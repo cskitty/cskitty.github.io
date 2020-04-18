@@ -44,3 +44,4 @@ Boolean value in Python may have one of two values, True or False.
 ## The print() function
 
 Type print("Hello World") in the above console and see what happens.
+Try another example print('foo\tbar').
