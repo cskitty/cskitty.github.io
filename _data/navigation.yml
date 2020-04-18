@@ -1,0 +1,15 @@
+main:
+  - title: "Posts"
+    url: /tags/
+  - title: "Tutorials"
+    url: /categories/projects/
+  - title: "Programming"
+    url: /categories/programming/
+  - title: "Math"
+    url: /tags/math/
+  - title: "Physics"
+    url: /tags/physics/
+  - title: "Playground"
+    url: /playground/
+  - title: "About"
+    url: /about/
