@@ -1,7 +1,7 @@
 ---
 title: "Conway's Game of Life"
 categories:
-  - Projects
+  - 
 tags:
   - Python
   - Game

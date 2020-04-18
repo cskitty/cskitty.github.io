@@ -1,5 +1,5 @@
 ---
-title: "Modeling a Canon using Python"
+title: "Modeling a Cannon using Python"
 date: 2020-04-13T15:34:30-04:00
 categories:
   - Programming
@@ -8,10 +8,10 @@ tags:
   - Physics
 ---
 
-## Modeling a Canon using Python
+## Modeling a cannon using Python
 
 
-Let us model a canon using Python: given the same initial speed, how to hit a target in a given position with a canon?
+Let us model a cannon using Python: given the same initial speed, how to hit a target in a given position with a cannon?
 Let the cannon be placed in the origin, i.e. its initial coordinate is (0,0) and the rest of parameters are:
 
 $$\begin{cases}
@@ -38,7 +38,7 @@ y_1 =y_0 + v_{y0}   t + \frac{1}{2}gt ^2
 \end{cases}
 $$
 
-Copy and paste the code below to Playground (trinket) and run it :)
+Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
 {% highlight python linenos %}
 from math import sin, cos, radians
@@ -77,7 +77,7 @@ x45, y45 = shoot(x0, y0, velocity, 30, tlist)
 x30, y30 = shoot(x0, y0, velocity, 45, tlist)
 x60, y60 = shoot(x0, y0, velocity, 60, tlist)
 
-plt.title('Modeling a canon using Python for 45/30/60 degree shoott')
+plt.title('Modeling a cannon using Python for 45/30/60 degree shoott')
 plt.plot(x45, y45, 'bo-', x30, y30, 'ro-', x60, y60, 'ko-',
         [0, 12], [0, 0], 'k-',  markersize=3,linestyle='dashed'
         )

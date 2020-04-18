@@ -1,5 +1,6 @@
 ---
-title: "Python Tutorial - Lesson 3 : Turtle"
+title: "Python for Beginner Lesson 3: Turtle"
+date: 2020-04-16 
 categories:
   - Projects
   - Tutorials
@@ -9,7 +10,7 @@ tags:
   - Turtle
 ---
 
-## Python Tutorial - Lesson 3 : Turtle
+## Python for Beginner Lesson 3: Turtle
 
  In this tutorial we will learn how to draw a graph using Python Turtle library.
 
