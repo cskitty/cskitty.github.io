@@ -6,4 +6,4 @@ taxonomy: Physics
 author_profile: true
 ---
 
-[Jupyter Notebook for Computational Physics is available here](https://github.com/cskitty/cskitty.github.io/blob/master/notebook/physics.ipynb)
+[Jupyter Notebook](https://github.com/cskitty/cskitty.github.io/blob/master/notebook/physics.ipynb)
