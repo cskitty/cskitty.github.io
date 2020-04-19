@@ -6,4 +6,4 @@ taxonomy: Physics
 author_profile: true
 ---
 
-[Jupyter Notebook](https://github.com/cskitty/cskitty.github.io/blob/master/notebook/physics.ipynb)
+[Notebook](https://github.com/cskitty/cskitty.github.io/blob/master/notebook/physics.ipynb)

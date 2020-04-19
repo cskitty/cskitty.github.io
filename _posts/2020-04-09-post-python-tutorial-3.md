@@ -1,13 +1,12 @@
 ---
 title: "Python for Beginner Lesson 3: Turtle"
-date: 2020-04-16 
+date: 2020-04-16
 categories:
   - Projects
   - Tutorials
 tags:
   - Python
   - Beginner
-  - Turtle
 ---
 
 ## Python for Beginner Lesson 3: Turtle

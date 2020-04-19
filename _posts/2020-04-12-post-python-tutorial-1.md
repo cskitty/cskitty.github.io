@@ -2,12 +2,11 @@
 title: "Python for Beginner Lesson 1: Variables and Print"
 date: 2020-04-18
 categories:
-  - Projects 
+  - Projects
   - Tutorials
 tags:
   - Python
   - Beginner
-  - Turtle
 ---
 
 # Python for Beginner Lesson 1: Variables and Print

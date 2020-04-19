@@ -1,13 +1,12 @@
 ---
 title: "Python for Beginner Lesson 2: Flow Control"
-date: 2020-04-17 
+date: 2020-04-17
 categories:
   - Projects
   - Tutorials
 tags:
   - Python
   - Beginner
-  - Turtle
 ---
 
 # Python for Beginner Lesson 2:  Flow Control
