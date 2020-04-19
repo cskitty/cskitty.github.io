@@ -15,9 +15,9 @@ Let us model a cannon using Python: given the same initial speed, how to hit a t
 Let the cannon be placed in the origin, i.e. its initial coordinate is (0,0) and the rest of parameters are:
 
 $$\begin{cases}
-x_0 = 0  meters\\
-y_0 = 0  meters\\
-t   = 30 seconds \\
+x_0 = 0  \text{ meters}\\
+y_0 = 0  \text{ meters}\\
+t   = 30 \text{ seconds} \\
 v_0 = 10  m/s \\
 g  = -10  m/s^2 \\
 \theta = 30,45,60
