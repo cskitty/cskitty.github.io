@@ -93,11 +93,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "cskitty"
+  name             : "StarCoder"
   avatar           : "https://avatars3.githubusercontent.com/u/19498807?s=400&u=a311a0cc9b765090373a431d386a0842ff8a9622&v=4"
-  bio              : "Hello! I’m cskitty.
-  <br> <br> My interests are in computer science and mathematics, and writing.
-  <br> <br> On this web site you will find my programming projects, mathematical ideas, various writings, and random work.
+  bio              : "
+  <br> <br> Project StarCoder hosts a collection of tutorials and artciles related with Programming for STEM students.
+  <br> <br> You will find programming ideas and applications for various K12 subjects including math / physics / gaming / cryptography etc
 "
   location         : "California"
   email            : "hicskitty@gmail.com"
