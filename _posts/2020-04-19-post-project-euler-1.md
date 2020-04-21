@@ -44,6 +44,14 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 
 ```python
-
-
+def problem_2():
+    fibonacci = [1, 1]
+    while fibonacci[-1] <= 4000000:
+        fibonacci.append(fibonacci[-1] + fibonacci[-2])
+    sum = 0
+    for x in fibonacci:
+        if x % 2 == 0:
+            sum += x
+    return sum
+print(problem_2())
 ```
