@@ -11,6 +11,8 @@ tags:
 
 # Project Euler in Python Series 1
 
+![](/assets/images/snowbunny.jpg)
+
 ## Problem 1 Multiples of 3 and 5
 
 
