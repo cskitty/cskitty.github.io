@@ -55,3 +55,28 @@ def problem_2():
     return sum
 print(problem_2())
 ```
+
+## Problem 3 Largest prime factor
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+
+```python
+def smallest_prime_factor(x):
+    for y in range(2, x):
+        if x % y == 0:
+            return y
+    return x
+
+def problem_3():
+    num = 600851475143
+    while num != smallest_prime_factor(num):
+        f = smallest_prime_factor(num)
+        if f <= num:
+            num //= f
+        else:
+            break
+    return num
+
+print(problem_3())
+```
