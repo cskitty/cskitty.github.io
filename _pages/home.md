@@ -29,7 +29,7 @@ feature_row:
     btn_label: "Learn more"
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Project Euler in Python"
-    excerpt: "Solving complex mathmatical problems"
+    excerpt: "Solving complex mathmatical problems."
     url: "/tags/math/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
