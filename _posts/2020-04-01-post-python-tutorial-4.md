@@ -26,7 +26,7 @@ As a starting point, you can draw a line using python turtle functions: there ar
 
 Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
-```python
+{% highlight python linenos %}
 # Step 1: Make all the "turtle" commands available to us.
 import turtle
 
@@ -37,13 +37,13 @@ alice = turtle.Turtle()
 alice.forward(100)
 # Step 4: We're done!
 turtle.done()
-```
+{% endhighlight %}
 
 ### Draw a square
 
 We can use Lines are boring. We can rotate the turtle in order to draw more interesting figures.
 
-```python
+{% highlight python linenos %}
 import turtle
 alice = turtle.Turtle()
 
@@ -60,13 +60,13 @@ alice.forward(100)
 alice.right(90)
 
 turtle.done()
-```
+{% endhighlight %}
 
 
 ### Draw a star
 
 
-```python
+{% highlight python linenos %}
 import turtle
 
 star = turtle.Turtle()
@@ -76,11 +76,11 @@ for i in range(5):
     star.right(144)
 
 turtle.done()
-```
+{% endhighlight %}
 
 ### Draw a hexagon
 
-```python
+{% highlight python linenos %}
 import turtle
 
 polygon = turtle.Turtle()
@@ -94,12 +94,12 @@ for i in range(num_sides):
     polygon.right(angle)
 
 turtle.done()
-```
+{% endhighlight %}
 
 ### Changing line color
 
 
-```python
+{% highlight python linenos %}
 import turtle
 
 painter = turtle.Turtle()
@@ -116,12 +116,12 @@ for i in range(50):
     painter.left(123)
 
 turtle.done()
-```
+{% endhighlight %}
 
 ### Spiraling star
 
 
-```python
+{% highlight python linenos %}
 import turtle
 
 spiral = turtle.Turtle()
@@ -131,48 +131,48 @@ for i in range(20):
     spiral.right(144)
 
 turtle.done()
-```
+{% endhighlight %}
 
 ### Drawing circles
 
 The code below will draw a circle of radius 50units.
 
-```python
+{% highlight python linenos %}
 import turtle
 t = turtle.Turtle()
 
 t.circle(50)
-```
+{% endhighlight %}
 
 More than one circle having one point of intersection is called tangent circles.
 The code below draws tangent Circles in Python turtle.
 
-```python
+{% highlight python linenos %}
 #Program to draw tangent circles in Python Turtle
 import turtle
 
 t = turtle.Turtle()
 for i in range(10):
   t.circle(10*i)
-```
+{% endhighlight %}
 
 Circles with varying radius are called spiral.
 The code below draws spiral circles in Python turtle.
 
 
-```python
+{% highlight python linenos %}
 #Program to draw spiral circles in Python Turtle
 import turtle
 
 t = turtle.Turtle()
 for i in range(30):
   t.circle(10+i, 45)
-```
+{% endhighlight %}
 
 Circles with different radii having a common center are called concurrent circles.
 
 
-```python
+{% highlight python linenos %}
 #Program to draw concentric circles in Python Turtle
 import turtle
 
@@ -182,12 +182,12 @@ for i in range(10):
   t.up()
   t.sety((10*i)*(-1))
   t.down()
-```
+{% endhighlight %}
 
 ### Turtle Olympics
 
 
-```python
+{% highlight python linenos %}
 import turtle
 myTurtle = turtle.Turtle()
 
@@ -211,13 +211,13 @@ myTurtle.circle(50)
 turtle.getscreen()._root.mainloop()
 
 turtle.done()
-```
+{% endhighlight %}
 
 
 ### Turtle's House
 
 
-```python
+{% highlight python linenos %}
 # Create a scene with a house, a tree, and a sun
 # Based on the picture at http://dragonometry.net/blog/?p=566
 # copied from https://trinket.io/python/8bfa7a2f2a
@@ -398,4 +398,4 @@ george.penup()
 george.goto(-100, -150)
 george.left(90)
 
-```
+{% endhighlight %}

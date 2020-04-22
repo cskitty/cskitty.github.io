@@ -35,11 +35,11 @@ That seems a little better.
 There's a special range( .. ) function built into Python that gives back a range of numbers.
 Try running the code below:
 
-```python
+{% highlight python linenos %}
 print(range(0, 6))
 for n in range(0, 6):
     print(n)
-```
+{% endhighlight %}
 
 Here we get the same result, though we didn't have to make a list ourselves. The range(0, 6) function returns a list that went from 0 (inclusive) to 6 (exclusive.)
 
@@ -47,27 +47,27 @@ Here we get the same result, though we didn't have to make a list ourselves. The
 
 The general form of a for loop looks like this:
 
-```python
+{% highlight python linenos %}
 for temp_variable in some_sort_of_list:
   do_something
-```
+{% endhighlight %}
 
 For loops end up being pretty useful. Take a look at the code below; when you think you know what it does,
 open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
-```python
+{% highlight python linenos %}
 sum = 0
 for x in range(0, 101):
     sum = sum + x
 
 print(sum)
-```
+{% endhighlight %}
 
 ### The While loop
 
 While loops repeat as long as a certain boolean condition is met. For example:
 
-```python
+{% highlight python linenos %}
 count = 0
 sum   = 0
 while count < 5:
@@ -75,14 +75,14 @@ while count < 5:
     count = count + 1  # count += 1 also works!
     sum = sum + count
 print(sum)
-```
+{% endhighlight %}
 
 
 ## "break" and "continue" statements
 
 break is used to exit a for loop or a while loop, whereas continue is used to skip the current block, and return to the "for" or "while" statement. A few examples:
 
-```python
+{% highlight python linenos %}
 # Prints out 0,1,2,3,4
 count = 0
 while True:
@@ -97,7 +97,7 @@ for x in range(10):
     if x % 2 == 0:
         continue
     print(x)
-```
+{% endhighlight %}
 
 ## Exercise
 

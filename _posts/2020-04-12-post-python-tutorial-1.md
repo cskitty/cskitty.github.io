@@ -28,13 +28,13 @@ While in other languages (C, java), there's limitation on the size of Integers. 
 
 Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
-```python
+{% highlight python linenos %}
 x=5
 y=-3
 print(x)
 print(y)
 print(x+y)
-```
+{% endhighlight %}
 
 ### String
 
@@ -45,14 +45,14 @@ String literals may be delimited using either single or double quotes. All the c
 
 Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
-```python
+{% highlight python linenos %}
 x = "Hello Word!"
 print(x)
 
 y = "I love "
 z = "Python!"
 print(y + z)
-```
+{% endhighlight %}
 
 ### Float (decimals)
 
@@ -62,11 +62,11 @@ The float type in Python designates a decimal number. float values are specified
 
 Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
-```python
+{% highlight python linenos %}
 pi = 3.14159
 print(x)
 print(2*pi)
-```
+{% endhighlight %}
 
 ### Boolean
 
@@ -76,12 +76,12 @@ Boolean value in Python may have one of two values, True or False.
 
 Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
-```python
+{% highlight python linenos %}
 i_love_python = True
 python_loves_me = False
 print(i_love_python)
 print(python_loves_me)
-```
+{% endhighlight %}
 
 ##  Operators
 
@@ -125,7 +125,7 @@ Logical operators perform Logical AND, Logical OR and Logical NOT operations.
 
 Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
-```python
+{% highlight python linenos %}
 i = 10
 j = 9
 print(i == j)
@@ -133,7 +133,7 @@ print(i > 9)
 print(i < j)
 print(i * j)
 print(i * j * j)
-```
+{% endhighlight %}
 
 ##  Conversions
 
@@ -141,7 +141,7 @@ In Python, we can use the build in functions int(), float(), and str() to conver
 
 Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
-```python
+{% highlight python linenos %}
 x = "5"
 print(x, type(x))
 x = int("5")
@@ -152,7 +152,7 @@ print(str(4))
 
 apples = "I have" + str(2) + "apple"
 print(apples)
-```
+{% endhighlight %}
 
 ## The print() function
 

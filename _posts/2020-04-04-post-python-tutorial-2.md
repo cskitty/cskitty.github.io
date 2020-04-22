@@ -25,14 +25,14 @@ Python supports the usual logical conditions from mathematics:
 
 Example:
 
-```python
+{% highlight python linenos %}
 a = 33
 b = 44
 if b > a:
   print("b is greater than a")
 else:
   print("b is less or equal than a")
-```
+{% endhighlight %}
 
 In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 44, we know that 44 is greater than 33, and so we print to screen that "b is greater than a".
 
@@ -41,12 +41,12 @@ In this example we use two variables, a and b, which are used as part of the if 
 Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.
 The following code will raise an error as the last line is not indented.
 
-```python
+{% highlight python linenos %}
 a = 33
 b = 200
 if b > a:
 print("b is greater than a") # you will get an error
-```
+{% endhighlight %}
 
 ## Nested if statements
 
@@ -72,7 +72,7 @@ Example:
 * Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 * After running, you can modify the variable today to "Tuesday" or "Sunday" and try again.
 
-```python
+{% highlight python linenos %}
 today = "Monday"
 hiking = "N"
 my_recitation = "Tuesday"
@@ -89,4 +89,4 @@ elif today == my_recitation:
     print("Go to recitation!")
 else:
     print("No plan for today")
-```
+{% endhighlight %}
