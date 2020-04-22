@@ -15,12 +15,21 @@ feature_row:
   - image_path: assets/images/unsplash-gallery-image-4-th.jpg
     alt: "placeholder image 1"
     title: "Coding Tutorials"
+    url: "/categories/projects/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "placeholder image 2"
     title: "Computational Physics"
+    url: "/tags/physics/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Project Euler in Python"
+    url: "/tags/math/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 
 ---
 
