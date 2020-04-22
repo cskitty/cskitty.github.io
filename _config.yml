@@ -12,7 +12,7 @@
 
 #theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "StarCoder"
-  avatar           : "https://avatars3.githubusercontent.com/u/19498807?s=400&u=a311a0cc9b765090373a431d386a0842ff8a9622&v=4"
+  avatar           : "/assets/images/catlogo.jpg" #"https://avatars3.githubusercontent.com/u/19498807?s=400&u=a311a0cc9b765090373a431d386a0842ff8a9622&v=4"
   bio              : "
   <br> <br> Project StarCoder hosts a collection of tutorials and articles related with Programming for STEM students.
   <br> <br> You will find programming ideas and applications for various K12 subjects including math / physics / gaming / cryptography etc
