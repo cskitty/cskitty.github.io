@@ -15,6 +15,7 @@ feature_row:
   - image_path: assets/images/unsplash-gallery-image-4-th.jpg
     alt: "placeholder image 1"
     title: "Coding Tutorials"
+    excerpt: "Everything from hello world to turtle graphics."
     url: "/categories/projects/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
@@ -22,11 +23,13 @@ feature_row:
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "placeholder image 2"
     title: "Computational Physics"
+    excerpt: "Physics visualization & experiments using Python."
     url: "/tags/physics/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Project Euler in Python"
+    excerpt: "Solving complex mathmatical problems with Python"
     url: "/tags/math/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
