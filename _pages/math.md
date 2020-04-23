@@ -10,7 +10,7 @@ author_profile: true
 
 Leonhard Euler (1707-1783)
 
-![](https://projecteuler.net/images/euler_portrait.png)
+![](/assets/images/euler.jpg)
 
 ### About Project Euler
 
