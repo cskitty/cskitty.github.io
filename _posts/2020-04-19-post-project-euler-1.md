@@ -101,3 +101,33 @@ def problem_4():
     return max(list)
 print(problem_4())
 {% endhighlight %}
+
+## Problem 5 Smallest Multiple
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+{% highlight python linenos %}
+def gcd(x,y):
+    r = 1
+    while r != 0:
+        if x > y:
+            x,y = y,x
+        r = y % x
+        if r == 0:
+            return x
+        else:
+            y,x = x,r
+            
+print(gcd(12,6))
+
+def lcm(x, y):
+    return x * y // gcd(x, y)
+
+def problem_5():
+    x = 1
+    for y in range(1, 21):
+        x = lcm(x, y)
+    return x
+print(problem_5())
+{% endhighlight %}
