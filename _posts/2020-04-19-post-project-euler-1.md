@@ -144,3 +144,21 @@ $$(1+2+...+10)^2=55^2=3025.$$
 Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is $$3025−385=2640.$$
 
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+{% highlight python linenos %}
+def problem_6():
+    sums = 0
+    
+    for x in range(1, 101):
+        sums += x
+    sums = sums * sums
+    
+    squares = 0
+    square = [x*x for x in range(1,101)]
+    for z in square:
+        squares += z
+    
+    
+    return sums - squares
+print(problem_6())
+{% endhighlight %}
