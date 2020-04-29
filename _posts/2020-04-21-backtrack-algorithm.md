@@ -9,9 +9,8 @@ tags:
 
 ## Backtrack Algorithm
 
-Backtrack algorithms are used to solve a lot of brute force based DFS search problems.
-
-Let's take a look at Leetcode problem [46](https://leetcode.com/problems/permutations/)
+Backtrack algorithms are used to solve a lot of brute force based DFS search problems. This is a standard python program for backtracking applied to Leetcode problem
+[Leetcode 46](https://leetcode.com/problems/permutations/).
 
 Explanation
 
