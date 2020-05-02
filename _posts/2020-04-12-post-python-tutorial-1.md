@@ -8,8 +8,19 @@ tags:
 ---
 
 # Python for Beginner Lesson 1: Variables and Print
-{% include video id="lyHTRSnAIns" provider="youtube" %}
+{% include video id="AEY_B1MSGTw" provider="youtube" %}
 
+If you’ve gone to search up the word “Python”, chances are, you get a definition like this:
+py·thon ˈpīˌTHän,ˈpīTHən/
+noun
+a large heavy-bodied nonvenomous constrictor snake occurring throughout the Old World tropics.
+ But that’s not the only thing it says, and that’s not what we mean. If you continue reading, the second definition should pop up:
+2. a high-level general-purpose programming language.
+ That’s the one we’re talking about. Python is a programming language, one of the easier ones too. So let’s start with some basics.
+
+{% highlight python linenos %}
+print("Hello Python!")
+{%endhighlight%}
 ## Numbers
 Numbers in Python work like what you've learned from your math class including but not limit to counting numbers, negative numbers, decimals so on and so force.
 
