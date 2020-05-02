@@ -8,6 +8,7 @@ tags:
 ---
 
 # Python for Beginner Lesson 1: Variables and Print
+{% include video id="lyHTRSnAIns" provider="youtube" %}
 
 ## Numbers
 Numbers in Python work like what you've learned from your math class including but not limit to counting numbers, negative numbers, decimals so on and so force.
