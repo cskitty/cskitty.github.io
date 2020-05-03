@@ -1,5 +1,5 @@
 ---
-title: "Python for Beginner Lesson 3: Loops"
+title: "Introduction to Python Lesson 3: Loops"
 categories:
   - Projects
   - Tutorials
@@ -7,7 +7,7 @@ tags:
   - Python
 ---
 
-# Python for Beginner Lesson 3:  Loops
+# Introduction to Python Lesson 3:  Loops
 
 There are two types of loops in Python, for loop and while loop.
 

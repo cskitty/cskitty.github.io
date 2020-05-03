@@ -1,5 +1,5 @@
 ---
-title: "Python for Beginner Lesson 4: Turtle"
+title: "Introduction to Python Lesson 4: Turtle"
 categories:
   - Projects
   - Tutorials
@@ -7,7 +7,7 @@ tags:
   - Python
 ---
 
-## Python for Beginner Lesson 4: Turtle
+## Introduction to Python Lesson 4: Turtle
 
  In this tutorial we will learn how to draw a graph using Python Turtle library.
 

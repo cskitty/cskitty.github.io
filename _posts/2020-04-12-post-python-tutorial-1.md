@@ -1,5 +1,5 @@
 ---
-title: "Python for Beginner Lesson 1: Variables and Print"
+title: "Introduction to Python Lesson 1: Variables and Print"
 categories:
   - Projects
   - Tutorials
@@ -7,7 +7,7 @@ tags:
   - Python
 ---
 
-# Python for Beginner Lesson 1: Variables and Print
+# Introduction to Python Lesson 1: Variables and Print
 {% include video id="AEY_B1MSGTw" provider="youtube" %}
 
 If you’ve gone to search up the word “Python”, chances are, you get a definition like this:
@@ -65,6 +65,23 @@ y = "I love "
 z = "Python!"
 print(y + z)
 {% endhighlight %}
+
+String is one of the six build-in sequence data type in Python. Each element of a sequence data type is assigned a position number or index. The first index is zero, the second index is one, and so forth.  In addition to string type, the others most common ones are lists and tuples, which we would see in next tutorial.
+
+There are certain things you can do with all sequence types. These operations include indexing, slicing, adding, and checking for existence. In addition, Python has built-in functions for finding the length of a sequence and for finding its largest and smallest elements.
+
+
+| Operation       | Result               | Example  |
+| -------------   | ---------------------| -----|
+| x in s          | True if an item of s is equal to x, else False | 'e' in "help" is True  |
+| s + t           |	the concatenation of s and t |  'Good '+'Morning' is 'Good Morning' |
+| s[i]            | i'th item of s, origin 0 | 'help'[3] is 'p'  |  
+| s[i:j]          | slice of s from i to j |  'help'[1:3] is 'el' |  
+| len(s)          | length of s | len(help) is 4  |  
+| min(s)          | smallest item of s | min('help') is 'e'  |  
+| max(s)          | largest item of s |  max('help') is 'h' |  
+
+
 
 ### Float (decimals)
 
