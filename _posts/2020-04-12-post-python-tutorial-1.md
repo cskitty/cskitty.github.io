@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Python Lesson 1: Variables and Print"
+title: "Python for Beginner Lesson 1: Variables and Print"
 categories:
   - Projects
   - Tutorials
@@ -7,7 +7,7 @@ tags:
   - Python
 ---
 
-# Introduction to Python Lesson 1: Variables and Print
+# Python for Beginner Lesson 1: Variables and Print
 {% include video id="AEY_B1MSGTw" provider="youtube" %}
 
 If you’ve gone to search up the word “Python”, chances are, you get a definition like this:
@@ -21,6 +21,25 @@ a large heavy-bodied nonvenomous constrictor snake occurring throughout the Old 
 {% highlight python linenos %}
 print("Hello Python!")
 {%endhighlight%}
+
+## 1.1: Variables
+
+Let’s suppose you want to store an object, like a pencil.
+In real life, you would probably store it in a container. In Python, or any other programming language, you can do the same. A virtual “container” for objects is known as a variable (abbreviate as var). Variables are one of the fundamental parts of Python or any programming! The only difference between a real container and a variable is that typically, variables only hold one item, like a small ziploc bag or a tiny backpack.
+In programming, variables need a name. This is how you can refer to them later. If I want to store my pencil into a bag and take it out later to write, I need to know what bag I stored it in.
+For the syntax of creating the variable, we can simply assign the name to the value. The syntax is shown below; run the code!
+
+{% highlight python linenos %}
+x = 3
+{%endhighlight%}
+
+Variable naming is an important part of any language. For Python, there are words like "For" or ""True" (Both of which will be addressed later!). To make sure we don't accidentally name a variable after a word that already has a meaning, there are a few simple rules to follow.3
+Camel Case - start with lowercase letters, and name new words with an uppercase letter. i.e. "firstDogSpot" or "catName"
+No spaces!
+Avoid keywords; on most python platforms, the keywords will change color. Don't use these words!
+Always start with a letter. They can contain numbers though; for example "dog1" or "catName3" work, while "1Dog" and "3CatName" do not.
+In this example, the value of the variable is a number. Of course, we can’t store actual items like pencils in python. However, we can store many other things.
+
 ## Numbers
 Numbers in Python work like what you've learned from your math class including but not limit to counting numbers, negative numbers, decimals so on and so force.
 
@@ -34,54 +53,23 @@ To show you what I mean, type a few more numbers into the console below, pressin
 
 ### Integer
 
-* int - integers: ..., -3, -2, -1, 0, 1, 2, 3, ...
+1.2: Numbers and Operators
+ Just like from math, numbers come in many different forms. In programming, they are classified into different types of variables.
 
-While in other languages (C, java), there's limitation on the size of Integers. In Python, there is no limit to how long an integer value can be. It is only constrained by the amount of memory your system has. 111, 222, -232301231231 are examples of integers in Python.
-
-Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
-
-{% highlight python linenos %}
-x=5
-y=-3
-print(x)
-print(y)
-print(x+y)
-{% endhighlight %}
-
-### String
-
-* str - character strings, text: "hello world!", "CS50", 'python', 'bunnies are awesome'
-
-Strings are sequences of character data. The string type in Python is called str.
-String literals may be delimited using either single or double quotes. All the characters between the opening delimiter and matching closing delimiter are part of the string: "hello word" or 'hello world'.
+print(z)
+ In this example, the value of z that will print out is 3 + 2, or 5.
+ The most commonly used form of numbers are integers, or abbreviated as int. In Python specifically, they are unlimited; from -31459263 to positive 6283185, any number can be an integer. (This is not true for other programming languages, such as C or Java).
 
 Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
 {% highlight python linenos %}
-x = "Hello Word!"
-print(x)
-
-y = "I love "
-z = "Python!"
-print(y + z)
+x = 3
+y = 2
+z = x + y
+print(x, y, z)
 {% endhighlight %}
 
-String is one of the six build-in sequence data type in Python. Each element of a sequence data type is assigned a position number or index. The first index is zero, the second index is one, and so forth.  In addition to string type, the others most common ones are lists and tuples, which we would see in next tutorial.
-
-There are certain things you can do with all sequence types. These operations include indexing, slicing, adding, and checking for existence. In addition, Python has built-in functions for finding the length of a sequence and for finding its largest and smallest elements.
-
-
-| Operation       | Result               | Example  |
-| -------------   | ---------------------| -----|
-| x in s          | True if an item of s is equal to x, else False | 'e' in "help" is True  |
-| s + t           |	the concatenation of s and t |  'Good '+'Morning' is 'Good Morning' |
-| s[i]            | i'th item of s, origin 0 | 'help'[3] is 'p'  |  
-| s[i:j]          | slice of s from i to j |  'help'[1:3] is 'el' |  
-| len(s)          | length of s | len(help) is 4  |  
-| min(s)          | smallest item of s | min('help') is 'e'  |  
-| max(s)          | largest item of s |  max('help') is 'h' |  
-
-
+As shown in the first example, variables can be added. But not only that: they can perform all the operations of a functioning equation!
 
 ### Float (decimals)
 
@@ -97,11 +85,40 @@ print(x)
 print(2*pi)
 {% endhighlight %}
 
+What about decimals and numbers that are not whole? These numbers go into a type of variable called a float.
+# while b renders as an int, a will save as a float.
+a = 1.02
+b = 1
+Just like integers, floats can be operated on.
+
+### String
+
+* str - character strings, text: "hello world!", "CS50", 'python', 'starcoder!'
+
+Remember the pencil from earlier? Though we can’t store the actual pencil, we can store the word in the variable. This word can be contained as a string (which can be abbreviated to str)
+So that Python can differentiate the string from a Python command, strings have double quotes around them.
+
+
+Strings are sequences of character data. The string type in Python is called str.
+String literals may be delimited using either single or double quotes. All the characters between the opening delimiter and matching closing delimiter are part of the string: "hello word" or 'hello world'.
+
+Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
+
+{% highlight python linenos %}
+x = "Hello Word!"
+print(x)
+
+y = "I love "
+z = "Python!"
+print(y + z)
+{% endhighlight %}
+
+
 ### Boolean
 
 * bool - boolean values: True and False
 
-Boolean value in Python may have one of two values, True or False.
+The final main type of variable is Boolean, abbreviated into bool. There are only two variables for these: true and false. Though this may not seem interesting right now, they are especially useful in the future (and next lesson!)
 
 Copy the code below, open the [Python Playground](http://starcoder.org/playground/), paste the code and run it.
 
@@ -113,6 +130,8 @@ print(python_loves_me)
 {% endhighlight %}
 
 ##  Operators
+
+These values can usually be operated on; there are a couple main types of operators.
 
 ### Arithmetic operators
 
