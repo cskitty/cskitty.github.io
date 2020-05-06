@@ -120,6 +120,9 @@ What is the value of the first triangle number to have over five hundred divisor
 import math
 
 # Returns the number of factors of n.
+import math
+
+# Returns the number of factors of n.
 def factors(n):
     # the largest factor excluding n is sqrt(n)
     end = math.floor(math.sqrt(n))
@@ -130,15 +133,12 @@ def factors(n):
         if n % i == 0:
             # Found two factors, i and n//i, so add 2
             count += 2
-            print(i)
 
     # Remove one extra if n is a perfect square
     if end * end == n:
         count -= 1
 
     return count
-
-print(factors(16))
 
 def problem_12():
     y = 1
