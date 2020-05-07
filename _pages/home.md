@@ -24,8 +24,8 @@ feature_row:
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/safe.png
-  title: "Algorithms"
-  excerpt: "Computer algorithms explained"
+  title: "Competitive Programming"
+  excerpt: "Algorithms"
   url: "/tags/algorithms/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
