@@ -5,10 +5,11 @@ categories:
   - Tutorials
 tags:
   - Python
----
-
-# Python for Beginner Lesson 1: Variables and Print
+---                          
+# Python for Beginner Lesson 1: Variables and Print                                                                       
 {% include video id="AEY_B1MSGTw" provider="youtube" %}
+
+## [Click to Download Lesson 1 Slides](/assets/docs/intro_python_1.pdf)    
 
 If you’ve gone to search up the word “Python”, chances are, you get a definition like this:
 py·thon ˈpīˌTHän,ˈpīTHən/
