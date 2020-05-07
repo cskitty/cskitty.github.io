@@ -8,7 +8,7 @@ tags:
 ---
 
 # Introduction to Python Lesson 2: Statement and Flow Control           
-{% include video id="hYXa2y3_sbA" provider="youtube" %}
+{% include video id="3m4C3hfEPLc" provider="youtube" %}
 
 ## [Click to Download Lesson 2 Slides](/assets/docs/intro_python_2.pdf)  
 ## Python Statement

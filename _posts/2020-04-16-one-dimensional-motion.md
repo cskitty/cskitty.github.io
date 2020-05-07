@@ -9,7 +9,7 @@ tags:
 ---
 
 ## One Dimensional Motion
-
+![](/assets/images/physheadercat.png)
 
 Below is the one dimensional kinematic equation that we learn in physics class.
 

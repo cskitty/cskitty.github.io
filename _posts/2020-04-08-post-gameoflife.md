@@ -8,6 +8,8 @@ tags:
 ---
 
 ## Conway's Game of Life
+![](/assets/images/gamesheadercat.png)
+
  Conway's Game of Life can be found in the wiki article [here](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
 

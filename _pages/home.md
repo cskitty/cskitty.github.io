@@ -24,7 +24,7 @@ feature_row:
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/safe.png
-  title: "Competitive Programming"
+  title: "Programming"
   excerpt: "USACO and Algorithms"
   url: "/tags/algorithms/"
   btn_class: "btn--primary"

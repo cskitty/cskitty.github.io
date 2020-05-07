@@ -87,9 +87,12 @@ print(2*pi)
 {% endhighlight %}
 
 What about decimals and numbers that are not whole? These numbers go into a type of variable called a float.
-# while b renders as an int, a will save as a float.
+
+In this example, while b renders as an int, a will save as a float.
+{% highlight python linenos %}
 a = 1.02
 b = 1
+{% endhighlight %}
 Just like integers, floats can be operated on.
 
 ### String
