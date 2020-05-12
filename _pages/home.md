@@ -26,7 +26,7 @@ feature_row:
 - image_path: /assets/images/cake.png
   title: "USACO"
   excerpt: "Competitive Programming"
-  url: "/tags/algorithms/"
+  url: "/categories/usaco/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/submarine.png
