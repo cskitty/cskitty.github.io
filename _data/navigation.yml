@@ -3,12 +3,12 @@ main:
     url: /tags/
   - title: "Tutorials"
     url: /categories/projects/
-  - title: "Programming"
+  - title: "Algorithms"
     url: /categories/programming/
-  - title: "Math"
+  - title: "USACO"
+    url: /categories/usaco/
+  - title: "Project Euler"
     url: /tags/math/
-  - title: "Physics"
-    url: /tags/physics/
   - title: "Playground"
     url: /playground/
   - title: "About"

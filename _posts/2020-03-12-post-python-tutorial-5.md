@@ -29,97 +29,6 @@ There are four collection data types in the Python programming language:
 When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.
 
 
-### Python List
-
-List is an ordered sequence of items. The list is a most versatile datatype available in Python and is very flexible. Python List can be written as a list of comma-separated items between square brackets: [item1, item2, item3]. Please note that items in a list need not be of the same type, for example:
-
-{% highlight python linenos %}
-list1 = ['physics', 'chemistry', 1997, 2000];
-list2 = [1, 2, 3, 4, 5 ];
-list3 = ["a", "b", "c", "d"]
-
-print(list1)
-print(list2)
-print(list3)
-{% endhighlight %}
-
-
-You access the list items by referring to the index number:
-
-{% highlight python linenos %}
-list = ['physics', 'chemistry', 1997, 2000]
-
-print(list[1])
-print(list[2])
-{% endhighlight %}
-
-
-List is a mutable collection, to change the value of a specific item, refer to the index number:
-
-{% highlight python linenos %}
-list = ['physics', 'chemistry', 1997, 2000];
-print(list)
-
-list[1] = 'math'
-print(list)
-
-{% endhighlight %}
-
-To determine if a specified item is present in a list use the in keyword:
-{% highlight python linenos %}
-list = ['physics', 'chemistry', 1997, 2000]
-
-a = 'physics'
-print(a in list)
-{% endhighlight %}
-
-To add an item to the end of the list, use the append() method:
-{% highlight python linenos %}
-list = ['physics', 'chemistry', 1997, 2000]
-print(list)
-
-list.append("orange")
-print(list)
-{% endhighlight %}
-
-There are several methods to remove items from a list:
-
-{% highlight python linenos %}
-list = ['physics', 'chemistry', 1997, 2000]
-print(list)
-
-list.remove("chemistry")
-print(list)
-
-del list[0]
-print(list)
-
-#clear the entire list3
-list.clear()
-print(list)
-{% endhighlight %}
-
-You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
-
-There are ways to make a copy, one way is to use the built-in List method copy().
-{% highlight python linenos %}
-list = ["apple", "banana", "cherry"]
-list2 = list.copy()
-print(list2)
-{% endhighlight %}
-
-We can join, or concatenate, two or more lists in Python using the + operator.
-There are ways to make a copy, one way is to use the built-in List method copy().
-
-{% highlight python linenos %}
-list1 = [1,2,3]
-list2 = [3,4,5]
-
-list3 = list1 + list2
-print(list3)
-{% endhighlight %}
-
-
 ### Python Tuple
 
 Tuple is an ordered sequence of items same as a list. The only difference is that tuples are immutable. Tuples once created cannot be modified.  In Python tuples are written with round brackets () where items are separated by commas, for example:
@@ -257,4 +166,64 @@ print(myDict)
 # from list of tuples
 myDict = dict([('color','red'), (1,'apple')])
 print(myDict)
+{% endhighlight %}
+
+
+
+## Python functions
+
+In Python, a function is a group of related statements that performs a specific task. Python function is a reusable block of code.
+Functions help break our program into smaller and modular chunks. As our program grows larger and larger, functions make it more organized and manageable.  
+Furthermore, it avoids repetition and makes the code reusable.  
+
+Syntax of a Python Function
+
+```
+def function_name(parameters):
+	statement
+  statement
+  ...
+  return return_value
+```
+
+A Python Function follows the following rules:
+
+* Keyword ***def*** that marks the start of the function header.
+* A function name to uniquely identify the function. Function name follows the same rules as variable names in Python.
+* Function parameters (arguments) through which we pass values to a function. They are optional.
+* A colon (:) to mark the end of the function header.
+* The function body consists of one or more valid python statements.
+* Statements in the function body must have the same indentation level.
+* An optional return statement to return a value from the function.
+
+
+Example of a Python function:
+
+{% highlight python linenos %}
+def hello(name):
+    greetString = "Hello, " + name
+    return greetString
+
+print(hello('World!'))
+{% endhighlight %}
+
+Please note that it is possible to define a function with zero arguments:
+
+{% highlight python linenos %}
+def hello():
+    greetString = "Hello, " + "World!"
+    return greetString
+
+print(hello())
+{% endhighlight %}
+
+It is also possible to define a function with do not return any value.  
+You can just simple omit the ***return*** statement in your function body.
+
+{% highlight python linenos %}
+def hello():
+    greetString = "Hello, " + "World!"
+    print(greetString)
+
+hello()
 {% endhighlight %}

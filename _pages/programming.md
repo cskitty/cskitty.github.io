@@ -1,5 +1,5 @@
 ---
-title: "Programming"
+title: "Algorithms"
 layout: category
 permalink: /categories/programming/
 taxonomy: Programming
