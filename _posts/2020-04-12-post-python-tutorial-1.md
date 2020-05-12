@@ -1,12 +1,12 @@
 ---
-title: "Python for Beginner Lesson 1: Variables and Print"
+title: "Introduction to Python Lesson 1: Variables and Print"
 categories:
   - Projects
   - Tutorials
 tags:
   - Python
 ---                          
-# Python for Beginner Lesson 1: Variables and Print                                                                       
+# Introduction to Python Lesson 1: Variables and Print                                                                       
 {% include video id="AEY_B1MSGTw" provider="youtube" %}
 
 ## [Click to Download Lesson 1 Slides](/assets/docs/intro_python_1.pdf)    
