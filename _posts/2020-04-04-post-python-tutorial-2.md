@@ -10,6 +10,7 @@ tags:
 {% include video id="3m4C3hfEPLc" provider="youtube" %}
 
 ## [Click to Download Lesson 2 Slides](/assets/docs/intro_python_2.pdf)  
+
 ## Python Statement
 
 In Python, a statement is an instruction that the Python interpreter can execute. For example, a = 11 is an assignment statement. There are other more complex statements such as if statement, for statement, while statement, etc.

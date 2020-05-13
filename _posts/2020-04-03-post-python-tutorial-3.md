@@ -7,6 +7,9 @@ tags:
 ---
 
 # Introduction to Python Lesson 3: List and Loops
+{% include video id="gCYDw43OmM8" provider="youtube" %}
+
+## [Click to Download Lesson 3 Slides](/assets/docs/intro_python_3.pdf) 
 
 ## Python List
 
