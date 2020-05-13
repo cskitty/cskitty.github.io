@@ -1,6 +1,6 @@
 main:
-  - title: "Posts"
-    url: /tags/
+  - title: "Playground"
+    url: /playground/
   - title: "Tutorials"
     url: /categories/projects/
   - title: "Algorithms"
@@ -9,7 +9,7 @@ main:
     url: /categories/usaco/
   - title: "Project Euler"
     url: /tags/math/
-  - title: "Playground"
-    url: /playground/
+  - title: "Archive"
+    url: /tags/
   - title: "About"
     url: /about/

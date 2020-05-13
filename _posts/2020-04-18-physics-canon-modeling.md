@@ -1,8 +1,6 @@
 ---
 title: "Modeling a Cannon using Python"
 date: 2020-04-13T15:34:30-04:00
-categories:
-  - Programming
 tags:
   - Python
   - Physics
