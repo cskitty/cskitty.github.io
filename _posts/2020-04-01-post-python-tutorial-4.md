@@ -1,7 +1,6 @@
 ---
 title: "Introduction to Python Lesson 4: Turtle Graphics"
 categories:
-  - Projects
   - Tutorials
 tags:
   - Python

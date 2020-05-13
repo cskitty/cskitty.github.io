@@ -1,7 +1,6 @@
 ---
 title: "Introduction to Python Lesson 3: List and Loops"
 categories:
-  - Projects
   - Tutorials
 tags:
   - Python

@@ -1,7 +1,6 @@
 ---
 title: "Introduction to Python Lesson 1: Variables and Print"
 categories:
-  - Projects
   - Tutorials
 tags:
   - Python

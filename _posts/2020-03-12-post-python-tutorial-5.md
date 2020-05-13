@@ -1,7 +1,6 @@
 ---
 title: "Introduction to Python Lesson 5: Collections and Functions"
 categories:
-  - Projects
   - Tutorials
 tags:
   - Python
@@ -227,3 +226,16 @@ def hello():
 
 hello()
 {% endhighlight %}
+
+
+### Calling Functions
+
+Once we have defined a function, we can call it from another function, program or even the Python prompt.  
+To call a function we simply type the function name with appropriate parameters.
+
+Consider the following code. It creates a variable, text, and then calls
+a function re.sub10 to substitute all occurrences of the string 'OI'
+with the more informative string 'Operating Income'. Notice that we
+passed three arguments to re.sub. The first argument is the search text,
+the second argument is the replacement text, and the third argument is
+the text to search.
