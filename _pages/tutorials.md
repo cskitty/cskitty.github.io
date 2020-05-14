@@ -1,7 +1,7 @@
 ---
-title: "Learning Python in Four Lessons"
+title: "Tutorials"
 layout: archive
-permalink: /categories/tutorials/
+permalink: /tutorials
 taxonomy: Tutorials
 author_profile: true
 ---

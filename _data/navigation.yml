@@ -2,7 +2,7 @@ main:
   - title: "Playground"
     url: /playground/
   - title: "Tutorials"
-    url: /categories/tutorials/
+    url: /tutorials/
   - title: "Algorithms"
     url: /categories/programming/
   - title: "USACO"

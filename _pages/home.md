@@ -14,7 +14,7 @@ feature_row:
 - image_path: assets/images/circus.png
   title: "Tutorials"
   excerpt: "Python from scratch"
-  url: "/categories/tutorials/"
+  url: "/tutorials/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/cabin.png
