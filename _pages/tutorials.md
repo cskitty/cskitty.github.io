@@ -1,7 +1,7 @@
 ---
 title: "Tutorials"
 layout: archive
-permalink: /tutorials
+permalink: /tutorials/
 taxonomy: Tutorials
 author_profile: true
 ---
