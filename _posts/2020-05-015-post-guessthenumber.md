@@ -1,5 +1,5 @@
 ---
-title: "Conway's Game of Life"
+title: "Guess the Number"
 tags:
   - Python
   - Game
