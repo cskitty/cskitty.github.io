@@ -23,4 +23,4 @@ This is the first class of Introduction to Python. This class is recorded on May
 This is the second class of Introduction to Python. This class is recorded on May, 14, 2020.
 #### [Click to Download Lesson 2 Slides](/assets/docs/intro_python_2.pdf)   
 
-{% include video id="YtMOPnoF5nw" provider="youtube" %}
+{% include video id="OmUim3Wude4" provider="youtube" %}
