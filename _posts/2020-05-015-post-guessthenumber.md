@@ -42,7 +42,7 @@ def guessthenum(start, stop):
             print("Congrats! You guessed the number in " + str(moves) + " turns. \n")
             break
         moves += 1
-guessthenum(1, 5)
+guessthenum(input("Start: "), input("Stop: "))
 
 
 {% endhighlight %}
