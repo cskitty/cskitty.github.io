@@ -6,7 +6,6 @@ tags:
 ---
 
 ## Guess the Number
-![](/assets/images/gameoflife.gif)
 
  
 
