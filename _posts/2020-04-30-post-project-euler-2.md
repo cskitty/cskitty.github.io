@@ -378,7 +378,7 @@ print(problem_13())
 ## Problem 14 Longest Collatz sequence  
 The following iterative sequence is defined for the set of positive integers:
 
-$$n \rightarrow n/2 $$(n is even)  
+$$n \rightarrow \frac{n}{2} $$(n is even)  
 $$n \rightarrow  3n + 1 $$(n is odd)  
  
 Using the rule above and starting with 13, we generate the following sequence:
