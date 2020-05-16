@@ -415,3 +415,22 @@ def problem_14():
 print(problem_14())
 
 {% endhighlight %}
+
+## Problem 15 Lattice paths
+
+Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
+
+![](https://projecteuler.net/project/images/p015.png)
+
+How many such routes are there through a 20×20 grid?
+
+{% highlight python linenos %}
+import functools
+
+def factorial(x):
+    return functools.reduce(lambda x, y: x * y, range(1, x + 1))
+
+def problem_15():
+    return factorial(40) // (factorial(20) * factorial(20))
+print(problem_15())
+{% endhighlight %}
