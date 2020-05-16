@@ -1,6 +1,5 @@
 ---
 title: "Project Euler in Python Series 1"
-date: 2020-04-18
 categories:
   - Math
 tags:
