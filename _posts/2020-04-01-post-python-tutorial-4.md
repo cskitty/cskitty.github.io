@@ -7,8 +7,11 @@ tags:
 ---
 
 ## Introduction to Python Lesson 4: Turtle Graphics
+{% include video id="fkOaw0JUApA" provider="youtube" %}  
 
- In this tutorial we will learn how to draw a graph using Python Turtle library.
+## [Click to Download Lesson 3 Slides](/assets/docs/intro_python_4.pdf)
+
+In this tutorial we will learn how to draw a graph using Python Turtle library.
 
  “Turtle” is a python feature like a drawing board, which lets you command a turtle to draw all over it!
 You can use functions like turtle.forward(...) and turtle.left(...) which can move the turtle around.
