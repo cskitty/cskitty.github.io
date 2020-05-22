@@ -28,7 +28,10 @@ This is the second class of Introduction to Python. This class is recorded on Ma
 ### Lesson 3: Lists and Loops
 
 This is the third class of Introduction to Python. This class is recorded on May, 21, 2020.
-#### [Click to Download Lesson 3 Slides](/assets/docs/intro_python_3.pdf)   
+#### [Click to Download Lesson 3 Slides](/assets/docs/intro_python_3.pdf)  
+  
+{% include video id="HEADzurtvrA" provider="youtube" %}
+
 
 ### Lesson 4: Turtle Graphics
 
