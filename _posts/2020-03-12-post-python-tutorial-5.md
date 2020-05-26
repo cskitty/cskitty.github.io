@@ -105,21 +105,22 @@ print(fruits)
 
 There are several ways to operate on two or more sets in Python.
 
-* \| or union() for union.
-* & or intersection() for intersection.
-* – or difference() for difference
-* ^ or symmetric_difference() for symmetric difference
+| \| or union() for union.                             |
+| & or intersection() for intersection.                |
+| – or difference() for difference                     |
+| ^ or symmetric_difference() for symmetric difference |
 
 
-You can use the union() method that returns a new set containing all items from both sets, or the update() method that inserts all the items from one set into another, as shown in the example below:
+You can use the union() method that returns a new set containing all items from both sets, or the update() method that inserts all the items from one set into another.
+This is written as shown in the example below:
 
 {% highlight python linenos %}
 # Program to perform different set operations
 # as we do in  mathematics
 
 # sets are define
-A = {0, 2, 4};
-B = {1, 2, 3};
+A = {0, 2, 4}
+B = {1, 2, 3}
 
 # union
 print("Union :", A | B)
