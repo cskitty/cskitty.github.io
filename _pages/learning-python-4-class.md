@@ -36,9 +36,10 @@ This is the third class of Introduction to Python. This class is recorded on May
 ### Lesson 4: Turtle Graphics
 
 This is the third class of Introduction to Python. This class is recorded on May, 28, 2020.
-#### [Click to Download Lesson 4 Slides](/assets/docs/intro_python_4.pdf)   
-
-
+#### [Click to Download Lesson 4 Slides](/assets/docs/intro_python_4.pdf)  
+  
+{% include video id="Og8hD4XZ6-Q" provider="youtube" %}  
+  
 ### Guest Book
 
 <div id="disqus_thread"></div>
