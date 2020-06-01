@@ -33,11 +33,11 @@ def stairs(x):
 print(stairs(6))
 {% endhighlight %}
 
-But, what if there was a quicker way? Let's try using dynamic progamming.
+But, what if there is a quicker way? Let's try using dynamic progamming.
 
 ### Dynamic Programming
 
-We can start with $$t_1$$ as the last step, $$t_2$$ as the second to last step, and $$t_3$$ as the third to last step. According to the recursion code, if x is the current step, we have $$step_x = step_{x-1} + step_{x- 2} + step_{x - 3}.$$
+We can start with $$\text{step}_1$$ as the last step, $$\text{step}_2$$ as the second to last step, and $$\text{step}_3$$ as the third to last step. According to the recursion code, if $$x$$ is the current step, we have $$\text{step}_x = \text{step}_{x-1} + \text{step}_{x- 2} + \text{step}_{x - 3}.$$
 
 Writing it in the dynamic programming way, we get
 
