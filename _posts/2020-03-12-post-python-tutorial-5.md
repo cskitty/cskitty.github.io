@@ -8,6 +8,10 @@ tags:
 
 ## Introduction to Python Lesson 5: Collections and Functions
 
+{% include video id="gSeLw_U2ano" provider="youtube" %}  
+## [Click to Download Lesson 5 Slides](/assets/docs/intro_python_5.pdf)
+
+
 ## Python Collections  
 
 There are four collection data types in the Python programming language:
