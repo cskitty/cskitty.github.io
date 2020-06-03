@@ -20,11 +20,17 @@ Merge Sort is a divide and conquer method of sorting. The idea of it is to const
 ### Visual Steps
 
 [3, 6, 2, 9, 1] <-- our main list
+
 [3, 6, 2] [9, 1] <-- split in half
+
 [3, 6] [2] [9] [1] <-- again
+
 [3] [6] [2] [9] [1] <-- back to individual
+
 [3, 6] [2, 9] [1] <-- compare the elements and reorder them
+
 [2, 3, 6, 9] [1] <-- again
+
 [1, 2, 3, 6, 9] <-- We’re done!
 
 
