@@ -14,12 +14,13 @@ tags:
 Here is an example from 2010 AMC8 Question $$25$$ (American Mathmatical Competition):  
 
 Everyday at school, Jo climbs a flight of $$6$$ stairs. Jo can take the stairs $$1$$, $$2$$, or $$3$$ at a time. For example, Jo could climb $$3$$, then $$1$$, then $$2$$. In how many ways can Jo climb the stairs?  
-  
-$$\textbf{(A)}\ 13 \qquad\textbf{(B)}\ 18\qquad\textbf{(C)}\ 20\qquad\textbf{(D)}\ 22\qquad\textbf{(E)}\ 24$$ 
+
+$$\textbf{(A)}\ 13 \qquad\textbf{(B)}\ 18\qquad\textbf{(C)}\ 20\qquad\textbf{(D)}\ 22\qquad\textbf{(E)}\ 24$$
 
 ### Recursion  
 
 This mathmatical question can be easily solved using the following python recursion code:
+ 
 {% highlight python linenos %}
 def stairs(x):
     if x == 1:
