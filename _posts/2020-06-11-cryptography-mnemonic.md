@@ -111,6 +111,8 @@ def decode(s):
         out += hex(int(r[i: i + 4], 2))[2:]
     return out
 
-# TODO: remove the trailing extra 0s
-print(decode(encode(input)))
+if __name__ == "__main__":
+  # TODO: remove the trailing extra 0s
+  print((encode(input)))
+  print(decode(encode(input)))
 {% endhighlight %}
