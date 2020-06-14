@@ -20,7 +20,7 @@ The following tutorials and live class recording are available in starcoder.org.
 
 | Class Name    |         Type  |       Description     |  Level |   
 |----------|:-------------------:|:----------------------------------------------:|------:|------:|
-| [Learning Python in Four Lessons](/liveclass1/)| Recorded Lessons | Recorded Live Python Class Sessions in Summer 2020| Beginner |
+| [Introduction to Python (Live Classes Summer 2020)](/liveclass1/)| Recorded Lessons | Recorded Live Python Class Sessions in Summer 2020| Beginner |
 | [Introduction to Python](/categories/intro-python/)| Video Tutorial | A beginner's guide to learning Python | Beginner |    
 | [Python Hands-on Projects](/tags/game/)| Video Tutorial | Learning Python through Game Development | Intermediate |   
 | [Project Euler ](/tags/math/)| Online Tutorial| Python Programing for Complex Math Problems | Intermediate |
