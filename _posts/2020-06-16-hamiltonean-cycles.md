@@ -17,6 +17,7 @@ Explanation
 The Hamiltonean Cycles algorithm is an implementation of backtracking. The problem calls for finding a cycle starting with one node (in this case, node 0) which traverses through all of the nodes once. Below is the code written in java.
 
 {% highlight java linenos %}
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -75,7 +76,8 @@ public class HamiltonianCycle {
         HamiltonianCycle hamiltonianCycle = new HamiltonianCycle();
 
 
-        int[][] mygraph = {{0, 0, 0, 0, 0, 1, 1, 0},
+        int[][] mygraph = {
+        {0, 0, 0, 0, 0, 1, 1, 0},
         {1, 1, 0, 0, 0, 0, 1, 0},
         {1, 0, 1, 0, 1, 1, 1, 1},
         {0, 1, 0, 1, 0, 0, 1, 0},
