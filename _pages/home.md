@@ -11,37 +11,37 @@ excerpt: "A collection of articles and video tutorials for coding."
 intro:
   - excerpt: 'From beginner level Introduction to Python tutorial to complex computer algorithms for USA Computer Olympiad (USACO).'
 feature_row:
-- image_path: assets/images/circus.png
+- image_path: assets/images/tutorialcat.PNG
   title: "Tutorials"
   excerpt: "Python from scratch"
   url: "/tutorials/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
-- image_path: /assets/images/cabin.png
+- image_path: /assets/images/algorithmcat.PNG
   title: "Algorithms"
   excerpt: "Computer Algorithms"
   url: "/tags/algorithms/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
-- image_path: /assets/images/cake.png
+- image_path: /assets/images/usacocat.PNG
   title: "USACO"
   excerpt: "Competitive Programming"
   url: "/categories/usaco/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
-- image_path: /assets/images/submarine.png
+- image_path: /assets/images/eulercat.PNG
   title: "Project Euler"
   excerpt: "Math problems in Python"
   url: "/tags/math/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
-- image_path: /assets/images/safe.png
+- image_path: /assets/images/physcat.PNG
   title: "Physics"
   excerpt: "Physics in Python"
   url: "/tags/physics/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
-- image_path: /assets/images/game.png
+- image_path: /assets/images/cryptocat.PNG
   title: "Cryptography"
   excerpt: "Hacker's Corner"
   url: "/tags/cryptography/"
