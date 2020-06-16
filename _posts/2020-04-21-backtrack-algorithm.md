@@ -5,6 +5,7 @@ categories:
 tags:
   - Python
   - Algorithms
+  - Backtracking
 ---
 
 ## Backtrack Algorithm

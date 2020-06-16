@@ -5,6 +5,7 @@ categories:
 tags:
   - Algorithms
   - Java
+  - Backtracking
 ---
 
 ## Backtracking Applied to problems

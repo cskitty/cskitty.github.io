@@ -5,6 +5,7 @@ categories:
 tags:
   - Python
   - Algorithms
+  - Backtracking
 ---
 
 ## 0/1 Knapsack Problem
