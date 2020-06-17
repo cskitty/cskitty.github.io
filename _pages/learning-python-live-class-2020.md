@@ -51,7 +51,7 @@ This is the fifth class of Introduction to Python. This class is recorded on Jun
 
 This is the sixth class of Introduction to Python. This class is recorded on June, 11, 2020.
 
-#### [Click to Download Lesson 6 Slides](/assets/docs/intro_python_6.pdf)  
+#### [Click to Download Lesson 6 Slides](/assets/docs/pong.pdf) 
 {% include video id="dFeFJUObJRM" provider="youtube" %}  
 
 ### Lesson 7: Python Project 2: Snake
