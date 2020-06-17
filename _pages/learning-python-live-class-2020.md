@@ -41,7 +41,7 @@ This is the fourth class of Introduction to Python. This class is recorded on Ma
 
 ### Lesson 5: Functions and Collections
 
-This is the fifth class of Introduction to Python. This class is recorded on June, 3, 2020.
+This is the fifth class of Introduction to Python. This class is recorded on June, 4, 2020.
 #### [Click to Download Lesson 5 Slides](/assets/docs/intro_python_5.pdf)  
 
 {% include video id="8_LlAatdcOk" provider="youtube" %}  
@@ -49,9 +49,16 @@ This is the fifth class of Introduction to Python. This class is recorded on Jun
 
 ### Lesson 6: Python Project 1: Pong
 
-This is the sixth class of Introduction to Python. This class is recorded on June, 10, 2020.
+This is the sixth class of Introduction to Python. This class is recorded on June, 11, 2020.
 
 #### [Click to Download Lesson 6 Slides](/assets/docs/intro_python_6.pdf)  
+{% include video id="dFeFJUObJRM" provider="youtube" %}  
+
+### Lesson 7: Python Project 2: Snake
+
+This is the Seven class of Introduction to Python. This class is recorded on June, 18, 2020.
+
+#### [Click to Download Lesson 7 Slides](/assets/docs/intro_python_7.pdf)  
 
 
 ### Guest Book
