@@ -10,6 +10,8 @@ tags:
 
 ## Subset Sum Algorithm
 
+![](/assets/images/asubsetsum.gif)
+
 
 Explanation
 
