@@ -10,6 +10,7 @@ tags:
 
 ## Knights Tour Algorithm
 
+![](/assets/images/aknightstour.gif)
 
 Explanation
 
