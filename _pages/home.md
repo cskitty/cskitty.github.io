@@ -5,7 +5,7 @@ permalink: /
 date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"
-  overlay_filter: "0.5"
+  overlay_filter: "0"
   overlay_image: /assets/images/starheader2.png
 excerpt: "A collection of articles and video tutorials for coding."
 intro:
