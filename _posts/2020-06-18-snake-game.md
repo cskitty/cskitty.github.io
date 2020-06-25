@@ -11,7 +11,7 @@ tags:
 
 
 
-We made this game in python using turtle. To play, use the arrow keys and guide the snake.
+This game was made in python using turtle. To play, use the arrow keys and guide the snake.
 
 {% highlight python linenos %}
 import turtle
