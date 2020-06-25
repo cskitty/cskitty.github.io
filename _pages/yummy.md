@@ -7,9 +7,9 @@ author_profile: true
 
 ![](https://avatars3.githubusercontent.com/u/19498807?s=460&v=4)
 
-Hello there! I’m a student in California, USA. I am interested in programming, mathematics and anime.  
+Hello there! I’m a student from California, USA. I am interested in programming, mathematics and writing.  
 
-I started Project Starcoder in 2019 and created starcoder.org website to host my coding tutorial videos and my writings.
+I started Project Starcoder in 2019 and created starcoder.org website to host my coding tutorial videos and articles.
 
 
 ## Copyrights and Licensing
