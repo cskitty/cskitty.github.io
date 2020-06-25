@@ -7,7 +7,7 @@ tags:
 
 ## Guess the Number
 
- 
+
 
 
 {% highlight python linenos %}
@@ -46,4 +46,3 @@ guessthenum(input("Start: "), input("Stop: "))
 
 
 {% endhighlight %}
-

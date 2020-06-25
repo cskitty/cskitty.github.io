@@ -88,7 +88,7 @@ goat 2 makesmilk eatsgrass
 SAMPLE OUTPUT:  
 
 3  
-  
+
 In this example, it is possible for Elsie to generate a transcript with 3 "yes" answers (the one above), and it is not possible to generate a transcript with more than 3 "yes" answers.  
 
 Problem credits: Brian Dean  

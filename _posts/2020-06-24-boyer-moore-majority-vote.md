@@ -5,7 +5,7 @@ categories:
 tags:
   - Java
   - Algorithms
-  - Brute Force
+  - Greedy
 ---
 
 ## Boyer-Moore's Majority Vote Algorithm
