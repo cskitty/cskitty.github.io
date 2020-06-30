@@ -6,7 +6,7 @@ date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"
   overlay_filter: "0"
-  overlay_image: /assets/images/starheader5.png
+  overlay_image: /assets/images/starheader.png
 excerpt: "Articles and video tutorials for coding"
 intro:
   - excerpt: 'From beginner level Introduction to Python tutorial to complex computer algorithms for USA Computer Olympiad (USACO).'
