@@ -20,34 +20,61 @@ Dijkstra's Shortest Path is an algorithm that finds the shortest (as in the best
 {% highlight java linenos %}
 import java.util.*;
 
-public class DijkstraShortestPath {
+class Node {
+    int node;
+    int weight;
+    public Node(int n, int w) {
+        node = n;
+        weight = w;
+    }
+}
 
-    Integer path_finder(Integer currentNode, List<Integer> values, List<Integer> visited, List<List<Integer>> connections, Integer wanted) {
-        Queue<Integer> nodesNeeded = new ArrayDeque<Integer>();
-        nodesNeeded.add(currentNode);
+class NodeComparator implements Comparator<Node>{
 
-        while (nodesNeeded.size() > 0) {
-            currentNode = nodesNeeded.peek();
-            nodesNeeded.remove();
-            for (int i = 0; i < connections.get(currentNode).size(); i++) {
-                if (connections.get(currentNode).get(i) >= 1) {
-                    int tempValue = values.get(currentNode) + connections.get(currentNode).get(i);
-                    if (tempValue < values.get(i)) {
-                        values.set(i,tempValue);
+    public int compare(Node s1, Node s2) {
+        if (s1.weight < s2.weight) {
+            return 1;
+        }
+        else if (s1.weight > s2.weight) {
+            return -1;
+        }
+        return 0;
+    }
+}
+
+public class DijkstraShortestPathA {
+
+
+
+    Integer path_finder(PriorityQueue<Node> myQueue, List<Integer> values, Integer value, List<List<Integer>> graph) {
+        for (int i = 0; i < graph.size(); i++) {
+            Node currentNode = new Node(i, Integer.MAX_VALUE);
+            myQueue.add(currentNode);
+        }
+        // Node prev = new Node(0, 0);
+        while(myQueue.size() > 0) {
+            Node n = myQueue.poll();
+
+            for (int i = 0; i < graph.get(n.node).size(); i++) {
+                // i is the node w/ the connection
+                if (graph.get(n.node).get(i) != 0) {
+
+                    int currentWeight = values.get(i) + graph.get(i).get(n.node);
+                    if (values.get(n.node) > currentWeight) {
+                        values.set(n.node, currentWeight);
                     }
-                    if (visited.get(i) == 0) {
-                        nodesNeeded.add(i);
-                        visited.set(i, 1);
-                    }
+                    myQueue.remove(n);
+
                 }
             }
         }
 
-        return values.get(wanted);
+        return values.get(value);
     }
 
+
     public static void main(String args[]) {
-        DijkstraShortestPath dijkstraShortestPath = new DijkstraShortestPath();
+        DijkstraShortestPathA dijkstraShortestPathA = new DijkstraShortestPathA();
 
         List<List<Integer>> graph = new ArrayList<List<Integer>>();
 
@@ -85,18 +112,17 @@ public class DijkstraShortestPath {
         graph.get(4).set(1, 8);
         graph.get(4).set(0, 4);
 
+
+        PriorityQueue<Node> myQueue = new PriorityQueue<Node>(5, new NodeComparator());
+
+
         List<Integer> values = new ArrayList<Integer>(5);
         for (int i = 0; i < 5; i++) {
             values.add(100000000);
         }
         values.set(0, 0);
 
-        List<Integer> visited = new ArrayList<Integer>();
-        for (int i = 0; i < 5; i++) {
-            visited.add(0);
-        }
-
-        System.out.println(dijkstraShortestPath.path_finder(0, values, visited, graph, 2));
+        System.out.println(dijkstraShortestPathA.path_finder(myQueue, values, 2, graph));
 
     }
 }
