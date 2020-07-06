@@ -1,5 +1,5 @@
 ---
-title: "Code Yourself! Programming Concepts"
+title: "Concepts of Programming"
 layout: archive
 permalink: /cs101/
 author_profile: true
@@ -8,6 +8,7 @@ author_profile: true
 
 This is a beginner's level programming class. This course will teach you basic programming concepts through Scratch 3.0, a visual programming language developped by MIT (Massachusetts Institute of Technology). This course is designed as a Kid's first programming class, no prior programming experienced is needed.
 
+#### [Register yourself for the class ](https://docs.google.com/forms/d/1Cb-OO9oT4lVNiNfK6Cgfy2YvfCwnMusAd2PzvU4uY7o/edit)   
 
 ### Lesson 1: Introduction  
 
