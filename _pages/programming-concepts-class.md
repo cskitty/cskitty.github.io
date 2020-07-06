@@ -1,64 +1,17 @@
 ---
-title: "Introduction to Python (Live Classes Summer 2020)"
+title: "Code Yourself! Programming Concepts"
 layout: archive
-permalink: /liveclass1/
+permalink: /cs101/
 author_profile: true
 ---
+{% include video id="Kl0pgK4pO4E" provider="youtube" %}
 
-This is a beginner's level Python programming class.  
-It is offered as zoom live sessions in Summer, 2020. There are over 60 students from USA and Canada attended this live zoom class.  
-
-### Lesson 1: Variables and Print
-
-This is the first class of Introduction to Python. This class is recorded on May, 7, 2020.   
-[Click to Download Lesson 1 Slides](/assets/docs/intro_python_1.pdf)   
-
-{% include video id="YtMOPnoF5nw" provider="youtube" %}
+This is a beginner's level programming class. This course will teach you basic programming concepts through Scratch 3.0, a visual programming language developped by MIT (Massachusetts Institute of Technology). This course is designed as a Kid's first programming class, no prior programming experienced is needed.
 
 
-### Lesson 2: Statement and Flow Control
-
-This is the second class of Introduction to Python. This class is recorded on May, 14, 2020.
-#### [Click to Download Lesson 2 Slides](/assets/docs/intro_python_2.pdf)   
-
-{% include video id="OmUim3Wude4" provider="youtube" %}
-
-### Lesson 3: Lists and Loops
-
-This is the third class of Introduction to Python. This class is recorded on May, 21, 2020.
-#### [Click to Download Lesson 3 Slides](/assets/docs/intro_python_3.pdf)  
-
-{% include video id="HEADzurtvrA" provider="youtube" %}
+### Lesson 1: Introduction  
 
 
-### Lesson 4: Turtle Graphics
-
-This is the fourth class of Introduction to Python. This class is recorded on May, 28, 2020.
-#### [Click to Download Lesson 4 Slides](/assets/docs/intro_python_4.pdf)  
-
-{% include video id="Og8hD4XZ6-Q" provider="youtube" %}  
-
-
-### Lesson 5: Functions and Collections
-
-This is the fifth class of Introduction to Python. This class is recorded on June, 4, 2020.
-#### [Click to Download Lesson 5 Slides](/assets/docs/intro_python_5.pdf)  
-
-{% include video id="8_LlAatdcOk" provider="youtube" %}  
-
-
-### Lesson 6: Python Project 1: Pong
-
-This is the sixth class of Introduction to Python. This class is recorded on June, 11, 2020.
-
-#### [Click to Download Lesson 6 Slides](/assets/docs/pong.pdf)
-{% include video id="dFeFJUObJRM" provider="youtube" %}  
-
-### Lesson 7: Python Project 2: Snake
-
-This is the Seven class of Introduction to Python. This class is recorded on June, 18, 2020.
-
-#### [Click to Download Lesson 7 Slides](/assets/docs/python_snake.pdf)  
 
 
 ### Guest Book

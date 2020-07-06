@@ -20,6 +20,7 @@ The following tutorials and live class recording are available in starcoder.org.
 
 | Class Name    |         Type  |       Description     |  Level |   
 |----------|:-------------------:|:----------------------------------------------:|------:|------:|
+| [Programming Concepts (Live Classes Summer 2020)](/cs101/)| Video Tutorial | Recorded Live Class Sessions in Summer 2020| Beginner |
 | [Beginner's Python Tutorial](https://www.udemy.com/course/python-for-juniors/)| Udemy Course | Udemy Free Course | Beginner |  
 | [Introduction to Python (Live Classes Summer 2020)](/liveclass1/)| Recorded Lessons | Recorded Live Python Class Sessions in Summer 2020| Beginner |
 | [Introduction to Python](/categories/intro-python/)| Video Tutorial | A beginner's guide to learning Python | Beginner |    
