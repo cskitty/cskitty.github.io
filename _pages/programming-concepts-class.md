@@ -1,9 +1,10 @@
 ---
 title: "Concepts of Programming"
-layout: archive
+layout: blank
 permalink: /cs101/
 author_profile: true
 ---
+
 {% include video id="Kl0pgK4pO4E" provider="youtube" %}
 
 This is a beginner's level programming class. This course will teach you basic programming concepts through Scratch 3.0, a visual programming language developped by MIT (Massachusetts Institute of Technology).   
@@ -12,10 +13,10 @@ This course is designed as a Kid's first programming class, no prior programming
 #### Time: Every Thursday of July, 2020,   
 2pm-3pm, Pacific Standard Time or 5pm-6pm, Eastern Standard Time
 
-*July, 9th, 2020,  
-*July, 16th, 2020
-*July, 23th, 2020
-*July, 30th, 2020
+*July, 9th, 2020    
+*July, 16th, 2020  
+*July, 23th, 2020  
+*July, 30th, 2020  
 
 This is a Zoom Session. Zoom ID and password will be emailed to student's registration address before class starts.
 
