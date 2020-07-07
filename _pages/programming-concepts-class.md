@@ -22,7 +22,10 @@ This is a Zoom Session. Zoom ID and password will be emailed to student's regist
 
 #### [Class Registeration ](https://docs.google.com/forms/d/1Cb-OO9oT4lVNiNfK6Cgfy2YvfCwnMusAd2PzvU4uY7o/edit)   
 
-### Lesson 1: Introduction  
+### Lesson 1: Introduction
+
+Project 1: Move the Cat:  https://scratch.mit.edu/projects/410129679
+<iframe src="https://scratch.mit.edu/projects/410129679/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 ### Lesson 2:   
 
