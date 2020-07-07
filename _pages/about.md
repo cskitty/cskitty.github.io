@@ -8,8 +8,10 @@ author_profile: true
 ![](https://avatars3.githubusercontent.com/u/19498807?s=460&v=4)
 
 Project Starcoder was started in 2019 by cskitty and milkybunny.  The site starcoder.org is created to host coding tutorial videos and articles.
-In year 2020, cskitty of Project Starcoder started offering [tutorials and live classes] (/tutorials/) to K12 students throughout USA and Canada.  
-While writing projects for Python tutorials, Milkybunny also creates solutions for [Project Euler](/tags/math/). In the meantime,  she is also a little hacker and wrote articles for [Project Euler](/tags/cryptography/).
+
+In year 2020, cskitty of Project Starcoder started offering [tutorials and live classes](/tutorials/) to K12 students throughout USA and Canada.  
+
+While writing projects for Python tutorials, Milkybunny also creates solutions for [Project Euler](/tags/math/). In the meantime,  she also writes articles for [cryptography](/tags/cryptography/).
 
 ## Copyrights and Licensing
 
