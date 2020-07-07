@@ -24,8 +24,8 @@ feature_row:
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/cryptocat.PNG
-  title: "Cryptography"
-  excerpt: "Sctrach 3.0"
+  title: "Scratch"
+  excerpt: "Scratch 3.0"
   url: "/cs101/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
