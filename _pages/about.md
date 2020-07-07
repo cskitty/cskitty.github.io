@@ -11,7 +11,6 @@ Project Starcoder was started in 2019 by cskitty and milkybunny.  The site starc
 In year 2020, cskitty of Project Starcoder started offering [tutorials and live classes] (/tutorials/) to K12 students throughout USA and Canada.  
 While writing projects for Python tutorials, Milkybunny also creates solutions for [Project Euler](/tags/math/). In the meantime,  she is also a little hacker and wrote articles for [Project Euler](/tags/cryptography/).
 
-
 ## Copyrights and Licensing
 
 Starcoder.org is the sole author and copyright holder of all the content on this web site, unless explicitly indicated otherwise.  

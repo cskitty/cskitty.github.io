@@ -13,10 +13,10 @@ This course is designed as a kid's first programming class, no prior programming
 #### Time: Every Thursday of July, 2020,   
 2pm-3pm, Pacific Standard Time or 5pm-6pm, Eastern Standard Time
 
-*July, 9th, 2020    
-*July, 16th, 2020  
-*July, 23th, 2020  
-*July, 30th, 2020  
+* July, 9th, 2020    
+* July, 16th, 2020  
+* July, 23th, 2020  
+* July, 30th, 2020  
 
 This is a Zoom Session. Zoom ID and password will be emailed to student's registration address before class starts.
 
@@ -24,8 +24,11 @@ This is a Zoom Session. Zoom ID and password will be emailed to student's regist
 
 ### Lesson 1: Introduction
 
-Project 1: Move the Cat:  https://scratch.mit.edu/projects/410129679
+Project 1: [Move the Cat](https://scratch.mit.edu/projects/410129679)
 <iframe src="https://scratch.mit.edu/projects/410129679/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+Project 2: [Maze](https://scratch.mit.edu/projects/404731903)
+<iframe src="https://scratch.mit.edu/projects/404731903/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 ### Lesson 2:   
 
