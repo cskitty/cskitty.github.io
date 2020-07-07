@@ -25,10 +25,10 @@ This is a Zoom Session. Zoom ID and password will be emailed to student's regist
 ### Lesson 1: Introduction
 
 Project 1: [Move the Cat](https://scratch.mit.edu/projects/410129679)
-<iframe src="https://scratch.mit.edu/projects/410129679/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://scratch.mit.edu/projects/410129679/embed" allowtransparency="true" width="600" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 Project 2: [Maze](https://scratch.mit.edu/projects/404731903)
-<iframe src="https://scratch.mit.edu/projects/404731903/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://scratch.mit.edu/projects/404731903/embed" allowtransparency="true" width="600" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 ### Lesson 2:   
 
