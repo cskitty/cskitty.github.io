@@ -6,13 +6,28 @@ author_profile: true
 ---
 {% include video id="Kl0pgK4pO4E" provider="youtube" %}
 
-This is a beginner's level programming class. This course will teach you basic programming concepts through Scratch 3.0, a visual programming language developped by MIT (Massachusetts Institute of Technology). This course is designed as a Kid's first programming class, no prior programming experienced is needed.
+This is a beginner's level programming class. This course will teach you basic programming concepts through Scratch 3.0, a visual programming language developped by MIT (Massachusetts Institute of Technology).   
+This course is designed as a Kid's first programming class, no prior programming experienced is needed.
 
-#### [Register yourself for the class ](https://docs.google.com/forms/d/1Cb-OO9oT4lVNiNfK6Cgfy2YvfCwnMusAd2PzvU4uY7o/edit)   
+#### Time: Every Thursday of July, 2020,   
+2pm-3pm, Pacific Standard Time or 5pm-6pm, Eastern Standard Time
+
+*July, 9th, 2020,  
+*July, 16th, 2020
+*July, 23th, 2020
+*July, 30th, 2020
+
+This is a Zoom Session. Zoom ID and password will be emailed to student's registration address before class starts.
+
+#### [Class Registeration ](https://docs.google.com/forms/d/1Cb-OO9oT4lVNiNfK6Cgfy2YvfCwnMusAd2PzvU4uY7o/edit)   
 
 ### Lesson 1: Introduction  
 
+### Lesson 2:   
 
+### Lesson 3:    
+
+### Lesson 4:    
 
 
 ### Guest Book
