@@ -17,6 +17,18 @@ feature_row:
   url: "/tutorials/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
+- image_path: /assets/images/physcat.PNG
+  title: "Python"
+  excerpt: "Intro to Python"
+  url: "/categories/intro-python/"
+  btn_class: "btn--primary"
+  btn_label: "Learn more"
+- image_path: /assets/images/cryptocat.PNG
+  title: "Cryptography"
+  excerpt: "Sctrach 3.0"
+  url: "/cs101/"
+  btn_class: "btn--primary"
+  btn_label: "Learn more"
 - image_path: /assets/images/algorithmcat.PNG
   title: "Algorithms"
   excerpt: "Computer Algorithms"
@@ -35,18 +47,7 @@ feature_row:
   url: "/tags/math/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
-- image_path: /assets/images/physcat.PNG
-  title: "Physics"
-  excerpt: "Physics in Python"
-  url: "/tags/physics/"
-  btn_class: "btn--primary"
-  btn_label: "Learn more"
-- image_path: /assets/images/cryptocat.PNG
-  title: "Cryptography"
-  excerpt: "Hacker's Corner"
-  url: "/tags/cryptography/"
-  btn_class: "btn--primary"
-  btn_label: "Learn more"
+
 ---
 
 {% include feature_row id="intro" type="center" %}
