@@ -22,7 +22,7 @@ The following tutorials and live class recording are available in starcoder.org.
 |----------|:-------------------:|:----------------------------------------------:|------:|------:|
 | [Beginner's Python Tutorial](https://www.udemy.com/course/python-for-juniors/)| Udemy Course | Udemy Free Course | Beginner |  
 | [Concepts of Programming (Live Classes Summer 2020)](/cs101/)| Recorded Lessons |   Live Class Sessions in Summer 2020| Beginner |
-| [Introduction to Python (Live Classes Summer 2020)](/liveclass1/)| Recorded Lessons | Live Python Class Sessions in Summer 2020| Beginner |
+| [Introduction to Python (Live Classes Summer 2020)](/liveclass1/)| Recorded Lessons | Live  Class Sessions in Summer 2020| Beginner |
 | [Scratch 3.0](/scratch3/)| Video Tutorial | A Beginner's Guide to Learning Scratch | Beginner |    
 | [Introduction to Python](/categories/intro-python/)| Video Tutorial | A Beginner's Guide to Learning Python | Beginner |    
 | [Python Hands-on Projects](/tags/game/)| Video Tutorial | Learning Python through Game Development | Intermediate |   
