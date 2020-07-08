@@ -9,6 +9,8 @@ main:
     url: /categories/usaco/
   - title: "Project Euler"
     url: /tags/math/
+  - title: "cryptography"
+    url: /tags/cryptography/
   - title: "Archive"
     url: /tags/
   - title: "About"
