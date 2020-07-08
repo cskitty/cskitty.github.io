@@ -1,5 +1,5 @@
 ---
-title: "Scratch 3.0, Concepts of Programming"
+title: "Introduction to Python"
 layout: blank
 permalink: /python3/
 author_profile: true
