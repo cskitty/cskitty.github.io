@@ -26,7 +26,7 @@ feature_row:
 - image_path: /assets/images/cryptocat.PNG
   title: "Scratch"
   excerpt: "Scratch 3.0"
-  url: "/cs101/"
+  url: "/scratch3/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/algorithmcat.PNG
