@@ -9,7 +9,7 @@ author_profile: true
 
 Project Starcoder was started in 2019 by Cskitty and Cryptobunny. The site [starcoder.org](https://starcoder.org) is created to host coding tutorial videos and articles.
 
-In the year 2020, Cskitty of Project Starcoder started offering [tutorials and live classes](/tutorials/) to K-12 students throughout USA and Canada.  
+In the year 2020, Cskitty started offering [tutorials and live classes](/tutorials/) to K-12 students throughout USA and Canada.  
 
 While writing projects for Python tutorials, Cryptobunny also creates solutions for [Project Euler](/tags/math/). In the meantime,  she also writes articles for [cryptography](/tags/cryptography/).
 
