@@ -17,16 +17,16 @@ feature_row:
   url: "/tutorials/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
-- image_path: /assets/images/physcat.PNG
-  title: "Python"
-  excerpt: "Intro to Python"
-  url: "/python3/"
-  btn_class: "btn--primary"
-  btn_label: "Learn more"
 - image_path: /assets/images/cryptocat.PNG
   title: "Scratch"
   excerpt: "Scratch 3.0"
   url: "/scratch3/"
+  btn_class: "btn--primary"
+  btn_label: "Learn more"
+- image_path: /assets/images/physcat.PNG
+  title: "Python"
+  excerpt: "Intro to Python"
+  url: "/python3/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/algorithmcat.PNG
