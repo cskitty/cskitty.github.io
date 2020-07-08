@@ -1,5 +1,5 @@
 ---
-title: "Scratch 3.0"
+title: "Scratch 3.0, Concepts of Programming"
 layout: blank
 permalink: /scratch3/
 author_profile: true
