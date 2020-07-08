@@ -20,7 +20,7 @@ feature_row:
 - image_path: /assets/images/physcat.PNG
   title: "Python"
   excerpt: "Intro to Python"
-  url: "/categories/intro-python/"
+  url: "/python3/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/cryptocat.PNG

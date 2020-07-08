@@ -24,7 +24,7 @@ The following tutorials and live class recording are available in starcoder.org.
 | [Concepts of Programming (Live Classes Summer 2020)](/scratch3/)| Recorded Lessons |   Live Class Sessions in Summer 2020| Beginner |
 | [Introduction to Python (Live Classes Summer 2020)](/liveclass1/)| Recorded Lessons | Live  Class Sessions in Summer 2020| Beginner |
 | [Scratch 3.0](/scratch3/)| Video Tutorial | A Beginner's Guide to Learning Scratch | Beginner |    
-| [Introduction to Python](/categories/intro-python/)| Video Tutorial | A Beginner's Guide to Learning Python | Beginner |    
+| [Introduction to Python](/python3/)| Video Tutorial | A Beginner's Guide to Learning Python | Beginner |    
 | [Python Hands-on Projects](/tags/game/)| Video Tutorial | Learning Python through Game Development | Intermediate |   
 | [Project Euler ](/tags/math/)| Online Tutorial| Python Programing for Complex Math Problems | Intermediate |
 | [USA Computing Olympiad ](/categories/usaco/)| Video Tutorial| USACO Problems Explained | Advanced |
