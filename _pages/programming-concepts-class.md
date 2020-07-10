@@ -19,6 +19,10 @@ This is a Zoom Session. Zoom ID and password will be emailed to student's regist
 
 ### Lesson 1: Introduction
 
+{% include video id="g1qbX8eSgJY" provider="youtube" %}
+
+This lesson is recorded on 07/09/20 2PM PST, there are 75 students attended this lesson.  
+
 #### [Click to Download Lesson 1 Slides](/assets/docs/scratch1.pdf)   
 
 Project 1: [Move the Cat](https://scratch.mit.edu/projects/410129679)
