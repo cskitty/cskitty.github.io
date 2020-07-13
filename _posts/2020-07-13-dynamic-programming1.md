@@ -67,17 +67,17 @@ On a staircase, the i-th step has some non-negative cost cost[i] assigned (0 ind
 
 Once you pay the cost, you can either climb one or two steps. You need to find minimum cost to reach the top of the floor, and you can either start from the step with index 0, or the step with index 1.
 
-Example 1:
-Input: cost = [10, 15, 20]
-Output: 15
-Explanation: Cheapest is start on cost[1], pay that cost and go to the top.
-Example 2:
-Input: cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
-Output: 6
-Explanation: Cheapest is start on cost[0], and only step on 1s, skipping cost[3].
+Example 1:  
+Input: cost = [10, 15, 20]  
+Output: 15  
+Explanation: Cheapest is start on cost[1], pay that cost and go to the top.  
+Example 2:  
+Input: cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]  
+Output: 6  
+Explanation: Cheapest is start on cost[0], and only step on 1s, skipping cost[3].  
 
 
-Let A(n) be the answer, i.e., minimum cost to climb to step n.
+Let A(n) be the answer, i.e., minimum cost to climb to step n.  
 * Consider the last step (or, equivalently the first step), do a case analysis.  What are the possible cases?
 * Case one: last step is 1.  
 * Case two: last step is 2.
@@ -119,20 +119,20 @@ An obstacle and empty space is marked as 1 and 0 respectively in the grid.
 
 Note: m and n will be at most 100.
 
-Example 1:
+Example 1:  
 
-Input:
-[
-  [0,0,0],
-  [0,1,0],
-  [0,0,0]
-]
-Output: 2
-Explanation:
-There is one obstacle in the middle of the 3x3 grid above.
-There are two ways to reach the bottom-right corner:
-1. Right -> Right -> Down -> Down
-2. Down -> Down -> Right -> Right
+Input:  
+[  
+  [0,0,0],  
+  [0,1,0],  
+  [0,0,0]  
+]  
+Output: 2  
+Explanation:  
+There is one obstacle in the middle of the 3x3 grid above.  
+There are two ways to reach the bottom-right corner:  
+1. Right -> Right -> Down -> Down  
+2. Down -> Down -> Right -> Right  
 
 {% highlight java linenos %}
 class Solution {
