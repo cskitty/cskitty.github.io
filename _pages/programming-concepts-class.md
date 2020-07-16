@@ -31,7 +31,7 @@ Project 1: [Move the Cat](https://scratch.mit.edu/projects/410129679)
 
 ### Lesson 2:   
 
-This lesson is recorded on 07/16/20 2PM PST, there are 65 students attended this lesson.  
+This lesson is recorded on 07/16/20 2PM PST, there are 87 students attended this lesson.  
 
 #### [Click to Download Lesson 2 Slides](/assets/docs/scratch2.pdf)   
 Project 2: [Maze](https://scratch.mit.edu/projects/404731903)
