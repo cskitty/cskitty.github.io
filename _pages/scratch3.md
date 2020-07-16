@@ -26,4 +26,5 @@ Project 1: [Move the Cat](https://scratch.mit.edu/projects/410129679)
 
 ### Lesson 3: The Maze Project
 
+{% include video id="-JqEAJfjj7E" provider="youtube" %}
 Project 2: [Maze](https://scratch.mit.edu/projects/404731903)
