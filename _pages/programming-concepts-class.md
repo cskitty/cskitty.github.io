@@ -31,6 +31,7 @@ Project 1: [Move the Cat](https://scratch.mit.edu/projects/410129679)
 
 ### Lesson 2:   
 
+{% include video id="TLSIuHvL6ms" provider="youtube" %}
 This lesson is recorded on 07/16/20 2PM PST, there are 87 students attended this lesson.  
 
 #### [Click to Download Lesson 2 Slides](/assets/docs/scratch2.pdf)   
