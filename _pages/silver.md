@@ -1,7 +1,7 @@
 ---
 title: "USACO Silver Questions"
 layout: archive
-permalink: /scratch3/
+permalink: /silver/
 author_profile: true
 ---
 
