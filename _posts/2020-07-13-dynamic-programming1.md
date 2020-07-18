@@ -31,7 +31,7 @@ Output: 2
 Explanation: There are two ways to climb to the top.
 1. 1 step + 1 step
 2. 2 steps  
-  
+
 Example 2:
 
 Input: 3
@@ -138,7 +138,85 @@ There are two ways to reach the bottom-right corner:
 {% highlight java linenos %}
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+        int[][] graph = new int[obstacleGrid.length][obstacleGrid[0].length];
 
+
+        for (int i = 0; i < obstacleGrid.length; i++) {
+            if (obstacleGrid[i][0] == 0) {
+                graph[i][0] = 1;
+            }
+            else{
+                break;
+            }
+        }
+
+        for (int j = 0; j < obstacleGrid[0].length; j++) {
+            if (obstacleGrid[0][j] == 0) {
+                graph[0][j] = 1;
+            }
+            else{
+                break;
+            }
+        }
+
+        for (int i = 1; i < obstacleGrid.length; i++) {
+            for (int j = 1; j < obstacleGrid[i].length; j++) {
+                if (obstacleGrid[i][j] == 0) {
+                    graph[i][j] = graph[i - 1][j] + graph[i][j - 1];
+                }
+            }
+        }
+
+        return graph[obstacleGrid.length - 1][obstacleGrid[0].length - 1];
     }
 }
+{% endhighlight %}
+
+
+## Longest Increasing Subsequence
+
+[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence).
+
+Longest Increasing Subsequence finds the longest (not necessarily continuous) sub-sequence given a sequence.
+
+Example:
+
+Input: [1, 4, 2, 5]
+Output: 3
+
+(Explanation: The length of the longest increasing subsequence can be found through finding either [1, 2, 5] or [1, 4, 5])
+
+
+{% highlight java linenos %}
+class Solution {
+
+    public int lengthOfLIS(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+
+        int[] dp = new int[nums.length];
+        dp[0] = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+            dp[i] = 1;
+            // nums[i] = current integer
+            for (int j = i - 1; j >= 0; j--) {
+                if (nums[j] < nums[i]) {
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                }
+            }
+        }
+
+        int max = 0;
+        for (int i = 0; i < dp.length; i++) {
+            if (dp[i] > max) {
+                max = dp[i];
+            }
+        }
+        return max;
+    }
+
+}
+
 {% endhighlight %}
