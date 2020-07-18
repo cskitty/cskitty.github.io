@@ -1,10 +1,11 @@
-# Key
 ---
-title: "USACO Silver"
+title: "USACO Silver Questions"
 layout: archive
-permalink: /silver/
+permalink: /scratch3/
 author_profile: true
 ---
+
+
 
  * FF: Flood Fill (finding the number of connected components in a graph)
    * DFS: Depth First Search
