@@ -1,11 +1,11 @@
 ---
-title: "Brute Force: Tree Traversal"
+title: "Tree Traversal"
 categories:
   - Programming
 tags:
   - Java
   - Algorithms
-  - Brute Force
+  - Tree
 ---
 
 ## Tree Traversal Algorithm

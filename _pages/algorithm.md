@@ -21,4 +21,5 @@ author_profile: true
 |             | [Hamiltonean Cycles](https://starcoder.org/programming/hamiltonean-cycles/)  | Easy         |   
 |             | [0/1 Knapsack Problem](https://starcoder.org/programming/knapsack-algorithm/)  | Easy         |   
 |             | [Palindrome Partitioning](https://starcoder.org/programming/backtrack-palindrome-partitioning/)  | Easy         |
+| Tree        | [Tree Traversal](https://starcoder.org/programming/tree-traversals/)  | Easy         |
 | Graph       | [BFS Distance](https://starcoder.org/programming/bfs-graph/)  | Easy         |
