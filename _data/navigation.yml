@@ -3,7 +3,7 @@ main:
     url: /playground/
   - title: "Tutorials"
     url: /tutorials/
-  - title: "Algorithm"
+  - title: "Algorithms"
     url: /algorithm/
   - title: "Project Euler"
     url: /tags/math/

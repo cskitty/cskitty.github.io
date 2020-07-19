@@ -5,9 +5,6 @@ permalink: /algorithm/
 author_profile: true
 ---
 
-
-#  Algorithms 
-
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
 | Brute Force | [Dijkstra’s Shortest Path](https://starcoder.org/programming/dijkstra's-shortest-path/)  | Medium         |   
