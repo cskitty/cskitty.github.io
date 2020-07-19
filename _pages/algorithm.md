@@ -9,6 +9,7 @@ author_profile: true
 | ------------| --------------------------------------------------------------- | ------------- |  
 | Brute Force | [Dijkstra’s Shortest Path](https://starcoder.org/programming/dijkstra's-shortest-path/)  | Medium         |   
 | Greedy      | [Boyer-Moore’s Majority Vote Algorithm](https://starcoder.org/programming/boyer-moore-majority-vote/)  | Easy         |   
+| Flood Fill  | [Flood Fill](https://starcoder.org/programming/flood-fill/)  | Easy         | 
 | DP          | [Climbing Stairs](https://starcoder.org/programming/dp-climbing-stairs/)  | Easy      |  
 |             | [Unique Paths II](https://starcoder.org/programming/dp-unique-path/)  | Easy      |  
 |             | [Longest Increasing Subsequence](https://starcoder.org/programming/dp-longest-increasing-sequence/)  | Easy      |  
@@ -17,3 +18,4 @@ author_profile: true
 |             | [Knights Tour](https://starcoder.org/programming/knights-tour-problem/)  | Easy         |   
 |             | [Hamiltonean Cycles](https://starcoder.org/programming/hamiltonean-cycles/)  | Easy         |   
 |             | [0/1 Knapsack Problem](https://starcoder.org/programming/knapsack-algorithm/)  | Easy         |   
+| Graph       | [BFS Distance](https://starcoder.org/programming/bfs-graph/)  | Easy         |
