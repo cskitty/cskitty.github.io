@@ -1,5 +1,5 @@
 ---
-title: "Backtrack in Java"
+title: "Permutations"
 categories:
   - Programming
 tags:
