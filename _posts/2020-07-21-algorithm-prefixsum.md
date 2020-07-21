@@ -10,7 +10,7 @@ tags:
 
 ## Subarray Sums Divisible by K
 
-[Leetcode  Subarray Sums Divisible by K] (https://leetcode.com/problems/subarray-sums-divisible-by-k/)  
+[Leetcode  Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)  
 
 Given an array A of integers, return the number of (contiguous, non-empty) subarrays that have a sum divisible by K.  
 

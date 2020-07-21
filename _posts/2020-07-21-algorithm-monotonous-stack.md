@@ -10,7 +10,7 @@ tags:
 
 ## Stock Spanner
 
-[Leetcode  Online Stock Span] (https://leetcode.com/problems/online-stock-span/)  
+[Leetcode  Online Stock Span](https://leetcode.com/problems/online-stock-span/)  
 
 Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock's price for the current day.  
 
