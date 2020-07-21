@@ -9,6 +9,8 @@ author_profile: true
 | ------------| --------------------------------------------------------------- | ------------- |  
 | Brute Force | [Dijkstra’s Shortest Path](https://starcoder.org/programming/dijkstra's-shortest-path/)  | Medium         |   
 | Greedy      | [Boyer-Moore’s Majority Vote Algorithm](https://starcoder.org/programming/boyer-moore-majority-vote/)  | Easy         |   
+| Prefix Sum  | [Subarray Sums Divisible by K](https://starcoder.org/programming/algorithm-prefixsum/)  | Easy         |
+| Monotonous Stack | [Stock Spanner](https://starcoder.org/programming/algorithm-monotonous-stack/)  | Easy         |
 | Flood Fill  | [Flood Fill](https://starcoder.org/programming/flood-fill/)  | Easy         |
 | DP          | [Climbing Stairs](https://starcoder.org/programming/dp-climbing-stairs/)  | Easy      |  
 |             | [Unique Paths II](https://starcoder.org/programming/dp-unique-path/)  | Easy      |  
