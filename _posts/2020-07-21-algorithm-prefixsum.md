@@ -8,6 +8,20 @@ tags:
   - PrefixSum
 ---
 
+# Prefix Sums
+
+Given an array A and an index i, the prevfix sums array  P is accumulated sums calculated over [0] ... [i]
+
+{% highlight java linenos %}
+for (int i = 0; i < A.length; i++) {
+    P[i + 1] = P[i] + A[i];
+}
+{% endhighlight %}
+
+
+Prefix sums can be used to get sums of any arbitary length subarray.
+
+
 [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)  
 
 Given an array of integers nums, write a method that returns the "pivot" index of this array.
