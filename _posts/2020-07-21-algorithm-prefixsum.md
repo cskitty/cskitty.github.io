@@ -8,7 +8,7 @@ tags:
   - PrefixSum
 ---
 
-# Prefix Sums
+## Prefix Sums
 
 Given an array A and an index i, the prevfix sums array  P is accumulated sums calculated over [0] ... [i]
 
@@ -19,8 +19,9 @@ for (int i = 0; i < A.length; i++) {
 {% endhighlight %}
 
 
-Prefix sums can be used to get sums of any arbitary length subarray.
+Prefix sums can be used to get sums of any arbitrary length subarray.
 
+### Find Pivot Index
 
 [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)  
 
@@ -52,7 +53,7 @@ class Solution {
 
 
 
-## Subarray Sums Divisible by K
+### Subarray Sums Divisible by K
 
 [Leetcode  Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)  
 
