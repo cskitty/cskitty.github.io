@@ -13,8 +13,8 @@ tags:
 
 A monotonic Stack is a data structure the elements from the front to the end is strictly either increasing or decreasing. For example, there is an line at the hair salon, and you would naturally start from the end of the line. However, if you are allowed to kick out any person that you can win at a fight, if every one follows the rule, then the line would start with the most powerful man and end up with the weakest one. This is an example of monotonic decreasing queue. We have either increasing or decreasing stack.
 
-Monotonic increasing stack: to push an element e, starts from the stack top element, we pop out element s>e;
-Monotonic decreasing stack: we pop out element s<e.
+Monotonic increasing stack: to push an element e, starts from the stack top element, we pop out element s>e;  
+Monotonic decreasing stack: we pop out element s<e.  
 
 
 ### Stock Spanner
