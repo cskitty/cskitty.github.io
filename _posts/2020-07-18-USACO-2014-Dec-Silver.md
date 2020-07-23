@@ -10,190 +10,7 @@ tags:
 
 # USACO 2014 December Silver
 
-## Problem 1: Cow Jog
-
-[Cow Jog](http://usaco.org/index.php?page=viewproblem2&cpid=493)
-
-The cows are out exercising their hooves again!  There are N cows
-jogging on an infinitely-long single-lane track (1 <= N <= 100,000).
-Each cow starts at a distinct position on the track, and some cows jog
-at different speeds.  
-
-With only one lane in the track, cows cannot pass each other.  When a
-faster cow catches up to another cow, she has to slow down to avoid
-running into the other cow, becoming part of the same running group.  
-
-The cows will run for T minutes (1 <= T <= 1,000,000,000).  Please
-help Farmer John determine how many groups will be left at this time.
-Two cows should be considered part of the same group if they are at
-the same position at the end of T minutes.  
-
-INPUT: (file cowjog.in)  
-
-The first line of input contains the two integers N and T.  
-
-The following N lines each contain the initial position and speed of a
-single cow.  Position is a nonnegative integer and speed is a positive
-integer; both numbers are at most 1 billion.  All cows start at
-distinct positions, and these will be given in increasing order in
-the input.  
-
-SAMPLE INPUT:  
-
-5 3  
-0 1  
-1 2  
-2 3  
-3 2  
-6 1  
-
-OUTPUT: (file cowjog.out)  
-
-A single integer indicating how many groups remain after T minutes.  
-
-SAMPLE OUTPUT:  
-
-3  
-
-
-{% highlight python linenos %}
-import javax.xml.soap.Node;
-import java.io.*;
-import java.util.*;
-
-class Cow implements Comparable<Cow> {
-    float position;
-    float speed;
-    int id;
-    Cow(int p, int s, int i) {
-        position = p;
-        speed = s;
-        id = i;
-    }
-    @Override
-    public int compareTo(Cow o) {
-        return (this.position < o.position ? -1 :
-                (this.position == o.position ? 0 : 1));
-    }
-}
-
-public class CowJog {
-
-    List<Cow> m_cows;
-
-    CowJog() {
-        m_cows = new ArrayList<Cow>();
-    }
-
-    void sortCow() {
-        Collections.sort(m_cows);
-    }
-
-    void printCows() {
-        for (int i = 0; i < m_cows.size(); i++) {
-            System.out.printf("(%d, %d), ",(int) m_cows.get(i).position, (int) m_cows.get(i).speed);
-        }
-        System.out.println();
-    }
-
-
-    List<Cow> deepCopy(List<Cow> origin) {
-        List<Cow> rL = new ArrayList<Cow>();
-
-        for (int i = 0; i < origin.size(); i++) {
-            rL.add(origin.get(i));
-        }
-        return rL;
-    }
-
-    Integer cowJog() {
-
-        float worldTime = 0;
-        boolean flag = true;
-        List<Integer> mL = new ArrayList<Integer>();
-        int dCount = 0;
-
-        while (flag) {
-            flag = false;
-            float nextMeetTime = Float.MAX_VALUE;
-            for (int i = m_cows.size() - 1; i > 0; i--) {
-                //System.out.printf("P: %d, S: %d\n", m_cows.get(i).position, m_cows.get(i).speed);
-
-                Cow one = m_cows.get(i);
-                Cow two = m_cows.get(i - 1);
-
-                if (one.speed < two.speed) {
-                    float meetTime = (one.position - two.position)/(two.speed - one.speed);
-                    if (meetTime < nextMeetTime) {
-                        nextMeetTime = meetTime;
-                    }
-
-                    flag = true;
-                }
-
-            }
-
-            if (! flag) {
-                break;
-            }
-            // smallest meet time found
-
-            // printCows();
-            worldTime += nextMeetTime;
-            List<Cow> deletedCows = new ArrayList<Cow>();
-
-            // System.out.printf("World Time: %f\n", worldTime);
-
-            // one round
-
-            float lastPosition = 0;
-            for (int i = m_cows.size() - 1; i >= 0; i--) {
-                Cow currentCow = m_cows.get(i);
-                float newPos = currentCow.position + (currentCow.speed * nextMeetTime);
-
-                if (i != 0 && m_cows.get(i).position <= m_cows.get(i - 1).position) {
-                    deletedCows.add(m_cows.get(i - 1));
-                }
-
-                m_cows.get(i).position = newPos;
-
-            }
-
-            for (int i = 0; i < deletedCows.size(); i++) {
-                m_cows.remove(deletedCows.get(i));
-            }
-
-        }
-
-
-        return m_cows.size();
-    }
-
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("cowjog.in"));
-        PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("cowjog.out")));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int n = Integer.parseInt(st.nextToken());
-
-        CowJog cowJog = new CowJog();
-
-        for(int i = 0; i < n; i++) {
-            st = new StringTokenizer(br.readLine());
-            int x = Integer.parseInt(st.nextToken());
-            int y = Integer.parseInt(st.nextToken());
-            Cow currentCow = new Cow(x, y, i);
-
-            cowJog.m_cows.add(currentCow);
-        }
-
-        int ans = cowJog.cowJog();
-
-        pw.println(ans);
-        pw.close();
-    }
-}
-{% endhighlight %}
-## Problem 3: Piggyback
+## Problem 1: Piggyback
 
 [Piggyback](http://usaco.org/index.php?page=viewproblem2&cpid=491)
 
@@ -427,6 +244,191 @@ public class Piggyback {
         }
 
 
+    }
+}
+{% endhighlight %}
+
+
+## Problem 3: Cow Jog
+
+[Cow Jog](http://usaco.org/index.php?page=viewproblem2&cpid=493)
+
+The cows are out exercising their hooves again!  There are N cows
+jogging on an infinitely-long single-lane track (1 <= N <= 100,000).
+Each cow starts at a distinct position on the track, and some cows jog
+at different speeds.  
+
+With only one lane in the track, cows cannot pass each other.  When a
+faster cow catches up to another cow, she has to slow down to avoid
+running into the other cow, becoming part of the same running group.  
+
+The cows will run for T minutes (1 <= T <= 1,000,000,000).  Please
+help Farmer John determine how many groups will be left at this time.
+Two cows should be considered part of the same group if they are at
+the same position at the end of T minutes.  
+
+INPUT: (file cowjog.in)  
+
+The first line of input contains the two integers N and T.  
+
+The following N lines each contain the initial position and speed of a
+single cow.  Position is a nonnegative integer and speed is a positive
+integer; both numbers are at most 1 billion.  All cows start at
+distinct positions, and these will be given in increasing order in
+the input.  
+
+SAMPLE INPUT:  
+
+5 3  
+0 1  
+1 2  
+2 3  
+3 2  
+6 1  
+
+OUTPUT: (file cowjog.out)  
+
+A single integer indicating how many groups remain after T minutes.  
+
+SAMPLE OUTPUT:  
+
+3  
+
+
+{% highlight python linenos %}
+import javax.xml.soap.Node;
+import java.io.*;
+import java.util.*;
+
+class Cow implements Comparable<Cow> {
+    float position;
+    float speed;
+    int id;
+    Cow(int p, int s, int i) {
+        position = p;
+        speed = s;
+        id = i;
+    }
+    @Override
+    public int compareTo(Cow o) {
+        return (this.position < o.position ? -1 :
+                (this.position == o.position ? 0 : 1));
+    }
+}
+
+public class CowJog {
+
+    List<Cow> m_cows;
+
+    CowJog() {
+        m_cows = new ArrayList<Cow>();
+    }
+
+    void sortCow() {
+        Collections.sort(m_cows);
+    }
+
+    void printCows() {
+        for (int i = 0; i < m_cows.size(); i++) {
+            System.out.printf("(%d, %d), ",(int) m_cows.get(i).position, (int) m_cows.get(i).speed);
+        }
+        System.out.println();
+    }
+
+
+    List<Cow> deepCopy(List<Cow> origin) {
+        List<Cow> rL = new ArrayList<Cow>();
+
+        for (int i = 0; i < origin.size(); i++) {
+            rL.add(origin.get(i));
+        }
+        return rL;
+    }
+
+    Integer cowJog() {
+
+        float worldTime = 0;
+        boolean flag = true;
+        List<Integer> mL = new ArrayList<Integer>();
+        int dCount = 0;
+
+        while (flag) {
+            flag = false;
+            float nextMeetTime = Float.MAX_VALUE;
+            for (int i = m_cows.size() - 1; i > 0; i--) {
+                //System.out.printf("P: %d, S: %d\n", m_cows.get(i).position, m_cows.get(i).speed);
+
+                Cow one = m_cows.get(i);
+                Cow two = m_cows.get(i - 1);
+
+                if (one.speed < two.speed) {
+                    float meetTime = (one.position - two.position)/(two.speed - one.speed);
+                    if (meetTime < nextMeetTime) {
+                        nextMeetTime = meetTime;
+                    }
+
+                    flag = true;
+                }
+
+            }
+
+            if (! flag) {
+                break;
+            }
+            // smallest meet time found
+
+            // printCows();
+            worldTime += nextMeetTime;
+            List<Cow> deletedCows = new ArrayList<Cow>();
+
+            // System.out.printf("World Time: %f\n", worldTime);
+
+            // one round
+
+            float lastPosition = 0;
+            for (int i = m_cows.size() - 1; i >= 0; i--) {
+                Cow currentCow = m_cows.get(i);
+                float newPos = currentCow.position + (currentCow.speed * nextMeetTime);
+
+                if (i != 0 && m_cows.get(i).position <= m_cows.get(i - 1).position) {
+                    deletedCows.add(m_cows.get(i - 1));
+                }
+
+                m_cows.get(i).position = newPos;
+
+            }
+
+            for (int i = 0; i < deletedCows.size(); i++) {
+                m_cows.remove(deletedCows.get(i));
+            }
+
+        }
+
+
+        return m_cows.size();
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("cowjog.in"));
+        PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("cowjog.out")));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+
+        CowJog cowJog = new CowJog();
+
+        for(int i = 0; i < n; i++) {
+            st = new StringTokenizer(br.readLine());
+            int x = Integer.parseInt(st.nextToken());
+            int y = Integer.parseInt(st.nextToken());
+            Cow currentCow = new Cow(x, y, i);
+
+            cowJog.m_cows.add(currentCow);
+        }
+
+        int ans = cowJog.cowJog();
+
+        pw.println(ans);
+        pw.close();
     }
 }
 {% endhighlight %}

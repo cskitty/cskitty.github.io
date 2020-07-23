@@ -8,9 +8,9 @@ tags:
   - USACO
 ---
 
-## USACO 2015 Dec Silver
+# USACO 2015 Dec Silver
 
-# Problem 3: Breed Counting
+## Problem 3: Breed Counting
 
 [Breed Counting](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)
 
