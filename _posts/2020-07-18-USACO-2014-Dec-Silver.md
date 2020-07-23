@@ -1,7 +1,7 @@
 ---
 title: "USACO 2014 Dec Silver"
 categories:
-  - Programming
+  - USACO
 tags:
   - Algorithms
   - Java

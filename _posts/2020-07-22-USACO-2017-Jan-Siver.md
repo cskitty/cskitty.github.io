@@ -1,7 +1,7 @@
 ---
 title: "USACO 2017 Jan Silver"
 categories:
-  - Programming
+  - USACO
 tags:
   - Algorithms
   - Java
