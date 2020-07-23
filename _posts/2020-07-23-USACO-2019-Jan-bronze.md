@@ -28,12 +28,15 @@ The first line of the input file contains an integer N giving the number of swap
 OUTPUT FORMAT (file shell.out):  
 Please output the maximum number of points Elsie could have earned.  
 SAMPLE INPUT:  
-```3  
+```
+3  
 1 2 1  
 3 2 1  
-1 3 1```  
+1 3 1
+```  
 SAMPLE OUTPUT:  
-```2
+```
+2
 ```  
 In this example, Elsie could have earned at most 2 points. If the pebble started under shell 1, then she guesses right exactly once (her final guess). If the pebble started under shell 2, then she guesses right twice (the first two guesses). If the pebble started under shell 3, then she doesn't make any correct guesses.  
 
