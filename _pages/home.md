@@ -32,7 +32,7 @@ feature_row:
 - image_path: /assets/images/algorithmcat.PNG
   title: "Algorithms"
   excerpt: "Computer Algorithms"
-  url: "/tags/algorithms/"
+  url: "/algorithm/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/usacocat.PNG
