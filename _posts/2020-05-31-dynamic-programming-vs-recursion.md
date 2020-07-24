@@ -5,6 +5,8 @@ categories:
 tags:
   - Python
   - Algorithms
+  - Recursion
+  - Dynamic Programming
 ---
 
 ## Recursion vs. Dynamic Programming Using a Question from AMC8
@@ -20,7 +22,7 @@ $$\textbf{(A)}\ 13 \qquad\textbf{(B)}\ 18\qquad\textbf{(C)}\ 20\qquad\textbf{(D)
 ### Recursion  
 
 This mathmatical question can be easily solved using the following python recursion code:
- 
+
 {% highlight python linenos %}
 def stairs(x):
     if x == 1:
