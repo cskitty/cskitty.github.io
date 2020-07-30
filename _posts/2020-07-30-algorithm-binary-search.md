@@ -49,7 +49,28 @@ A search algorithm that splits the decision in half every time. If larger, "l" b
 
 {% highlight c++ linenos %}
 
-int binarySearch(vector<ll> cities, vector<ll> towers) {
+
+bool possible(ll r, vector<ll> cities, vector<ll> towers) {
+    int i = 0, j = 0;
+    while (i < cities.size() && j < towers.size()) {
+        dbg(i, cities[i]);
+        dbg(j, towers[j]);
+        if (abs(cities[i] - towers[j]) > r) {
+            j++;
+            // too small
+            while (j < towers.size() && abs(cities[i] - towers[j]) > r) {
+                j++;
+            }
+            if (j == towers.size()) {
+                return false;
+            }
+        }
+        i++;
+    }
+    return true;
+}
+
+int cellularNetwork(vector<ll> cities, vector<ll> towers) {
     int ans = 0;
     ll l = 0;
     ll r = max(cities.back(), towers.back()) - min(cities[0], towers[0]);
@@ -66,6 +87,22 @@ int binarySearch(vector<ll> cities, vector<ll> towers) {
 
     }
     return ans;
+}
+
+int main() {
+    int n, m;
+    re(n, m);
+    vector<ll> cities(n);
+    F0R(i, n) {
+        re(cities[i]);
+    }
+    vector<ll> towers(m);
+    F0R(i, m) {
+        re(towers[i]);
+    }
+
+    pr(cellularNetwork(cities, towers));
+
 }
 
 {% endhighlight %}
