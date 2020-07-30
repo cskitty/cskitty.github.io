@@ -1,5 +1,5 @@
 ---
-title: "Cellular Network"
+title: "Binary Search"
 categories:
   - Programming
 tags:
@@ -10,7 +10,82 @@ tags:
 
 #Binary search
 
-## Cellular Network
+## B. Books
+
+[Books](https://codeforces.com/problemset/problem/279/B)
+
+When Valera has got some free time, he goes to the library to read some books. Today he's got t free minutes to read. That's why Valera took n books in the library and for each book he estimated the time he is going to need to read it. Let's number the books by integers from 1 to n. Valera needs a i minutes to read the i-th book.  
+
+Valera decided to choose an arbitrary book with number i and read the books one by one, starting from this book. In other words, he will first read book number i, then book number i + 1, then book number i + 2 and so on. He continues the process until he either runs out of the free time or finishes reading the n-th book. Valera reads each book up to the end, that is, he doesn't start reading the book if he doesn't have enough free time to finish reading it.  
+
+Print the maximum number of books Valera can read.  
+
+Input  
+The first line contains two integers n and t (1 ≤ n ≤ 105; 1 ≤ t ≤ 109) — the number of books and the number of free minutes Valera's got. The second line contains a sequence of n integers a 1, a 2, ..., a n (1 ≤ a i ≤ 104), where number a i shows the number of minutes that the boy needs to read the i-th book.  
+
+Output  
+Print a single integer — the maximum number of books Valera can read.  
+
+Examples  
+Input  
+```
+4 5
+3 1 2 1
+```
+Output  
+```
+3
+```
+  
+{% highlight c++ linenos %}
+int binarySearch(int i, int l, int r, vector<int> arr, int maxTime) {
+    while(l<r)
+    {
+        int mid=(l+r)>>1;
+        mid++;
+        dbg(l, r, mid);
+        if(arr[mid] - arr[i] <= maxTime) {
+            l = mid;
+        }
+        else r=mid-1;
+    }
+    return l;
+}
+
+
+int longestSequence(vector<int> prefixSum, int maxBooks, int maxTime) {
+    int maxCount = 0;
+    dbg(maxCount);
+    for (int i = 0; i < maxBooks; i++) {
+        int j = binarySearch(i, i, maxBooks, prefixSum, maxTime);
+        if (j != -1) {
+            maxCount = max(j - i, maxCount);
+            //dbg(j, maxCount);
+        }
+        dbg(i, j, maxCount);
+    }
+    return maxCount;
+}
+
+int main() {
+    int n, t;
+    re(n, t);
+
+    vector<int> minutes(n,0);
+    vector<int> prefixSum(n + 1,0);
+
+    F0R(i, n) {
+        re(minutes[i]);
+        prefixSum[i + 1] = prefixSum[i] + minutes[i];
+    }
+    dbg(prefixSum);
+    int x = longestSequence(prefixSum, n, t);
+    pr(x);
+}
+{% endhighlight %}
+
+
+## C. Cellular Network
 
 [Cellular Network](https://codeforces.com/problemset/problem/702/C)  
 
@@ -30,13 +105,13 @@ The third line contains a sequence of m integers b 1, b 2, ..., b m ( -�
 Output
 Print minimal r so that each city will be covered by cellular network.  
 
-inputCopy
+Input
 ```
 3 2
 -2 2 4
 -3 0
 ```
-outputCopy
+Output
 ```
 4
 ```
