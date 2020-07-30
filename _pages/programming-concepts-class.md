@@ -45,14 +45,14 @@ Project 2: [Maze](https://scratch.mit.edu/projects/404731903)
 {% include video id="OUygpOqfcag" provider="youtube" %}
 This lesson is recorded on 07/23/20 2PM PST, there are 78 students attended this lesson.  
 
-#### [Click to Download Lesson 2 Slides](/assets/docs/scratch3.pdf)   
-Project 3: [Maze](https://scratch.mit.edu/projects/413033160)
+#### [Click to Download Lesson 3 Slides](/assets/docs/scratch3.pdf)   
+Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
 <iframe src="https://scratch.mit.edu/projects/413033160/embed" allowtransparency="true" width="600" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 
 
 ### Lesson 4:    
-
+#### [Click to Download Lesson 4 Slides](/assets/docs/scratch4.pdf)   
 
 ### Guest Book
 
