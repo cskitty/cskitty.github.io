@@ -28,3 +28,9 @@ Project 1: [Move the Cat](https://scratch.mit.edu/projects/410129679)
 
 {% include video id="-JqEAJfjj7E" provider="youtube" %}
 Project 2: [Maze](https://scratch.mit.edu/projects/404731903)
+
+
+### Lesson 4: The Super Pong Project (Part1)
+
+{% include video id="-jy9lH_V9W9I" provider="youtube" %}
+Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
