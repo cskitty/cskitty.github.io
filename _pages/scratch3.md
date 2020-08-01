@@ -41,4 +41,4 @@ Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
 
 {% include video id="8HjIZ1QomnM" provider="youtube" %}
 Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
-#### [Click to Download Lesson 4 Slides](/assets/docs/scratch4.pdf)   
+#### [Click to Download Lesson Slides](/assets/docs/scratch4.pdf)   
