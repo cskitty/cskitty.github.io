@@ -34,3 +34,9 @@ Project 2: [Maze](https://scratch.mit.edu/projects/404731903)
 
 {% include video id="jy9lH_V9W9I" provider="youtube" %}
 Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
+
+
+### Lesson 5: The Super Pong Project (Part2)
+
+{% include video id="8HjIZ1QomnM" provider="youtube" %}
+Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
