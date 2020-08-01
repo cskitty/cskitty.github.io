@@ -17,7 +17,7 @@ This course is designed as a kid's first programming class, no prior programming
 
 {% include video id="TvpeytGbelw" provider="youtube" %}
 
-
+#### [Click to Download Lesson Slides](/assets/docs/scratch1.pdf)   
 
 ### Lesson 2: Move the Cat
 
