@@ -49,48 +49,6 @@ Output
 6
 5
 ```
-Input  
-```
-15
-yamatonadeshiko
-10
-1 a
-2 a
-3 a
-4 a
-5 a
-1 b
-2 b
-3 b
-4 b
-5 b
-```
-Output  
-```
-3
-4
-5
-7
-8
-1
-2
-3
-4
-5
-```
-Input  
-```
-10
-aaaaaaaaaa
-2
-10 b
-10 z
-```
-Output
-```
-10
-10
-```  
 
 ## Two Pointers
 
