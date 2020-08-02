@@ -17,20 +17,28 @@ This course is designed as a kid's first programming class, no prior programming
 
 {% include video id="TvpeytGbelw" provider="youtube" %}
 
+#### [Click to Download Lesson Slides](/assets/docs/scratch1.pdf)   
 
 ### Lesson 2: Move the Cat
 
 {% include video id="RhBOL-PTAxk" provider="youtube" %}
 Project 1: [Move the Cat](https://scratch.mit.edu/projects/410129679)
-
+#### [Click to Download Lesson Slides](/assets/docs/scratch1.pdf)   
 
 ### Lesson 3: The Maze Project
 
 {% include video id="-JqEAJfjj7E" provider="youtube" %}
 Project 2: [Maze](https://scratch.mit.edu/projects/404731903)
-
+#### [Click to Download Lesson Slides](/assets/docs/scratch2.pdf)   
 
 ### Lesson 4: The Super Pong Project (Part1)
 
 {% include video id="jy9lH_V9W9I" provider="youtube" %}
 Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
+#### [Click to Download Lesson Slides](/assets/docs/scratch3.pdf)   
+
+### Lesson 5: The Super Pong Project (Part2)
+
+{% include video id="8HjIZ1QomnM" provider="youtube" %}
+Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
+#### [Click to Download Lesson Slides](/assets/docs/scratch4.pdf)   
