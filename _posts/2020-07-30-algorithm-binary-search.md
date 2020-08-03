@@ -8,7 +8,7 @@ tags:
   - Binary Search
 ---
 
-#Binary search
+# Binary search
 
 ## B. Books
 
@@ -36,7 +36,7 @@ Output
 ```
 3
 ```
-  
+
 {% highlight c++ linenos %}
 int binarySearch(int i, int l, int r, vector<int> arr, int maxTime) {
     while(l<r)
