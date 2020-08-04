@@ -23,8 +23,10 @@ The next N lines contain an integer that is either 1, 2, or 3, giving the breed 
 The next Q lines describe a query in the form of two integers a,b (a≤b).  
 
 OUTPUT FORMAT (file bcount.out):  
-For each of the Q queries (a,b), print a line containing three numbers: the number of cows numbered a…b that are Holsteins (breed 1), Guernseys (breed 2), and Jerseys (breed 3).  
+For each of the Q queries (a,b), print a line containing three numbers: the number of cows numbered a…b that are Holsteins (breed 1), Guernseys (breed 2), and Jerseys (breed 3).    
+
 SAMPLE INPUT:  
+```
 6 3  
 2  
 1  
@@ -34,69 +36,51 @@ SAMPLE INPUT:
 1  
 1 6  
 3 3  
-2 4  
-SAMPLE OUTPUT:  
+2 4
+```  
+SAMPLE OUTPUT:
+```  
 3 2 1  
 1 0 0  
 2 0 1  
-{% highlight python linenos %}
+```
+{% highlight c++ linenos %}
+int main() {
+    ifstream cin ("bcount.in");
+    ofstream cout ("bcount.out");
 
-import java.io.*;
-import java.util.Scanner;
+    int N, Q;
+    cin >> N >> Q;
 
-public class CowCode {
+    vector<int> one(N + 1);
+    vector<int> two(N + 1);
+    vector<int> three(N + 1);
 
-    char findChar(String original, long position, int k) {
-        // base case
-        // System.out.printf("%d %d\n", position, k);
-        if (position <= original.length()) {
-            return original.charAt((int) position - 1);
+    FOR(cow, 1, N + 1) {
+        int val;
+        cin >> val;
+        one[cow] = one[cow - 1];
+        two[cow] = two[cow - 1];
+        three[cow] = three[cow - 1];
+
+        if (val == 1) {
+            one[cow]++;
         }
-        else {
-            long half = (long) Math.pow(2, k) * original.length();
-            if (half + 1 == position) {
-                return (findChar(original, half, k - 1));
-            }
-            else {
-                k = (int) (Math.log((position - 1 - half)/original.length())/Math.log(2));
-                return (findChar(original, position - 1 - half, k));
-            }
+        if (val == 2) {
+            two[cow]++;
         }
-    }
-
-    public static void main(String[] args) {
-        CowCode cowCode = new CowCode();
-
-        try {
-            // input
-            BufferedReader br = new BufferedReader(new FileReader("cowcode.in"));
-            Scanner scanner = new Scanner(br);
-
-            String[] line = scanner.nextLine().split(" ");
-            br.close();
-
-            String original = line[0];
-            long n = Long.parseLong(line[1]);
-
-            int k = (int) (Math.log(n/original.length()) / Math.log(2));
-
-            char ans = cowCode.findChar(original, n, k);
-
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("cowcode.out"));
-            bufferedWriter.write(ans);
-            bufferedWriter.close();
-            ///
-        }
-
-
-        catch (FileNotFoundException e) {
-            System.out.println("File not exists or insufficient rights");
-            e.printStackTrace();
-        }
-        catch (IOException e) {
-            System.out.println("An exception occured while reading the file");
-            e.printStackTrace();
+        if (val == 3) {
+            three[cow]++;
         }
     }
+
+    F0R(query, Q) {
+        int start, end;
+        cin >> start >> end;
+
+        cout << one[end] - one[start - 1] << " " << two[end] - two[start - 1] << " " << three[end] - three[start - 1] << endl;
+
+    }
+
 }
 {% endhighlight %}
