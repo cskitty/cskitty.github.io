@@ -77,7 +77,7 @@ SAMPLE OUTPUT:
 
 22  
 
-{% highlight python linenos %}
+{% highlight java linenos %}
 import java.io.*;
 import java.util.*;
 
@@ -248,6 +248,128 @@ public class Piggyback {
 }
 {% endhighlight %}
 
+## Problem 2: Marathon
+
+[Marathon](http://www.usaco.org/index.php?page=viewproblem2&cpid=492)
+
+Unhappy with the poor health of his cows, Farmer John enrolls them in
+an assortment of different physical fitness activities.  His prize cow
+Bessie is enrolled in a running class, where she is eventually
+expected to run a marathon through the downtown area of the city near
+Farmer John's farm!  
+
+The marathon course consists of N checkpoints (3 <= N <= 500) to be
+visited in sequence, where checkpoint 1 is the starting location and
+checkpoint N is the finish.  Bessie is supposed to visit all of these
+checkpoints one by one, but being the lazy cow she is, she decides
+that she will skip up to K checkpoints (K < N) in order to shorten her
+total journey.  She cannot skip checkpoints 1 or N, however, since
+that would be too noticeable.  
+
+Please help Bessie find the minimum distance that she has to run if
+she can skip up to K checkpoints.  
+
+Since the course is set in a downtown area with a grid of streets, the
+distance between two checkpoints at locations (x1, y1) and (x2, y2) is
+given by |x1-x2| + |y1-y2|.  
+
+INPUT: (file marathon.in)  
+
+The first line gives the values of N and K.  
+
+The next N lines each contain two space-separated integers, x and y,
+representing a checkpoint (-1000 <= x <= 1000, -1000 <= y <= 1000).
+The checkpoints are given in the order that they must be visited.
+Note that the course might cross over itself several times, with
+several checkpoints occurring at the same physical location.  When
+Bessie skips such a checkpoint, she only skips one instance of the
+checkpoint -- she does not skip every checkpoint occurring at the same
+location.  
+
+SAMPLE INPUT:  
+```
+5 2
+0 0
+8 3
+1 1
+10 -5
+2 2
+```
+OUTPUT: (file marathon.out)  
+
+Output the minimum distance that Bessie can run by skipping up to K
+checkpoints.  In the sample case shown here, skipping the checkpoints
+at (8, 3) and (10, -5) leads to the minimum total distance of 4.  
+
+SAMPLE OUTPUT:  
+```
+4
+```
+
+{% highlight c++ linenos %}
+vector<vector<int>> dp;
+
+int dist(pair<int, int> first, pair<int, int> second) {
+    return abs(first.f - second.f) + abs(first.s - second.s);
+}
+
+int maxCheckpoints(int N, int K, vector<pair<int, int>> checkpoints) {
+    // sum, row 1
+    FOR(i, 1, N) {
+        dp[i][0] = dp[i - 1][0] + dist(checkpoints[i], checkpoints[i - 1]);
+    }
+
+    // dp
+    FOR(i, 1, N) {
+        FOR(j, 1, K + 1) {
+
+            dp[i][j] = 1<<30;
+
+            if (i <= j) {
+                // invalid, skip
+                continue;
+            }
+            int x = min(i - 1, j);
+            dbg(i, j, K, x);
+            F0R(k, x + 1) {
+                dp[i][j]  = min(dp[i - k - 1][j - k] + dist(checkpoints[i], checkpoints[i - k - 1]), dp[i][j]);
+            }
+
+        }
+    }
+    int ans = INT_MAX;
+    F0R(i, min(K + 1, N-2)) {
+
+        ans = min(ans, dp[N - 1][i]);
+
+    }
+    return ans;
+}
+
+
+int main() {
+    ifstream cin ("marathon.in");
+    ofstream cout ("marathon.out");
+
+    int N, K;
+    cin >> N >> K;
+
+    dp.resize(N);
+    F0R(i, N) {
+        dp[i].resize(K + 1);
+    }
+
+    vector<pair<int, int>> checkpoints;
+    checkpoints.resize(N);
+
+    F0R(i, N) {
+        cin >> checkpoints[i].f >> checkpoints[i].s;
+    }
+
+    cout << maxCheckpoints(N, K, checkpoints);
+}
+{% endhighlight %}
+
 
 ## Problem 3: Cow Jog
 
@@ -295,7 +417,7 @@ SAMPLE OUTPUT:
 3  
 
 
-{% highlight python linenos %}
+{% highlight java linenos %}
 import javax.xml.soap.Node;
 import java.io.*;
 import java.util.*;
