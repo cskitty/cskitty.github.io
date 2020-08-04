@@ -18,8 +18,9 @@ author_profile: true
 | Flood Fill  | [Flood Fill](https://starcoder.org/programming/flood-fill/)  | Easy         |
 | DP          | [Climbing Stairs](https://starcoder.org/programming/dp-climbing-stairs/)  | Easy      |  
 |             | [Unique Paths II](https://starcoder.org/programming/dp-unique-path/)  | Easy      |  
-|             | [House Robber](https://starcoder.org/programming/dp-house-robber/)  | Medium      |  
 |             | [Longest Increasing Subsequence](https://starcoder.org/programming/dp-longest-increasing-sequence/)  | Easy      |  
+|             | [House Robber](https://starcoder.org/programming/dp-house-robber/)  | Medium      |  
+|             | [Marathon](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-2-marathon) | Medium      |
 |             | [Best Time to Buy and Sell Stock](https://starcoder.org/programming/dp-buy-sell-stock/)  | Easy         |  
 |             | [Diamond Collector](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector)  | Hard      |  
 | Backtrack   | [Subsets](https://starcoder.org/programming/backtrack-subsets/)  | Medium         |   

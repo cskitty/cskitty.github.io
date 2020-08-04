@@ -5,6 +5,7 @@ categories:
 tags:
   - Algorithms
   - Java
+  - C++
   - USACO
 ---
 
