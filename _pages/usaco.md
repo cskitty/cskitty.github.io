@@ -9,21 +9,21 @@ author_profile: true
 
 ![](/assets/images/USACObessieheader.PNG)
 
-### USACO: A Story About Farmer John and Bessie the cow
+### USACO: A Story About Farmer John and Bessie the Cow
 
 Farmer John is the well acclaimed owner of many cows. But one of them always gets into mischief! Help Farmer John deal with Bessie the cow, using programs to assist them on their journey on the [USACO](http://usaco.org/) site.
 
 
 #  Silver
 
-| Contest   | #                                                               | Name          | Alogrithm                              | Code |
+| Contest   | #                                                               | Name          | Alogrithm                              | Status |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | ------ |
-| 2014 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=491    )  | piggyback     | [Graph](https://starcoder.org/programming/USACO-2014-Dec-Silver/#problem-1-cow-jog)                           |    |
-|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=492)      | marathon      | BinSearch                              |    |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=493)      | cowjog        | [Simulation](https://starcoder.org/programming/USACO-2014-Dec-Silver/#problem-3-piggyback)                             |    |
+| 2014 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=491    )  | piggyback     | [BFS](https://starcoder.org/programming/USACO-2014-Dec-Silver/#problem-1-cow-jog)            |  Done  |
+|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=492)      | marathon      | [DP](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-2-marathon)     |  Done  |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=493)      | cowjog        | [Simulation](https://starcoder.org/programming/USACO-2014-Dec-Silver/#problem-3-piggyback) |  Done  |
 | 2015 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=570)  | lightson      | FloodFill                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=571)  | highcard      | BinSearch                              |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [BinSearch](https://starcoder.org/programming/USACO-2015-Dec-Siver/#problem-3-breed-counting)                                |    |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [BinSearch](https://starcoder.org/programming/USACO-2015-Dec-Siver/#problem-3-breed-counting)                                |  Done   |
 | 2016 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=594)  | angry         | BinSearch                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | CumSum                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=596)  | gates         | FloodFill                              |    |
@@ -39,7 +39,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)  | moocast       | FloodFill                              |    |
 | 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=690)  | cowdance      | BinSearch                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | CumSum                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch](https://starcoder.org/programming/USACO-2017-Jan-Siver/#problem-3-secret-cow-code)                                 |    | 
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch](https://starcoder.org/programming/USACO-2017-Jan-Siver/#problem-3-secret-cow-code)                                 |  Done  |
 | 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | 2Pointers                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | CumSum                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | FloodFill                              |    |
