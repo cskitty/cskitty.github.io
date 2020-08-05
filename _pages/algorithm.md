@@ -16,6 +16,7 @@ author_profile: true
 | Two Pointers| [Circulation of Affection](https://starcoder.org/programming/an-impassioned-circulation-of-affection/)   | Easy         |
 | Monotonous Stack | [Stock Spanner](https://starcoder.org/programming/algorithm-monotonous-stack/)  | Easy         |
 | Flood Fill  | [Flood Fill](https://starcoder.org/programming/flood-fill/)  | Easy         |
+|             | [Grid Path](https://starcoder.org/programming/grid-paths/)  | Easy         |
 | DP          | [Climbing Stairs](https://starcoder.org/programming/dp-climbing-stairs/)  | Easy      |  
 |             | [Unique Paths II](https://starcoder.org/programming/dp-unique-path/)  | Easy      |  
 |             | [Longest Increasing Subsequence](https://starcoder.org/programming/dp-longest-increasing-sequence/)  | Easy      |  
