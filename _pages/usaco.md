@@ -70,5 +70,5 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | Contest   | #                                                               | Name          | Alogrithm                                                                              | Level  | Language | Status |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- | ------ |
 | 2020 Jan  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=987    )  | word          | [String](https://starcoder.org/usaco/USACO-2020-Jan-Broze/#problem-1-word-processor)   |  Easy  |  Python  | Done   |
-|           | [2](                                                     )      |               | [   ](                                                                               ) |        |          |        |
-|           | [3](                                                     )      |               | [   ](                                                                               ) |        |          |        |
+| 2020 Jan  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=988    )  | word          |     |  Easy  |  Python  |     |
+| 2020 Jan  | [3](http://usaco.org/index.php?page=viewproblem2&cpid=989    )  | word          |    |  Easy  |  Python  |     |
