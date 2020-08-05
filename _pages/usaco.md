@@ -23,7 +23,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=493)      | cowjog        | [Simulation](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-3-cow-jog) |  Done  |
 | 2015 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=570)  | lightson      | FloodFill                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=571)  | highcard      | BinSearch                              |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [CumSum](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-3-breed-counting)                                |  Done   |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [BinSearch](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-3-breedcounting)                                |  Done   |
 | 2016 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=594)  | angry         | BinSearch                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | CumSum                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=596)  | gates         | FloodFill                              |    |
@@ -39,7 +39,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)  | moocast       | FloodFill                              |    |
 | 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=690)  | cowdance      | BinSearch                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | CumSum                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Siver/#problem-3-secret-cow-code)                                 |  Done  |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-3-secret-cow-code)                                 |  Done  |
 | 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | 2Pointers                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | CumSum                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | FloodFill                              |    |
@@ -66,3 +66,9 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 
 #  Bronze
+
+| Contest   | #                                                               | Name          | Alogrithm                                                                              | Level  | Language | Status |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- | ------ |
+| 2020 Jan  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=987    )  | word          | [String](https://starcoder.org/usaco/USACO-2020-Jan-Broze/#problem-1-word-processor)   |  Easy  |  Python  | Done   |
+| 2020 Jan  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=988    )  | Photoshoot          |     |  Easy  |  Python  |     |
+| 2020 Jan  | [3](http://usaco.org/index.php?page=viewproblem2&cpid=989    )  | race          |    |  Easy  |  Python  |     |
