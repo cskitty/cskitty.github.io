@@ -107,7 +107,7 @@ The next N lines each contain three space-separated integers wi, xi, and di. All
 
 OUTPUT FORMAT (file meetings.out):  
 
-Print a single line containing the answer. 
+Print a single line containing the answer.
 
 SAMPLE INPUT:   
 ```
