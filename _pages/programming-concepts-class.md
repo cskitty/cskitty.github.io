@@ -50,10 +50,15 @@ Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
 <iframe src="https://scratch.mit.edu/projects/413033160/embed" allowtransparency="true" width="600" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 
-
-### Lesson 4:    
+### Lesson 4:   
+This lesson is recorded on 07/30/20 2PM PST, there are 75 students attended this lesson.  
 #### [Click to Download Lesson 4 Slides](/assets/docs/scratch4.pdf)   
 
+
+### Lesson 5:   
+#### [Click to Download Lesson Slides](/assets/docs/scratch5.pdf)  
+Project 4: [Name Animation](https://scratch.mit.edu/projects/415830828/)  
+<iframe src="https://scratch.mit.edu/projects/415830828/embed" allowtransparency="true" width="600" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
 ### Guest Book
 
 <div id="disqus_thread"></div>
