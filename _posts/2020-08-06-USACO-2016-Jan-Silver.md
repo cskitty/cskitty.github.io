@@ -193,6 +193,7 @@ vector<vector<int>> G;
 int dx[] = {-1,1,0,0};
 int dy[] = {0,0,-1,1};
 
+//Queue FloodFloor,Q flood Floor
 void flood(int cor_x, int cor_y, int newColor) {
 
     queue<pair<int, int>> myQ;
