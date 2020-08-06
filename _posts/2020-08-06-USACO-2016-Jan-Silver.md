@@ -6,6 +6,7 @@ tags:
   - Algorithms
   - Python
   - USACO
+  - FloodFill 
 ---
 
 # USACO 2016 Jan Silver
