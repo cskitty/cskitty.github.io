@@ -60,8 +60,8 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=835)  |               |                                        |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=836)  |               |                                        |    |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [BinSearch](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-1-moobuzz)                              |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings   | [ ](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-2-meetings)                              |    |
+| 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [Math](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-1-moobuzz)                              |    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings   | [Simulation](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-2-meetings)                              |    |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=968)  | milkvisits    | [BFS](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-3-milk-visits)                              |    |
 
 
