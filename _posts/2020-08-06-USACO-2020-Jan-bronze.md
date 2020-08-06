@@ -1,81 +1,182 @@
 ---
-title: "USACO 2020 Jan Bronze"
+title: "USACO 2019 Dec Silver"
 categories:
   - USACO
 tags:
   - Algorithms
-  - Python
+  - C++
   - USACO
 ---
 
-# USACO 2020 Jan Bronze
+# USACO 2019 Dec Silver
 
-## Problem 1. Word Processor
+## Problem 1. MooBuzz
 
-[Word Processor](http://usaco.org/index.php?page=viewproblem2&cpid=987)
+[MooBuzz](http://usaco.org/index.php?page=viewproblem2&cpid=966)
 
-Bessie the cow is working on an essay for her writing class. Since her handwriting is quite bad, she decides to type the essay using a word processor.
-The essay contains N words ($$1\le N\le 100$$), separated by spaces. Each word is between 1 and 15 characters long, inclusive, and consists only of uppercase or lowercase letters. According to the instructions for the assignment, the essay has to be formatted in a very specific way: each line should contain no more than K ($$1\leK\le80$$) characters, not counting spaces. Fortunately, Bessie's word processor can handle this requirement, using the following strategy:
+Farmer John's cows have recently become fans of playing a simple number game called "FizzBuzz". The rules of the game are simple: standing in a circle, the cows sequentially count upward from one, each cow saying a single number when it is her turn. If a cow ever reaches a multiple of 3, however, she should say "Fizz" instead of that number. If a cow reaches a multiple of 5, she should say "Buzz" instead of that number. If a cow reaches a multiple of 15, she should say "FizzBuzz" instead of that number. A transcript of the first part of a game is therefore:  
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16  
 
-If Bessie types a word, and that word can fit on the current line, put it on that line.
-Otherwise, put the word on the next line and continue adding to that line.
-Of course, consecutive words on the same line should still be separated by a single space. There should be no space at the end of any line.
+Having a slightly more limited vocabulary, the version of FizzBuzz played by the cows involves saying "Moo" instead of Fizz, Buzz, and FizzBuzz. The beginning of the cow version of the game is therefore  
 
-Unfortunately, Bessie's word processor just broke. Please help her format her essay properly!
+1, 2, Moo, 4, Moo, Moo, 7, 8, Moo, Moo, 11, Moo, 13, 14, Moo, 16  
 
-INPUT FORMAT (file word.in):
-The first line of input contains two space-separated integers N and K.
-The next line contains N words separated by single spaces. No word will ever be larger than K characters, the maximum number of characters on a line.
+Given N (1≤N≤109), please determine the Nth number spoken in this game.  
 
-OUTPUT FORMAT (file word.out):
-Bessie's essay formatted correctly.
+SCORING  
+Test cases 2-5 satisfy N≤106.  
+
+INPUT FORMAT (file moobuzz.in):  
+The input consists of a single integer, N.  
+
+OUTPUT FORMAT (file moobuzz.out):  
+Please print out the Nth number spoken during the game.  
+SAMPLE INPUT:  
+```
+4
+```
+SAMPLE OUTPUT:  
+```
+7
+```
+The 4th number spoken is 7. The first 4 numbers spoken are 1, 2, 4, 7, since we skip over any time a cow says "Moo".  
+
+Problem credits: Brian Dean  
+
+{% highlight c++ linenos %}
+
+int main() {
+    ifstream cin ("moobuzz.in");
+    ofstream cout ("moobuzz.out");
+
+    int N;
+    cin >> N ;
+
+    int i = 1;
+    int number = 1;
+
+    map<int, int> myDict;
+    int j = 1;
+
+    while (i <= 15) {
+        if (! (i % 3 == 0 || i % 5 == 0 )) {
+            myDict[j] = i;
+            j++;
+        }
+        i++;
+    }
+
+    for (auto x : myDict) {
+        dbg(x.first, x.second);
+    }
+
+    int cycle = floor(N / 8);
+    int remain = N % 8;
+
+    dbg(N, cycle, remain, myDict[remain]);
+
+    int ans = 0;
+    if (remain == 0) {
+         ans = 15 * (cycle-1) + myDict[8];
+    }
+    else {
+         ans = 15 * cycle + myDict[remain];
+    }
+
+    cout << ans;
+}
+{% endhighlight %}
+
+
+## Problem 2. Meetings
+
+[Meetings](http://usaco.org/index.php?page=viewproblem2&cpid=967)
+
+Two barns are located at positions 0 and L (1≤L≤109) on a one-dimensional number line. There are also N cows (1≤N≤5⋅104) at distinct locations on this number line (think of the barns and cows effectively as points). Each cow i is initially located at some position xi and moving in a positive or negative direction at a speed of one unit per second, represented by an integer di that is either 1 or −1. Each cow also has a weight wi in the range [1,103]. All cows always move at a constant velocity until one of the following events occur:  
+If cow i reaches a barn, then cow i stops moving.  
+
+A meeting occurs when two cows i and j occupy the same point, where that point is not a barn. In this case, cow i is assigned cow j's previous velocity and vice versa. Note that cows could potentially meet at points that are not integers.  
+Let T be the earliest point in time when the sum of the weights of the cows that have stopped moving (due to reaching one of the barns) is at least half of the sum of the weights of all cows. Please determine the total number of meetings between pairs of cows during the range of time 0…T (including at time T).  
+
+SCORING:  
+Test cases 2-4 satisfy N≤102 and wi=1 for all i.  
+Test cases 5-7 satisfy N≤102.  
+INPUT FORMAT (file meetings.in):  
+The first line contains two space-separated integers N and L.  
+The next N lines each contain three space-separated integers wi, xi, and di. All locations xi are distinct and satisfy 0<xi<L.  
+
+OUTPUT FORMAT (file meetings.out):  
+
+Print a single line containing the answer.  
+SAMPLE INPUT:   
+3 5  
+1 1 1  
+2 2 -1  
+3 3 -1  
+SAMPLE OUTPUT:  
+2  
+The cows in this example move as follows:  
+
+The first and second cows meet at position 1.5 at time 0.5. The first cow now has velocity −1 and the second has velocity 1.  
+The second and third cows meet at position 2 at time 1. The second cow now has velocity −1 and the third has velocity 1.  
+The first cow reaches the left barn at time 2.  
+The second cow reaches the left barn at time 3.  
+The process now terminates since the sum of the weights of the cows that have reached a barn is at least half of the sum of the weights of all cows. The third cow would have reached the right barn at time 4.  
+Exactly two meetings occurred.  
+
+Problem credits: Benjamin Qi
+
+{% highlight c++ linenos %}
+
+{% endhighlight %}
+
+
+
+## Problem 3. Milk Visits
+
+[Milk Visits](http://usaco.org/index.php?page=viewproblem2&cpid=968)
+
+Farmer John is planning to build N (1≤N≤105) farms that will be connected by N−1 roads, forming a tree (i.e., all farms are reachable from each-other, and there are no cycles). Each farm contains a cow, whose breed is either Guernsey or Holstein.  
+Farmer John's M friends (1≤M≤105) often come to visit him. During a visit with friend i, Farmer John will walk with his friend along the unique path of roads from farm Ai to farm Bi (it may be the case that Ai=Bi). Additionally, they can try some milk from any cow along the path they walk. Since most of Farmer John's friends are also farmers, they have very strong preferences regarding milk. Some of his friends will only drink Guernsey milk, while the remainder will only drink Holstein milk. Any of Farmer John's friends will only be happy if they can drink their preferred type of milk during their visit.  
+
+Please determine whether each friend will be happy after visiting.  
+
+SCORING:
+Test cases 2-5 satisfy N≤103,M≤2⋅103.
+INPUT FORMAT (file milkvisits.in):
+The first line contains the two integers N and M.
+The second line contains a string of length N. The ith character of the string is 'G' if the cow in the ith farm is a Guernsey, or 'H' if the cow in the ith farm is a Holstein.
+
+The next N−1 lines each contain two distinct integers X and Y (1≤X,Y≤N), indicating that there is a road between farms X and Y.  
+
+The next M lines contain integers Ai, Bi, and a character Ci. Ai and Bi represent the endpoints of the path walked during friend i's visit, while Ci is either G or H if the ith friend prefers Guernsey milk or Holstein milk.  
+
+OUTPUT FORMAT (file milkvisits.out):  
+Print a binary string of length M. The ith character of the string should be '1' if the ith friend will be happy, or '0' otherwise.  
+
 SAMPLE INPUT:
 ```
-10 7
-hello my name is Bessie and this is my essay
+5 5
+HHGHG
+1 2
+2 3
+2 4
+1 5
+1 4 H
+1 4 G
+1 3 G
+1 3 H
+5 5 H
 ```
 SAMPLE OUTPUT:
 ```
-hello my
-name is
-Bessie
-and this
-is my
-essay
+10110
 ```
-Including "hello" and "my", the first line contains 7 non-space characters. Adding "name" would cause the first line to contain 11>7 non-space characters, so it is placed on a new line.
+Here, the path from farm 1 and farm 4 involves farms 1, 2, and 4. All of these contain Holsteins, so the first friend will be satisfied while the second one will not.
 
-Problem credits: Nathan Pinsker
-
-{% highlight python linenos %}
-fin = open("word.in", "r")
-fout = open("word.out", "w")
+Problem credits: Spencer Compton  
 
 
-nk = fin.readline().split()
-n = nk[0]
-k = int(nk[1])
+{% highlight c++ linenos %}
 
-text = fin.readline().split()
-output = []
-
-line = ''
-for x in text:
-    if len(x.replace(" ", '') + line.replace(' ', '')) <= k:
-        line += x + ' '
-        dsf = 1
-    else:
-        output.append(line)
-
-        line = x + " "
-
-        dsf = 0
-
-output.append(line)
-
-
-for x in range(len(output) - 1):
-    fout.write(output[x].strip() + '\n')
-
-fout.write(output[-1].strip())
 {% endhighlight %}
