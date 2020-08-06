@@ -94,11 +94,7 @@ int main() {
     }
 
     sort(cows.begin(), cows.end());
-
-    dbg(cows);
-
     cout << angryCows(cows, K);
-
 }
 {% endhighlight %}
 
@@ -161,22 +157,6 @@ int main() {
         }
     }
     cout << maximum;
-
-
-    // vector<pair<int, int>> dp(N + 1);
-
-    // dp[i] = max up to then
-
-    /*F0R(i, prefix.size()) {
-        F0R(j, i) {
-            int x = prefix[i] - prefix[j];
-            if (x % 7 == 0) {
-                maximum = max(maximum, i - j);
-            }
-        }
-    }
-
-    cout << maximum;*/
 }
 {% endhighlight %}
 
@@ -226,7 +206,6 @@ void flood(int cor_x, int cor_y, int newColor) {
         int x = curr.f;
         int y = curr.s;
 
-        dbg(x, y);
         if (x < 0 || x > G.size() - 1 || y < 0 || y > G[0].size() - 1) {
             continue;
         }
