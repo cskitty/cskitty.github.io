@@ -21,12 +21,12 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2014 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=491    )  | piggyback     | [BFS](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-1-piggyback)            |  Done  |
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=492)      | marathon      | [DP](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-2-marathon)     |  Done  |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=493)      | cowjog        | [Simulation](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-3-cow-jog) |  Done  |
-| 2015 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=570)  | lightson      | [FloodFill](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-1-switching-on-the-lights)                              |   Done |
+| 2015 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=570)  | lightson      | [R FloodFill](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-1-switching-on-the-lights)                              |   Done |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=571)  | highcard      | [2P](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-2-high-card-wins) |  Done  |                           
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [BinSearch](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-3-breedcounting)                                |  Done   |
 | 2016 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=594)  | angrycows     | [BinSearch](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-1-angry-cows) | Done    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | CumSum                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=596)  | gates         | FloodFill                              |    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | [CumSum](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)                                 | Done   |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=596)  | gates         | [Q FloodFill](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-3-build-gates)                              |    |
 | 2016 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=618)  | cbarn         |                                        |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=619)  | balancing     | CumSum                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=620)  | pails         | FloodFill                              |    |
