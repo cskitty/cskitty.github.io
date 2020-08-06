@@ -107,14 +107,19 @@ The next N lines each contain three space-separated integers wi, xi, and di. All
 
 OUTPUT FORMAT (file meetings.out):  
 
-Print a single line containing the answer.  
+Print a single line containing the answer. 
+
 SAMPLE INPUT:   
+```
 3 5  
 1 1 1  
 2 2 -1  
 3 3 -1  
+```
 SAMPLE OUTPUT:  
+```
 2  
+```
 The cows in this example move as follows:  
 
 The first and second cows meet at position 1.5 at time 0.5. The first cow now has velocity −1 and the second has velocity 1.  
