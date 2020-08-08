@@ -5,8 +5,8 @@ main:
     url: /tutorials/
   - title: "Algorithms"
     url: /algorithm/
-  - title: "Project Euler"
-    url: /tags/math/
+  - title: "USACO"
+    url: /categories/usaco/
   - title: "Cryptography"
     url: /tags/cryptography/
   - title: "Archive"
