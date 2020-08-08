@@ -175,8 +175,16 @@ int main() {
     }
     sort(elsie.begin(), elsie.end());
 
-    vector<int> bessie(N);
+    vector<int> bessie;
 
+    vector<int> N2(2 * N);
+    F0R(i, N * 2) {
+        N2[i] = i + 1;
+    }
+
+    set_difference(N2.begin(), N2.end(), elsie.begin(), elsie.end(), inserter(bessie, bessie.begin()));
+
+    /*
     int n = 1;
     int i = 0;
     int j = 0;
@@ -188,19 +196,16 @@ int main() {
             n++;
         }
         else {
-            dbg(bessie);
             bessie[j] = n;
             j++;
             n++;
         }
     }
-
-    dbg(bessie);
+    */
 
     int count = 0;
-
-    i = 0;
-    j = 0;
+    int i = 0;
+    int j = 0;
 
     while (i < N && j < N) {
         if (elsie[i] < bessie[j]) {
@@ -215,7 +220,6 @@ int main() {
 
     cout << count;
 }
-
 {% endhighlight %}
 
 ## Problem 3: Breed Counting
