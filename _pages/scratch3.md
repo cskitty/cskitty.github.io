@@ -44,7 +44,7 @@ Project 3: [Super Pong](https://scratch.mit.edu/projects/413033160)
 #### [Click to Download Lesson Slides](/assets/docs/scratch4.pdf)   
 
 
-### Lesson 6: The Super Pong Project (Part2)
+### Lesson 6: Name Animation
 
 {% include video id="nfwqhuAHY9w" provider="youtube" %}
 Project 4: [Name Animation](https://scratch.mit.edu/projects/415830828/)
