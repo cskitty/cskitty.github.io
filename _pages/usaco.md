@@ -69,6 +69,6 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 | Contest   | #                                                               | Name          | Alogrithm                                                                              | Level  | Language | Status |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- | ------ |
-| 2020 Jan  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=987    )  | word          | [String](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-1-moobuzz)   |  Easy  |  Python  | Done   |
+| 2020 Jan  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=987    )  | word          | [String](https://starcoder.org/usaco/USACO-2020-Jan-Bronze/#problem-1-word-processor)   |  Easy  |  Python  | Done   |
 | 2020 Jan  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=988    )  | Photoshoot          |     |  Easy  |  Python  |     |
 | 2020 Jan  | [3](http://usaco.org/index.php?page=viewproblem2&cpid=989    )  | race          |    |  Easy  |  Python  |     |
