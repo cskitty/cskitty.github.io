@@ -140,7 +140,7 @@ when we want to determine which vertices can be visited, whether there exists a 
 one vertex to another, and so forth. There are two algorithms for graph traversal, namely
 depth-first search (DFS) and breadth-first search (BFS).
 
-###  Breadth-first search
+###  Breadth-First Search
 Breadth-first search visits nodes in order of distance away from the starting node; it first
 visits all nodes that are one edge away, then all nodes that are two edges away, and so on.
 
@@ -220,16 +220,7 @@ int main(){
 {% endhighlight %}
 
 
-### Depth-first search
-
-Depth-first search continues down a single path as far as possible; once it has no more
-vertices to visit along that path, it backtracks until it finds more vertices to visit. Depth-first
-search will process all nodes that are reachable (connected by edges) to the starting node.
-Let’s look at an example of how this works. Depth first-search can start at any node, but by
-convention we’ll start the search at node 1. We’ll use the following color scheme: blue for
-nodes we have already visited, red for nodes we are currently processing, and black for nodes
-that have not been visited yet.
-
+### Depth-First Search
 
 {% highlight c++ linenos %}
 //Global variables
@@ -250,7 +241,7 @@ void addEdge(int a, int b, int weight = 1) {
 void dfs(int node){
   //step1: boundary processing
   cout << "visiting node " << node;
-  
+
   //step2: check visited or not
   if (!visited[node]) {
     visited[node] = true;
@@ -273,7 +264,9 @@ void DFS(int start){
   dist[start] = 0;
 
   st.push(start);
+
   while(!st.empty()){
+
     int node = st.top();
     st.pop();
 
@@ -302,3 +295,64 @@ int main(){
 }
 
 {% endhighlight %}
+
+
+
+### DFS Graph Coloring
+
+{% highlight c++ linenos %}
+
+vector<int> adj[MX];
+int coloring[MX];
+
+void addEdge(int u, int v)
+{
+    adj[u].push_back(v);
+    adj[v].push_back(u);
+}
+
+
+string cowType;
+
+bool flag(int current, int end) {
+    if (current == end) {
+        return true;
+    }
+    return false;
+}
+
+
+void DFS(int start, int color){
+    // fill distance array with -1's
+
+    vector<bool> visited(cowType.size(), false);
+
+    stack<int> st;
+
+    st.push(start);
+    while(!st.empty()){
+        int node = st.top();
+        coloring[node] = color;
+        visited[node] = true;
+        st.pop();
+
+        for(int next : adj[node]){
+            if(! visited[next] && cowType[next] == cowType[node]){
+                st.push(next);
+            }
+        }
+    }
+
+}
+
+void DFSColoring(int N) {
+    // read in N
+    int color = 1;
+    F0R(i, N) {
+        if (coloring[i] == 0) {
+            DFS(i, color);
+            color++;
+        }
+    }
+
+}
