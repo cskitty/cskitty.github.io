@@ -66,6 +66,34 @@ int main() {
 
 {% endhighlight %}
 
+### Python implementtion by Cryptobunny
+{% highlight python linenos %}
+def moobuzz(x):
+    output = []
+    for y in range(1, 1+x):
+        if y % 15 == 0:
+            output.append(False)
+        elif y % 5 ==  0:
+            output.append(False)
+        elif y % 3 == 0:
+            output.append(False)
+        else:
+            output.append(y)
+    return output
+
+output = list(filter(lambda a: a != False, moobuzz(15)))
+def reverse_moobuzz(n):
+    nmod8 = n % len(output)
+    ndiv8 = n // len(output)
+
+    if nmod8 == 0:
+        return ndiv8 * 15 - 1
+    return output[nmod8 - 1] + ndiv8 * 15
+
+fin, fout = open('moobuzz.in', 'r'), open('moobuzz.out', 'w')
+n = int(fin.readline())
+fout.write(str(reverse_moobuzz(n)))
+{% endhighlight %}
 
 ## Problem 2. Meetings
 
