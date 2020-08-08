@@ -250,7 +250,7 @@ void addEdge(int a, int b, int weight = 1) {
 void dfs(int node){
   //step1: boundary processing
   cout << "visiting node " << node;
-
+  
   //step2: check visited or not
   if (!visited[node]) {
     visited[node] = true;

@@ -76,3 +76,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2019 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=891 ) | shellgame     | [Simulation](https://starcoder.org/usaco/USACO-2019-Jan-Bronze/#problem-1-shell-game)   |  Easy  |  Python  |  
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=892  )  | sleepy      |     |  Easy  |  Python  |     |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=893  )  | guess       |    |  Easy  |  Python  |     |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
+| 2018 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=855 ) | mixmilk     | [Simulation](https://starcoder.org/usaco/USACO-2018-Dec-Bronze/#problem-1-mixing-milk)   |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=856  )  | blist      |     |  Easy  |  Python  |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=857  )  | backforth       |    |  Easy  |  Python  |     |
