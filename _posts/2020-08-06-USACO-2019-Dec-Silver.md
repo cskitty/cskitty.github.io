@@ -130,40 +130,35 @@ struct ant {
 int N,L;
 vector<ant> ants;
 
-
-int getTime() {
-    vector<int> leftAnts;
-    vector<int> rightAnts;
-
-    F0R(i, N) {
-        if (ants[i].d == -1) {
-            leftAnts.push_back(ants[i].x);
-        }
-        else {
-            rightAnts.push_back(ants[i].x);
-        }
+int getTime () {
+    vector<int> left, right;
+    F0R(i,N) {
+        if (ants[i].d == -1)
+            left.push_back(ants[i].x);
+        else
+            right.push_back(L - ants[i].x);
     }
 
     vector<pair<int, int>> v;
+    F0R(i,left.size())
+        v.push_back({left[i], ants[i].w});
 
-    F0R(i, leftAnts.size()) {
-        v.push_back(make_pair(leftAnts[i], ants[i].w));
-    }
-    F0R(i, rightAnts.size()) {
-        v.push_back(make_pair(L - rightAnts[i], ants[leftAnts.size() + i].w));
-    }
+    //since the cow never cross each other
+    //we need to reverse the right side cows, use right most weight also
+    reverse(right.begin(), right.end());
+    F0R(i,right.size())
+        v.push_back({right[i], ants[ N - 1 - i ].w});
 
     sort(v.begin(), v.end());
 
-    int totalWeight = 0;
-    int weight = 0;
-    F0R(i, v.size()) {
-        totalWeight += v[i].s;
-    }
-    F0R(i, v.size()) {
-        weight += v[i].s;
-        if (weight * 2 >= totalWeight) {
-            return v[i].f;
+    int total = 0;
+    for(auto t: v) total += t.s;
+
+    int curr = 0;
+    for(auto t: v) {
+        curr += t.s;
+        if (curr * 2 >= total) {
+            return t.f;
         }
     }
 
