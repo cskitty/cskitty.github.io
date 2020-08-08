@@ -27,4 +27,4 @@ The following tutorials and live class recording are available in starcoder.org.
 | [Introduction to Python, Summer 2020](/liveclass1/)| Recorded Lessons | Live  Class Sessions in Summer 2020| Beginner |  
 | [Python Hands-on Projects](/tags/game/)| Video Tutorial | Learning Python through Game Development | Intermediate |   
 | [Project Euler ](/tags/math/)| Online Tutorial| Python Programing for Complex Math Problems | Intermediate |
-| [USA Computing Olympiad ](/categories/usaco/)| Video Tutorial| USACO Problems Explained | Advanced |
+| [USA Computing Olympiad ](/categories/usaco/)| Training Tutorial| USACO Problems Explained | Advanced |
