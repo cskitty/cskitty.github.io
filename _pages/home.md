@@ -7,7 +7,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0"
   overlay_image: /assets/images/newstarheader.png
-excerpt: "Articles and video tutorials for coding"
+excerpt: "From Basic Coding to USACO Competitive Programming"
 intro:
   - excerpt: 'From beginner level Introduction to Python tutorial to complex computer algorithms for USA Computer Olympiad (USACO).'
 feature_row:
