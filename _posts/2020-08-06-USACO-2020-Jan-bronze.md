@@ -132,7 +132,122 @@ Exactly two meetings occurred.
 Problem credits: Benjamin Qi
 
 {% highlight c++ linenos %}
+#include <bits/stdc++.h>
+using namespace std;
 
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<pair<int,int>> vpi;
+
+#define FOR(i,a,b) for (int i = (a); i < (b); ++i)
+#define F0R(i,a) FOR(i,0,a)
+#define ROF(i,a,b) for (int i = (b)-1; i >= (a); --i)
+#define R0F(i,a) ROF(i,0,a)
+#define trav(a,x) for (auto& a: x)
+
+#define pb push_back
+#define rsz resize
+#define sz(x) int(x.size())
+#define all(x) begin(x), end(x)
+#define f first
+#define s second
+
+void setIO(string name) {
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    freopen((name+".in").c_str(),"r",stdin);
+    freopen((name+".out").c_str(),"w",stdout);
+}
+
+struct ant {
+    int w;
+    int x;
+    int d;
+    int t;
+};
+
+int N,L;
+vector<ant> ants;
+
+int getTime() {
+    vector<int> left, right;
+    F0R(i,N) {
+        if (ants[i].d == -1)
+            left.push_back(ants[i].x);
+        else
+            right.push_back(ants[i].x);
+    }
+
+    vector<pair<int, int>> v;
+    F0R(i,left.size())
+        v.push_back({left[i], ants[i].w});
+
+    F0R(i,right.size())
+        v.push_back({L-right[i], ants[ left.size() + i ].w});
+
+    sort(all(v));
+
+    int tot = 0; trav(t,v) tot += t.s;
+    //cout <<  "Total weight mine2 = " << tot << endl;
+    trav(t,v) {
+        tot -= 2*t.s;
+        if (tot <= 0) {
+           // cout << "Time = " << t.f << endl;
+            return t.f;
+        }
+    }
+
+    return 0;
+}
+
+int main() {
+    setIO("meetings");
+    cin >> N >> L;
+    ants.resize(N);
+    F0R(i,N) {
+        cin >> ants[i].w >> ants[i].x >> ants[i].d;
+
+        if (ants[i].d == 1) {
+            ants[i].t = L - ants[i].x;
+        }
+        else {
+            ants[i].t = ants[i].x;
+        }
+    }
+
+    sort(ants.begin(), ants.end(), [](ant a, ant b) { return a.x < b.x; });
+
+    int Time = getTime();
+    int collisions = 0;
+
+    vector<int> left, right;
+
+    F0R(i,N) {
+        if (ants[i].d == -1)
+            left.push_back(ants[i].x);
+        else
+            right.push_back(ants[i].x);
+    }
+
+    /*
+    // Brute Force
+    F0R(i, left.size()) {
+        F0R(j, right.size()) {
+            if (( (right[j] + 2*Time) >= left[i]) && (left[i]  >= right[j]) ) {
+                collisions ++;
+            }
+        }
+    }
+    */
+
+    // Binary Search Optimized
+    F0R(i, left.size()) {
+        int end = lower_bound(right.begin(), right.end(), left[i]) - right.begin();
+        int start = lower_bound(right.begin(), right.end(), left[i] - 2*Time) - right.begin();
+        collisions += end - start;
+    }
+
+    cout << collisions;
+}
 {% endhighlight %}
 
 
