@@ -161,7 +161,7 @@ void addEdge(int a, int b, int weight = 1) {
 }
 
 //recursive BFS
-void dfs(int node){
+void bfs(int node){
   //step1: boundary processing
   cout << "visiting node " << node;
 
@@ -173,14 +173,14 @@ void dfs(int node){
   //step3: loop through neighbors
   for(int next : adj[node]){
     if(!visited[next]){
-      dfs(next);
+      bfs(next);
     }
   }
 }
 
 //Queue based BFS
 
-void bfs(int start){
+void BFS(int start){
   // fill distance array with -1's
   memset(dist, -1, sizeof(dist));
 
@@ -212,7 +212,7 @@ int main(){
     addEdge(a,b);
   }
 
-  bfs(0);
+  BFS(0);
 
   return 0;
 }
@@ -229,3 +229,76 @@ Let’s look at an example of how this works. Depth first-search can start at an
 convention we’ll start the search at node 1. We’ll use the following color scheme: blue for
 nodes we have already visited, red for nodes we are currently processing, and black for nodes
 that have not been visited yet.
+
+
+{% highlight c++ linenos %}
+//Global variables
+
+ // max num of nodes
+int MX = 1e5;
+int adj[MX][MX];
+bool visited[MX];
+int dist[MX];
+
+
+void addEdge(int a, int b, int weight = 1) {
+  adj[a][b] = weight;
+  adj[b][a] = weight;
+}
+
+//recursive DFS
+void dfs(int node){
+  //step1: boundary processing
+  cout << "visiting node " << node;
+
+  //step2: check visited or not
+  if (!visited[node]) {
+    visited[node] = true;
+  }
+
+  //step3: loop through neighbors
+  for(int next : adj[node]){
+    if(!visited[next]){
+      dfs(next);
+    }
+  }
+}
+
+//Stack based DFS
+void DFS(int start){
+  // fill distance array with -1's
+  memset(dist, -1, sizeof(dist));
+
+  stack<int> st;
+  dist[start] = 0;
+
+  st.push(start);
+  while(!st.empty()){
+    int node = st.top();
+    st.pop();
+
+    for(int next : adj[node]){
+      if(dist[next] == -1){
+        dist[next] = dist[node] + 1;
+        st.push(next);
+        }
+      }
+    }
+}
+
+int main(){
+  int n, m; // number of nodes and edges
+  cin >> n; // reads in number of nodes
+  cin >> m; // reads in number of edges
+  for(int i = 0; i < m; i++){ // reading in each of the m edges
+    int a, b;
+    cin >> a >> b;
+    addEdge(a,b);
+  }
+
+  dfs(0);
+
+  return 0;
+}
+
+{% endhighlight %}
