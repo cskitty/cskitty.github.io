@@ -69,7 +69,6 @@ void floodfill(int x, int y) {
     visited[x][y] = true;
 
     pair<int, int> curr = make_pair(x, y);
-n
     F0R(i, rooms[curr].size()) {
         int newX = rooms[curr][i].f;
         int newY = rooms[curr][i].s;
