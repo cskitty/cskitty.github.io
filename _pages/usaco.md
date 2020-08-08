@@ -60,15 +60,15 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=835)  |               |                                        |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=836)  |               |                                        |    |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [Math](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-1-moobuzz)                              |   C++ |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings      | [Simulation](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-2-meetings)                              |  C++  |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=968)      | milkvisits    | [BFS](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-3-milk-visits)                              | C++   |
+| 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [Math](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-1-moobuzz)                              |  C++ |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings      | [Simulation](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-2-meetings)                       |  C++ |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=968)      | milkvisits    | [Graph DFS](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-3-milk-visits)                     | C++  |
 
 
 #  Bronze
 
 | Contest   | #                                                               | Name          | Alogrithm                                                                              | Level  | Language | Status |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- | ------ |
-| 2020 Jan  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=987    )  | word          | [String](https://starcoder.org/usaco/USACO-2020-Jan-Broze/#problem-1-word-processor)   |  Easy  |  Python  | Done   |
+| 2020 Jan  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=987    )  | word          | [String](https://starcoder.org/usaco/USACO-2020-Jan-Bronze/#problem-1-word-processor)   |  Easy  |  Python  | Done   |
 | 2020 Jan  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=988    )  | Photoshoot          |     |  Easy  |  Python  |     |
 | 2020 Jan  | [3](http://usaco.org/index.php?page=viewproblem2&cpid=989    )  | race          |    |  Easy  |  Python  |     |
