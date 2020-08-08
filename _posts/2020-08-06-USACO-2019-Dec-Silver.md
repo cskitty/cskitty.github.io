@@ -287,5 +287,99 @@ Problem credits: Spencer Compton
 
 
 {% highlight c++ linenos %}
+vector<int> adj[MX];
+int coloring[MX];
+
+void addEdge(int u, int v)
+{
+    adj[u].push_back(v);
+    adj[v].push_back(u);
+}
+
+
+string cowType;
+
+bool flag(int current, int end) {
+    if (current == end) {
+        return true;
+    }
+    return false;
+}
+
+
+void DFS(int start, int color){
+    // fill distance array with -1's
+
+    vector<bool> visited(cowType.size(), false);
+
+    stack<int> st;
+
+    st.push(start);
+    while(!st.empty()){
+        int node = st.top();
+        coloring[node] = color;
+        visited[node] = true;
+        st.pop();
+
+        for(int next : adj[node]){
+            if(! visited[next] && cowType[next] == cowType[node]){
+                st.push(next);
+            }
+        }
+    }
+
+}
+
+void DFSColoring(int N) {
+    // read in N
+    int color = 1;
+    F0R(i, N) {
+        if (coloring[i] == 0) {
+            DFS(i, color);
+            color++;
+        }
+    }
+
+}
+
+int main() {
+    ifstream cin ("milkvisits.in");
+    ofstream cout ("milkvisits.out");
+
+    int N, M;
+    cin >> N >> M;
+    N++;
+
+
+    cin >> cowType;
+
+    cowType = "0" + cowType;
+
+    F0R(i, N - 2) {
+        int x, y;
+        cin >> x >> y;
+        addEdge(x, y);
+    }
+
+    DFSColoring(N);
+
+    F0R(i, M) {
+        int start, end;
+        char needed;
+        cin >> start >> end >> needed;
+        if ((cowType[end] != cowType[start] || (cowType[start] == needed))) {
+            cout << 1;
+        }
+        else {
+            if (coloring[start] != coloring[end]) {
+                cout << 1;
+            }
+            else {
+                cout << 0;
+            }
+        }
+    }
+
+}
 
 {% endhighlight %}
