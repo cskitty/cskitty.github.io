@@ -16,16 +16,16 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 #  Silver
 
-| Contest   | #                                                               | Name          | Alogrithm                              | Status |
+| Contest   | #                                                               | Name          | Alogrithm                              | Language |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | ------ |
 | 2014 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=491    )  | piggyback     | [BFS](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-1-piggyback)            |  Done  |
-|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=492)      | marathon      | [DP](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-2-marathon)     |  Done  |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=493)      | cowjog        | [Simulation](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-3-cow-jog) |  Done  |
-| 2015 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=570)  | lightson      | [R FloodFill](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-1-switching-on-the-lights)                              |   Done |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=571)  | highcard      | [2P](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-2-high-card-wins) |  Done  |                           
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [BinSearch](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-3-breedcounting)                                |  Done   |
-| 2016 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=594)  | angrycows     | [BinSearch](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-1-angry-cows) | Done    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | [CumSum](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)            | Done   |
+|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=492)      | marathon      | [DP](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-2-marathon)     |  Java  |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=493)      | cowjog        | [Simulation](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-3-cow-jog) |  Java  |
+| 2015 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=570)  | lightson      | [R FloodFill](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-1-switching-on-the-lights)                              |   Java |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=571)  | highcard      | [2P](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-2-high-card-wins) |  C++  |                           
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [BinSearch](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-3-breedcounting)                                |  C++   |
+| 2016 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=594)  | angrycows     | [BinSearch](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-1-angry-cows) | C++    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | [CumSum](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)            | C++   |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=596)  | gates         | [Q FloodFill](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-3-build-gates)                              |    |
 | 2016 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=618)  | cbarn         |                                        |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=619)  | balancing     | CumSum                                 |    |
@@ -39,7 +39,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)  | moocast       | FloodFill                              |    |
 | 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=690)  | cowdance      | BinSearch                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | CumSum                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-3-secret-cow-code)                                 |  Done  |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-3-secret-cow-code)                                 |  C++  |
 | 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | 2Pointers                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | CumSum                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | FloodFill                              |    |
@@ -60,9 +60,9 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=835)  |               |                                        |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=836)  |               |                                        |    |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [Math](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-1-moobuzz)                              |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings   | [Simulation](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-2-meetings)                              |    |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=968)  | milkvisits    | [BFS](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-3-milk-visits)                              |    |
+| 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [Math](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-1-moobuzz)                              |   C++ |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings   | [Simulation](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-2-meetings)                              |  C++  |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=968)  | milkvisits    | [BFS](https://starcoder.org/usaco/USACO-2020-Jan-bronze/#problem-3-milk-visits)                              | C++   |
 
 
 #  Bronze
