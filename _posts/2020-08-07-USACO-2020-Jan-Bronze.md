@@ -45,5 +45,32 @@ Including "hello" and "my", the first line contains 7 non-space characters. Addi
 Problem credits: Nathan Pinsker
 
 {% highlight python linenos %}
+fin = open("word.in", "r")
+fout = open("word.out", "w")
 
+
+nk = fin.readline().split()
+n = nk[0]
+k = int(nk[1])
+
+text = fin.readline().split()
+output = []
+
+line = ''
+for x in text:
+    if len(x.replace(" ", '') + line.replace(' ', '')) <= k:
+        line += x + ' '
+        dsf = 1
+    else:
+        output.append(line)
+
+        line = x + " "
+
+        dsf = 0
+
+output.append(line)
+
+
+for x in range(len(output) - 1):
+    fout.write(output[x].strip() + '\n')
 {% endhighlight %}
