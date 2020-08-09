@@ -25,10 +25,10 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=571)  | highcard      | [2P](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-2-high-card-wins) |  C++  |                           
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [BinSearch](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-3-breedcounting)     |  C++   |
 | 2016 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=594)  | angrycows     | [BinSearch](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-1-angry-cows) | C++    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | [CumSum](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)  | C++   |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | [Prefix](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)  | C++   |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=596)  | gates         | [Q FloodFill](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-3-build-gates)          | C++    |
 | 2016 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=618)  | cbarn         |                                        |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=619)  | balancing     | CumSum                                 |    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=619)  | balancing     | Prefix                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=620)  | pails         | FloodFill                              |    |
 | 2016 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=642)  | reduce        |                                        |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=643)  | diamond       | 2Pointers                              |    |
@@ -38,10 +38,10 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=667)  | citystate     | Map                                    |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)  | moocast       | FloodFill                              |    |
 | 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=690)  | cowdance      | BinSearch                              |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | CumSum                                 |    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | Prefix                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-3-secret-cow-code)  |  C++  |
 | 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | 2Pointers                              |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | CumSum                                 |    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | Prefix                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | FloodFill                              |    |
 | 2017 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=738)  | pairup        | 2Pointers                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=739)  | cownomics     |                                        |    |
