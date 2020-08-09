@@ -13,6 +13,9 @@ tags:
 ##  Combinations Using Bitwise
 
 {% highlight c++ linenos %}
+constexpr int pct(int x) { return __builtin_popcount(x); }
+constexpr int bits(int x) { return 31-__builtin_clz(x); } // floor(log2(x))
+
 int bitOneCount(int i) {
     int sum = 0;
     while (i) {
@@ -20,7 +23,11 @@ int bitOneCount(int i) {
         i = i >> 1;
     }
     return sum;
+
+    // entire function is same as 
+    //return pct(i)
 }
+
 
 vector<vector<int>> combinations(int num, int needed) {
     vector<vector<int>> ans;
