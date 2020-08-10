@@ -1,5 +1,5 @@
 ---
-title: "Binary Search"
+title: "Binary Search Examples"
 categories:
   - Programming
 tags:
@@ -8,7 +8,7 @@ tags:
   - Binary Search
 ---
 
-# Binary search
+# Binary Search Examples
 
 ## B. Books
 

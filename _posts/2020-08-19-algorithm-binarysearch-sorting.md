@@ -54,5 +54,4 @@ cout << b-a << "\n";
 
 auto r = equal_range(array, array+n, x);
 cout << r.second-r.first << "\n";
-
 {% endhighlight %}
