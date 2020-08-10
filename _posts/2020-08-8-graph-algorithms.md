@@ -356,3 +356,5 @@ void DFSColoring(int N) {
     }
 
 }
+
+{% endhighlight %}
