@@ -9,6 +9,8 @@ tags:
   - Sorting
 ---
 
+# Binary Search and Sorting
+
 ## Sorting with C++ struct
 
 C++ struct can be sorted using lamda functions.
@@ -25,7 +27,7 @@ sort(ants.begin(), ants.end(), [](P a, P b) {return p.x < p.x;});
 {% endhighlight %}
 
 
-## Binary Search
+## Binary Search implementation 1
 
 {% highlight c++ linenos %}
 int a = 0, b = n-1;
@@ -54,7 +56,7 @@ int binarySearch(int i, int l, int r, vector<int> arr, int maxTime) {
 
 {% endhighlight %}
 
-## Binary Search implementation 1
+## Binary Search implementation 2
 
 {% highlight c++ linenos %}
 
@@ -70,7 +72,7 @@ bool binary_search(int l, int r, vector<int> x, int k) {
 
 {% endhighlight %}
 
-## Binary Search implementation 2
+## Binary Search implementation 3
 
 There are often bugs in binary search implementations. How exactly to update the search bounds and what is the condition when the search should stop?
 Here is an alternative binary search implementation that is shorter and should be easier to get correct:
