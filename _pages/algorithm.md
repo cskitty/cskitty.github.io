@@ -12,7 +12,9 @@ author_profile: true
 | Prefix Sum  | [Prefix Sum](https://starcoder.org/programming/algorithm-prefixsum/) | Easy    |  
 |             | [Subarray Sums Divisible by K](https://starcoder.org/programming/algorithm-prefixsum/)  | Easy         |
 |             | [Maximum Subarray Sum](https://starcoder.org/programming/algorithm-subarraysum/)  | Easy         |
-| Binary Search  | [B. Books](https://starcoder.org/programming/algorithm-binary-search/#b-books)  | Easy       |
+| Binary Search  | [Binary Search C++](https://starcoder.org/programming/algorithm-binarysearch-sorting/)  | Easy       |
+|            | [B.Books](https://starcoder.org/programming/algorithm-binary-search/#b-books)  | Easy       |
+|            | [C.Cellular Network](https://starcoder.org/programming/algorithm-binary-search/#c-cellular-network)  | Easy       |
 | Two Pointers| [Circulation of Affection](https://starcoder.org/programming/an-impassioned-circulation-of-affection/)   | Easy         |
 | Monotonous Stack | [Stock Spanner](https://starcoder.org/programming/algorithm-monotonous-stack/)  | Easy         |
 | Flood Fill  | [Flood Fill](https://starcoder.org/programming/flood-fill/)  | Easy         |

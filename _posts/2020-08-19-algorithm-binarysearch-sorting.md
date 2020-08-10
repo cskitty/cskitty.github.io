@@ -5,7 +5,7 @@ categories:
 tags:
   - Algorithms
   - C++
-  - Binary search
+  - Binary Search
   - Sorting
 ---
 
