@@ -13,7 +13,8 @@ tags:
 
 C++ struct can be sorted using lamda functions.
 
-{% highlight java linenos %}
+{% highlight c++ linenos %}
+
 struct P {
   int x, y;
 };
@@ -22,10 +23,9 @@ sort(ants.begin(), ants.end(), [](P a, P b) {return p.x < p.x;});
 {% endhighlight %}
 
 
-
 ## Binary Search
 
-{% highlight java linenos %}
+{% highlight c++ linenos %}
 int a = 0, b = n-1;
 
 while (a <= b) {
@@ -46,7 +46,7 @@ least x.
 larger than x.
 *  equal_range returns both above pointers.
 
-{% highlight java linenos %}
+{% highlight c++ linenos %}
 
 auto a = lower_bound(array, array+n, x);
 auto b = upper_bound(array, array+n, x);
