@@ -23,22 +23,6 @@ are no cycles, and the number of edges is one less than the number of nodes. Tre
 the property that for any two nodes A and B, there is exactly one way to travel between A
 and B.  
 
-The root of a tree is the one vertex that is placed at the top, and is where we usually
-start our tree traversals from. Usually, problems don’t tell us where the tree is rooted at, and
-it usually doesn’t matter either; trees can be arbitrarily rooted (here, we’ll use the convention
-of rooting at index 1).
-Every node except the root node has a parent. The parent of a node s is defined as
-follows: On the path from the root to s, the node that is one closer to the root than s is the
-parent of s. Each non-root node has a unique parent.  
-
-Child nodes are the opposite. They lie one farther away from the root than their parent
-node. Unlike parent nodes, these are not unique. Each node can have arbitrarily many child
-nodes, and nodes can also have zero children. If a node s is the parent of a node t, then t is
-the child node of s.  
-
-A leaf node is a node that has no children. Leaf nodes can be identified quite easily
-because there is only one edge adjacent to them.
-
 
 ## Graph Representations
 
@@ -297,20 +281,32 @@ int main(){
 {% endhighlight %}
 
 
+## Finding Components (Undirected Graph)
 
-### DFS Graph Coloring
+### Counting Connected Components
+
+{% highlight c++ linenos %}
+int components = 0;
+vector<bool> visited(N, false);
+
+F0R(i, N) {
+  if (!visited[i]) {
+    components++;
+    dfs(i, components);
+  }
+}
+
+cout << "Total " << components << " components" << endl;  
+{% endhighlight %}
+
+
+
+### Graph Coloring using DFS or BFS
 
 {% highlight c++ linenos %}
 
 vector<int> adj[MX];
 int coloring[MX];
-
-void addEdge(int u, int v)
-{
-    adj[u].push_back(v);
-    adj[v].push_back(u);
-}
-
 
 string cowType;
 
@@ -321,12 +317,10 @@ bool flag(int current, int end) {
     return false;
 }
 
-
 void DFS(int start, int color){
     // fill distance array with -1's
 
     vector<bool> visited(cowType.size(), false);
-
     stack<int> st;
 
     st.push(start);
@@ -342,7 +336,6 @@ void DFS(int start, int color){
             }
         }
     }
-
 }
 
 void DFSColoring(int N) {
@@ -354,7 +347,6 @@ void DFSColoring(int N) {
             color++;
         }
     }
-
 }
 
 {% endhighlight %}
