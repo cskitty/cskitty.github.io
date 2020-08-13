@@ -56,10 +56,20 @@ This lesson is recorded on 07/30/20 2PM PST, there are 75 students attended this
 
 
 ### Lesson 5:   
+
+{% include video id="zcBkFiY8Bcw" provider="youtube" %}
+This lesson is recorded on 08/07/20 2PM PST, there are 78 students attended this lesson.  
+
 #### [Click to Download Lesson Slides](/assets/docs/scratch5.pdf)  
 Project 4: [Name Animation](https://scratch.mit.edu/projects/415830828/)  
 <iframe src="https://scratch.mit.edu/projects/415830828/embed" allowtransparency="true" width="600" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
 ### Guest Book
+
+
+### Lesson 6:   
+
+This lesson is recorded on 08/14/20 2PM PST, there are 78 students attended this lesson.  
+
 
 <div id="disqus_thread"></div>
 <script>
