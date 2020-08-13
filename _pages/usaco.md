@@ -64,7 +64,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings      | [Simulation](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-2-meetings)                       | C++ |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=968)      | milkvisits    | [Graph DFS](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-3-milk-visits)                     | C++  |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2020 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=1014)  | swap       | [CycleSim](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-1-swapity-swapity-swap)                              | C++, [Python](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#python-implementtion-by-cryptobunny)|
+| 2020 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=1014)  | swap       | [CycleSim](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-1-swapity-swapity-swap)                              | C++|
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=1015)  | triangles      |                         | C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=1016)      | clocktree    |                      | C++  |
 
