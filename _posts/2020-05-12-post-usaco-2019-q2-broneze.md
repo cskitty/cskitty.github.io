@@ -1,12 +1,14 @@
 ---
-title: "USACO 2019 January Bronze"
+title: "USACO 2019 Jan Bronze"
 categories:
   - USACO
 tags:
   - USACO
   - Bronze
----                          
-# USACO 2019 January Bronze     
+---             
+
+             
+# USACO 2019 Jan Bronze     
 
 ## Problem 2. Sleepy Cow Sorting
 
