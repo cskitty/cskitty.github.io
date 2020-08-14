@@ -12,7 +12,7 @@ author_profile: true
 | Prefix Sum  | [Prefix Sum](https://starcoder.org/programming/algorithm-prefixsum/) | Easy    |  
 |             | [Subarray Sums Divisible by K](https://starcoder.org/programming/algorithm-prefixsum/)  | Easy         |
 |             | [Maximum Subarray Sum](https://starcoder.org/programming/algorithm-subarraysum/)  | Easy         |
-|             | [Div7](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens/)  | Easy         |
+|             | [Div7](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)  | Easy         |
 | Binary Search  | [Binary Search C++](https://starcoder.org/programming/algorithm-binarysearch-sorting/)  | Easy       |
 |            | [B.Books](https://starcoder.org/programming/algorithm-binary-search/#b-books)  | Easy       |
 |            | [C.Cellular Network](https://starcoder.org/programming/algorithm-binary-search/#c-cellular-network)  | Easy       |
