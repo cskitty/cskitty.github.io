@@ -50,7 +50,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2017 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=762)  | homework      |                                        |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=763)  | measurement   | Map                                    |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=764)  | shuffle       | Graphs                                 |    |
-| 2018 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=786)  | lifeguards    | Sorting                                |    |
+| 2018 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=786)  | lifeguards    | [Simulation](https://starcoder.org/usaco/USACO-2018-Jan-Silver/#problem-1-lifeguards)                                |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=787)  | rental        | Sorting                                |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=788)  | mootube       | FloodFill                              |    |
 | 2018 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=810)  |               |                                        |    |
