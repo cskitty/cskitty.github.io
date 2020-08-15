@@ -14,6 +14,7 @@ author_profile: true
 |             | [Maximum Subarray Sum](https://starcoder.org/programming/algorithm-subarraysum/)  | Easy         |
 |             | [Div7](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)  | Easy         |
 | Binary Search  | [Binary Search C++](https://starcoder.org/programming/algorithm-binarysearch-sorting/)  | Easy       |
+|            | [Maximum Median](https://starcoder.org/programming/algorithm-maximum-medium/)  | Easy       |
 |            | [B.Books](https://starcoder.org/programming/algorithm-binary-search/#b-books)  | Easy       |
 |            | [C.Cellular Network](https://starcoder.org/programming/algorithm-binary-search/#c-cellular-network)  | Easy       |
 | Two Pointers| [Circulation of Affection](https://starcoder.org/programming/an-impassioned-circulation-of-affection/)   | Easy         |
