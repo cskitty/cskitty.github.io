@@ -9,6 +9,8 @@ tags:
 ---
 # C. Maximum Median
 
+[C. Maximum Median](https://codeforces.com/contest/1201/problem/C)
+
 You are given an array a of n integers, where n is odd. You can make the following operation with it:  
 
 Choose one of the elements of the array (for example ai) and increase it by 1 (that is, replace it with ai+1).  
