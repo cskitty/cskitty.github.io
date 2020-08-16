@@ -4,7 +4,6 @@ categories:
   - USACO
 tags:
   - Algorithms
-  - C++
   - USACO
   - Two Pointers
   - Dynamic Programming

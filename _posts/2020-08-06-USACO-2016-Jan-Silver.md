@@ -4,9 +4,7 @@ categories:
   - USACO
 tags:
   - Algorithms
-  - Python
   - USACO
-  - FloodFill 
 ---
 
 # USACO 2016 Jan Silver
@@ -46,56 +44,51 @@ Problem credits: Brian Dean
 
 {% highlight c++ linenos %}
 
-bool possible(ll R, vector<ll> cows, int amt) {
-    ll value = R * 2;
+int N;
+ll M;
 
-    auto it = cows.begin();
-    while(it != cows.end()) {
-        it = upper_bound(it, cows.end(), value + *it);
-        amt--;
-    }
+bool check(vector<ll> v, ll target) {
+    ll i = 0;
+    target = target + target;
+    ll used = 1;
+    F0R(j, v.size()) {
+        if (v[j] - v[i] > target) {
+            i = j;
+            used++;
+        }
 
-    if (amt < 0) {
-        return false;
+        if (used > M) {
+            return false;
+        }
+
     }
     return true;
 }
 
-int angryCows(vector<ll> cities, ll amt) {
-    int ans = 0;
-    ll l = 0;
-    ll r = cities.back() - cities.front();
-    while (l <= r) {
-        ll mid = (r + l)/2;
-        if (possible(mid, cities, amt)) {
-            dbg(mid, cities, amt);
-            // greater
-            ans = mid;
-            r = mid - 1;
-        }
-        else {
-            l = mid + 1;
-        }
+ll binary_search(vector<ll> x) {
+
+    ll max = x.end() - x.begin();
+    ll p = max;
+    for (ll a = max; a >= 1; a /= 2) {
+        while ((p - a) >= 0 && check(x, p - a)) p -= a;
     }
-    return ans;
+    return p;
 }
 
-
 int main() {
-    ifstream cin ("angry.in");
-    ofstream cout ("angry.out");
 
-    ll N, K;
-    cin >> N >> K;
+    setIO("angry");
 
-    vector<ll> cows(N);
+    cin >> N >> M;
 
-    F0R(i, N) {
-        cin >> cows[i];
-    }
+    vector<ll> nums(N);
 
-    sort(cows.begin(), cows.end());
-    cout << angryCows(cows, K);
+    F0R(i, N) cin >> nums[i];
+
+    sort(all(nums));
+
+    cout << binary_search(nums);
+
 }
 {% endhighlight %}
 
