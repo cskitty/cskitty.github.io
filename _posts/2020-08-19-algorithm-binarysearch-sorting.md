@@ -30,35 +30,6 @@ sort(ants.begin(), ants.end(), [](P a, P b) {return p.x < p.x;});
 ## Binary Search implementation 1
 
 {% highlight c++ linenos %}
-int a = 0, b = n-1;
-
-while (a <= b) {
-  int k = (a+b)/2;
-  if (array[k] == x) {
-  // x found at index k
-  }
-  if (array[k] > x) b = k-1;
-  else a = k+1;
-}
-
-int binarySearch(int i, int l, int r, vector<int> arr, int maxTime) {
-    while(l<r)
-    {
-        int mid=(l+r)>>1;
-        mid++;
-        if(arr[mid] - arr[i] <= maxTime) {
-            l = mid;
-        }
-        else r=mid-1;
-    }
-    return l;
-}
-
-{% endhighlight %}
-
-## Binary Search implementation 2
-
-{% highlight c++ linenos %}
 
 bool binary_search(int l, int r, vector<int> x, int k) {
 
@@ -72,20 +43,33 @@ bool binary_search(int l, int r, vector<int> x, int k) {
 
 {% endhighlight %}
 
-## Binary Search implementation 3
+## Binary Search implementation 2
 
 There are often bugs in binary search implementations. How exactly to update the search bounds and what is the condition when the search should stop?
 Here is an alternative binary search implementation that is shorter and should be easier to get correct:
 
 {% highlight c++ linenos %}
-bool binary_search(vector<int> x, int k) {
 
-    int p = 0;
-    for (int a = x.size() - 1; a >= 1; a /= 2) {
-        while (p+a < n && x[p+a] <= k) p += a;
+ll binary_search(vector<pair<ll, ll>> x) {
+
+    ll max = x.end() - x.begin();
+    ll p = 0;
+    for (ll a = max; a >= 1; a /= 2) {
+        while ((p + a) >= 0 && check(x, p + a)) p += a;
     }
-    return x[p] == k;
+    return p;
 }
+
+ll binary_search(vector<ll> x) {
+
+    ll max = x.end() - x.begin();
+    ll p = max;
+    for (ll a = max; a >= 1; a /= 2) {
+        while ((p - a) >= 0 && check(x, p - a)) p -= a;
+    }
+    return p;
+}
+
 
 {% endhighlight %}
 
