@@ -34,12 +34,12 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=643)  | diamond       | 2Pointers                              |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=644)  | closing       | Graphs                                 |    |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2016 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=666)  | haybales      | BinSearch                              |    |
+| 2016 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=666)  | haybales      | [BinSearch](https://starcoder.org/usaco/USACO-2016-Dec-Silver/#problem-1--counting-haybales)  |  C++  |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=667)  | citystate     | Map                                    |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)  | moocast       | FloodFill                              |    |
 | 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=690)  | cowdance      | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-1-cow-dance-show)   |  C++  |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | Prefix                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-3-secret-cow-code)  |  C++  |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch]  |  C++  |
 | 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | 2Pointers                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | Prefix                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | FloodFill                              |    |
