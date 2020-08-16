@@ -39,7 +39,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)  | moocast       | FloodFill                              |    |
 | 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=690)  | cowdance      | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-1-cow-dance-show)   |  C++  |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | Prefix                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch]  |  C++  |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | BinSearch  |  C++  |
 | 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | 2Pointers                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | Prefix                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | FloodFill                              |    |
@@ -68,7 +68,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=1015)  | triangles      |                         | C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=1016)      | clocktree    |                      | C++  |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2020 Open | [1](http://usaco.org/index.php?page=viewproblem2&cpid=1038)     | docdist       | [BinSearch](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-1-social-distancing)                              | C++|
+| 2020 Open | [1](http://usaco.org/index.php?page=viewproblem2&cpid=1038)     | docdist       | [BinSearch](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-1-social-distancing   )                              | C++|
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=1039)     | cereal      |                         | C++ |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=1040)     | moop    |                      | C++  |
 
