@@ -1,5 +1,5 @@
 ---
-title: "USACO 2018 Dec Bronze"
+title: "USACO 2020 Open Silver"
 categories:
   - USACO
 tags:
@@ -8,10 +8,9 @@ tags:
   - Binary Search
 ---
 
-# USACO 2018 Dec Silver
+# USACO 2020 Open Silver
 
 ## Problem 1. Social Distancing
-
 
 [Social Distancing](http://usaco.org/index.php?page=viewproblem2&cpid=1038)  
 
