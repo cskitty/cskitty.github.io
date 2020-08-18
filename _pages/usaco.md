@@ -68,7 +68,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=896)  | mountains     | [Sorting](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |
 | 2019 Feb  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=918)      | herding       | | C++ |
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=919)      | paintbarn     | | C++ |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=920)      | revegetate    | [BFS, BiPartite](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=920)      | revegetate    | [BFS, BiPartite](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-3-the-great-revegetation)| C++ |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [Math](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-1-moobuzz)  | C++, [Python](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#python-implementtion-by-cryptobunny)|
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings      | [Simulation](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-2-meetings)       | C++ |
