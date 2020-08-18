@@ -5,7 +5,9 @@ categories:
 tags:
   - Java
   - Algorithms
+  - BFS
   - Graph
+  - BiPartite
 ---
 
 # Graph Algorithms
