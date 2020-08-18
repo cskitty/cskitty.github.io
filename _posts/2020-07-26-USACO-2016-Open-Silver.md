@@ -272,7 +272,7 @@ int main() {
 {% endhighlight %}
 
 
-## Closing the Farm
+## Problem 3: Closing the Farm
 
 Farmer John and his cows are planning to leave town for a long vacation, and so FJ wants to temporarily close down his farm to save money in the meantime.
 The farm consists of N barns connected with M bidirectional paths between some pairs of barns (1≤N,M≤3000). To shut the farm down, FJ plans to close one barn at a time. When a barn closes, all paths adjacent to that barn also close, and can no longer be used.  

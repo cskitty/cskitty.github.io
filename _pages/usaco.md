@@ -30,9 +30,9 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2016 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=618)  | cbarn         |                                        |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=619)  | balancing     | Prefix                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=620)  | pails         | FloodFill                              |    |
-| 2016 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=642)  | reduce        |                                        |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=643)  | diamond       | 2Pointers                              |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=644)  | closing       | Graphs                                 |    |
+| 2016 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=642)  | reduce        | [Sorting,Geo](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-1-field-reduction) | C++    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=643)  | diamond       | [2Pointers](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector) | C++    |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=644)  | closing       | [BFS](https://starcoder.org/usaco/USACO-2016-Open-Silver/#closing-the-farm)                  | C++    |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2016 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=666)  | haybales      | [BinSearch](https://starcoder.org/usaco/USACO-2016-Dec-Silver/#problem-1--counting-haybales)  |  C++  |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=667)  | citystate     | Map                                    |    |
@@ -56,23 +56,27 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2018 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=810)  |               |                                        |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=811)  |               |                                        |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=812)  |               |                                        |    |
-| 2018 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=834)  |               |                                        |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=835)  |               |                                        |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=836)  |               |                                        |    |
+| 2018 Open | [1](http://usaco.org/index.php?page=viewproblem2&cpid=858    )  | convention    | [BinSearch](https://starcoder.org/usaco/USACO-2018-Dec-Silver/#problem-1-convention)       | C++  |
+|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=859)      | convention2   |                                        |    |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=860)      | mooyomooyo    |                                        |    |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
+| 2018 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=894)  | planting      | | C++ |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=895)  | perimeter     | | C++ |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=896)  | mountains     | [Sorting](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |
 | 2019 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=894)  | planting      | | C++ |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=895)  | perimeter     | | C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=896)  | mountains     | [Sorting](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |
+| 2019 Feb  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=918)      | herding       | | C++ |
+|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=919)      | paintbarn     | | C++ |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=920)      | revegetate    | [BFS, BiPartite](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [Math](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-1-moobuzz)  | C++, [Python](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#python-implementtion-by-cryptobunny)|
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings      | [Simulation](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-2-meetings)       | C++ |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=968)      | milkvisits    | [Graph DFS](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-3-milk-visits)     | C++  |
-| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2020 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=1014)  | swap       | [CycleSim](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-1-swapity-swapity-swap)| C++|
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=1015)  | triangles      |                         | C++ |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=1016)      | clocktree    |                      | C++  |
-| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2020 Open | [1](http://usaco.org/index.php?page=viewproblem2&cpid=1038)     | docdist       | [BinSearch](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-1-social-distancing   ) | C++|
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=1016)  | clocktree    |                      | C++  |
+| 2020 Open | [1](http://usaco.org/index.php?page=viewproblem2&cpid=1038)     | socdist       | [BinSearch](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-1-social-distancing   ) | C++|
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=1039)     | cereal      |                         | C++ |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=1040)     | moop    |                      | C++  |
 

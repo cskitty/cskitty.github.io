@@ -1,16 +1,16 @@
 ---
-title: "USACO 2018 Dec Bronze"
+title: "USACO 2018 Dec Silver"
 categories:
   - USACO
 tags:
   - Algorithms
   - USACO
+  - Binary Search
 ---
 
 # USACO 2018 Dec Silver
 
 ## Problem 1. Convention
-
 
 [Convention](http://usaco.org/index.php?page=viewproblem2&cpid=858)  
 
