@@ -29,7 +29,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=596)  | gates         | [Q FloodFill](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-3-build-gates)          | C++    |
 | 2016 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=618)  | cbarn         |                                        |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=619)  | balancing     | Prefix                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=620)  | pails         | FloodFill                              |    |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=620)  | pails         | [Simulation](https://starcoder.org/usaco/USACO-2018-Dec-Silver/#problem-3-milk-pails)  | C++   |
 | 2016 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=642)  | reduce        | [Sorting,Geo](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-1-field-reduction) | C++    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=643)  | diamond       | [2Pointers](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector) | C++    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=644)  | closing       | [BFS](https://starcoder.org/usaco/USACO-2016-Open-Silver/#closing-the-farm)                  | C++    |
@@ -64,7 +64,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=859)      | convention2   |                                        |    |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=860)      | mooyomooyo    |                                        |    |
 | 2019 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=894)  | planting      | | C++ |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=895)  | perimeter     | | C++ |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=895)  | perimeter     | [FloodFill](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-2-icy-perimeter)| C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=896)  | mountains     | [Sorting](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |
 | 2019 Feb  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=918)      | herding       | | C++ |
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=919)      | paintbarn     | | C++ |
