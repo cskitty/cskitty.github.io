@@ -21,7 +21,7 @@ Farmer John has received an order for exactly M units of milk (1≤M≤200) that
 
 - He can pour the contents of one pail into the other, stopping when the former becomes empty or the latter becomes full (whichever of these happens first).  
 
-Although FJ realizes he may not be able to end up with exactly M total units of milk in the two pails, please help him compute the minimum amount of error between M and the total amount of milk in the two pails. That is, please compute the minimum value of |M−M′| such that FJ can construct M′ units of milk collectively between the two pails.  
+Although FJ realizes he may not be able to end up with exactly M total units of milk in the two pails, please help him compute the minimum amount of error between M and the total amount of milk in the two pails. That is, please compute the minimum value of M−M′ such that FJ can construct M′ units of milk collectively between the two pails.  
 
 INPUT FORMAT (file pails.in):  
 The first, and only line of input, contains X, Y, K, and M.  
