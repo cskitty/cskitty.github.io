@@ -10,7 +10,7 @@ tags:
 
 # USACO 2016 Feb Silver
 
-##Problem 3. Milk Pails
+## Problem 3. Milk Pails
 
 [Milk Pails](http://www.usaco.org/index.php?page=viewproblem2&cpid=620)  
 
