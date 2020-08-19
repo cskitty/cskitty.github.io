@@ -56,13 +56,13 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2018 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=810)  |               |                                        |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=811)  |               |                                        |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=812)  |               |                                        |    |
-| 2018 Open | [1](http://usaco.org/index.php?page=viewproblem2&cpid=858    )  | convention    | [BinSearch](https://starcoder.org/usaco/USACO-2018-Dec-Silver/#problem-1-convention)       | C++  |
+| 2018 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=834)  | sort          |                                |    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=835)  | lemonade      |                                        |    |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=836)  | multimoo      |                                |    |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
+| 2018 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=858    )  | convention    | [BinSearch](https://starcoder.org/usaco/USACO-2018-Dec-Silver/#problem-1-convention)       | C++  |
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=859)      | convention2   |                                        |    |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=860)      | mooyomooyo    |                                        |    |
-| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2018 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=894)  | planting      | | C++ |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=895)  | perimeter     | | C++ |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=896)  | mountains     | [Sorting](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |
 | 2019 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=894)  | planting      | | C++ |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=895)  | perimeter     | | C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=896)  | mountains     | [Sorting](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |

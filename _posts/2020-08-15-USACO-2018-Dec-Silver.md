@@ -1,5 +1,5 @@
 ---
-title: "USACO 2018 Dec Silver"
+title: "USACO 2016 Feb Silver"
 categories:
   - USACO
 tags:
@@ -8,110 +8,115 @@ tags:
   - Binary Search
 ---
 
-# USACO 2018 Dec Silver
+# USACO 2016 Feb Silver
 
-## Problem 1. Convention
+##Problem 3. Milk Pails
 
-[Convention](http://usaco.org/index.php?page=viewproblem2&cpid=858)  
+[Milk Pails](http://www.usaco.org/index.php?page=viewproblem2&cpid=620)  
 
-Farmer John is hosting a new bovine grass-eating convention at his farm!  
-Cows from all over the world are arriving at the local airport to attend the convention and eat grass. Specifically, there are N cows arriving at the airport (1≤N≤105) and cow i arrives at time ti (0≤ti≤109). Farmer John has arranged M (1≤M≤105) buses to transport the cows from the airport. Each bus can hold up to C cows in it (1≤C≤N). Farmer John is waiting with the buses at the airport and would like to assign the arriving cows to the buses. A bus can leave at the time when the last cow on it arrives. Farmer John wants to be a good host and so does not want to keep the arriving cows waiting at the airport too long. What is the smallest possible value of the maximum waiting time of any one arriving cow if Farmer John coordinates his buses optimally? A cow’s waiting time is the difference between her arrival time and the departure of her assigned bus.  
+Farmer John has received an order for exactly M units of milk (1≤M≤200) that he needs to fill right away. Unfortunately, his fancy milking machine has just become broken, and all he has are two milk pails of integer sizes X and Y (1≤X,Y≤100) with which he can measure milk. Both pails are initially empty. Using these two pails, he can perform up to K of the following types of operations (1≤K≤100):
+- He can fill either pail completely to the top.   
 
-It is guaranteed that MC≥N.  
+- He can empty either pail.  
 
-INPUT FORMAT (file convention.in):  
-The first line contains three space separated integers N, M, and C. The next line contains N space separated integers representing the arrival time of each cow.  
-OUTPUT FORMAT (file convention.out):  
-Please write one line containing the optimal minimum maximum waiting time for any one arriving cow.  
+- He can pour the contents of one pail into the other, stopping when the former becomes empty or the latter becomes full (whichever of these happens first).  
+
+Although FJ realizes he may not be able to end up with exactly M total units of milk in the two pails, please help him compute the minimum amount of error between M and the total amount of milk in the two pails. That is, please compute the minimum value of |M−M′| such that FJ can construct M′ units of milk collectively between the two pails.  
+
+INPUT FORMAT (file pails.in):  
+The first, and only line of input, contains X, Y, K, and M.  
+OUTPUT FORMAT (file pails.out):  
+Output the smallest distance from M to an amount of milk FJ can produce.  
 SAMPLE INPUT:  
 ```
-6 3 2
-1 1 10 14 4 3
+14 50 2 32
 ```
 SAMPLE OUTPUT:
 ```
-4
+18
 ```
-If the two cows arriving at time 1 go in one bus, cows arriving at times 3 and 4 in the second, and cows arriving at times 10 and 14 in the third, the longest time a cow has to wait is 4 time units (the cow arriving at time 10 waits from time 10 to time 14).
+In two steps FJ can be left with the following quanities in his pails  
 
-Problem credits: Grace Cai
+(0, 0) = 0 units  
+(14, 0) = 14 units  
+(0, 50) = 50 units  
+(0, 14) = 14 units  
+(14, 36) = 50 units  
+(14, 50) = 64 units  
+The closest we can come to 32 units is 14 for a difference of 18. Note that it would require an extra step to pour out the first pail to end up with (0, 36).  
 
+Problem credits: Brian Dean  
 {% highlight C++ linenos %}
-int N;
-ll M, C;
-ll ans = -1;
+const int MaX = 1001;
+int X, Y, K, M;
+int closestValue = 0;
+set<pair<pair<int, int>, int>> goneValues;
 
-bool check(vector<ll> v, ll target) {
-    ll currMax = 0;
-    dbg(target);
-
-    if (target == 1) {
-        dbg('x');
+void simulate(int cX, int cY, int turn) {
+    dbg(cX, cY, turn);
+    if (goneValues.find(make_pair(make_pair(cX, cY), turn)) != goneValues.end()) {
+        return;
+    }
+    goneValues.insert(make_pair(make_pair(cX, cY), turn));
+    if (abs(M - (cX + cY)) < abs(M - closestValue)) {
+        closestValue = cX + cY;
     }
 
-    ll i = 0;
-    ll buses = 1;
-    ll inBus = 0;
-
-    F0R(j, v.size()) {
-        if (inBus >= C || v[j] - v[i] > target) {
-            buses++;
-            i = j;
-            inBus = 1;
-        }
-        else {
-            currMax = max(currMax, v[j] - v[i]);
-            inBus++;
-        }
-
-        if (buses > M) {
-            dbg("out");
-            return false;
-        }
+    if (turn == K) {
+        return;
     }
 
-    if (currMax > target) {
-        dbg("out");
-        return false;
+    if (cX == 0 && cY == 13 && turn == 1) {
+        dbg("XXXXXXX");
     }
-    ans = currMax;
-    dbg("in");
-    return true;
+
+    // fill
+    int oldX = cX, oldY = cY;
+    if (cX != X) {
+        cX = X;
+        simulate(cX, cY, turn + 1);
+        cX = oldX;
+    }
+    if (cY != Y) {
+        cY = Y;
+        simulate(cX, cY, turn + 1);
+        cY = oldY;
+    }
+    // transfer
+    int fill = min(cX, Y - cY);
+
+    cX -= fill, cY += fill;
+    simulate(cX, cY, turn + 1);
+    cY = oldY, cX = oldX;
+
+    fill = min(X - cX, cY);
+    cX += fill, cY -= fill;
+    simulate(cX, cY, turn + 1);
+    cY = oldY, cX = oldX;
+
+    // empty
+    if (cX != 0) {
+        cX = 0;
+        simulate(cX, cY, turn + 1);
+        cX = oldX;
+    }
+
+    if (cY != 0) {
+        cY = 0;
+        simulate(cX, cY, turn + 1);
+        cY = oldY;
+    }
+
 }
 
-ll binary_search(vector<ll> x) {
-
-    dbg(x);
-
-    //ll max = x.end() - x.begin();
-    ll max = x[x.size() - 1] - x[0];
-    ll p = max;
-    for (ll a = max; a >= 1; a /= 2) {
-        while ((p - a) >= 0 && check(x, p - a)) p -= a;
-        dbg(p);
-    }
-    return p;
-}
 
 int main() {
+    setIO("pails");
 
-    setIO("convention");
+    cin >> X >> Y >> K >> M;
 
-    cin >> N >> M >> C;
+    simulate(0, 0, 0);
 
-    vector<ll> nums(N);
-
-    F0R(i, N) cin >> nums[i];
-
-    sort(all(nums));
-
-    ll a = binary_search(nums);
-
-    if (ans == -1 ) {
-        cout << a;
-    }
-    else {
-        cout << ans;
-    }
+    cout << abs(M - closestValue);
 }
 {% endhighlight %}
