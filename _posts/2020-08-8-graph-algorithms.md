@@ -5,7 +5,9 @@ categories:
 tags:
   - Java
   - Algorithms
+  - BFS
   - Graph
+  - BiPartite
 ---
 
 # Graph Algorithms
@@ -38,13 +40,29 @@ Graphs can be represented in three ways:
 
 int MX = 1e5; // max num of nodes
 vector<int> adj[MX]; // adjacency list where MX is max possible # of nodes
-bool visited[MX]; // visited array of size MX as well  
+bool visited[MX];    // visited array of size MX as well  
+int group[MX];       // group that this node belongs to
+bool bad = false;
 
 void addEdge(int a, int b) {
   adj[a].push_back(b);
 
   // omit this line if the graph is directed
   adj[b].push_back(a);
+}
+
+void dfs(int n, int g)
+{
+    visited[n]=1;
+    group[n]=g;
+    for(int u:adj[n])
+        if(visited[u])
+        {
+            // process groups, colors etc
+            // or terminate the BFS by setting bad=1;
+        }
+        else
+            dfs(u, g);
 }
 
 int main(){
@@ -55,6 +73,12 @@ int main(){
     cin >> a >> b;
     addEdge(a,b);
   }
+
+  int g = 0;
+  for(int i=1;!bad && i<=N;++i)
+        if(!vis[i])
+            dfs(i, ++g);
+
   return 0;
 }
 

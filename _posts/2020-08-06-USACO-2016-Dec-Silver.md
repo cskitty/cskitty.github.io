@@ -4,9 +4,7 @@ categories:
   - USACO
 tags:
   - Algorithms
-  - Python
   - USACO
-  - FloodFill
 ---
 
 # USACO 2016 Dec Silver

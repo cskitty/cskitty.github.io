@@ -4,7 +4,6 @@ categories:
   - USACO
 tags:
   - Algorithms
-  - Java
   - USACO
 ---
 
