@@ -27,9 +27,9 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2016 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=594)  | angrycows     | [BinSearch](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-1-angry-cows) | C++    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | [Prefix](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)  | C++   |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=596)  | gates         | [Q FloodFill](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-3-build-gates)          | C++    |
-| 2016 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=618)  | cbarn         |                                        |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=619)  | balancing     | Prefix                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=620)  | pails         | [Simulation](https://starcoder.org/usaco/USACO-2018-Dec-Silver/#problem-3-milk-pails)  | C++   |
+| 2016 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=618)  | cbarn         | [Simulation](https://starcoder.org/usaco/USACO-2016-Feb-Silver/#problem-1-circular-barn)     | C++   |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=619)  | balancing     | [Geometry](https://starcoder.org/usaco/USACO-2016-Feb-Silver/#problem-2-load-balancing)   | C++  |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=620)  | pails         | [Simulation](https://starcoder.org/usaco/USACO-2016-Feb-Silver/#problem-3-milk-pails)  | C++   |
 | 2016 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=642)  | reduce        | [Sorting,Geo](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-1-field-reduction) | C++    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=643)  | diamond       | [2Pointers](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector) | C++    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=644)  | closing       | [BFS](https://starcoder.org/usaco/USACO-2016-Open-Silver/#closing-the-farm)                  | C++    |
