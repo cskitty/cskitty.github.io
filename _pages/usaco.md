@@ -40,9 +40,9 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=690)  | cowdance      | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-1-cow-dance-show)   |  C++  |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | Prefix                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | BinSearch  |  C++  |
-| 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | 2Pointers                              |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | Prefix                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | FloodFill                              |    |
+| 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | [2Pointers](https://starcoder.org/usaco/USACO-2017-Feb-Silver/#problem-1-why-did-the-cow-cross-the-road)   |  C++   |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | [Prefix](https://starcoder.org/usaco/USACO-2017-Feb-Silver/#problem-2-why-did-the-cow-cross-the-road-ii)   |  C++   |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | [FloodFill](https://starcoder.org/usaco/USACO-2017-Feb-Silver/#problem-3-why-did-the-cow-cross-the-road-iii) | C++  |
 | 2017 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=738)  | pairup        | 2Pointers                              |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=739)  | cownomics     |                                        |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=740)  | where         | FloodFill                              |    |
@@ -53,9 +53,9 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2018 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=786)  | lifeguards    | [Simulation](https://starcoder.org/usaco/USACO-2018-Jan-Silver/#problem-1-lifeguards)      | C++  |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=787)  | rental        | [Sorting](https://starcoder.org/usaco/USACO-2018-Jan-Silver/#problem-2--rental-service)    | C++  |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=788)  | mootube       | FloodFill                              |    |
-| 2018 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=810)  |               |                                        |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=811)  |               |                                        |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=812)  |               |                                        |    |
+| 2018 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=810)  | reststops     |                                        |    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=811)  | snowboots     |                                        |    |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=812)  | teleport     |                                        |    |
 | 2018 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=834)  | sort          |                                |    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=835)  | lemonade      |                                        |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=836)  | multimoo      |                                |    |
@@ -69,10 +69,16 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2019 Feb  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=918)      | herding       | | C++ |
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=919)      | paintbarn     | | C++ |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=920)      | revegetate    | [BFS, BiPartite](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-3-the-great-revegetation)| C++ |
+| 2019 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=942)      | leftout       | | C++ |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=943)      | cowjump     | | C++ |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=944)      | fenceplan    | [DFS/FloodFill](https://starcoder.org/usaco/USACO-2019-Open-Silver/#problem-3-fence-planning)| C++ |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [Math](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-1-moobuzz)  | C++, [Python](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#python-implementtion-by-cryptobunny)|
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=967)  | meetings      | [Simulation](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-2-meetings)       | C++ |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=968)      | milkvisits    | [Graph DFS](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-3-milk-visits)     | C++  |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=968)      | milkvisits    | [Graph DFS](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-3-milk-visits)     | C++ |
+| 2020 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=990)  | berries       | | C++ |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=991)  | loan          |  | C++ |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=992)  | wormsort     | [DFS/FloodFill](https://starcoder.org/usaco/USACO-2020-Jan-Silver/#problem-3-wormhole-sort)| C++ |
 | 2020 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=1014)  | swap       | [CycleSim](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-1-swapity-swapity-swap)| C++|
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=1015)  | triangles      |                         | C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=1016)  | clocktree    |                      | C++  |
