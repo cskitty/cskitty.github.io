@@ -191,7 +191,7 @@ int main() {
             four = N - i - one;
             M = min(M, max(one, (max(two, max(three, four)))));
        }
-      */
+      * /
 
     cout << M;
 }
