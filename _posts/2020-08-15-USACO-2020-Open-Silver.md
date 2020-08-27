@@ -105,3 +105,198 @@ int main() {
 
 }
 {% endhighlight %}
+
+## Problem 2. Cereal
+
+[Cereal](http://www.usaco.org/index.php?page=viewproblem2&cpid=1039)  
+
+Farmer John's cows like nothing more than cereal for breakfast! In fact, the cows have such large appetites that they will each eat an entire box of cereal for a single meal.
+The farm has recently received a shipment with M different types of cereal (1≤M≤105) .   Unfortunately, there is only one box of each cereal! Each of the N cows (1≤N≤105) has a favorite cereal and a second favorite cereal. When given a selection of cereals to choose from, a cow performs the following process:  
+
+If the box of her favorite cereal is still available, take it and leave.  
+Otherwise, if the box of her second-favorite cereal is still available, take it and leave.
+Otherwise, she will moo with disappointment and leave without taking any cereal.
+The cows have lined up to get cereal. For each 0≤i≤N−1, determine how many cows would take a box of cereal if Farmer John removed the first i cows from the line.  
+
+INPUT FORMAT (file cereal.in):  
+The first line contains two space-separated integers N and M.  
+For each 1≤i≤N, the i-th line contains two space-separted integers fi and si (1≤fi,si≤M and fi≠si) denoting the favorite and second-favorite cereals of the i-th cow in line.  
+
+OUTPUT FORMAT (file cereal.out):  
+For each 0≤i≤N−1, print a line containing the answer for i.  
+SAMPLE INPUT:
+```
+4 2
+1 2
+1 2
+1 2
+1 2
+```
+SAMPLE OUTPUT:
+```
+2
+2
+2
+1
+```
+If at least two cows remain, then exactly two of them get a box of cereal.
+
+SCORING:
+Test cases 2-3 satisfy N,M≤1000.
+Test cases 4-10 satisfy no additional constraints.
+Problem credits: Dhruv Rohatgi
+
+{% highlight C++ linenos %}  
+const int MaX = 100001;
+int N, M;
+vector<int> occ(MaX, 0);
+int ans = 0;
+vector<pair<int, int>> cows(MaX);
+
+int main() {
+    setIO("cereal");
+    cin >> N >> M;
+
+
+    F0R(i, N) {
+        int F, S;
+        cin >> F >> S;
+        cows[i].f = F;
+        cows[i].s = S;
+    }
+
+
+    vector<int> ansVec(N);
+
+    for (int i = N - 1; i >= 0; i--) {
+        int pos = cows[i].f;
+        int j = i;
+
+        while (true) {
+            if (occ[pos] == 0) {
+                occ[pos] = j;
+                ans++;
+                break;
+            }
+            else if (occ[pos] < j) {
+                break;
+            }
+            else {
+                int next = occ[pos];
+                occ[pos] = j;
+                if (pos == cows[next].s) {
+                    break;
+                }
+                j = next;
+                pos = cows[next].s;
+            }
+        }
+        ansVec[i] = ans;
+    }
+
+    F0R(i, N) {
+        cout << ansVec[i] << endl;
+    }
+}
+{% endhighlight %}
+
+
+## Problem 3. The Moo Particle
+
+[The Moo Particle](http://www.usaco.org/index.php?page=viewproblem2&cpid=1040)
+
+Quarantined for their protection during an outbreak of COWVID-19, Farmer John's cows have come up with a new way to alleviate their boredom: studying advanced physics! In fact, the cows have even managed to discover a new subatomic particle, which they have named the "moo particle".
+The cows are currently running an experiment involving N moo particles (1≤N≤105). Particle i has a "spin" described by two integers xi and yi in the range −109…109 inclusive. Sometimes two moo particles interact. This can happen to particles with spins (xi,yi) and (xj,yj) only if xi≤xj and yi≤yj. Under these conditions, it's possible that exactly one of these two particles may disappear (and nothing happens to the other particle). At any given time, at most one interaction will occur.  
+
+The cows want to know the minimum number of moo particles that may be left after some arbitrary sequence of interactions.  
+
+INPUT FORMAT (file moop.in):  
+The first line contains a single integer N, the initial number of moo particles. Each of the next N lines contains two space-separated integers, indicating the spin of one particle. Each particle has a distinct spin.  
+OUTPUT FORMAT (file moop.out):  
+A single integer, the smallest number of moo particles that may remain after some arbitrary sequence of interactions.  
+SAMPLE INPUT:
+```
+4
+1 0
+0 1
+-1 0
+0 -1
+```
+SAMPLE OUTPUT:
+```
+1
+```
+One possible sequence of interactions:
+
+Particles 1 and 4 interact, particle 1 disappears.  
+Particles 2 and 4 interact, particle 4 disappears.  
+Particles 2 and 3 interact, particle 3 disappears.  
+Only particle 2 remains.  
+
+SAMPLE INPUT:
+```
+3
+0 0
+1 1
+-1 3
+```
+SAMPLE OUTPUT:
+```
+2
+```
+Particle 3 cannot interact with either of the other two particles, so it must remain. At least one of particles 1 and 2 must also remain.  
+
+SCORING:  
+Test cases 3-6 satisfy N≤1000.  
+Test cases 7-12 satisfy no additional constraints.  
+Problem credits: Dhruv Rohatgi  
+
+{% highlight C++ linenos %}
+int N, M;
+int ans;
+int rep[MX];
+int parent[MX];
+vector<vector<int>> cows(MX);
+
+bool visited[MX];
+
+int find(int x) {
+    dbg(x, parent[x]);
+    if (x == parent[x]) {
+        return x;
+    }
+    else {
+        return parent[x] = find(parent[x]);
+    }
+}
+
+int main() {
+    setIO("moop");
+    cin >> N;
+
+    F0R(i, N) {
+        int A, B;
+        cin >> A >> B;
+        cows[i] = {A, B};
+    }
+
+    F0R(i, N) {
+        parent[i] = i;
+        F0R(j, i) {
+            if (i != j && ((cows[i][0] <= cows[j][0] && cows[i][1] <= cows[j][1]))) {
+                parent[j] = i;
+            }
+            else if (cows[i][0] >= cows[j][0] && cows[i][1] >= cows[j][1]) {
+                parent[i] = j;
+            }
+        }
+    }
+
+    set<int> roots;
+    F0R(i, N) {
+        roots.insert(find(i));
+    }
+
+    cout << roots.size() << endl;
+}
+{% endhighlight %}
