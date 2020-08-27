@@ -1,9 +1,7 @@
 ---
 title: "C. Maximum Median"
 categories:
-  - Programming
-tags:
-  - Algorithms
+tags:  
   - C++
   - Binary Search
 ---
@@ -11,7 +9,7 @@ tags:
 
 [C. Maximum Median](https://codeforces.com/contest/1201/problem/C)
 
-You are given an array a of n integers, where n is odd. You can make the following operation with it:  
+You are given an array a of n integers, where n is odd. You can make the following operation  with it:  
 
 Choose one of the elements of the array (for example ai) and increase it by 1 (that is, replace it with ai+1).  
 You want to make the median of the array the largest possible using at most k operations.  

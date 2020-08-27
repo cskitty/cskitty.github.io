@@ -98,7 +98,7 @@ Example
 Input:
 ```
 5
-3 1 2 7 4
+3 1 2 7 4   
 ```
 Output:
 ```
