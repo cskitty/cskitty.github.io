@@ -21,7 +21,8 @@ If each cow can be paired with at most one chicken and each chicken with at most
 INPUT FORMAT (file helpcross.in):  
 The first line of input contains C and N. The next C lines contain T1…TC, and the next N lines contain Aj and Bj (Aj≤Bj) for j=1…N. The A's, B's, and T's are all non-negative integers (not necessarily distinct) of size at most 1,000,000,000.  
 OUTPUT FORMAT (file helpcross.out):  
-Please compute the maximum possible number of cow-chicken pairs.  
+Please compute the maximum possible number of cow-chicken pairs.
+
 SAMPLE INPUT:
 ```
 5 4
@@ -35,18 +36,19 @@ SAMPLE INPUT:
 0 3
 8 13
 ```
+
 SAMPLE OUTPUT:
 ```
 3
 ```
-Problem credits: Brian Dean
-{% highlight c++ linenos }
-int C, N;
+Problem credits: Brian Dean  
 
+{% highlight c++ linenos %}
+
+int C, N;
 
 int main() {
     setIO("helpcross");
-
     cin >> C >> N;
 
     vector<int> chickens(C);
@@ -59,6 +61,14 @@ int main() {
     sort(all(chickens));
     sort(all(cows), [](pair<int, int> a, pair<int, int> b) {if (a.s == b.s) {return a.f < b.f;} else {return a.s < b.s;}});
 
+    F0R(i, N) {
+        auto a = lower_bound(all(chickens), cows[i].s);
+        if (a != chickens.end() && cows[i].f <= * a) {
+            ans++;
+            chickens.erase(a);
+        }
+    }
+
     /* vector<bool> usedCows(N, false);
      F0R(i, C) {
        F0R(j, N) {
@@ -68,17 +78,8 @@ int main() {
                  break;
              }
          }
-     }*/
+     }
 
-    F0R(i, N) {
-        auto a = lower_bound(all(chickens), cows[i].s);
-        if (a != chickens.end() && cows[i].f <= *a) {
-            ans++;
-            chickens.erase(a);
-        }
-    }
-
-    /*
     int pD = 0, pB = 0;
     int ans = 0;
     while (pD < C && pB < N) {
@@ -95,7 +96,7 @@ int main() {
         else {
             pB++;
         }
-    }*/
+    } * /
 
     cout << ans;
 }
