@@ -11,6 +11,8 @@ tags:
 
 ## Problem 1. Swapity Swapity Swap
 
+[Swapity Swapity Swap](http://www.usaco.org/index.php?page=viewproblem2&cpid=1014)
+
 Farmer John's N cows (1≤N≤105) are standing in a line. The ith cow from the left has label i for each 1≤i≤N.  
 Farmer John has come up with a new morning exercise routine for the cows. He has given the cows M pairs of integers (L1,R1)…(LM,RM), where 1≤M≤100. He then tells the cows to repeat the following M-step process exactly K (1≤K≤109) times:   
 
@@ -129,4 +131,117 @@ int main() {
     }
 
 }
+{% endhighlight %}
+
+
+## Problem 2. Triangles
+
+[Triangles](http://www.usaco.org/index.php?page=viewproblem2&cpid=1015)
+
+Farmer John would like to create a triangular pasture for his cows.  
+There are N fence posts (3≤N≤105) at distinct points (X1,Y1)…(XN,YN) on the 2D map of his farm. He can choose three of them to form the vertices of the triangular pasture as long as one of the sides of the triangle is parallel to the x-axis and another side is parallel to the y-axis.  
+
+What is the sum of the areas of all possible pastures that FJ can form?  
+
+SCORING:  
+Test case 2 satisfies N=200.  
+Test cases 3-4 satisfy N≤5000.  
+Test cases 5-10 satisfy no additional constraints.  
+INPUT FORMAT (file triangles.in  
+The first line contains N.  
+Each of the next N lines contains two integers Xi and Yi, each in the range −104…104 inclusive, describing the location of a fence post.  
+
+OUTPUT FORMAT (file triangles.out):  
+As the sum of areas is not necessarily be an integer and may be very large, output the remainder when two times the sum of areas is taken modulo 109+7.  
+SAMPLE INPUT:  
+```
+4
+0 0
+0 1
+1 0
+1 2
+```
+SAMPLE OUTPUT:
+```
+3
+```
+Fence posts (0,0), (1,0), and (1,2) give a triangle of area 1, while (0,0), (1,0), and (0,1) give a triangle of area 0.5. Thus, the answer is 2⋅(1+0.5)=3.
+
+Problem credits: Travis Hance and Nick Wu
+
+{% highlight C++ linenos %}
+
+struct P{
+    int x;
+    int y;
+};
+
+map<int, int> xMap;
+map<int, int> yMap;
+
+vector<P> XPoints;
+vector<P> YPoints;
+
+
+int YSumForX(int x,  int i) {
+    if (xMap.count(XPoints[i].y) > 0) {
+        return xMap[x];
+    }
+
+    ll sumY = 0;
+    auto bounds2 = equal_range(YPoints.begin(), YPoints.end(), XPoints[i], [] (P a, P b) {return a.y < b.y;});
+    for (auto k = bounds2.f; k < bounds2.s; k++) {
+        sumY += abs(( * k).x - x);
+    }
+
+    xMap[XPoints[i].y] = sumY + x;
+
+    return sumY;
+}
+
+int XSumForY(int y, int i) {
+    if (yMap.count(y) > 0) {
+        return yMap[y];
+    }
+
+    ll sumX = 0;
+    auto bounds = equal_range(XPoints.begin(), XPoints.end(), XPoints[i], [] (P a, P b) {return a.x < b.x;});
+    for (auto j = bounds.f; j < bounds.s; j++) {
+        sumX += abs((* j).y - y);
+    }
+
+    //yMap[y] = sumX;
+
+    return sumX;
+}
+
+int main() {
+    setIO("triangles");
+
+    ll sum = 0;
+
+    int N;
+    cin >> N;
+    XPoints.resize(N);
+
+    F0R(i, N) cin >> XPoints[i].x >> XPoints[i].y;
+
+    sort(XPoints.begin(), XPoints.end(), [] (P a, P b) {return a.x < b.x;});
+
+    YPoints.assign(XPoints.begin(), XPoints.end());
+    sort(YPoints.begin(), YPoints.end(), [] (P a, P b) {return a.y < b.y;});
+
+    F0R(i, N) {
+
+        ll sumY = YSumForX(XPoints[i].x,  i);
+        ll sumX = XSumForY(XPoints[i].y,  i);
+
+
+        sum += sumX * sumY;
+    }
+
+    cout << sum % MOD;
+
+}
+
 {% endhighlight %}
