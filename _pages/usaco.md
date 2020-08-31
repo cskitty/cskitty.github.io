@@ -96,7 +96,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=988    )  | photo         |     |  Easy  |  Python  |     |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=989    )  | race          |    |  Easy  |  Python  |     |
 | 2020 Feb  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=1011   )  | triangles     |    |  Easy  |  Python  |  
-|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=1012   )  | breedflip     |   |  Easy  |  Python  |     |
+|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=1012   )  | breedflip     | [Greedy](https://starcoder.org/usaco/USACO-2020-Feb-Bronze/#problem-2-mad-scientist)  |  Easy  |  Python  |     |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=1013   )  | swap          |    |  Easy  |  Python  |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
 | 2019 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=891 ) | shellgame     | [Simulation](https://starcoder.org/usaco/USACO-2019-Jan-Bronze/#problem-1-shell-game)   |  Easy  |  Python  |  
