@@ -122,6 +122,42 @@ SAMPLE OUTPUT:
 1
 ```
 Problem credits: Brian Dean  
+{% highlight c++ linenos %}
+
+const int MaX = 100001;
+int N, M;
+vector<int> adj(MaX);
+
+int main() {
+    setIO("citystate");
+
+    cin >> N;
+
+    int ans = 0;
+    set<string> codes;
+    map<string, int> amt;
+
+
+    vector<string> states(N);
+    map<string, int> past;
+
+    F0R(i, N) {
+        string one, two;
+        cin >> one >> two;
+
+        if (past.find(two + one.substr(0, 2)) != past.end()) {
+          if (one.substr(0, 2) != two) {
+                ans += past[two + one.substr(0, 2)];
+          }
+        }
+
+        past[one.substr(0, 2) + two]++;
+    }
+
+    cout << ans;
+}
+
+{% endhighlight %}
 
 ## Problem 3. Moocast
 
