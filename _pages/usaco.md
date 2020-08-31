@@ -38,8 +38,8 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=667)  | citystate     | [Map](https://starcoder.org/usaco/USACO-2016-Dec-Silver/#problem-2-cities-and-states)     | C++   |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)  | moocast       | [FloodFill](https://starcoder.org/usaco/USACO-2016-Dec-Silver/#problem-3-moocast)         | C++   |
 | 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=690)  | cowdance      | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-1-cow-dance-show)   |  C++  |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | Prefix                                 |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | BinSearch  |  C++  |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | [Prefix](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-2-hoof-paper-scissors) |  C++   |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-3-secret-cow-code)  |  Java  |
 | 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | [2Pointers](https://starcoder.org/usaco/USACO-2017-Feb-Silver/#problem-1-why-did-the-cow-cross-the-road)   |  C++   |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | [Prefix](https://starcoder.org/usaco/USACO-2017-Feb-Silver/#problem-2-why-did-the-cow-cross-the-road-ii)   |  C++   |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | [FloodFill](https://starcoder.org/usaco/USACO-2017-Feb-Silver/#problem-3-why-did-the-cow-cross-the-road-iii) | C++  |

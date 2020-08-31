@@ -185,7 +185,7 @@ int main() {
 
 ## Problem 3. Secret Cow Code
 
-[Hoof, Paper, Scissors](http://usaco.org/index.php?page=viewproblem2&cpid=691)
+[Secret Cow Code](http://usaco.org/index.php?page=viewproblem2&cpid=692)
 
 The cows are experimenting with secret codes, and have devised a method for creating an infinite-length string to be used as part of one of their codes.  
 Given a string s, let F(s) be s followed by s "rotated" one character to the right (in a right rotation, the last character of s rotates around and becomes the new first character). Given an initial string s, the cows build their infinite-length code string by repeatedly applying F; each step therefore doubles the length of the current string.   
