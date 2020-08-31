@@ -141,7 +141,8 @@ int main() {
         cin >> plain[i];
     }
 
-    map<char, int> dict = {{'A',0}, {'C', 1}, {'G', 2}, {'T', 3}};
+    map<char, int> dict = { {'A',0}, {'C', 1}, {'G', 2}, {'T', 3} };
+
     int ans = 0;
     vector<string> v(N+N);
     F0R(i, M - 2) {
@@ -335,5 +336,5 @@ int main() {
     }
 
     cout << count;
-} 
+}
 {% endhighlight %}
