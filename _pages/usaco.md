@@ -35,21 +35,21 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=644)  | closing       | [BFS](https://starcoder.org/usaco/USACO-2016-Open-Silver/#closing-the-farm)                  | C++    |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2016 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=666)  | haybales      | [BinSearch](https://starcoder.org/usaco/USACO-2016-Dec-Silver/#problem-1--counting-haybales)  |  C++  |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=667)  | citystate     | Map                                    |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)  | moocast       | FloodFill                              |    |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=667)  | citystate     | [Map](https://starcoder.org/usaco/USACO-2016-Dec-Silver/#problem-2-cities-and-states)     | C++   |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)  | moocast       | [FloodFill](https://starcoder.org/usaco/USACO-2016-Dec-Silver/#problem-3-moocast)         | C++   |
 | 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=690)  | cowdance      | [BinSearch](https://starcoder.org/usaco/USACO-2017-Jan-Silver/#problem-1-cow-dance-show)   |  C++  |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=691)  | hps           | Prefix                                 |    |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=692)  | cowcode       | BinSearch  |  C++  |
 | 2017 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=714)  | helpcross     | [2Pointers](https://starcoder.org/usaco/USACO-2017-Feb-Silver/#problem-1-why-did-the-cow-cross-the-road)   |  C++   |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=715)  | maxcross      | [Prefix](https://starcoder.org/usaco/USACO-2017-Feb-Silver/#problem-2-why-did-the-cow-cross-the-road-ii)   |  C++   |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=716)  | countcross    | [FloodFill](https://starcoder.org/usaco/USACO-2017-Feb-Silver/#problem-3-why-did-the-cow-cross-the-road-iii) | C++  |
-| 2017 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=738)  | pairup        | 2Pointers                              |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=739)  | cownomics     |                                        |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=740)  | where         | FloodFill                              |    |
+| 2017 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=738)  | pairup        | [2Pointers](https://starcoder.org/usaco/USACO-2017-Open-Silver/#problem-1-paired-up)       | C++   |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=739)  | cownomics     | [SetHash](https://starcoder.org/usaco/USACO-2017-Open-Silver/#problem-2-bovine-genomics)       | C++   |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=740)  | where         | [FloodFill](https://starcoder.org/usaco/USACO-2017-Open-Silver/#problem-3-wheres-bessie)            | C++   |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2017 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=762)  | homework      |                                        |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=763)  | measurement   | Map                                    |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=764)  | shuffle       | Graphs                                 |    |
+| 2017 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=762)  | homework      | [Prefix](https://starcoder.org/usaco/USACO-2017-Dec-Silver/#problem-1-my-cow-ate-my-homework)    | C++   |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=763)  | measurement   | [Simulation](https://starcoder.org/usaco/USACO-2017-Dec-Silver/#problem-2-milk-measurement)  | C++   |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=764)  | shuffle       | [TopologySort](https://starcoder.org/usaco/USACO-2017-Dec-Silver/#problem-3-the-bovine-shuffle)_ | C++   |
 | 2018 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=786)  | lifeguards    | [Simulation](https://starcoder.org/usaco/USACO-2018-Jan-Silver/#problem-1-lifeguards)      | C++  |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=787)  | rental        | [Sorting](https://starcoder.org/usaco/USACO-2018-Jan-Silver/#problem-2--rental-service)    | C++  |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=788)  | mootube       | FloodFill                              |    |
