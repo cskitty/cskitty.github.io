@@ -13,12 +13,12 @@ tags:
 
 [Counting Haybales](http://www.usaco.org/index.php?page=viewproblem2&cpid=666)
 
-Farmer John has just arranged his $$N$$ haybales ($$1\leN\le100,000$$) at various points along the one-dimensional road running across his farm. To make sure they are spaced out appropriately, please help him answer Q queries ($$1\leQ\le100,000$$), each asking for the number of haybales within a specific interval along the road.
+Farmer John has just arranged his $$N$$ haybales ($$1\leN\le100,000$$) at various points along the one-dimensional road running across his farm. To make sure they are spaced out appropriately, please help him answer Q queries ($$1\le Q\le100,000$$), each asking for the number of haybales within a specific interval along the road.
 INPUT FORMAT (file haybales.in):
 The first line contains N and Q.
 The next line contains N distinct integers, each in the range 0…1,000,000,000, indicating that there is a haybale at each of those locations.
 
-Each of the next Q lines contains two integers A and B (0≤A≤B≤1,000,000,000) giving a query for the number of haybales between A and B, inclusive.
+Each of the next Q lines contains two integers A and B ($$0\le A\le B\le 1,000,000,000$$) giving a query for the number of haybales between A and B, inclusive.
 
 OUTPUT FORMAT (file haybales.out):
 You should write Q lines of output. For each query, output the number of haybales in its respective interval.
@@ -102,7 +102,7 @@ To keep his cows intellectually stimulated, Farmer John has placed a large map o
 Let us say that two cities are a "special pair" if they satisfy this property and come from different states. The cows are wondering how many special pairs of cities exist. Please help them solve this amusing geographical puzzle  
 
 INPUT FORMAT (file citystate.in  
-The first line of input contains N (1≤N≤200,000), the number of cities on the map  
+The first line of input contains N ($$1\le N\le 200,000$$), the number of cities on the map  
 The next N lines each contain two strings: the name of a city (a string of at least 2 and at most 10 uppercase letters), and its two-letter state code (a string of 2 uppercase letters). Note that the state code may be something like ZQ, which is not an actual USA state. Multiple cities with the same name can exist, but they will be in different states.  
 
 OUTPUT FORMAT (file citystate.out):  
@@ -163,7 +163,7 @@ int main() {
 
 [Moocast](http://www.usaco.org/index.php?page=viewproblem2&cpid=668)
 
-Farmer John's N cows (1≤N≤200) want to organize an emergency "moo-cast" system for broadcasting important messages among themselves.
+Farmer John's N cows ($$1\le N \le200$$) want to organize an emergency "moo-cast" system for broadcasting important messages among themselves.
 Instead of mooing at each-other over long distances, the cows decide to equip themselves with walkie-talkies, one for each cow. These walkie-talkies each have a limited transmission radius -- a walkie-talkie of power P can only transmit to other cows up to a distance of P away (note that cow A might be able to transmit to cow B even if cow B cannot transmit back, due to cow A's power being larger than that of cow B). Fortunately, cows can relay messages to one-another along a path consisting of several hops, so it is not necessary for every cow to be able to transmit directly to every other cow.
 
 Due to the asymmetrical nature of the walkie-talkie transmission, broadcasts from some cows may be more effective than from other cows in their ability to reach large numbers of recipients (taking relaying into account). Please help the cows determine the maximum number of cows that can be reached by a broadcast originating from a single cow.

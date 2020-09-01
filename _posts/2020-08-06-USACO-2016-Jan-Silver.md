@@ -21,7 +21,7 @@ A total of K cows are available to shoot, each with the same power R. Please det
 
 INPUT FORMAT (file angry.in):  
 
-The first line of input contains N ($$1\leN\le50,000$$) and K ($$1\leK\le10$$). The remaining N lines all contain integers $$x_1…x_N$$ (each in the range $$0…1,000,000,000$$).
+The first line of input contains N ($$1\le N\le50,000$$) and K ($$1\le K\le10$$). The remaining N lines all contain integers $$x_1…x_N$$ (each in the range $$0…1,000,000,000$$).
 
 OUTPUT FORMAT (file angry.out):  
 Please output the minimum power $$R$$ with which each cow must be launched in order to detonate all the hay bales.  
@@ -98,7 +98,7 @@ Farmer John's N cows are standing in a row, as they have a tendency to do from t
 Please help FJ determine the size of the largest group he can photograph.  
 
 INPUT FORMAT (file div7.in):  
-The first line of input contains N ($$1\leN\le50,000$$). The next N lines each contain the N integer IDs of the cows (all are in the range $$0…1,000,000$$).  
+The first line of input contains N ($$1\le N\le50,000$$). The next N lines each contain the N integer IDs of the cows (all are in the range $$0…1,000,000$$).  
 OUTPUT FORMAT (file div7.out):  
 Please output the number of cows in the largest consecutive group whose IDs sum to a multiple of $$7$$. If no such group exists, output $$0$$.  
 You may want to note that the sum of the IDs of a large group of cows might be too large to fit into a standard 32-bit integer. If you are summing up large groups of IDs, you may therefore want to use a larger integer data type, like a 64-bit "long long" in C/C++.  
@@ -165,7 +165,7 @@ Needless to say, FJ is rather dismayed at the result after he completes the fenc
 Please determine the minimum number of gates FJ needs to build so that every region of the farm is once again reachable from every other region.  
 
 INPUT FORMAT (file gates.in):  
-The first line of input contains N (1≤N≤1000). The next line contains a string of length N describing FJ's path. Each character is either N (north), E (east), S (south), or W (west).  
+The first line of input contains N $$(1\le N\le1000)$$. The next line contains a string of length N describing FJ's path. Each character is either N (north), E (east), S (south), or W (west).  
 OUTPUT FORMAT (file gates.out):  
 Write out a single integer giving the minimum number of gates FJ needs to build to restore complete connectivity to all regions of his farm. Note that the answer could be zero if the farm is connected to begin with.  
 

@@ -20,10 +20,10 @@ Having a slightly more limited vocabulary, the version of FizzBuzz played by the
 
 1, 2, Moo, 4, Moo, Moo, 7, 8, Moo, Moo, 11, Moo, 13, 14, Moo, 16  
 
-Given N (1≤N≤109), please determine the Nth number spoken in this game.  
+Given N ($$1\le N\le 109$$), please determine the Nth number spoken in this game.  
 
 SCORING  
-Test cases 2-5 satisfy N≤106.  
+Test cases 2-5 satisfy $$N\le106$$.  
 
 INPUT FORMAT (file moobuzz.in):  
 The input consists of a single integer, N.  
