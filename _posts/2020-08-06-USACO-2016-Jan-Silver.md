@@ -15,16 +15,16 @@ tags:
 
 Bessie the cow has designed what she thinks will be the next big hit video game: "Angry Cows". The premise, which she believes is completely original, is that the player shoots cows with a slingshot into a one-dimensional scene consisting of a set of hay bales located at various points on a number line. Each cow lands with sufficient force to detonate the hay bales in close proximity to her landing site. The goal is to use a set of cows to detonate all the hay bales.  
 
-There are N hay bales located at distinct integer positions x1,x2,…,xN on the number line. If a cow is launched with power R landing at position x, this will causes a blast of "radius R", destroying all hay bales within the range x−R…x+R.  
+There are N hay bales located at distinct integer positions $$x_1,x_2,…,x_N$$ on the number line. If a cow is launched with power R landing at position x, this will causes a blast of "radius R", destroying all hay bales within the range $$x−R…x+R$$.  
 
 A total of K cows are available to shoot, each with the same power R. Please determine the minimum integer value of R such that it is possible to use the K cows to detonate every single hay bale in the scene.  
 
 INPUT FORMAT (file angry.in):  
 
-The first line of input contains N (1≤N≤50,000) and K (1≤K≤10). The remaining N lines all contain integers x1…xN (each in the range 0…1,000,000,000).
+The first line of input contains N ($$1\leN\le50,000$$) and K ($$1\leK\le10$$). The remaining N lines all contain integers $$x_1…x_N$$ (each in the range $$0…1,000,000,000$$).
 
 OUTPUT FORMAT (file angry.out):  
-Please output the minimum power R with which each cow must be launched in order to detonate all the hay bales.  
+Please output the minimum power $$R$$ with which each cow must be launched in order to detonate all the hay bales.  
 SAMPLE INPUT:  
 ```
 7 2
@@ -98,9 +98,9 @@ Farmer John's N cows are standing in a row, as they have a tendency to do from t
 Please help FJ determine the size of the largest group he can photograph.  
 
 INPUT FORMAT (file div7.in):  
-The first line of input contains N (1≤N≤50,000). The next N lines each contain the N integer IDs of the cows (all are in the range 0…1,000,000).  
+The first line of input contains N ($$1\leN\le50,000$$). The next N lines each contain the N integer IDs of the cows (all are in the range $$0…1,000,000$$).  
 OUTPUT FORMAT (file div7.out):  
-Please output the number of cows in the largest consecutive group whose IDs sum to a multiple of 7. If no such group exists, output 0.  
+Please output the number of cows in the largest consecutive group whose IDs sum to a multiple of $$7$$. If no such group exists, output $$0$$.  
 You may want to note that the sum of the IDs of a large group of cows might be too large to fit into a standard 32-bit integer. If you are summing up large groups of IDs, you may therefore want to use a larger integer data type, like a 64-bit "long long" in C/C++.  
 
 SAMPLE INPUT:  
@@ -118,7 +118,7 @@ SAMPLE OUTPUT:
 ```
 5  
 ```
-In this example, 5+1+6+2+14 = 28.  
+In this example, $$5+1+6+2+14 = 28$$.  
 
 {% highlight c++ linenos %}
 int main() {

@@ -13,7 +13,7 @@ tags:
 
 [Counting Haybales](http://www.usaco.org/index.php?page=viewproblem2&cpid=666)
 
-Farmer John has just arranged his N haybales (1≤N≤100,000) at various points along the one-dimensional road running across his farm. To make sure they are spaced out appropriately, please help him answer Q queries (1≤Q≤100,000), each asking for the number of haybales within a specific interval along the road.
+Farmer John has just arranged his $$N$$ haybales ($$1\leN\le100,000$$) at various points along the one-dimensional road running across his farm. To make sure they are spaced out appropriately, please help him answer Q queries ($$1\leQ\le100,000$$), each asking for the number of haybales within a specific interval along the road.
 INPUT FORMAT (file haybales.in):
 The first line contains N and Q.
 The next line contains N distinct integers, each in the range 0…1,000,000,000, indicating that there is a haybale at each of those locations.
