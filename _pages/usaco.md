@@ -104,8 +104,8 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=893  )  | guess       |    |  Easy  |  Python  |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
 | 2018 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=831 ) | tttt | [Brute Force](https://starcoder.org/usaco/USACO-2018-Open-Bronze/#problem-1-team-tic-tac-toe)  |  Easy  |  Python  |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=832)  | milkorder     |Easy|     |
-|        | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=833)  | family        |Easy|     |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=832)  | milkorder     |        | Easy |     |
+|        | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=833)  | family        |           |   Easy |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ |
 | 2018 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=855 ) | mixmilk     | [Simulation](https://starcoder.org/usaco/USACO-2018-Dec-Bronze/#problem-1-mixing-milk)   |  Easy  |  Python  |  
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=856  )  | blist      |     |  Easy  |  Python  |     |
