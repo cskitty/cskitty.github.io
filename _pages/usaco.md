@@ -1,20 +1,19 @@
 ---
 title: "USACO"
-layout: category
-permalink: /categories/usaco/
+permalink: /usaco/
 taxonomy: USACO
 author_profile: true
 ---
 
-
 ![](/assets/images/USACObessieheader.PNG)
 
-### USACO: A Story About Farmer John and Bessie the Cow
+## USACO: A Story About Farmer John and Bessie the Cow
 
 Farmer John is the well acclaimed owner of many cows. But one of them always gets into mischief! Help Farmer John deal with Bessie the cow, using programs to assist them on their journey on the [USACO](http://usaco.org/) site.
 
+[USACO By Year and Level](/categories/usaco/)
 
-#  Silver
+##  Silver
 
 | Contest   | #                                                               | Name          | Alogrithm                              | Language |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | ------ |

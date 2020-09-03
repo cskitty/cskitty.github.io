@@ -6,7 +6,7 @@ main:
   - title: "Algorithms"
     url: /algorithm/
   - title: "USACO"
-    url: /categories/usaco/
+    url: /usaco/
   - title: "Cryptography"
     url: /tags/cryptography/
   - title: "Archive"
