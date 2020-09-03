@@ -1,7 +1,7 @@
 ---
 title: "USACO"
+layout: archive
 permalink: /usaco/
-taxonomy: USACO
 author_profile: true
 ---
 
