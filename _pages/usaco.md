@@ -52,13 +52,13 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=764)  | shuffle       | [TopologySort](https://starcoder.org/usaco/USACO-2017-Dec-Silver/#problem-3-the-bovine-shuffle)_ | C++   |
 | 2018 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=786)  | lifeguards    | [Simulation](https://starcoder.org/usaco/USACO-2018-Jan-Silver/#problem-1-lifeguards)      | C++  |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=787)  | rental        | [Sorting](https://starcoder.org/usaco/USACO-2018-Jan-Silver/#problem-2--rental-service)    | C++  |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=788)  | mootube       | FloodFill                              |    |
-| 2018 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=810)  | reststops     |                                        |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=811)  | snowboots     |                                        |    |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=788)  | mootube       | [FloodFill](https://starcoder.org/usaco/USACO-2018-Jan-Silver/#problem-3-mootube)          | C++  |
+| 2018 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=810)  | reststops     | [Math&Sim](https://starcoder.org/usaco/USACO-2018-Feb-Silver/#problem-1-rest-stops)       | C++  |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=811)  | snowboots     | [Recursion](https://starcoder.org/usaco/USACO-2018-Feb-Silver/#problem-2-snow-boots)       | C++  |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=812)  | teleport     |                                        |    |
-| 2018 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=834)  | sort          |                                |    |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=835)  | lemonade      |                                        |    |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=836)  | multimoo      |                                |    |
+| 2018 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=834)  | sort          | [Sorting](https://starcoder.org/usaco/USACO-2018-Open-Silver/#problem-1-out-of-sorts)      | C++  |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=835)  | lemonade      | [Math&Sim](https://starcoder.org/usaco/USACO-2018-Open-Silver/#problem-2-lemonade-line)    | C++  |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=836)  | multimoo      | [Graph&BFS](https://starcoder.org/usaco/USACO-2018-Open-Silver/#problem-3-multiplayer-moo)  | C++  |   
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2018 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=858    )  | convention    | [BinSearch](https://starcoder.org/usaco/USACO-2018-Dec-Silver/#problem-1-convention)       | C++  |
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=859)      | convention2   |                                        |    |
