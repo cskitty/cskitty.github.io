@@ -164,5 +164,211 @@ Problem credits: Brian Dean
 
 
 {% highlight C++ linenos %}
- 
+int N;
+
+const int MaX = 255;
+map<int, int> regIDtoColor;
+map<int, int> regIDtoSize;
+int grid[MaX][MaX];
+int maxColor = 0;
+
+class MyGraph {
+
+public:
+
+   // construct a vector of vectors to represent an adjacency list
+   map<int, set<int>> m_adj;
+   set<int> m_nodes;
+   map<int, int> m_regID;
+
+   void addEdge(int a, int b) {
+       m_nodes.insert(a);
+       m_nodes.insert(b);
+
+       m_adj[a].insert(b);
+       m_adj[b].insert(a);
+   }
+
+   void setID(int a, int id) {
+       m_regID[a] = id;
+   }
+
+   int regID(int a) {
+       return m_regID[a];
+   }
+
+   int bfs(int nodeID, int regID) {
+       // return size 0 if it is already visited
+       if (m_regID[nodeID] > 0) {
+           return 0;
+       }
+
+       queue<int> myQueue;
+       myQueue.push(nodeID);
+       int size = 0;
+
+       while (myQueue.size() > 0) {
+           int curr = myQueue.front();
+
+           myQueue.pop();
+           if (m_regID[curr] == 0) {
+               size++;
+           }
+           else {
+               continue;
+           }
+
+           m_regID[curr] = regID;
+
+
+           for (auto j : m_adj[curr]) {
+               if (m_regID[j] == 0) {
+                   myQueue.push(j);
+               }
+           }
+       }
+
+       return size;
+   }
+
+   int bfs2(int nodeID, int regID) {
+
+       queue<int> myQueue;
+       myQueue.push(nodeID);
+       int size = 0;
+
+       while (myQueue.size() > 0) {
+           int curr = myQueue.front();
+           myQueue.pop();
+           if (m_regID[curr] == 0) {
+               size += regIDtoSize[curr];
+           }
+           else {
+               continue;
+           }
+
+
+           m_regID[curr] = regID;
+           for (auto j : m_adj[curr]) {
+               if (m_regID[j] == 0) {
+                   myQueue.push(j);
+               }
+           }
+       }
+
+       return size;
+   }
+
+};
+
+
+
+int main() {
+   setIO("multimoo");
+
+   cin >> N;
+
+   set<int> colors;
+
+   F0R(i, N) {
+       F0R(j, N) {
+           cin >> grid[i][j];
+           colors.insert(grid[i][j]);
+       }
+   }
+
+   map<int, MyGraph> G1;
+
+
+   // visit the matrix & create graphs for all colors
+   F0R(i, N) {
+       F0R(j, N) {
+           int color = grid[i][j];
+           int node = i * N + j;
+
+           // check south neighbor for same color
+           if (i + 1 < N && grid[i + 1][j] == color) {
+               int southNeighbor = (i + 1) * N + j;
+               G1[color].addEdge(node, southNeighbor);
+           }
+           // check right neighbor
+           if (j + 1 < N && grid[i][j + 1] == color){
+               int rightNeighbor = (i) * N + (j + 1);
+               G1[color].addEdge(node, rightNeighbor);
+           }
+           // left and up already covered by prev node (2d rectangular grid)
+       }
+   }
+
+   int regID = 1;
+   int ans = 0;
+
+   F0R(i, N) {
+       F0R(j, N) {
+           int color = grid[i][j];
+           regIDtoColor[regID] = color;
+           int regSize = G1[color].bfs(i*N + j, regID);
+           if (regSize > 0) {
+               regIDtoSize[regID] = regSize;
+               ans = max(ans, regIDtoSize[regID]);
+               regID++;
+           }
+       }
+   }
+
+   map<pair<int, int>, MyGraph> G2;
+
+   F0R(i, N) {
+       F0R(j, N) {
+           int c1 = grid[i][j];
+
+           if (i + 1 < N && grid[i + 1][j] != c1) {
+               int c2 = grid[i + 1][j];
+
+               int reg1 = G1[c1].regID(i * N + j);
+               int reg2 = G1[c2].regID((i + 1) * N + j);
+
+               if (c1 < c2) {
+                   swap(c1, c2);
+               }
+
+               pair<int, int> c1c2 = mp(c1, c2);
+               G2[c1c2].addEdge(reg1, reg2);
+           }
+
+           c1 = grid[i][j];
+           // check right neighbor
+           if (j + 1 < N && grid[i][j + 1] != c1) {
+               int c2 = grid[i][j + 1];
+
+               int reg1 = G1[c1].regID(i * N + j);
+               int reg2 = G1[c2].regID(i * N + (j + 1));
+
+               if (c1 < c2) {
+                   swap(c1, c2);
+               }
+
+               G2[mp(c1, c2)].addEdge(reg1, reg2);
+
+           }
+
+       }
+   }
+
+
+   int ans1 = 0;
+
+   int regID2 = 1;
+   for (auto v : G2) {
+       for (auto n : v.s.m_nodes) {
+           int curr = v.s.bfs2(n, regID2);
+           ans1 = max(ans1, curr);
+           regID2++;
+       }
+   }
+
+   cout << ans << endl;
+   cout << ans1;
+}
+
 {% endhighlight %}
