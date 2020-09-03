@@ -38,5 +38,6 @@ author_profile: true
 | Tree        | [Tree Traversal](https://starcoder.org/programming/tree-traversals/)  | Easy         |
 |             | [Tree Algorithms](https://starcoder.org/programming/tree-algorithms/)  | Easy         |
 | Graph       | [Graph Algorithms in C++](https://starcoder.org/programming/graph-algorithms/)  | Easy         |  
+|             | [Graph Class Example](https://starcoder.org/usaco/USACO-2018-Open-Silver/#problem-3-multiplayer-moo)  | Easy         |
 |             | [BFS Distance](https://starcoder.org/programming/bfs-graph/)  | Easy         |
 | DFS         | [Grid Paths](https://starcoder.org/programming/grid-paths/)  | Easy         |  
