@@ -13,7 +13,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 ### [USACO By Year and Level](/categories/usaco/)
 
-## USACO Questions Implementation by Algorithm
+## Reference Implementation for USACO Questions
 
 ###  Silver
 
