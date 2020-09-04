@@ -111,3 +111,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2018 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=855 ) | mixmilk     | [Simulation](https://starcoder.org/usaco/USACO-2018-Dec-Bronze/#problem-1-mixing-milk)   |  Easy  |  Python  |  
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=856  )  | blist      |     |  Easy  |  Python  |     |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=857  )  | backforth       |    |  Easy  |  Python  |     |
+------------------------------------ | ------ |
+| 2015 Feb Bronze  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=526 ) |    censor  |         |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=527  )  | cow      |   [DP](https://starcoder.org/usaco/USACO-2015-Feb-Bronze/#problem-2-cow)  |  Easy  |  Python  |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=528  )  | hopscotch |    |  Easy  |  Python  |     |
