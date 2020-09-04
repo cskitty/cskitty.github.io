@@ -112,6 +112,10 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=856  )  | blist      |     |  Easy  |  Python  |     |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=857  )  | backforth       |    |  Easy  |  Python  |     |
 ------------------------------------ | ------ |
-| 2015 Feb Bronze  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=526 ) |    censor  |         |  Easy  |  Python  |  
+| 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=687 ) | notlast     |    |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=688)  | hps      |  [Simulation](https://starcoder.org/usaco/USACO-2017-Jan-Bronze/#problem-2-hoof-paper-scissors)  |  Easy  |  Python  |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=689  )  | cowtip       |      |  Easy  |  Python  |     |
+------------------------------------ | ------ |
+| 2015 Feb Bronze  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=526 ) |    censor  |       [Brute Force](https://starcoder.org/usaco/USACO-2015-Feb-Bronze/#problem-3-cow-tipping)   |  Easy  |  Python  |  
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=527  )  | cow      |   [DP](https://starcoder.org/usaco/USACO-2015-Feb-Bronze/#problem-2-cow)  |  Easy  |  Python  |     |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=528  )  | hopscotch |    |  Easy  |  Python  |     |
