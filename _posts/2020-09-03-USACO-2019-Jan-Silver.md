@@ -9,8 +9,9 @@ tags:
 
 # USACO 2019 Jan Silver
 
-Problem 1. Grass Planting
-[Convention](http://usaco.org/index.php?page=viewproblem2&cpid=894)
+## Problem 1. Grass Planting  
+
+[Grass Planting  ](http://usaco.org/index.php?page=viewproblem2&cpid=894)  
 
 It's the time of year for Farmer John to plant grass in all of his fields. The entire farm consists of N fields (1≤N≤105), conveniently numbered 1…N and conveniently connected by N−1 bidirectional pathways in such a way that every field can reach every other field via some collection of pathways.  
 Farmer John can potentially plant a different type of grass in each field, but he wants to minimize the number of grass types he uses in total, since the more types of grass he uses, the more expense he incurs.  
@@ -63,8 +64,9 @@ int main() {
 {% endhighlight %}
 
 
-Problem 2. Icy Perimeter
-[Icy Perimeter](http://usaco.org/index.php?page=viewproblem2&cpid=895)
+## Problem 2. Icy Perimeter  
+
+[Icy Perimeter](http://usaco.org/index.php?page=viewproblem2&cpid=895)  
 
 Farmer John is going into the ice cream business! He has built a machine that produces blobs of ice cream but unfortunately in somewhat irregular shapes, and he is hoping to optimize the machine to make the shapes produced as output more reasonable.  
 The configuration of ice cream output by the machine can be described using an N×N grid (1≤N≤1000) as follows:  
@@ -76,6 +78,7 @@ The configuration of ice cream output by the machine can be described using an N
 .#####  
 ...###  
 ....##  
+
 Each '.' character represents empty space and each '#' character represents a 1×1 square cell of ice cream.  
 
 Unfortunately, the machine isn't working very well at the moment and might produce multiple disconnected blobs of ice cream (the figure above has two). A blob of ice cream is connected if you can reach any ice cream cell from every other ice cream cell in the blob by repeatedly stepping to adjacent ice cream cells in the north, south, east, and west directions.  
@@ -104,7 +107,7 @@ SAMPLE INPUT:
 .#####
 ...###
 ....##
-```
+```  
 SAMPLE OUTPUT:
 ```
 13 22
@@ -211,8 +214,9 @@ int main() {
 
 {% endhighlight %}
 
-Problem 3. Mountain View
-[Mountain View](http://usaco.org/index.php?page=viewproblem2&cpid=896)
+## Problem 3. Mountain View  
+
+[Mountain View](http://usaco.org/index.php?page=viewproblem2&cpid=896)  
 
 From her pasture on the farm, Bessie the cow has a wonderful view of a mountain range on the horizon. There are N mountains in the range (1≤N≤105). If we think of Bessie's field of vision as the xy plane, then each mountain is a triangle whose base rests on the x axis. The two sides of the mountain are both at 45 degrees to the base, so the peak of the mountain forms a right angle. Mountain i is therefore precisely described by the location (xi,yi) of its peak. No two mountains have exactly the same peak location.  
 Bessie is trying to count all of the mountains, but since they all have roughly the same color, she cannot see a mountain if its peak lies on or within the triangular shape of any other mountain.  
