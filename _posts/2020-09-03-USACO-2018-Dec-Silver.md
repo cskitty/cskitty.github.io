@@ -208,6 +208,7 @@ int main() {
 
     cout << mxWait;
 }
+{% endhighlight %}
 
 ## Problem 3. Mooyo Mooyo
 
@@ -283,6 +284,7 @@ Problem credits: Brian Dean
 
 
 {% highlight C++ linenos %}
+
 const int MaX = 101;
 const int rowM = 10;
 int N, M;
@@ -357,7 +359,6 @@ int main() {
 
     cin >> N >> M;
 
-
     F0R(i, N) {
         F0R(j, 10) {
             char V;
@@ -380,4 +381,5 @@ int main() {
     }
 
 }
+
 {% endhighlight %}
