@@ -7,7 +7,7 @@ tags:
   - USACO
 ---
 
-# USACO 2019 Jan Silver
+# USACO 2019 Jan Silver  
 
 ## Problem 1. Grass Planting  
 
