@@ -42,37 +42,33 @@ SAMPLE OUTPUT:
 Problem credits: Delphine and Brian Dean
 
 {% highlight c++ linenos %}
-
 int N;
 ll M;
 
 bool check(vector<ll> v, ll target) {
+     priority_queue<ll, vector<ll>,greater<ll>> onStage;
 
-     vector<ll> onStage;
+     ll maxV = 0;
      ll i = 0;
-     ll time = 0;
-     while (i < v.size()) {
-         while (onStage.size() < target) {
-             onStage.push_back(v[i]);
-             i++;
-         }
+     while (onStage.size() < target) {
+        onStage.push(v[i]);
+        i++;
+     }
 
-         auto sub = min_element(all(onStage));
-         ll min = * sub;
-         time += min;
-         F0R(j, onStage.size()) {
-             onStage[j] -= min;
-             if (onStage[j] == 0) {
-                 onStage[j] = v[i];
-                 i++;
-             }
-         }
-         if (time > M) {
+     while (i < v.size()) {
+         // auto sub = min_element(all(onStage));
+         ll min = onStage.top();
+         onStage.pop();
+
+         onStage.push(min + v[i]);
+         maxV = max(maxV, min + v[i]);
+         if (maxV > M) {
              return false;
          }
+         i++;
      }
-     time += * max_element(all(onStage));
-     if (time > M) {
+
+     if (maxV > M) {
          return false;
      }
      return true;
@@ -89,7 +85,6 @@ ll binary_search(vector<ll> x) {
 }
 
 int main() {
-
     setIO("cowdance");
 
     cin >> N >> M;
@@ -101,7 +96,6 @@ int main() {
     cout << binary_search(nums);
 
 }
-
 {% endhighlight %}
 
 ## Problem 2. Hoof, Paper, Scissors
