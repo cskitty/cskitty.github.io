@@ -67,8 +67,8 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2019 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=894)  | planting      | [Graph](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-1-grass-planting)           | C++ |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=895)  | perimeter     | [FloodFill](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-2-icy-perimeter)| C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=896)  | mountains     | [Sorting](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |
-| 2019 Feb  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=918)      | herding       | | C++ |
-|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=919)      | paintbarn     | | C++ |
+| 2019 Feb  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=918)      | herding       | [Sim/Prefix](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-1-sleepy-cow-herding)| C++ |
+|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=919)      | paintbarn     | [2DPrefixsum](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-2-painting-the-barn)| C++ |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=920)      | revegetate    | [BFS, BiPartite](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-3-the-great-revegetation)| C++ |
 | 2019 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=942)      | leftout       | | C++ |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=943)      | cowjump     | | C++ |
