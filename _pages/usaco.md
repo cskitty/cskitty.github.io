@@ -71,7 +71,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=919)      | paintbarn     | [2DPrefixsum](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-2-painting-the-barn)| C++ |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=920)      | revegetate    | [BFS, BiPartite](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-3-the-great-revegetation)| C++ |
 | 2019 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=942)      | leftout       | | C++ |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=943)      | cowjump     | | C++ |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=943)      | cowjump     | [SweepLine](https://starcoder.org/usaco/USACO-2019-Open-Silver/#problem-2-cow-steeplechase-ii) | C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=944)      | fenceplan    | [DFS/FloodFill](https://starcoder.org/usaco/USACO-2019-Open-Silver/#problem-3-fence-planning)| C++ |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2019 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=858)  | moobuzz       | [Math](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#problem-1-moobuzz)  | C++, [Python](https://starcoder.org/usaco/USACO-2019-Dec-Silver/#python-implementtion-by-cryptobunny)|
