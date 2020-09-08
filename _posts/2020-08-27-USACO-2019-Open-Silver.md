@@ -10,6 +10,74 @@ tags:
 
 # USACO 2019 Open Silver
 
+
+## Problem 1. Left Out
+
+[Fence Planning](http://www.usaco.org/index.php?page=viewproblem2&cpid=942)  
+
+Farmer John is attempting to take a photograph of his herd of cows. From past experience, he knows this particular endeavor never usually ends well.
+This time, Farmer John has purchased an expensive drone in order to take an aerial photo. To make the photo look as good as possible, he wants his cows all to be facing the same direction when the photo is taken. The cows are currently arranged in an N×N grid (2≤N≤1000) inside a fenced-in square pasture, for example:  
+
+ ```
+RLR  
+RRL  
+LLR
+```
+
+Here, an 'R' means a cow facing right, and an 'L' means a cow facing left. Since the cows are packed together, Farmer John cannot walk up to an individual cow to make it turn around. All he can do is shout at any row or column of cows to turn around, causing L's to change to R's and R's to L's within the row or column in question. Farmer John can yell at as many rows or columns as he wants, even at the same row or column more than once.  
+
+As expected, Farmer John observes that he is unable to make his cows all face one common direction. The best he can do is get all but one of the cows to face the same direction. Please determine the identity of such a cow.  
+
+INPUT FORMAT (file leftout.in):  
+The first line contains N. The next N lines describe rows 1…N in the grid of cows, each containing a string of length N.  
+OUTPUT FORMAT (file leftout.out):  
+Print the row and column index of a cow such that if that cow were flipped, Farmer John could make all his cows face the same direction. If no such cow exists, print -1. If multiple such cows exist, print the one with the smallest row index, or if multiple such cows have the same smallest row index, print the one with the smallest column index.  
+SAMPLE INPUT:   
+```
+3
+RLR
+RRL
+LLR
+```
+SAMPLE OUTPUT:
+```
+1 1
+```
+In the example above, the cow in row 1, column 1 (the upper-left corner) is the offending cow, since Farmer John can shout at row 2 and column 3 to make all other cows face left, with just this cow facing right.
+
+Problem credits: Brian Dean
+
+## Problem 2. Cow Steeplechase II
+
+[Fence Planning](http://www.usaco.org/index.php?page=viewproblem2&cpid=943)  
+
+In the past, Farmer John had contemplated a number of innovative ideas for new cow sports, among them Cow Steeplechase, where herds of cows would race around a course and jump over hurdles. His past efforts to build interest in this sport have met with mixed results, so he is hoping to build an even larger Cow Steeplechase course on his farm to try and create more publicity for the sport.
+Farmer John's new course is carefully planned around N hurdles, conveniently numbered 1…N (2≤N≤105), each one described as a line segment on the 2D map of the course. These line segments should not intersect each-other in any way, even their at endpoints.  
+
+Unfortunately, Farmer John wasn't paying attention when crafting the course map and notices that there are intersections between segments. However, he also notices that if he takes away just one segment, the map is restored to its intended state of having no intersecting segments (not even at endpoints).  
+
+Please determine a line segment Farmer John can remove from his plan to restore the property that no segments intersect. If multiple segments are possible to remove in this way, please output the index of the earliest one in the input.  
+
+INPUT FORMAT (file cowjump.in):  
+The first line of input contains N. Each of the N remaining lines describe one line segment with four integers x1 y1 x2 y2, all nonnegative integers at most 109. The line segment has (x1,y1) and (x2,y2) as its endpoints. All endpoints are distinct from each-other.  
+OUTPUT FORMAT (file cowjump.out):  
+Output the earliest index within the input of a segment such that removing that segment causes the remaining segments not to intersect.  
+SAMPLE INPUT:
+```
+4
+2 1 6 1
+4 0 1 5
+5 6 5 5
+2 7 1 3
+```
+SAMPLE OUTPUT:
+```
+2
+```
+Note: You may want to be careful of integer overflow in this problem, due to the size of the integers provided as coordinates of segment endpoints.
+
+Problem credits: Brian Dean
+
 ## Problem 3. Fence Planning
 
 [Fence Planning](http://www.usaco.org/index.php?page=viewproblem2&cpid=944)  
