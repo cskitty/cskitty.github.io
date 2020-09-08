@@ -78,6 +78,159 @@ Note: You may want to be careful of integer overflow in this problem, due to the
 
 Problem credits: Brian Dean
 
+
+
+
+{% highlight C++ linenos %}  
+
+
+ll N;
+ll x;
+
+struct Point {
+    ll x, y;
+    int segindex;
+    bool start;
+};
+
+bool operator< (Point p1, Point p2) { return p1.x==p2.x ? p1.y<p2.y : p1.x<p2.x; }
+
+struct Segment {
+    Point p, q;
+    int index;
+};
+
+// What is the y coordinate of segment s when evaluated at x?
+double eval(Segment s) {
+    if (s.p.x == s.q.x) return s.p.y;
+    return s.p.y + (s.q.y-s.p.y) * (x-s.p.x) / (s.q.x-s.p.x);
+}
+
+bool operator< (Segment s1, Segment s2) { return s1.index != s2.index && eval(s1)<eval(s2); }
+bool operator== (Segment s1, Segment s2) { return s1.index == s2.index; }
+
+
+// Intersection testing (here, using a standard "cross product" trick)
+int sign(ll x) { if (x==0) return 0; else return x<0 ? -1 : +1; }
+int operator* (Point p1, Point p2) { return sign(p1.x * p2.y - p1.y * p2.x); }
+Point operator- (Point p1, Point p2) { Point p = {p1.x-p2.x, p1.y-p2.y}; return p; }
+bool isect(Segment &s1, Segment &s2)
+{
+    Point &p1 = s1.p, &q1 = s1.q, &p2 = s2.p, &q2 = s2.q;
+    return ((q2-p1)*(q1-p1)) * ((q1-p1)*(p2-p1)) >= 0 && ((q1-p2)*(q2-p2)) * ((q2-p2)*(p1-p2)) >= 0;
+}
+
+
+
+int main() {
+    setIO("cowjump");
+
+    cin >> N;
+
+    vector<Point> points;
+    vector<Segment> hurdles(N);
+
+    /*Shamos-Hoey Algorithm*/
+    F0R(i, N) {
+        cin >> hurdles[i].p.x >> hurdles[i].p.y >> hurdles[i].q.x >> hurdles[i].q.y;
+
+        hurdles[i].p.segindex = i, hurdles[i].q.segindex = i;
+
+        if (hurdles[i].p.x < hurdles[i].q.x) {
+            hurdles[i].p.start = true;
+            hurdles[i].q.start = false;
+        }
+        else if (hurdles[i].p.x == hurdles[i].q.x) {
+            if (hurdles[i].p.y > hurdles[i].q.y) {
+                hurdles[i].p.start = false;
+                hurdles[i].q.start = true;
+            }
+            else {
+                hurdles[i].p.start = true;
+                hurdles[i].q.start = false;
+            }
+        }
+        else {
+            hurdles[i].p.start = false;
+            hurdles[i].q.start = true;
+        }
+        hurdles[i].index = i;
+        points.pb(hurdles[i].p);
+        points.pb(hurdles[i].q);
+    }
+
+    sort(all(points), [](Point a, Point b) {if (a.x == b.x) return a.y < b.y; else {return a.x < b.x;}});
+
+    int line1, line2;
+    set<Segment> active;
+
+    bool flag = true;
+    for (int i = 0; i < points.size() && flag; i++) {
+        x = points[i].x;
+
+        if (points[i].start) {
+
+            set<Segment>::iterator next = lower_bound(all(active), hurdles[points[i].segindex]);
+            if (next != active.end() && isect(hurdles[next->index], hurdles[points[i].segindex])) {
+                line1 = points[i].segindex;
+                line2 = next->index;
+                flag = false;
+                break;
+            }
+
+            set<Segment>::iterator prev = next;
+            if (prev != active.begin()) {
+                prev--;
+                if (isect(hurdles[prev->index], hurdles[points[i].segindex])) {
+                    line1 = points[i].segindex;
+                    line2 = prev->index;
+                    flag = false;
+                    break;
+                }
+            }
+            active.insert(hurdles[points[i].segindex]);
+        }
+        else {
+            //set<Segment>::iterator prev = active.begin(), curr = active.begin();
+            auto it = active.find(hurdles[points[i].segindex]);
+            if (it != active.end()) {
+                auto after = it, before = it;
+                after++;
+                if (before != active.begin() && after != active.end()) {
+                    before--;
+                    if (isect(hurdles[before->index], hurdles[after->index])) {
+                        line1 = before->index;
+                        line2 = after->index;
+                        flag = false;
+                        break;
+                    }
+                }
+                active.erase(hurdles[points[i].segindex]);
+            }
+        }
+    }
+
+    if (line1 < line2) {
+        swap(line1, line2);
+    }
+    int val = 0;
+    F0R(i, N) {
+        if (i != line1) {
+            if (isect(hurdles[i], hurdles[line1])) {
+                val++;
+            }
+        }
+    }
+
+    if (val > 1) {
+        cout << line1 + 1;
+    }
+    else {
+        cout << line2 + 1;
+    }
+}
+{% endhighlight %}
+
 ## Problem 3. Fence Planning
 
 [Fence Planning](http://www.usaco.org/index.php?page=viewproblem2&cpid=944)  
