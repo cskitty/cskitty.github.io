@@ -90,7 +90,7 @@ int main() {
 {% endhighlight %}
 
 
-Problem 2. Painting the Barn
+## Problem 2. Painting the Barn
 
 [The Great Revegetation](http://usaco.org/index.php?page=viewproblem2&cpid=920)
 
