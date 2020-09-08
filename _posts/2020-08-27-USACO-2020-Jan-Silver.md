@@ -83,7 +83,50 @@ Note that the large size of integers involved in this problem may require the us
 Problem credits: Nick Wu  
 
 {% highlight c++ linenos %}
+ll N;
+ll M, K, Kv;
 
+bool check(ll target) {
+    K = Kv;
+    ll G = 0;
+
+    dbg(target);
+    while (K > 0 && G < N) {
+        ll Y = (N - G)/target;
+        if (Y <= M) {
+            return (G + M * K) >= N;
+        }
+        ll days = (N - G - (target * Y))/Y + 1;
+        if (days > K) {
+            days = K;
+        }
+        G += Y * days;
+        K-= days;
+    }
+    return G >= N;
+}
+
+ll binary_search() {
+
+    ll max = 1e12;
+    ll p = 0;
+    for (ll a = max; a >= 1; a /= 2) {
+        while ((p + a) > 0 && check(p + a)) {
+            p += a;
+        }
+    }
+    return p;
+}
+
+int main() {
+    setIO("loan");
+
+    cin >> N >> K >> M;
+    Kv = K;
+
+    cout << binary_search();
+
+}
 {% endhighlight %}
 
 
