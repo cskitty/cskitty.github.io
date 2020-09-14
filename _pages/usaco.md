@@ -93,6 +93,30 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 | Contest   | #                                                               | Name          | Alogrithm                                                                              | Level  | Language |  
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
+| 2015 Feb Bronze  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=526 ) |    censor  |             |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=527  )  | cow      |   [DP](https://starcoder.org/usaco/USACO-2015-Feb-Bronze/#problem-2-cow)  |  Easy  |  Python  |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=528  )  | hopscotch |    |  Easy  |  Python  |     |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
+| 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=687 ) | notlast     |    |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=688)  | hps      |  [Simulation](https://starcoder.org/usaco/USACO-2017-Jan-Bronze/#problem-2-hoof-paper-scissors)  |  Easy  |  Python  |  |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=689  )  | cowtip       |   [Brute Force](https://starcoder.org/usaco/USACO-2015-Feb-Bronze/#problem-3-cow-tipping) | Easy  |  Python  |     |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
+| 2017 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=760 ) | shuffle     | [Simulation](https://starcoder.org/usaco/USACO-2017-Dec-Bronze/#problem-2-the-bovine-shuffle)   |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=761  )  | measurement      |     |  Easy  |  Python  |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=762  )  | homework       |    |  Easy  |  Python  |     |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ |
+| 2018 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=855 ) | mixmilk     | [Simulation](https://starcoder.org/usaco/USACO-2018-Dec-Bronze/#problem-1-mixing-milk)   |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=856  )  | blist      |     |  Easy  |  Python  |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=857  )  | backforth       |    |  Easy  |  Python  |     |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
+| 2018 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=831 ) | tttt | [Brute Force](https://starcoder.org/usaco/USACO-2018-Open-Bronze/#problem-1-team-tic-tac-toe)  |  Easy  |  Python  |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=832)  | milkorder     |        | Easy |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=833)  | family        |           |   Easy |     |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
+| 2019 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=891 ) | shellgame     | [Simulation](https://starcoder.org/usaco/USACO-2019-Jan-Bronze/#problem-1-shell-game)   |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=892  )  | sleepy      |     |  Easy  |  Python  |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=893  )  | guess       |    |  Easy  |  Python  |     |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
 | 2020 Jan  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=987    )  | word          | [String](https://starcoder.org/usaco/USACO-2020-Jan-Bronze/#problem-1-word-processor)   |  Easy  |  Python  |  
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=988    )  | photo         | [Brute Force](https://starcoder.org/usaco/USACO-2020-Jan-Bronze/#problem-2-photoshoot)|  Easy  |  Python  |     |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=989    )  | race          |    |  Easy  |  Python  |     |
@@ -100,22 +124,3 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=1012   )  | breedflip     | [Greedy](https://starcoder.org/usaco/USACO-2020-Feb-Bronze/#problem-2-mad-scientist)  |  Easy  |  Python  |     |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=1013   )  | swap          |    |  Easy  |  Python  |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
-| 2019 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=891 ) | shellgame     | [Simulation](https://starcoder.org/usaco/USACO-2019-Jan-Bronze/#problem-1-shell-game)   |  Easy  |  Python  |  
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=892  )  | sleepy      |     |  Easy  |  Python  |     |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=893  )  | guess       |    |  Easy  |  Python  |     |
-| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
-| 2018 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=831 ) | tttt | [Brute Force](https://starcoder.org/usaco/USACO-2018-Open-Bronze/#problem-1-team-tic-tac-toe)  |  Easy  |  Python  |
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=832)  | milkorder     |        | Easy |     |
-|        | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=833)  | family        |           |   Easy |     |
-| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ |
-| 2018 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=855 ) | mixmilk     | [Simulation](https://starcoder.org/usaco/USACO-2018-Dec-Bronze/#problem-1-mixing-milk)   |  Easy  |  Python  |  
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=856  )  | blist      |     |  Easy  |  Python  |     |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=857  )  | backforth       |    |  Easy  |  Python  |     |
------------------------------------- | ------ |
-| 2017 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=687 ) | notlast     |    |  Easy  |  Python  |  
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=688)  | hps      |  [Simulation](https://starcoder.org/usaco/USACO-2017-Jan-Bronze/#problem-2-hoof-paper-scissors)  |  Easy  |  Python  |     |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=689  )  | cowtip       |   [Brute Force](https://starcoder.org/usaco/USACO-2015-Feb-Bronze/#problem-3-cow-tipping) | Easy  |  Python  |     |
------------------------------------- | ------ |
-| 2015 Feb Bronze  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=526 ) |    censor  |             |  Easy  |  Python  |  
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=527  )  | cow      |   [DP](https://starcoder.org/usaco/USACO-2015-Feb-Bronze/#problem-2-cow)  |  Easy  |  Python  |     |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=528  )  | hopscotch |    |  Easy  |  Python  |     |
