@@ -45,7 +45,77 @@ then she receives two baskets each with 4 berries, giving her 8 berries in total
 
 Problem credits: Nathan Pinsker
 {% highlight c++ linenos %}
+int N, K;
 
+int bessie(int Q, vector<int> trees) {
+    vector<int> ct = trees;
+    int count = 0;
+    bool flag = true;
+    for(int i = 0; i < N && flag; i++) {
+        while (ct[i] >= Q) {
+            ct[i] -= Q;
+            count++;
+            if (count == K/2) {
+                flag = false;
+                break;
+            }
+        }
+    }
+    if (count == K/2) {
+        int count2 = 0;
+        int ans = 0;
+        sort(all(ct), greater<int>());
+        flag = true;
+        for(int i = 0; i < N && flag; i++) {
+            while(ct[i] >= Q) {
+                ct[i] -= Q;
+                ans += Q;
+                count2++;
+                if (count2 == K/2) {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        if (count2 != K/2) {
+            sort(all(ct), greater<int>());
+            F0R(i, N) {
+                count2++;
+                ans += ct[i];
+                ct[i] = 0;
+                if (count2 == K/2) {
+                    break;
+                }
+            }
+        }
+        return ans;
+    }
+    else {
+        // not enough for this Q
+        return 0;
+    }
+}
+
+int main() {
+    setIO("berries");
+
+    cin >> N >> K;
+
+    vector<int> trees(N);
+
+    F0R(i, N) {
+        cin >> trees[i];
+    }
+
+    sort(all(trees), greater<int>());
+
+    int ans = 0;
+    for (int i = trees[0]; i > 0; i--) {
+        ans = max(ans, bessie(i, trees));
+    }
+
+    cout << ans;
+}
 {% endhighlight %}
 
 ## Problem 2. Loan Repayment
