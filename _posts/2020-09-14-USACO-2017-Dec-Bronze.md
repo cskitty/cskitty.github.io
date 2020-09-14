@@ -1,5 +1,5 @@
 ---
-title: "USACO 2017 Jan Bronze"
+title: "USACO 2017 Dec Bronze"
 categories:
   - USACO
 tags:
@@ -8,7 +8,7 @@ tags:
   - USACO
 ---
 
-# USACO 2017 Jan Bronze                         
+# USACO 2017 Dec Bronze                         
 
 ## Problem 2. The Bovine Shuffle        
 
