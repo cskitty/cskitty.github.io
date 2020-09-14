@@ -81,8 +81,8 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=991)  | loan          | [BinSearch](https://starcoder.org/usaco/USACO-2020-Jan-Silver/#problem-2-loan-repayment) | C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=992)  | wormsort     | [DFS/FloodFill](https://starcoder.org/usaco/USACO-2020-Jan-Silver/#problem-3-wormhole-sort)| C++ |
 | 2020 Feb  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=1014)  | swap       | [CycleSim](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-1-swapity-swapity-swap)| C++|
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=1015)  | triangles   | [Geometry](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-2-triangles)     | C++ |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=1016)  | clocktree    | [BFS] (https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-3-clock-tree)                     | C++  |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=1015)  | triangles   | [Geometry](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-2-triangles)        | C++ |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=1016)  | clocktree   | [BFS](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-3-clock-tree)            | C++  |
 | 2020 Open | [1](http://usaco.org/index.php?page=viewproblem2&cpid=1038)     | socdist       | [BinSearch](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-1-social-distancing   ) | C++|
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=1039)     | cereal      | [Simulationn](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-2-cereal)    | C++ |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=1040)     | moop    |                      | C++  |
