@@ -93,7 +93,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 | Contest   | #                                                               | Name          | Alogrithm                                                                              | Level  | Language |  
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
-| 2015 Feb Bronze  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=526 ) |    censor  |             |  Easy  |  Python  |  
+| 2015 Feb Bronze  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=526 ) |    censor  | [Brute Force](https://starcoder.org/usaco/USACO-2020-Feb-Bronze/#problem-1-triangles)            |  Easy  |  Python  |  
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=527  )  | cow      |   [DP](https://starcoder.org/usaco/USACO-2015-Feb-Bronze/#problem-2-cow)  |  Easy  |  Python  |     |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=528  )  | hopscotch |    |  Easy  |  Python  |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
