@@ -10,8 +10,7 @@ tags:
 ## Floodfill (Recursive)
 
 {% highlight c++ linenos %}
-bool visited[MaxX][MaxY];
-
+int visited[MaxX][MaxY];
 int currSize = 0;
 
 int xv[] = {0, 0, -1, 1};
@@ -23,7 +22,7 @@ void ff(int r, int c, int color) {
     }
 
     currSize++;
-    visited[r][c] = 1;
+    visited[r][c] = color;
 
     F0R(i, 4) {
         int nX = r + xv[i], nY = c + yv[i];
@@ -35,6 +34,17 @@ int floodfill() {
 
     memset(visited, 0, MaxX * MaxY * sizeof(bool));
 
-    ff(startx, starty, 1);
+    int color = 0;
+    F0R(i, N) {
+      F0R(j, M) {
+        if (! visited[i][j]) {
+          currSize = 0;
+          color++;
+          ff(i, j, color);
+        }
+      }
+    }
+
+    return color;
 }
 {% endhighlight %}
