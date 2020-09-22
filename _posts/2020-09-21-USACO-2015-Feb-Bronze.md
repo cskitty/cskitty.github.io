@@ -1,5 +1,5 @@
 ---
-title:USACO 2015 Feb Bronze
+title: USACO 2015 Feb Bronze
 categories:
   - USACO
 tags:
