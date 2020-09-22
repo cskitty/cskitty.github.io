@@ -6,11 +6,9 @@ tags:
   - Algorithms
   - C++
   - Binary Search
-  - Sorting
 ---
 
 # Binary Search
-
 
 ## Minimum Possible
 
@@ -21,7 +19,6 @@ Binary search with false false true true.
 int binary_search() {
     int l = 0;
     int r = 1e9 + 1;
-
     while (l != r) {
         int mid = (l + r)/2;
         if (check(mid)) {
@@ -31,7 +28,6 @@ int binary_search() {
             l = mid + 1;
         }
     }
-
     return l;
 }
 
@@ -43,21 +39,21 @@ Binary search with true true false false.
 
 {% highlight c++ linenos %}
 
-int binary_search(vector<ll> x) {
+  int binary_search(vector<ll> x) {
 
-    int l = 0;
-    int r = 1e9 + 1;
-    while (l != r) {
-        int mid = (l + r + 1)/2;
-        if (check(x, mid)) {
-            l = mid;
-        }
-        else {
-            r = mid - 1;
-        }
-    }
-    return l;
-}
+      int l = 0;
+      int r = 1e9 + 1;
+      while (l != r) {
+          int mid = (l + r + 1)/2;
+          if (check(x, mid)) {
+              l = mid;
+          }
+          else {
+              r = mid - 1;
+          }
+      }
+      return l;
+  }
 
 {% endhighlight %}
 
@@ -71,10 +67,11 @@ larger than x.
 
 {% highlight c++ linenos %}
 
-auto a = lower_bound(array, array+n, x);
-auto b = upper_bound(array, array+n, x);
-cout << b-a << "\n";
+    auto a = lower_bound(array, array+n, x);
+    auto b = upper_bound(array, array+n, x);
+    cout << b-a << "\n";
 
-auto r = equal_range(array, array+n, x);
-cout << r.second-r.first << "\n";
+    auto r = equal_range(array, array+n, x);
+    cout << r.second-r.first << "\n";  
+
 {% endhighlight %}

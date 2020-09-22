@@ -10,7 +10,7 @@ tags:
 
 ## Sorting with C++ Struct
 
-C++ struct can be sorted using lamda functions.
+C++ struct can be sorted using lambda functions.
 
 {% highlight c++ linenos %}
 
