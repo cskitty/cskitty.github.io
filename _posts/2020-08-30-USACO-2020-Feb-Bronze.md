@@ -38,9 +38,33 @@ Posts at (0,0), (1,0), and (1,2) form a triangle of area 1. Thus, the answer is 
 
 Problem credits: Travis Hance
 
-{% highlight c++ linenos %}
+{% highlight python linenos %}
+fin, fout = open('triangles.in'), open('triangles.out', 'w')
+n = int(fin.readline())
+points = []
 
+for x in range(n):
+    points.append(tuple(map(int, fin.readline().split())))
 
+maxArea = 0
+for point1 in range(n):
+    for point2 in range(0, point1 + 1):
+        for point3 in range(0, point2 + 1):
+            yLine = 0
+            xLine = 0
+            for x in [points[point1], points[point2], points[point3]]:
+                for y in [points[point1], points[point2], points[point3]]:
+                    if x == y:
+                        continue
+                    elif y[0] == x[0]:
+                        xLine = abs(x[1] - y[1])
+                    elif y[1] == x[1]:
+                        yLine = abs(x[0] - y[0])
+
+                if yLine * xLine > maxArea:
+                    maxArea = xLine * yLine
+
+fout.write(str(maxArea))
 {% endhighlight %}
 
 ## Problem 2. Mad Scientist
@@ -72,7 +96,7 @@ First, FJ can transform the substring that corresponds to the first character al
 
 Problem credits: Brian Dean
 
-{% highlight c++ linenos %}
+{% highlight python linenos %}
 
 fin, fout = open('breedflip.in'), open('breedflip.out', 'w')
 
@@ -141,5 +165,5 @@ Initially, the order of the cows is [1,2,3,4,5,6,7] from left to right. After th
 Problem credits: Brian Dean  
 
 {% highlight c++ linenos %}
- 
+
 {% endhighlight %}
