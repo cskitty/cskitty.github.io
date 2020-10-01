@@ -101,9 +101,13 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=688)  | hps      |  [Simulation](https://starcoder.org/usaco/USACO-2017-Jan-Bronze/#problem-2-hoof-paper-scissors)  |  Easy  |  Python  |  |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=689  )  | cowtip       |   [Brute Force](https://starcoder.org/usaco/USACO-2015-Feb-Bronze/#problem-3-cow-tipping) | Easy  |  Python  |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
-| 2017 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=760 ) | shuffle     | [Simulation](https://starcoder.org/usaco/USACO-2017-Dec-Bronze/#problem-2-the-bovine-shuffle)   |  Easy  |  Python  |  
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=761  )  | measurement      |     |  Easy  |  Python  |     |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=762  )  | homework       |    |  Easy  |  Python  |     |
+| 2017 Open  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=735 ) | lostcow     |    |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=736)  | cownomics      |  [Sets](https://starcoder.org/usaco/USACO-2017-Jan-Bronze/#problem-2-hoof-paper-scissors)  |  Easy  |  Python  |  |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=737  )  | art       |   | Easy  |  Python  |     |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
+| 2017 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=759 ) | billboard     |  [Brute Force](https://starcoder.org/usaco/USACO-2017-Dec-Bronze/#problem-1-the-blocked-billboard)  |  Easy  |  Python  |  
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=760  )  | shuffle      |   [Simulation](https://starcoder.org/usaco/USACO-2017-Dec-Bronze/#problem-2-the-bovine-shuffle)  |  Easy  |  Python  |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=761 )  | measurement     |    |  Easy  |  Python  |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ |
 | 2018 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=855 ) | mixmilk     | [Simulation](https://starcoder.org/usaco/USACO-2018-Dec-Bronze/#problem-1-mixing-milk)   |  Easy  |  Python  |  
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=856  )  | blist      |     |  Easy  |  Python  |     |
