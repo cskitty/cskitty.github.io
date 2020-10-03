@@ -107,7 +107,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
 | 2017 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=759 ) | billboard     |  [Brute Force](https://starcoder.org/usaco/USACO-2017-Dec-Bronze/#problem-1-the-blocked-billboard)  |  Easy  |  Python  |  
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=760  )  | shuffle      |   [Simulation](https://starcoder.org/usaco/USACO-2017-Dec-Bronze/#problem-2-the-bovine-shuffle)  |  Easy  |  Python  |     |
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=761 )  | measurement     |    |  Easy  |  Python  |     |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=761 )  | measurement     | [Simulation](https://starcoder.org/usaco/USACO-2017-Dec-Bronze/#problem-3-milk-measurement)   |  Easy  |  Python  |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ |
 | 2018 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=855 ) | mixmilk     | [Simulation](https://starcoder.org/usaco/USACO-2018-Dec-Bronze/#problem-1-mixing-milk)   |  Easy  |  Python  |  
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=856  )  | blist      |     |  Easy  |  Python  |     |
