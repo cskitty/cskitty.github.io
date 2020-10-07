@@ -30,7 +30,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 
 | 2013 Mar  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=262    )  | tractor     | [DP](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-2-tractor)          |  C++  |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=263 )  | painting      | [SweepLine](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-3-milk-scheduling) |  C++
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=263 )  | painting      | [SweepLine](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-3-milk-scheduling) |  C++|
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 
 | 2013 Open  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=294    )  | cruise     | [DFS](https://starcoder.org/usaco/USACO-2013-Open-Silver/#problem-3-luxury-river-cruise )          |  C++  |
