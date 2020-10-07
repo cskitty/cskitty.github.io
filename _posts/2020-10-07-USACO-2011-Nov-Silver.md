@@ -1,5 +1,5 @@
 ---
-title: "USACO 2012 Nov Silver"
+title: "USACO 2011 Nov Silver"
 categories:
   - USACO
 tags:
@@ -8,7 +8,7 @@ tags:
   - USACO
 ---
 
-# USACO 2012 Nov Silver                  
+# USACO 2011 Nov Silver                  
 
 ## Problem 2. Cow Lineup
 [Cow Lineup](http://www.usaco.org/index.php?page=viewproblem2&cpid=89)  
