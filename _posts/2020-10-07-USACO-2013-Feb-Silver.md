@@ -11,7 +11,7 @@ tags:
 # USACO 2013 Feb Silver                  
 
 ## Problem 2. Tractor
-[Clumsy Cows](http://www.usaco.org/index.php?page=viewproblem2&cpid=245)  
+[Tractor](http://www.usaco.org/index.php?page=viewproblem2&cpid=245)  
 
 Problem 2: Tractor [Kalki Seksaria and Brian Dean, 2013]
 
@@ -171,7 +171,7 @@ int main() {
 
 
 ## Problem 3. Milk Scheduling
-[Clumsy Cows](http://www.usaco.org/index.php?page=viewproblem2&cpid=246)  
+[Milk Scheduling](http://www.usaco.org/index.php?page=viewproblem2&cpid=246)  
 Problem 3: Milk Scheduling [Kalki Seksaria, 2013]
 
 Farmer John's N cows (1 <= N <= 10,000) are conveniently numbered 1..N.

@@ -1,5 +1,5 @@
 ---
-title: "USACO 2013 Nov Silver"
+title: "USACO 2012 Nov Silver"
 categories:
   - USACO
 tags:
@@ -8,110 +8,93 @@ tags:
   - USACO
 ---
 
-# USACO 2013 Nov Silver                  
+# USACO 2012 Nov Silver                  
 
-## Problem 2. Crowded Cows
-[Crowded Cows](http://www.usaco.org/index.php?page=viewproblem2&cpid=344)  
-Problem 2: Crowded Cows [Brian Dean, 2013]  
+## Problem 1. Clumsy Cows
+[Clumsy Cows](http://www.usaco.org/index.php?page=viewproblem2&cpid=190)  
 
-Farmer John's N cows (1 <= N <= 50,000) are grazing along a one-dimensional
-fence.  Cow i is standing at location x(i) and has height h(i) (1 <=
-x(i),h(i) <= 1,000,000,000).     
+Bessie the cow is trying to type a balanced string of parentheses into her
+new laptop, but she is sufficiently clumsy (due to her large hooves) that
+she keeps mis-typing characters.  Please help her by computing the minimum
+number of characters in the string that one must reverse (e.g., changing a
+left parenthesis to a right parenthesis, or vice versa) so that the string
+would become balanced.
 
-A cow feels "crowded" if there is another cow at least twice her height
-within distance D on her left, and also another cow at least twice her
-height within distance D on her right (1 <= D <= 1,000,000,000).  Since
-crowded cows produce less milk, Farmer John would like to count the number
-of such cows.  Please help him.  
+There are several ways to define what it means for a string of parentheses
+to be "balanced".  Perhaps the simplest definition is that there must be
+the same total number of ('s and )'s, and for any prefix of the string,
+there must be at least as many ('s as )'s.  For example, the following
+strings are all balanced:  
 
-PROBLEM NAME: crowded  
+()  
+(())
+()(()())  
+
+while these are not:
+
+)(  
+())(  
+((())))  
+
+PROBLEM NAME: clumsy  
 
 INPUT FORMAT:  
 
-* Line 1: Two integers, N and D.  
+* Line 1: A string of parentheses of even length at most 100,000
+        characters
 
-* Lines 2..1+N: Line i+1 contains the integers x(i) and h(i).  The
-        locations of all N cows are distinct.  
+SAMPLE INPUT (file clumsy.in):
+```  
+())(
+```  
+OUTPUT FORMAT:
 
-SAMPLE INPUT (file crowded.in):  
-```
-6 4
-10 3
-6 2
-5 3
-9 7
-3 6
-11 2
-```
-INPUT DETAILS:  
+* Line 1: A single integer giving the minimum number of parentheses
+        that must be toggled to convert the string into a balanced
+        string.
 
-There are 6 cows, with a distance threshold of 4 for feeling crowded.  Cow #1 lives at position x=10 and has height h=3, and so on.  
-
-OUTPUT FORMAT:    
-
-* Line 1: The number of crowded cows.  
-
-SAMPLE OUTPUT (file crowded.out):  
-```
+SAMPLE OUTPUT (file clumsy.out):
+```  
 2
 ```
 OUTPUT DETAILS:
 
-The cows at positions x=5 and x=6 are both crowded.  
-{% highlight C++ linenos %}  
+The last parenthesis must be toggled, and so must one of the two middle
+right parentheses.
 
-ll N, K;
+
+
+
+{% highlight C++ linenos %}
+
+ll N;
 
 int main() {
-    setIO("crowded");
+    setIO("clumsy");
 
-    cin >> N >> K;
+    int ss = 0;
+    int ans = 0;
 
-    vector<pair<ll, ll>> cows(N);
+    string s;
+    cin >> s;
 
-    F0R(i, N) {
-        cin >> cows[i].f >> cows[i].s;
+    F0R(i, s.size()) {
+        int a = s[i];
+        if (a == '(') {
+            ss++;
+        }
+        else {
+            if (ss == 0) {
+                ans++;
+                ss++;
+            }
+            else {
+                ss--;
+            }
+        }
     }
 
-    sort(all(cows));
-
-    ll ans = 0;
-    int l = 0, r = 0;
-    multiset<ll, greater<ll>> leftQ;
-    multiset<ll, greater<ll>> rightQ;
-
-    rightQ.insert(cows[0].s);
-    r++;
-
-    for(int curr = 0; curr < N; curr++) {
-        bool flag = false;
-
-        leftQ.insert(cows[curr].s);
-        while (l < curr && cows[curr].f - cows[l].f > K) {
-            leftQ.erase(leftQ.lower_bound(cows[l].s));
-            l++;
-        }
-
-        auto leftTop = leftQ.begin();
-        if (* leftTop >= cows[curr].s * 2) {
-            flag = true;
-        }
-
-        if (rightQ.find(cows[curr].s) != rightQ.end()) {
-            rightQ.erase(rightQ.lower_bound(cows[curr].s));
-        }
-        while (r < N && cows[r].f - cows[curr].f <= K) {
-            rightQ.insert(cows[r].s);
-            r++;
-        }
-
-        auto rightTop = rightQ.begin();
-        if (flag && * rightTop >= cows[curr].s * 2) {
-            ans++;
-        }
-
-    }
-
-    cout << ans;
+    cout << ss/2 + ans;
 }
+
 {% endhighlight %}

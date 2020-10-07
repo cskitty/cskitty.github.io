@@ -11,7 +11,7 @@ tags:
 # USACO 2013 Open Silver                  
 
 ## Problem 3. Luxury River Cruise
-[Clumsy Cows](http://www.usaco.org/index.php?page=viewproblem2&cpid=284)  
+[ Luxury River Cruise](http://www.usaco.org/index.php?page=viewproblem2&cpid=284)  
 Problem 3: Luxury River Cruise [Josh Alman and Nathan Pinsker, 2013]
 
 Farmer John is taking Bessie and the cows on a cruise! They are sailing on a
