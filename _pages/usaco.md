@@ -26,7 +26,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | 2012 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=209    )  | wifi     | [DP](https://starcoder.org/usaco/USACO-2012-Dec-Silver/#problem-2-wifi-setup)          |  C++  |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2013 Feb  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=245    )  | tractor     | [BinSearch](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-2-tractor)          |  C++  |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=246 )  | msched      | [Scheduling](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-3-milk-scheduling) |  C++
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=246 )  | msched      | [Scheduling](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-3-milk-scheduling) |  C++|
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 
 | 2013 Mar  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=262    )  | tractor     | [DP](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-2-tractor)          |  C++  |
