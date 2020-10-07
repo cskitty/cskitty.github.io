@@ -38,8 +38,11 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 | 2013 Nov  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=344    )  | crowded     | [DP](https://starcoder.org/usaco/USACO-2012-Nov-Silver/#problem-2-crowded-cows )          |  C++  |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
+| 2014 Jan  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=380    )  | ccski     | [BinSearch](https://starcoder.org/usaco/USACO-2014-Jan-Silver/#problem-2-cross-country-skiing )          |  C++  |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 
-
+| 2014 Feb  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=397    )  | auto     | [BinSearch](https://starcoder.org/usaco/USACO-2014-Feb-Silver/#problem-1-auto-complete )          |  C++  |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 
 | 2014 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=491    )  | piggyback     | [BFS](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-1-piggyback)            |  Java  |
 |           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=492)      | marathon      | [DP](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-2-marathon)     |  Java  |
