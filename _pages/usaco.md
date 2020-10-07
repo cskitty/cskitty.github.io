@@ -19,23 +19,20 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 | Contest   | #                                                               | Name          | Alogrithm                              | Language |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | ------ |
-| 2011 Nov  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=89    )  | lineup     | [2Pointers](https://starcoder.org/usaco/USACO-2011-Nov-Silver/#problem-2-cow-lineup)            |  C++  |
+| 2011 Nov  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=89    )  | lineup         | [2Pointers](https://starcoder.org/usaco/USACO-2011-Nov-Silver/#problem-2-cow-lineup)            |  C++  |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2012 Nov  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=190    )  | clumsy     | [Stack](https://starcoder.org/usaco/USACO-2013-Nov-Silver/#problem-1-clumsy-cows)          |  C++  |
+| 2012 Nov  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=190    )  | clumsy        | [Stack](https://starcoder.org/usaco/USACO-2013-Nov-Silver/#problem-1-clumsy-cows)          |  C++  |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2012 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=209    )  | wifi     | [DP](https://starcoder.org/usaco/USACO-2012-Dec-Silver/#problem-2-wifi-setup)          |  C++  |
+| 2012 Dec  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=209    )  | wifi          | [DP](https://starcoder.org/usaco/USACO-2012-Dec-Silver/#problem-2-wifi-setup)          |  C++  |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-| 2013 Feb  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=245    )  | tractor     | [BinSearch](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-2-tractor)          |  C++  |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=246 )  | msched      | [Scheduling](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-3-milk-scheduling) |  C++|
+| 2013 Feb  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=245    )  | tractor       | [BinSearch](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-2-tractor)          |  C++  |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=246 )     | msched        | [Scheduling](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-3-milk-scheduling) |  C++|
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-
-| 2013 Mar  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=262    )  | tractor     | [DP](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-2-tractor)          |  C++  |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=263 )  | painting      | [SweepLine](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-3-milk-scheduling) |  C++|
+| 2013 Mar  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=262    )  | tractor       | [DP](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-2-tractor)          |  C++  |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=263 )     | painting      | [SweepLine](https://starcoder.org/usaco/USACO-2013-Feb-Silver/#problem-3-milk-scheduling) |  C++|
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-
 | 2013 Open  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=294    )  | cruise     | [DFS](https://starcoder.org/usaco/USACO-2013-Open-Silver/#problem-3-luxury-river-cruise )          |  C++  |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
-
 | 2013 Nov  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=344    )  | crowded     | [DP](https://starcoder.org/usaco/USACO-2012-Nov-Silver/#problem-2-crowded-cows )          |  C++  |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | -- |
 | 2014 Jan  | [2](http://usaco.org/index.php?page=viewproblem2&cpid=380    )  | ccski     | [BinSearch](https://starcoder.org/usaco/USACO-2014-Jan-Silver/#problem-2-cross-country-skiing )          |  C++  |
