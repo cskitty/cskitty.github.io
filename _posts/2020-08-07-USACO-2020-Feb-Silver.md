@@ -170,78 +170,66 @@ Fence posts (0,0), (1,0), and (1,2) give a triangle of area 1, while (0,0), (1,0
 Problem credits: Travis Hance and Nick Wu
 
 {% highlight C++ linenos %}
+ll N;
+const int myINF = 1e9;
+const int maxV = 2e4 + 1;
+const int myMOD = 1e9 + 7;
+vector<vector<pl>> xPoints(maxV);
+vector<vector<pl>> yPoints(maxV);
+vector<ll> xSum, ySum;
 
-struct P{
-    int x;
-    int y;
-};
-
-map<int, int> xMap;
-map<int, int> yMap;
-
-vector<P> XPoints;
-vector<P> YPoints;
-
-
-int YSumForX(int x,  int i) {
-    if (xMap.count(XPoints[i].y) > 0) {
-        return xMap[x];
+void findSum(vector<pl> points, vector<ll> &sum) {
+    if (points.empty()) {
+        return;
     }
-
-    ll sumY = 0;
-    auto bounds2 = equal_range(YPoints.begin(), YPoints.end(), XPoints[i], [] (P a, P b) {return a.y < b.y;});
-    for (auto k = bounds2.f; k < bounds2.s; k++) {
-        sumY += abs(( * k).x - x);
+    sort(all(points), [](pi a, pi b) {return a.s < b.s;});
+    auto j = points.begin();
+    ll lastSum = 0;
+    for (auto k = points.begin(); k < points.end(); k++) {
+        lastSum += (* k).s - (* j).s;
     }
+    sum[(* j).f] = lastSum;
+    j++;
 
-    xMap[XPoints[i].y] = sumY + x;
-
-    return sumY;
-}
-
-int XSumForY(int y, int i) {
-    if (yMap.count(y) > 0) {
-        return yMap[y];
+    int cnt = 1;
+    int sizeV = points.size();
+    for (; j < points.end(); j++) {
+        lastSum += ((* j).s - (* (j - 1)).s) * (2*cnt - sizeV);
+        cnt++;
+        sum[(* j).f] = lastSum;
     }
-
-    ll sumX = 0;
-    auto bounds = equal_range(XPoints.begin(), XPoints.end(), XPoints[i], [] (P a, P b) {return a.x < b.x;});
-    for (auto j = bounds.f; j < bounds.s; j++) {
-        sumX += abs((* j).y - y);
-    }
-
-    //yMap[y] = sumX;
-
-    return sumX;
 }
 
 int main() {
     setIO("triangles");
 
-    ll sum = 0;
-
-    int N;
     cin >> N;
-    XPoints.resize(N);
 
-    F0R(i, N) cin >> XPoints[i].x >> XPoints[i].y;
-
-    sort(XPoints.begin(), XPoints.end(), [] (P a, P b) {return a.x < b.x;});
-
-    YPoints.assign(XPoints.begin(), XPoints.end());
-    sort(YPoints.begin(), YPoints.end(), [] (P a, P b) {return a.y < b.y;});
+    xSum.resize(N);
+    ySum.resize(N);
 
     F0R(i, N) {
-
-        ll sumY = YSumForX(XPoints[i].x,  i);
-        ll sumX = XSumForY(XPoints[i].y,  i);
-
-
-        sum += sumX * sumY;
+        ll a, b;
+        cin >> a >> b;
+        a += 1e4;
+        b += 1e4;
+        xPoints[a].pb({i, b});
+        yPoints[b].pb({i, a});
     }
 
-    cout << sum % MOD;
+    F0R(i, maxV) {
+        findSum(xPoints[i], xSum);
+        findSum(yPoints[i], ySum);
+    }
 
+    ll sum = 0;
+
+    F0R(i, N) {
+        sum += xSum[i] * ySum[i];
+        sum %= myMOD;
+    }
+
+    cout << sum % myMOD;
 }
 
 {% endhighlight %}
