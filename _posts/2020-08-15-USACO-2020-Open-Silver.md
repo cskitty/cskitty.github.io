@@ -252,51 +252,39 @@ Test cases 7-12 satisfy no additional constraints.
 Problem credits: Dhruv Rohatgi  
 
 {% highlight C++ linenos %}
-int N, M;
-int ans;
-int rep[MX];
-int parent[MX];
-vector<vector<int>> cows(MX);
-
-bool visited[MX];
-
-int find(int x) {
-    dbg(x, parent[x]);
-    if (x == parent[x]) {
-        return x;
-    }
-    else {
-        return parent[x] = find(parent[x]);
-    }
-}
-
 int main() {
     setIO("moop");
     cin >> N;
 
-    F0R(i, N) {
-        int A, B;
-        cin >> A >> B;
-        cows[i] = {A, B};
-    }
+    vector<pi> particles(N);
+    vector<int> maxY(N);
+    vector<int> minY(N);
 
     F0R(i, N) {
-        parent[i] = i;
-        F0R(j, i) {
-            if (i != j && ((cows[i][0] <= cows[j][0] && cows[i][1] <= cows[j][1]))) {
-                parent[j] = i;
-            }
-            else if (cows[i][0] >= cows[j][0] && cows[i][1] >= cows[j][1]) {
-                parent[i] = j;
-            }
+        cin >> particles[i].f >> particles[i].s;
+    }
+
+    sort(all(particles), [](pi a, pi b) {if (a.f == b.f) {return a.s < b.s;} return a.f < b.f;});
+
+    minY[0] = particles[0].s;
+    maxY[N - 1] = particles[N - 1].s;
+    F0R(i, N) {
+        if (i >= 1) {
+            minY[i] = min(minY[i - 1], particles[i - 1].s);
+        }
+        if (N - i - 1 != N - 1) {
+            maxY[N - i - 1] = max(particles[N - i - 1].s, maxY[N - i]);
         }
     }
 
-    set<int> roots;
-    F0R(i, N) {
-        roots.insert(find(i));
-    }
+    int ans = N;
 
-    cout << roots.size() << endl;
+    FOR(i, 1, N) {
+        if (minY[i] <= maxY[i]) {
+            ans--;
+        }
+    }
+    cout << ans;
 }
+
 {% endhighlight %}

@@ -83,7 +83,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=895)  | perimeter     | [FloodFill](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-2-icy-perimeter)| C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=896)  | mountains     | [Sorting](https://starcoder.org/usaco/USACO-2019-Jan-Silver/#problem-3-mountain-view)| C++ |
 | 2019 Feb  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=918)      | herding       | [Sim/Prefix](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-1-sleepy-cow-herding)| C++ |
-|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=919)      | paintbarn     | [2DPrefixsum](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-2-painting-the-barn)| C++ |
+|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=919)      | paintbarn     | [2DPrefix](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-2-painting-the-barn)| C++ |
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=920)      | revegetate    | [BFS, BiPartite](https://starcoder.org/usaco/USACO-2019-Feb-Silver/#problem-3-the-great-revegetation)| C++ |
 | 2019 Open | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=942)      | leftout       | | C++ |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=943)      | cowjump     | [SweepLine](https://starcoder.org/usaco/USACO-2019-Open-Silver/#problem-2-cow-steeplechase-ii) | C++ |
@@ -99,8 +99,8 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=1015)  | triangles   | [Geometry](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-2-triangles)        | C++ |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=1016)  | clocktree   | [BFS](https://starcoder.org/usaco/USACO-2020-Feb-Silver/#problem-3-clock-tree)            | C++  |
 | 2020 Open | [1](http://usaco.org/index.php?page=viewproblem2&cpid=1038)     | socdist       | [BinSearch](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-1-social-distancing   ) | C++|
-|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=1039)     | cereal      | [Simulationn](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-2-cereal)    | C++ |
-|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=1040)     | moop    |                      | C++  |
+|           | [2](http://usaco.org/index.php?page=viewproblem2&cpid=1039)     | cereal      | [Simulation](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-2-cereal)    | C++ |
+|           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=1040)     | moop    |                [Prefix](https://starcoder.org/usaco/USACO-2020-Open-Silver/#problem-3-the-moo-particle)      | C++  |
 
 
 
