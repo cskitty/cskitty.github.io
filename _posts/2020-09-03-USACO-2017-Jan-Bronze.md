@@ -85,7 +85,6 @@ for cow in cowTLst:
             min2count += 1
             min2 = cow
 
-print(min2, min2count)
 if min2count == 1:
     fout.write(min2[1])
 else:

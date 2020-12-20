@@ -11,7 +11,9 @@ tags:
 # USACO 2013 Nov Bronze
 
 ## Problem 2. Goldilocks and the N Cows
-[Goldilocks and the N Cows](http://www.usaco.org/index.php?page=viewproblem2&cpid=341)  
+
+
+[Problem 2. Goldilocks and the N Cows](http://www.usaco.org/index.php?page=viewproblem2&cpid=341)
 
 You may have heard the classical story about Goldilocks and the 3 bears.
 Little known, however, is that Goldilocks ultimately took up farming as a
@@ -75,7 +77,7 @@ If Goldilocks sets the thermostat to either 7 or 8, then she will make cows
 \#1 and \#4 happy, with cow \#2 being too hot and cow \#3 being too cold.  This
 yields 31 units of total milk.
 
-{% highlight C++ python %}
+{% highlight python linenos %}
 fin, fout = open('milktemp.in'), open('milktemp.out', 'w')
 
 N, X, Y, Z = list(map(int, fin.readline().split()))
