@@ -8,7 +8,107 @@ tags:
   - Python
 ---
 
-# USACO 2019 Dec Bronze
+# USACO 2019 Dec Bronze  
+
+## Problem 1. Cow Gymnastics
+
+In order to improve their physical fitness, the cows have taken up gymnastics! Farmer John designates his favorite cow Bessie to coach the N other cows and to assess their progress as they learn various gymnastic skills.
+In each of K practice sessions (1≤K≤10), Bessie ranks the N cows according to their performance (1≤N≤20). Afterward, she is curious about the consistency in these rankings. A pair of two distinct cows is consistent if one cow did better than the other one in every practice session.
+
+Help Bessie compute the total number of consistent pairs.
+
+INPUT FORMAT (file gymnastics.in):  
+The first line of the input file contains two positive integers K and N. The next K lines will each contain the integers 1…N in some order, indicating the rankings of the cows (cows are identified by the numbers 1…N). If A appears before B in one of these lines, that means cow A did better than cow B.
+OUTPUT FORMAT (file gymnastics.out):
+Output, on a single line, the number of consistent pairs.
+SAMPLE INPUT:  
+```
+3 4
+4 1 2 3
+4 1 3 2
+4 2 1 3
+```
+SAMPLE OUTPUT:  
+```
+4
+```
+The consistent pairs of cows are (1,4), (2,4), (3,4), and (1,3).
+
+Problem credits: Nick Wu
+
+{% highlight python linenos %}
+fin, fout = open('gymnastics.in'), open('gymnastics.out', 'w')
+
+k, n = tuple(map(int, fin.readline().split()))
+rankings = [list(map(int, fin.readline().strip().split())) for _ in range(k)]
+
+cows = list(range(1, 1 + n))
+ans = 0
+for cow1 in cows:
+    for cow2 in cows:
+        if cow1 != cow2:
+            consistent = True
+            for ranking in rankings:
+                if ranking.index(cow1) < ranking.index(cow2):
+                    consistent = False
+
+            if consistent:
+                ans += 1
+
+fout.write(str(ans))
+{% endhighlight %}
+
+## Problem 2. Where Am I?  
+
+Farmer John has gone out for a walk down the road and thinks he may now be lost!  
+Along the road there are N farms (1≤N≤100) in a row. Farms unfortunately do not have house numbers, making it hard for Farmer John to figure out his location along the road. However, each farm does have a colorful mailbox along the side of the road, so Farmer John hopes that if he looks at the colors of the mailboxes nearest to him, he can uniquely determine where he is.    
+
+Each mailbox color is specified by a letter in the range A..Z, so the sequence of N mailboxes down the road can be represented by a string of length N containing letters in the range A..Z. Some mailboxes may have the same colors as other mailboxes. Farmer John wants to know what is the smallest value of K such that if he looks at any sequence of K consecutive mailboxes, he can uniquely determine the location of that sequence along the road.   
+
+For example, suppose the sequence of mailboxes along the road is 'ABCDABC'. Farmer John cannot set K=3, since if he sees 'ABC', there are two possible locations along the road where this consecutive set of colors might be. The smallest value of K that works is K=4, since if he looks at any consecutive set of 4 mailboxes, this sequence of colors uniquely determines his position along the road.  
+
+INPUT FORMAT (file whereami.in):    
+The first line of input contains N, and the second line contains a string of N characters, each in the range A..Z.  
+OUTPUT FORMAT (file whereami.out):    
+Print a line containing a single integer, specifying the smallest value of K that solves Farmer John's problem.  
+SAMPLE INPUT:  
+```
+7
+ABCDABC
+```
+SAMPLE OUTPUT:  
+```
+4
+```
+Problem credits: Brian Dean
+
+{% highlight python linenos %}
+fin, fout = open('whereami.in'), open('whereami.out', 'w')
+n = int(fin.readline())
+S = fin.readline().strip()
+
+k = 1
+
+
+def count(val, S):
+    return val.find(S) == val.rfind(S)
+
+
+while k <= n:
+    b = True
+    for x in range(0, n - k):
+        val = S[x:x + k]
+
+        if not count(S, val):
+            b = False
+
+    if b:
+        break
+
+    k += 1
+
+fout.write(str(k))
+{% endhighlight %}
 
 ## Problem 3. Livestock Lineup   
 
