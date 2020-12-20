@@ -1,5 +1,5 @@
 ---
-title: "USACO 2019 Jan Silver"
+title: "USACO 2016 Jan Silver"
 categories:
   - USACO
 tags:
