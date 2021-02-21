@@ -39,7 +39,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://usaco.org/index.php?page=viewproblem2&cpid=493)      | cowjog        | [Simulation](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-3-cow-jog) |  Java  |
 | 2015 Dec  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=570)  | lightson      | [R FloodFill](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-1-switching-on-the-lights) |   C++ |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=571)  | highcard      | [2P](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-2-high-card-wins) |  C++  |                           
-|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [BinSearch](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-3-breedcounting)     |  C++   |
+|           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=572)  | breedcounting | [PrefixSum](https://starcoder.org/usaco/USACO-2015-Dec-Silver/#problem-3-breedcounting)     |  C++   |
 | 2016 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=594)  | angrycows     | [BinSearch](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-1-angry-cows) | C++    |
 |           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=595)  | div7          | [Prefix](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)  | C++   |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=596)  | gates         | [Q FloodFill](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-3-build-gates)          | C++    |

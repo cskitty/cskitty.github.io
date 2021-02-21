@@ -255,42 +255,61 @@ SAMPLE OUTPUT:
 2 0 1  
 ```
 {% highlight c++ linenos %}
+#include <bits/stdc++.h>
+using namespace std;
+
+int N, Q;
+vector<int> breeds;
+vector<pair<int, int>> queries;
+vector<vector<int>> prefix;
+
 int main() {
-    ifstream cin ("bcount.in");
-    ofstream cout ("bcount.out");
+    // I/0
+    ifstream fin("bcount.in");
+    ofstream fout("bcount.out");
 
-    int N, Q;
-    cin >> N >> Q;
+    fin >> N >> Q;
+    breeds.resize(N);
+    queries.resize(Q);
 
-    vector<int> one(N + 1);
-    vector<int> two(N + 1);
-    vector<int> three(N + 1);
-
-    FOR(cow, 1, N + 1) {
-        int val;
-        cin >> val;
-        one[cow] = one[cow - 1];
-        two[cow] = two[cow - 1];
-        three[cow] = three[cow - 1];
-
-        if (val == 1) {
-            one[cow]++;
-        }
-        if (val == 2) {
-            two[cow]++;
-        }
-        if (val == 3) {
-            three[cow]++;
-        }
+    for (int i = 0; i < N; i++) {
+        fin >> breeds[i];
     }
 
-    F0R(query, Q) {
-        int start, end;
-        cin >> start >> end;
-
-        cout << one[end] - one[start - 1] << " " << two[end] - two[start - 1] << " " << three[end] - three[start - 1] << endl;
-
+    for (int i = 0; i < Q; i++) {
+        fin >> queries[i].first;
+        fin >> queries[i].second;
     }
 
+    // One based array using indexes 1, 2, and 3
+    prefix.resize(4, vector<int>(N));
+
+    // Initializing the Prefix Sum
+    prefix[breeds[0]][0] = 1;
+
+    // Prefix Sum
+    for (int i = 1; i < N; i++) {
+        for (int j = 1; j < 4; j++) {
+            prefix[j][i] = prefix[j][i - 1];
+        }
+        prefix[breeds[i]][i]++;
+    }
+
+    for (int q = 0; q < Q; q++) {
+        for (int i = 1; i <= 3; i++) {
+            if (i>1) {
+                fout << " ";
+            }
+            if (breeds[queries[q].first - 1] == i) {
+                fout << prefix[i][queries[q].second - 1] - prefix[i][queries[q].first - 1] + 1;
+            }
+            else {
+                fout << prefix[i][queries[q].second - 1] - prefix[i][queries[q].first - 1];
+            }
+        }
+        fout << '\n';
+    }
+
+    return 0;
 }
 {% endhighlight %}
