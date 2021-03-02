@@ -1,7 +1,7 @@
 ---
-title: "Algorithms"
+title: "Beginner Algorithm (Bronze, Silver)"
 layout: archive
-permalink: /algorithm/
+permalink: /algorithm1/
 author_profile: true
 ---
 
