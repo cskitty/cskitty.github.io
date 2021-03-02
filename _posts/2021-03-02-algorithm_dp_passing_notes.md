@@ -8,7 +8,7 @@ tags:
   - Dynamic Programming
 ---
 
-## Passing Notes (Chinese NOIP2008 Intermediate Q3)
+## Dynmamic Programming: Passing Notes (Chinese NOIP2008 Intermediate Q3)
 
 Bessie and Elsie are good friends and classmates, they always talk about endless topics together.
 
