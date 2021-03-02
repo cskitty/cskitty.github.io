@@ -52,28 +52,30 @@ data range
 34
 ```
 
-## Solution 1: Using 4D array as state,
+## Solution 1: Using 4D array as state
 
 Since there are two routes, we can think that the DP state is represented by sum of two routes from (1, 1) to (x1, y1) and (x2, y2).
 And because n is only 50, we can directly mark state as dp[x1][y1][x2][y2], which represents the maximum value of the first route to (x1, y1) and the second route to (x2, y2).
 For each student, the note is transferred from the two directions (top or left), so there are total four state transfer situations.  
 
-Please note that the two routes ((1, 1) to (x1, y1) and (x2, y2)) can not share any common node.  To avoid that, we set dp[x][y][x][y]=-1.
-
-The actual code can be written as =0, because the value is all >0.
+Please note that the two routes ((1, 1) to (x1, y1) and (x2, y2)) can not share any common node.  To avoid that, we set dp[x][y][x][y]= 0. because the values are all positive integers.
 
 {% highlight C++ linenos %}
 #include<bits/stdc++.h>
 using namespace std;
-const int	N=55;
+const int	N =51;
+
 int n,m,a[N][N];
 int f[N][N][N][N];
-void MAX(int &a,int b){a=max(a,b);}
+
+
 int main()
 {
-	scanf("%d%d",&n,&m);
+	cin >> n >> m;
 	for (int i=1;i<=n;i++)
-		for (int j=1;j<=m;j++) scanf("%d",&a[i][j]);
+		for (int j=1;j<=m;j++)
+       cin >> a[i][j];
+
 	for (int x1=1;x1<=n;x1++)
 		for (int y1=1;y1<=m;y1++)
 			for (int x2=1;x2<=n;x2++)
@@ -82,14 +84,64 @@ int main()
 						f[x1][y1][x2][y2]=0;
 						continue;
 					}
+
 					int t=f[x1][y1][x2][y2];
-					MAX(t,f[x1][y1-1][x2][y2-1]);
-					MAX(t,f[x1][y1-1][x2-1][y2]);
-					MAX(t,f[x1-1][y1][x2-1][y2]);
-					MAX(t,f[x1-1][y1][x2][y2-1]);
+					t = max(t,f[x1][y1-1][x2][y2-1]));
+					t = max(t,f[x1][y1-1][x2-1][y2]));
+					t = max(t,f[x1-1][y1][x2-1][y2]));
+					t = max(t,f[x1-1][y1][x2][y2-1]));
+
 					f[x1][y1][x2][y2]=t+a[x1][y1]+a[x2][y2];
 				}
-	printf("%d\n",f[n][m][n][m]);
+
+
+	cou << f[n][m][n][m];
 	return 0;
 }
+{% endhighlight %}
+
+
+
+## Solution 2: Using 3D array as state
+
+Using f[k][i][j] to represent the max value from (1, 1) to (i,k-i) and (j，k-j).
+
+{% highlight C++ linenos %}
+#include<bits/stdc++.h>
+using namespace std;
+const int	N = 51;
+
+int n,m,a[N][N];
+int f[N][N][N][N];
+void MAX(int &a,int b){a=max(a,b);}
+int main()
+{
+  cin >> n >> m;
+  for (int i=1;i<=n;i++)
+  for (int j=1;j<=m;j++)
+  cin >> a[i][j];
+
+  for(k=3;k<=m+n;k++) {
+    for(i=1;i<=m;i++) {
+      if(k-i>=1 && k-i<=n) {
+        for(j=1;j<=m;j++) {
+          if(k-j>=1 && k-j<=n) {
+
+            x = max(f[k-1][i][j],f[k-1][i-1][j-1]);
+            y = max(f[k-1][i-1][j],f[k-1][i][j-1]);
+
+            if(i==j)
+              f[k][i][j]=a[i][k-i];
+            else
+              f[k][i][j]=a[i][k-i]+a[j][k-j];
+
+            f[k][i][j] += max(x, y);
+          }   
+        }
+      }
+    }   
+  }
+  printf("%d\n",f[m+n][m][m]);	    
+  return 0;
+
 {% endhighlight %}
