@@ -40,14 +40,14 @@ Output an integer, which represents the maximum value of the sum of the kindness
 
 data range
 1 ≤ n , m ≤ 50
-
+Input sample:
 ```
 3 3
 0 3 9
 2 8 5
 5 7 0
 ```
-
+Sample output:
 ```
 34
 ```
