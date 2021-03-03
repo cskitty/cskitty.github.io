@@ -41,17 +41,12 @@ Sample output:
 
 State representation:
 
-* f[i][j] represents the length of LCIS in a[1 ~ i] and b[1 ~ j] ending with b[j]
+* f[i][j] is the length of LCIS in a[1 ~ i] and b[1 ~ j] ending with b[j]
 
-State calculation (corresponding to set division):
+State calculation:
 
-First, according to whether the common sub-sequence is included a[i], f[i][j]the represented set is divided into two mutually exclusive and complimentary sub-sets:
-
-a) subsets of CIS not including a[i], the maximum value is f[i - 1][j];  
-b) subsets of CIS including a[i], this can be further divided into mutually exclusive and complimentary sub-sets, depending on the second to last number of CIS:  
-* CIS subset only contain one element in b[j], length is 1
-* second to last number of CIS subset equals to b[1], the maximum length is f[i - 1][1] + 1;
-* second to last number of CIS subset equals to b[j - 1]the subsequence is the set, and the maximum length is f[i - 1][j - 1] + 1;
+We can first loop through i and j to get a matching pair of a[i] and b[j].
+Once we have found them, we then need to find the LCIS ending with the value b[j]. We can do this by looping through all previous DP values of numbers with an array b index less than j, denoted as "k". If the value at b[k] is less than the value of b[j], we can assume b[j] can be added to the end of the sequence and creating a new LCIS of length f[i - 1][k] + 1 (the longest possible length ending with b[k] and adding 1 for b[j]).  
 
 If implemented directly according to the above ideas, a three-fold loop is required:
 
@@ -73,9 +68,9 @@ for (int i = 1; i <= n; i ++ )
 }
 ```
 
-Then we find that what we get for each iteration maxv is the maximum value a[i] > b[k] of f[i - 1][k] + 1 the prefix that is satisfied .
+Optimization:   
 
-Therefore, you can directly maxv refer to the outside of the first layer of loops to reduce repeated calculations. At this time, only two loops are left.
+We can change our program from three for loops (O(N^3)) to two (O(N^2)) by realizing that we don't need to visit all of the previous values "k" to get the maxv. Because the implementation involved is DP, for every new value of j we can reuse the previously calculated maxv value instead of looping through all previous values again in k.
 
 The final answer enumeration subsequence ends with the maximum value.
 
@@ -100,10 +95,14 @@ int main() {
 
     for (int i = 1; i <= n; ++ i) {
         int maxv = 1;
-        for (int j = 1; j <= n; ++ j) {
+
+        for (int j = 1; j <= n; ++ j) {  
             f[i][j] = f[i - 1][j];
-            if (a[i] == b[j]) f[i][j] = max(f[i][j], maxv);
-            if (a[i] > b[j]) maxv = max(maxv, f[i - 1][j] + 1);
+            if (a[i] == b[j])
+              f[i][j] = max(f[i][j], maxv);
+
+            if (a[i] > b[j])
+              maxv = max(maxv, f[i - 1][j] + 1);
         }
     }
 
