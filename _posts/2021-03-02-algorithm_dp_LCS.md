@@ -69,7 +69,7 @@ int longestCommonSubsequence(string text1, string text2) {
 }
 
 int main() {
-    cout << longestCommonSubsequence("abc", "abc");
+    cout << longestCommonSubsequence("abcde", "abc");
 
 }
 {% endhighlight %}
