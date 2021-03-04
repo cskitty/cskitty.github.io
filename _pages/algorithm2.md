@@ -9,7 +9,10 @@ author_profile: true
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
-| Dynamic Programming | [ Passing Notes](/algorithm/algorithm_dp_passing_notes/)  | Medium |   
-| Dynamic Programming | [ Longest Increasing Sequence](/algorithm/algorithm_dp_LIS/) | Medium |  
-| Dynamic Programming | [ Longest Common Sequence](/algorithm/algorithm_dp_LCS/) | Medium |   
-| Dynamic Programming | [ Longest Common Increasing Sequence](/algorithm/algorithm_dp_LCIS/) | Hard |   
+| DP | [ Passing Notes](/algorithm/algorithm_dp_passing_notes/)  | Medium |   
+| DP | [ LIS (Longest Increasing Sequence, N^2 Algorithm)](/algorithm/algorithm_dp_LIS/) | Medium |  
+| Binary Search | [ LIS (Longest Increasing Sequence, NLogN Algorithm)](/algorithm/algorithm_dp_LIS_nlogn/) | Hard |
+| DP | [ LCS (Longest Common Sequence)](/algorithm/algorithm_dp_LCS/) | Medium |
+| LIS | [ Sister Cities](/algorithm/algorithm_dp_LIS_sister_cities/) | Medium |    
+| LIS | [ Chrous ](/algorithm/algorithm_dp_LIS_chrous/) | Medium |  
+| LIS/LCS | [ LCIS(Longest Common Increasing Sequence)](/algorithm/algorithm_dp_LCIS/) | Hard |   
