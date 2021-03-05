@@ -30,8 +30,8 @@ Scan through input array and insert A[i] to these lists. We scan the lists (for 
 We will use the end elements of all the lists to find a list whose end element is smaller than A[i].
 
 * If A[i] is smallest among all end candidates of active lists, we will start new active list of length 1.
-* If A[i] is largest among all end candidates of active lists, we extend the largest list by A[i].
-* If A[i] is in between, we will find a list with largest end element that is smaller than A[i]. Extend this list by A[i]. If there's another list with the same size as this extended list, remove that list. So for each list length, we only keep the list with the smallest end elementments.  
+* If A[i] is largest among all end candidates of active lists, we clone the list and extend the largest list by A[i].
+* If A[i] is in between, we will find a list with largest end element that is smaller than A[i]. Clone and extend the cloned list by A[i]. If there's another list with the same size as this extended list, remove that list. So for each list length, we only keep the list with the smallest end elements.  
 
 As we can use binary search to find the list based on  A[i], the complexitiy is N (A[i] loop) * log(N) (binary search).
 
