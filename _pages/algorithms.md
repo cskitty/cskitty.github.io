@@ -1,7 +1,14 @@
 ---
-title: "Algorithms Explained"
-layout: tag
-permalink: /tags/algorithms/
-taxonomy: Algorithms
+title: "Algorithms for USACO"
+layout: archive
+permalink: /algorithms/
 author_profile: true
 ---
+
+
+| USACO Grade                             | Level        |
+| ----------------------------------------| ------------ |  
+| [USACO Bronze Algorithms](/algorithm1)  | Beginner     |
+| [USACO Silver Algorithms](/algorithm2)  | Intermediate |
+| [USACO Gold Algorithms](/algorithm3)    | Hard         |
+| [USACO Platinum Algorithms](/algorithm4)| Super Hard   |

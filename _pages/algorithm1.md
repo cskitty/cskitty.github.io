@@ -5,21 +5,31 @@ permalink: /algorithm1/
 author_profile: true
 ---
 
+
+### Simulation
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |          
+| Simulation  | [Hoof, Paper, ScissorsPermalink](/usaco/USACO-2017-Jan-Bronze/#problem-2-hoof-paper-scissors)  | Easy   |      
+| Simulation  | [The Bovine Shuffle](/usaco/USACO-2017-Dec-Bronze/#problem-2-the-bovine-shuffle)  | Easy   |   
+| Simulation  | [Milk Measurement](/usaco/USACO-2017-Dec-Bronze/#problem-3-milk-measurement)  | Easy   |   
+| Simulation  | [Mixing Milk](/usaco/USACO-2018-Dec-Bronze/#problem-1-mixing-milk)  | Easy   |   
+| Simulation  | [Shell Game](/usaco/USACO-2019-Jan-Bronze/#problem-1-shell-game)  | Easy   |   
+
+
+### Brute Force
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |          
+| Brute Force | [Triangles](/usaco/USACO-2020-Feb-Bronze/#problem-1-triangles) | Easy  |  
+| Brute Force | [The Blocked Billboard](/usaco/USACO-2017-Dec-Bronze/#problem-1-the-blocked-billboard) | Easy  |  
+| Brute Force | [Team Tic Tac Toe](/usaco/USACO-2018-Open-Bronze/#problem-1-team-tic-tac-toe) | Easy  |  
+| Brute Force | [Photoshoot](/usaco/USACO-2020-Jan-Bronze/#problem-2-photoshoot) | Easy  |  
+
+
+### Greedy
+
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |    
-| Greedy      | [Boyer-Moore’s Majority Vote Algorithm](https://starcoder.org/programming/boyer-moore-majority-vote/)  | Easy         
-          | [Best Time to Buy and Sell Stock](https://starcoder.org/programming/dp-buy-sell-stock/)  | Easy         |  
-|             | [Diamond Collector](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector)  | Hard      |  
-| Backtrack   | [Subsets](https://starcoder.org/programming/backtrack-subsets/)  | Medium         |   
-|             | [Permutation](https://starcoder.org/programming/backtrack-permutation/)  | Easy         |  
-|             | [Combination](https://starcoder.org/programming/backtrack-combination-sum/)  | Easy         |  
-|             | [Knights Tour](https://starcoder.org/programming/knights-tour-problem/)  | Easy         |   
-|             | [Hamiltonean Cycles](https://starcoder.org/programming/hamiltonean-cycles/)  | Easy         |   
-|             | [0/1 Knapsack Problem](https://starcoder.org/programming/knapsack-algorithm/)  | Easy         |   
-|             | [Palindrome Partitioning](https://starcoder.org/programming/backtrack-palindrome-partitioning/)  | Easy         |
-| Tree        | [Tree Traversal](https://starcoder.org/programming/tree-traversals/)  | Easy         |
-|             | [Tree Algorithms](https://starcoder.org/programming/tree-algorithms/)  | Easy         |
-| Graph       | [Graph Algorithms in C++](https://starcoder.org/programming/graph-algorithms/)  | Easy         |  
-|             | [Graph Class Example](https://starcoder.org/usaco/USACO-2018-Open-Silver/#problem-3-multiplayer-moo)  | Easy         |
-|             | [BFS Distance](https://starcoder.org/programming/bfs-graph/)  | Easy         |
-| DFS         | [Grid Paths](https://starcoder.org/programming/grid-paths/)  | Easy         |  
+| Greedy      | [Boyer-Moore’s Majority Vote Algorithm](https://starcoder.org/programming/boyer-moore-majority-vote/)  | Easy   |      
+| Greedy      | [Mad Scientist](/usaco/USACO-2020-Feb-Bronze/#problem-2-mad-scientist)  | Hard      |  

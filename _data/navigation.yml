@@ -4,7 +4,7 @@ main:
   - title: "Tutorials"
     url: /tutorials/
   - title: "Algorithms"
-    url: /algorithm0/
+    url: /algorithms/
   - title: "USACO"
     url: /usaco/
   - title: "Cryptography"
