@@ -1,20 +1,62 @@
 ---
-title: "Intermediate Algorithms (Gold)"
-layout: tag
+title: "Intermediate Algorithm (USACO Silver Level)"
+layout: archive
 permalink: /algorithm2/
 author_profile: true
 ---
 
+### Prefix Sum
 
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |          
+| Prefix Sum  | [Prefix Sum](https://starcoder.org/programming/algorithm-prefixsum/) | Easy    |  
+| Prefix Sum  | [Subarray Sums Divisible by K](https://starcoder.org/programming/algorithm-prefixsum/)  | Easy         |
+| Prefix Sum  | [Maximum Subarray Sum](https://starcoder.org/programming/algorithm-subarraysum/)  | Easy         |
+| Prefix Sum  | [Div7](https://starcoder.org/usaco/USACO-2016-Jan-Silver/#problem-2-subsequences-summing-to-sevens)  | Easy         |
+
+### Binary Search
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
-| DP | [ Passing Notes](/algorithm/algorithm_dp_passing_notes/)  | Medium |   
-| DP | [ LIS (Longest Increasing Sequence, N^2 Algorithm)](/algorithm/algorithm_dp_LIS/) | Medium |  
-| Binary Search | [ LIS (Longest Increasing Sequence, NLogN Algorithm)](/algorithm/algorithm_dp_LIS_nlogn/) | Hard |
-| LIS,DFS | [ Missile Defense System](/algorithm/algorithm_dp_LIS_nlogn/) | Hard |
-| DP | [ LCS (Longest Common Sequence)](/algorithm/algorithm_dp_LCS/) | Medium |
-| LIS | [ Sister Cities](/algorithm/algorithm_dp_LIS_sister_cities/) | Medium |    
-| LIS | [ Chrous ](/algorithm/algorithm_dp_LIS_chrous/) | Medium |  
-| Backtrack, LIS | [ Missile Defense System](/algorithm/algorithm_dfs_missile_defense_system/) | Medium |  
-| LIS/LCS | [ LCIS(Longest Common Increasing Sequence)](/algorithm/algorithm_dp_LCIS/) | Hard |   
+| Binary Search | [Binary Search C++](https://starcoder.org/programming/algorithm-binarysearch-sorting/)  | Easy       |
+| Binary Search | [Maximum Median](https://starcoder.org/programming/algorithm-maximum-medium/)  | Easy       |
+| Binary Search | [B.Books](https://starcoder.org/programming/algorithm-binary-search/#b-books)  | Easy       |
+| Binary Search | [C.Cellular Network](https://starcoder.org/programming/algorithm-binary-search/#c-cellular-network)  | Easy       |
+
+### Two Pointers
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| Two Pointers| [Circulation of Affection](https://starcoder.org/programming/an-impassioned-circulation-of-affection/)   | Easy         |
+
+
+### DFS  
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| DFS         | [Grid Paths](https://starcoder.org/programming/grid-paths/)  | Easy         |  
+| Flood Fill  | [Flood Fill](https://starcoder.org/programming/flood-fill/)  | Easy         |
+| Flood Fill  | [Grid Path](https://starcoder.org/programming/grid-paths/)  | Easy         |
+|             | [Diamond Collector](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector)  | Hard      |  
+
+
+### BFS  
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| BFS         | [BFS Distance](https://starcoder.org/programming/bfs-graph/)  | Easy         |
+
+
+### Tree  
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| Tree        | [Tree Traversal](https://starcoder.org/programming/tree-traversals/)  | Easy         |
+| Tree        | [Tree Algorithms](https://starcoder.org/programming/tree-algorithms/)  | Easy         |
+
+### Graph  
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| Graph       | [Graph Algorithms in C++](https://starcoder.org/programming/graph-algorithms/)  | Easy         |  
+| Graph       | [Graph Class Example](https://starcoder.org/usaco/USACO-2018-Open-Silver/#problem-3-multiplayer-moo)  | Easy         |

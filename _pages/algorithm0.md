@@ -6,8 +6,9 @@ author_profile: true
 ---
 
 
-[Beginner level Algorithms (USACO Bronze to Silver)](/algorithm1)  
-
-[Intermediate level Algorithms (USACO Gold)](/algorithm2)  
-
-[Advanced level Algorithms (USACO Platinum)](/algorithm3)  
+| USACO Grade                             | Level        |
+| ----------------------------------------| ------------ |  
+| [USACO Bronze Algorithms](/algorithm1)  | Beginner     |
+| [USACO Silver Algorithms](/algorithm2)  | Intermediate |
+| [USACO Gold Algorithms](/algorithm3)    | Hard         |
+| [USACO Platinum Algorithms](/algorithm4)| Super Hard   |
