@@ -5,10 +5,11 @@ permalink: /algorithm1/
 author_profile: true
 ---
 
-### Ad Hoc
+### Ad Hoc  
+
 | Algorithm  | Example                                                          | Level         |
 | ---------- | ---------------------------------------------------------------- | ------------- |
-| Ad Hoc     | [Sleepy Cow Herding](/usaco/USACO-2019-Jan-Bronze/#problem-2-Sleepy-Cow-Herding) | Easy |
+| Ad Hoc     | [Sleepy Cow Herding](/usaco/USACO-2019-Jan-Bronze/#problem-2-Sleepy-Cow-Sorting) | Easy |
 
 
 ### Simulation
