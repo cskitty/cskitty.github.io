@@ -133,7 +133,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=833)  | family        |           |   Easy |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
 | 2019 Jan  | [1](http://www.usaco.org/index.php?page=viewproblem2&cpid=891 ) | shellgame     | [Simulation](https://starcoder.org/usaco/USACO-2019-Jan-Bronze/#problem-1-shell-game)   |  Easy  |  Python  |  
-|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=892  )  | sleepy      |     |  Easy  |  Python  |     |
+|           | [2](http://www.usaco.org/index.php?page=viewproblem2&cpid=892  )  | sleepy      | [AdHoc](https://starcoder.org/usaco/USACO-2019-Jan-Bronze/#problem-2-Sleepy-Cow-Herding)    |  Easy  | C++ |     |
 |           | [3](http://www.usaco.org/index.php?page=viewproblem2&cpid=893  )  | guess       |    |  Easy  |  Python  |     |
 | --------- | --------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------- | ------ | -------- |  
 | 2020 Jan  | [1](http://usaco.org/index.php?page=viewproblem2&cpid=987    )  | word          | [String](https://starcoder.org/usaco/USACO-2020-Jan-Bronze/#problem-1-word-processor)   |  Easy  |  Python  |  

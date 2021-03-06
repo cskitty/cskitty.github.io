@@ -5,12 +5,17 @@ permalink: /algorithm1/
 author_profile: true
 ---
 
+### Ad Hoc
+| Algorithm  | Example                                                          | Level         |
+| ---------- | ---------------------------------------------------------------- | ------------- |
+| Ad Hoc     | [Sleepy Cow Herding](/usaco/USACO-2019-Jan-Bronze/#problem-2-Sleepy-Cow-Herding) | Easy |
+
 
 ### Simulation
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |          
-| Simulation  | [Hoof, Paper, ScissorsPermalink](/usaco/USACO-2017-Jan-Bronze/#problem-2-hoof-paper-scissors)  | Easy   |      
+| Simulation  | [Hoof, Paper, Scissors](/usaco/USACO-2017-Jan-Bronze/#problem-2-hoof-paper-scissors)  | Easy   |      
 | Simulation  | [The Bovine Shuffle](/usaco/USACO-2017-Dec-Bronze/#problem-2-the-bovine-shuffle)  | Easy   |   
 | Simulation  | [Milk Measurement](/usaco/USACO-2017-Dec-Bronze/#problem-3-milk-measurement)  | Easy   |   
 | Simulation  | [Mixing Milk](/usaco/USACO-2018-Dec-Bronze/#problem-1-mixing-milk)  | Easy   |   
