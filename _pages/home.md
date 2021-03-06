@@ -26,7 +26,7 @@ feature_row:
 - image_path: /assets/images/algorithmcat.PNG
   title: "Algorithms"
   excerpt: "Computer Algorithms"
-  url: "/algorithm0/"
+  url: "/algorithms/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/physcat.PNG
