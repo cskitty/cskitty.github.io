@@ -14,15 +14,14 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 ### [USACO By Year and Level](/categories/usaco/)
 
 ## Video Solutions for USACO
-[Bronze Questions](/usaco_bronze_video/)
-[Silver Questions](/usaco_bronze_video/)
-[Gold DP Questions](/usaco_dp)
+[Bronze Questions](/usaco_bronze_video/)  
+[Silver Questions](/usaco_bronze_video/)  
+[Gold DP Questions](/usaco_dp)  
 
 ## Reference Implementation for USACO Questions
 
 
 ###  Gold
-
 
 
 ###  Silver
