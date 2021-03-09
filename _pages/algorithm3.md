@@ -5,6 +5,9 @@ permalink: /algorithm3/
 author_profile: true
 ---
 
+## Video Solutions for Gold Algorithms
+[Dynamic Programming](/usaco_dp)
+
 ### Easy DP
 
 | Algorithm   |  Example                                                        | Level         |
@@ -13,6 +16,8 @@ author_profile: true
 | DP        | [Unique Paths II](https://starcoder.org/programming/dp-unique-path/)  | Easy      |  
 | DP        | [House Robber](https://starcoder.org/programming/dp-house-robber/)  | Medium      |  
 | DP        | [Marathon](https://starcoder.org/usaco/USACO-2014-Dec-Silver/#problem-2-marathon) | Medium      |
+
+
 
 ### Backtrack  
 
