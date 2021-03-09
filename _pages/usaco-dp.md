@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Python"
+title: "Dynamic Programming Algorithm for USACO"
 layout: blank
 permalink: /usaco_dp/
 author_profile: true
