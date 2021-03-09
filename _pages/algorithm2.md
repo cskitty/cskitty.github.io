@@ -5,6 +5,13 @@ permalink: /algorithm2/
 author_profile: true
 ---
 
+
+## Video Solutions for Silver Questions
+
+I selected several interesting questions in USACO Silver and made explained videos for them.  
+Checkout my solution videos for selected [Silver Questions](/usaco_silver_video/)
+
+
 ### Prefix Sum
 
 | Algorithm   |  Example                                                        | Level         |
@@ -50,7 +57,7 @@ author_profile: true
 | Two Pointers | [Diamond Collector](/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector)   |  Easy  |
 | Two Pointers | [Why did the Cow Cross the Road?](/usaco/USACO-2017-Feb-Silver/#problem-1-why-did-the-cow-cross-the-road)   |  Easy  |
 | Two Pointers | [Paired Up](/usaco/USACO-2017-Open-Silver/#problem-1-paired-up)   |  Easy  |
-| Two Pointers | [Diamond Collector](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector)  | Hard      | 
+| Two Pointers | [Diamond Collector](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector)  | Hard      |
 
 
 ### DFS  
