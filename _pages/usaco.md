@@ -15,6 +15,13 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 ## Reference Implementation for USACO Questions
 
+
+###  Gold
+
+| Contest   | #                                                               | Name          | Alogrithm                              | Language |
+| --------- | --------------------------------------------------------------- | ------------- | -------------------------------------- | ------ |
+ 
+
 ###  Silver
 
 | Contest   | #                                                               | Name          | Alogrithm                              | Language |
