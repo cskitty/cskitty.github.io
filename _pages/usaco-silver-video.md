@@ -59,7 +59,7 @@ author_profile: true
 
 ### [USACO 2015 Silver January Q2: Cow Routing](http://www.usaco.org/index.php?page=viewproblem2&cpid=512)
 
-{% include video id="-xa_-kNAz1fc" provider="youtube" %}
+{% include video id="xa_-kNAz1fc" provider="youtube" %}
 
 
 ### [USACO 2015 Silver January Q3: Meeting Time](http://www.usaco.org/index.php?page=viewproblem2&cpid=513)
