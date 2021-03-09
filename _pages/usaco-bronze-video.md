@@ -1,7 +1,7 @@
 ---
 title: "Video Solution for USACO Bronze"
 layout: blank
-permalink: /usaco_dp/
+permalink: /usaco_bronze_video/
 author_profile: true
 ---
 

@@ -7,7 +7,7 @@ author_profile: true
 
 ## Video Solutions for Bronze Questions
 
-I selected several interesting questions in USACO Bronze and made explained videos for them.
+I selected several interesting questions in USACO Bronze and made explained videos for them.  
 Checkout my solution videos for selected [Bronze Questions](/usaco_bronze_video/)
 
 ### Ad Hoc  
