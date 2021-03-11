@@ -56,7 +56,10 @@ author_profile: true
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
-| Knapsack    | [0/1 Knapsack Problem](https://starcoder.org/programming/knapsack-algorithm/)  | Easy         |   
+| 0/1         | [0/1 Knapsack Problem](https://starcoder.org/programming/knapsack-algorithm/)  | Easy         |   
+| Unbounded   | [Currency System](/algorithm/algorithm_dp_currency_system/)  | Easy         |   
+| Unbounded   | [Number Combination](/algorithm/algorithm_dp_number_system/)  | Easy         |   
+| Multiple Contstraits   | [Knapsack with Multiple Contstraits](/algorithm/algorithm_dp_multiple_constraits/)  | Hard         |   
 
 ### Graph  
 
