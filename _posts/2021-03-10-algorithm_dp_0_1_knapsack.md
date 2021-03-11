@@ -1,7 +1,7 @@
 ---
 title: "0/1 Knapsack and UnBounded Knapsack Problem"
 categories:
-  - Programming
+  - Algorithm
 tags:
   - C++
   - Algorithms
