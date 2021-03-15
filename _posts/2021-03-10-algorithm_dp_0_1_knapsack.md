@@ -14,7 +14,7 @@ tags:
 
 Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. In other words, given two integer arrays val[0..n-1] and wt[0..n-1] which represent values and weights associated with n items respectively. Also given an integer W which represents knapsack capacity, find out the items such that sum of the weights of those items of given subset is smaller than or equal to W. You cannot break an item, either pick the complete item, or don’t pick it (0-1 property).
 
-### Solution  1: DP
+### Solution  1: DP using 2D array
 
 {% highlight C++ linenos %}
 int knapSack(int W, int wt[], int val[], int n)
@@ -41,7 +41,29 @@ int knapSack(int W, int wt[], int val[], int n)
 }
 {% endhighlight %}
 
-### Solution  2: Backtrack
+
+### Solution  2: DP using 1D array
+
+{% highlight C++ linenos %}
+int KnapSack(int val[], int wt[], int n, int W)
+{
+
+    int dp[W+1];
+
+    memset(dp, 0, sizeof(dp));
+
+    // iterate through all items
+    for(int i=0; i < n; i++)  
+        //traverse dp array from bigger to small, since dp[small] is the "old" value
+        for(int j=W; j>=wt[i]; j--)
+            dp[j] = max(dp[j] , val[i] + dp[j-wt[i]]);
+    return dp[W];
+}
+{% endhighlight %}
+
+
+
+### Solution  3: Backtrack
 With little modification, backtrack algorithm can be used to solve 0/1 knapsack Problem
 
 {% highlight C++ linenos %}
