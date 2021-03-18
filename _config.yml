@@ -25,7 +25,7 @@ url                      : "https://cskitty.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cskitty/cskitty.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/headertitlelogo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/starlogo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "StarCoder"
-  avatar           : "/assets/images/catlogo.jpg" #"https://avatars3.githubusercontent.com/u/19498807?s=400&u=a311a0cc9b765090373a431d386a0842ff8a9622&v=4"
+  avatar           : "/assets/images/logo.jpg" #"https://avatars3.githubusercontent.com/u/19498807?s=400&u=a311a0cc9b765090373a431d386a0842ff8a9622&v=4"
   bio              : "
   <br> <br> Project starcoder provides online articles, tutorials and video class sessions which can help K-12 students to learn from basic coding to algorithms for advanced USACO comeptitive programming.
   <br> <br> You can find coding ideas and applications for various subjects including algorithms / math / cryptography etc."
