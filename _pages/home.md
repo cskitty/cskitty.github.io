@@ -6,7 +6,7 @@ date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"
   overlay_filter: "0"
-  overlay_image: /assets/images/newstarheader.png
+  overlay_image: /assets/images/starheader.PNG
 excerpt: "From Basic Coding to USACO Competitive Programming"
 intro:
   - excerpt: 'From beginner level Introduction to Python tutorial to complex computer algorithms for USA Computer Olympiad (USACO).'
