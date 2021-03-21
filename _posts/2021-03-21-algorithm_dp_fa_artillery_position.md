@@ -61,15 +61,13 @@ dp[i][j][k]: the maximum number of artilleries placed
 * j: the placement of artilleries in row i  
 * k: the placement of artilleries in row i - 1
 
-We use an integer k to represent row i's king's placement in row i.
-A k-th bit 1 in k represent a king is planted in column k of row i.
+dp[i][j][k] = max(dp[i][j][k], dp[i-1][k][u] + cnt[j])
 
-If we know i-th row is a, i-1 row is b, then the valid placement of kings are  (a & b)==0 && check(a | b).
+Optimizatin:
+* We use a rolling array to compress the first dimension to 2 since only i-1 values are needed.
+* We add valid j to a list state[] and enumerate that list for all possible i, i-1, i-2 rows
 
-* a&b == 0 means there's no two kings on the same column in the two rows.
-* check(a|b) means there's no two diagnal kings in the two rows
-
-dp[i][j][a] += dp[i-1][j-c][head[a][b]]
+dp[i%2][state[j]][state[k]] = max(dp[i%2][state[j]][state[k]], dp[(i-1)%2][state[k]][state[u]] + cnt[state[j]])
 
 {% highlight C++ linenos %}
 #include<iostream>
@@ -145,7 +143,7 @@ int main(){
               //for i-th row value state[i] and i -1 row state[k], make sure all artilleries placed on P (plain)
               if((g[i] & a) != 0 || (g[i-1] & b) != 0) continue;
                  continue;
-              
+
               dp[i%2][j][k] = max(dp[i%2][j][k], dp[(i-1)%2][k][u] + cnt[a]);
           }
 
