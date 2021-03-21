@@ -62,6 +62,13 @@ author_profile: true
 | Multiple Constraits | [Knapsack with Multiple Constraits](/algorithm/algorithm_dp_multiple_constraits/)  | Hard         |   
 | Group | [Group Knapsack](/algorithm/algorithm_dp_group_knapsack/)  | Easy         |   
 
+### DP on Finite Automata
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| DP on FA | [Corn Yard](/algorithm/algorithm_dp_fa_corn_yard/)  | Medium         |   
+| DP on FA | [Little King](/algorithm/algorithm_dp_fa_little_king/)  | Medium         |    
+| DP Compression w/ Rolling Array | [Artillary Position](/algorithm/algorithm_dp_fa_artillery_position/)  | Medium         |   
 
 ### Graph  
 
