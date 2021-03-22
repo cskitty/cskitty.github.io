@@ -38,7 +38,7 @@ Sample Output:
 ### Solution
 
 dp[i][j][k]:  i: current row, j: number of kings placed so far k:the placement of kings in row i
-We use an integer k to represent row i's king's placement in row i. 
+We use an integer k to represent row i's king's placement in row i.
 A k-th bit 1 in k represent a king is planted in column k of row i.
 
 If we know i-th row is a, i-1 row is b, then the valid placement of kings are  (a & b)==0 && check(a | b).
@@ -46,7 +46,7 @@ If we know i-th row is a, i-1 row is b, then the valid placement of kings are  (
 * a&b == 0 means there's no two kings on the same column in the two rows.
 * check(a|b) means there's no two diagnal kings in the two rows
 
-dp[i][j][a] += dp[i-1][j-c][head[a][b]]
+dp[i][j][a] += dp[i-1][j-c][compatible_list[a][b]]
 
 {% highlight C++ linenos %}
 #include<bits/stdc++.h>
@@ -59,9 +59,11 @@ int n,m;
 //valid state of row i, with no two kings next to each other
 vector<int>state;    
 
-int count_one[M];   //用于预处理每个状态下国王的数量
+//precalculated king's numbers for each row's number
+int count_one[M];    
 
-vector<int>head[M]; //用于预处理可以进行状态转移的状态关系；
+//a map: giving i-th row value as key, return a list of possible arrangements for i-1 row values
+vector<int>compatible_list[M];
 
 //i: current row, j: number of kings placed so far k:the placement of kings in row i
 ll dp[N][K][M];   
@@ -118,7 +120,7 @@ int main()
             int a=state[i],b=state[j];
 
             if(check(a | b) && (a & b)==0)
-              head[a].push_back(b);     
+              compatible_list[a].push_back(b);     
         }
     }
 
@@ -130,9 +132,9 @@ int main()
             for(int k=0; k<state.size(); k++)
             {
                 int p=state[k];
-                for(int z=0; z<head[p].size(); z++)   
+                for(int z=0; z<compatible_list[p].size(); z++)   
                 {
-                     int h=head[p][z];
+                     int h=compatible_list[p][z];
                      if(j>=count_one[p])
                      {
                         dp[i][j][p] += dp[i-1][j-count_one[p]][h];

@@ -61,14 +61,15 @@ dp[i][j][k]: the maximum number of artilleries placed
 * j: the placement of artilleries in row i  
 * k: the placement of artilleries in row i - 1
 
-dp[i][j][k] = max(dp[i][j][k], dp[i-1][k][u] + cnt[j])
+dp[i][j][k] = max(dp[i][j][k], dp[i-1][k][u] + cnt[j])   
 
-Optimizatin:
-* We use a rolling array to compress the first dimension to 2 since only i-1 values are needed.
-* We add valid j to a list state[] and enumerate that list for all possible i, i-1, i-2 rows
+Optimization:
 
-dp[i%2][state[j]][state[k]] = max(dp[i%2][state[j]][state[k]], dp[(i-1)%2][state[k]][state[u]] + cnt[state[j]])
+* We use a rolling array to compress the first dimension to 2 since only i-1 values are needed.  
+* We add valid j to a list state[] and enumerate that list for all possible i, i-1, i-2 rows  
 
+dp[i%2][state[j]][state[k]] = max(dp[i%2][state[j]][state[k]], dp[(i-1)%2][state[k]][state[u]] + cnt[state[j]])  
+  
 {% highlight C++ linenos %}
 #include<iostream>
 #include<cstring>
