@@ -126,7 +126,9 @@ int main()
     for (int i = 1; i < 1 << n; i ++ )
         //iterate through all subsets of set i
         for (int j = i - 1; j; j = (j - 1) & i)
-            if ((g[j] & i) == i)
+            //validness check: subset j's reachable set must be inside set i
+            //otherwise, j is an invalid subset
+            if ((reachable[j] & i) == i)
             {
                 //remain is the set of nodes not in j but in i
                 int remain = i ^ j;
