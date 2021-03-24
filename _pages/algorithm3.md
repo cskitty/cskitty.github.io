@@ -68,7 +68,9 @@ author_profile: true
 | ------------| --------------------------------------------------------------- | ------------- |  
 | DP on FA | [Corn Yard](/algorithm/algorithm_dp_fa_corn_yard/)  | Medium         |   
 | DP on FA | [Little King](/algorithm/algorithm_dp_fa_little_king/)  | Medium         |    
-| DP on FA | [Password Counting](/algorithm/algorithm_dp_fa_password_counting/)  | Medium         |    
+| DP on FA | [Password Counting](/algorithm/algorithm_dp_fa_password_counting/)  | Medium         |  
+| DP on AC FA | [Password Counting](/algorithm/algorithm_dp_fa_dna_repairing/)  | Medium         |   
+| DP Compression | [Treasure Hunt](/algorithm/algorithm_dp_fa_treasure_hunt/)  | Medium         |  
 | DP Compression w/ Rolling Array | [Artillary Position](/algorithm/algorithm_dp_fa_artillery_position/)  | Medium         |   
 
 
