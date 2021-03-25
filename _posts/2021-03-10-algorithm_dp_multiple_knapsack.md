@@ -37,7 +37,7 @@ Sample Output:
 1040
 ```
 
-### Solution
+### Solution 1
 
 {% highlight C++ linenos %}
 #include <iostream>
@@ -72,3 +72,25 @@ int main(){
     return 0;
 }
 {% endhighlight %}
+
+### Solution 2: Optimization through Binary Grouping
+
+For each item, create new items which is equivalent to packing together 2^j (j=0..log2(s[i])) items.
+Then solve the original problem with 0-1 knapsack.
+
+
+'''
+index = 0;
+for (int i = 1; i <= n; i++) {
+  int c = 1, v, w, s;
+  cin >> v >> w >> s;
+  while (s - c > 0) {
+    s -= c;
+    w[++index] = c * w;
+    v[index] = c * v;
+    c *= 2;
+  }
+  w[++index] = k * w;
+  v[index] = k * v;
+}
+'''
