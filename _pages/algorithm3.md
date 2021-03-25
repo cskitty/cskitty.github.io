@@ -62,6 +62,15 @@ author_profile: true
 | Multiple Constraits | [Knapsack with Multiple Constraits](/algorithm/algorithm_dp_multiple_constraits/)  | Hard         |   
 | Group | [Group Knapsack](/algorithm/algorithm_dp_group_knapsack/)  | Easy         |   
 
+
+### Interval DP
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| Interval DP | [Stone Merger](/algorithm/algorithm_interval_dp_illustrated_stone_merge/)  | Easy         |   
+
+
+
 ### DP on Finite Automata
 
 | Algorithm   |  Example                                                        | Level         |
@@ -69,7 +78,7 @@ author_profile: true
 | DP on FA | [Corn Yard](/algorithm/algorithm_dp_fa_corn_yard/)  | Medium         |   
 | DP on FA | [Little King](/algorithm/algorithm_dp_fa_little_king/)  | Medium         |    
 | DP on FA | [Password Counting](/algorithm/algorithm_dp_fa_password_counting/)  | Medium         |  
-| DP on AC FA | [Password Counting](/algorithm/algorithm_dp_fa_dna_repairing/)  | Medium         |   
+| DP on AC FA | [DNA Repairing](/algorithm/algorithm_dp_fa_dna_repairing/)  | Medium         |   
 | DP Compression | [Treasure Hunt](/algorithm/algorithm_dp_fa_treasure_hunt/)  | Medium         |  
 | DP Compression w/ Rolling Array | [Artillary Position](/algorithm/algorithm_dp_fa_artillery_position/)  | Medium         |   
 
