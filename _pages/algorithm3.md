@@ -59,6 +59,7 @@ author_profile: true
 | 0/1         | [0/1 Knapsack Problem](/algorithm/algorithm_dp_0_1_knapsack/)  | Easy         |   
 | Unbounded   | [Currency System](/algorithm/algorithm_dp_currency_system/)  | Easy         |   
 | Unbounded   | [Number Combination](/algorithm/algorithm_dp_number_system/)  | Easy         |   
+| Multiple    | [Multiple Knapsack Problem](/algorithm/algorithm_dp_multiple_knapsack/)  | Easy         |  
 | Multiple Constraits | [Knapsack with Multiple Constraits](/algorithm/algorithm_dp_multiple_constraits/)  | Hard         |   
 | Group | [Group Knapsack](/algorithm/algorithm_dp_group_knapsack/)  | Easy         |   
 
