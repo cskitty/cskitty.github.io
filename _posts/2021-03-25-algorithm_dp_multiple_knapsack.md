@@ -7,10 +7,10 @@ tags:
   - Algorithms
   - Dynamic Programming
   - Knapsack
-  - Limited Quantity
+  - Multiple Knapsack
 ---
 
-## Limited Quantity Knapsack Knapsack Problem
+## DP Multiple Knapsack
 
 Given an array of items, each item has weight, value and quantity and the knapsack's maximum holding weight.
 Output the the maximum value that can be obtained for holding these items in knapsack.  
@@ -79,7 +79,7 @@ For each item, create new items which is equivalent to packing together 2^j (j=0
 Then solve the original problem with 0-1 knapsack.
 
 
-'''
+{% highlight C++ linenos %}
 index = 0;
 for (int i = 1; i <= n; i++) {
   int c = 1, v, w, s;
@@ -93,4 +93,4 @@ for (int i = 1; i <= n; i++) {
   w[++index] = k * w;
   v[index] = k * v;
 }
-'''
+{% endhighlight %}
