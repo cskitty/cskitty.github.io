@@ -70,7 +70,7 @@ author_profile: true
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
 | Interval DP | [Stone Merger](/algorithm/algorithm_interval_dp_illustrated_stone_merge/)  | Easy         |   
-
+| Interval DP | [Bonus Binary Tree](/algorithm/algorithm_interval_dp_scored_binary_tree/)  | Easy         |   
 
 
 ### DP on Finite Automata

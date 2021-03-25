@@ -6,7 +6,7 @@ tags:
   - C++
   - Algorithms
   - Dynamic Programming
-  - DP on Interval
+  - Interval DP
 ---
 
 ## What is DP on Interval?
@@ -82,7 +82,7 @@ int main()
         f[i][i] = 0;
     }    
 
-    //dp on interval
+    //dp on interval: out loop is length, inner loop is the left bound
     for(int len = 2 ; len <= n ;len ++ )
       for(int l = 1; l + len - 1 <= 2 * n ; l ++ )
       {
