@@ -44,3 +44,10 @@ Checkout my solution videos for selected [Bronze Questions](/usaco_bronze_video/
 | ------------| --------------------------------------------------------------- | ------------- |    
 | Greedy      | [Boyer-Moore’s Majority Vote Algorithm](https://starcoder.org/programming/boyer-moore-majority-vote/)  | Easy   |      
 | Greedy      | [Mad Scientist](/usaco/USACO-2020-Feb-Bronze/#problem-2-mad-scientist)  | Hard      |  
+
+
+### Coordinate Compression  
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |          
+| Coordinate Compression  | [Range Sum](/algorithm/algorithm_coordinate_compression_range_sum/) | Easy    |  
