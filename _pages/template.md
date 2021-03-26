@@ -304,14 +304,118 @@ void merge(vector<pair<int,int>> &segs)
 
 {% highlight C++ linenos %}
 //Open a stack and decrease monotonically.
-// For the top element on the stack, what you can see is the number of elements behind
+//For the top element on the stack, what you can see is the number of elements behind
 	stack<int>s;
 	for (int i = 0; i < n; i++) {
 		int temp;
 		cin >> temp;
-		//When the input person is taller, remove the shorter person from the stack
+
+		//When the input is bigger, remove the smaller from the stack
 		while (!s.empty() && temp >= s.top())s.pop();
-		sum += s.size();
+
 		s.push(temp);
 	}
+{% endhighlight %}
+
+
+## Sliding Window
+
+Use monotonous queue to find minimal in a sliding window.   
+
+{% highlight C++ linenos %}
+deque<int> dq;
+
+//find the minimal number in the sliding window
+for(int i = 0; i < n; i ++)
+{
+     //keep the front of the deque always inside sliding window of size k
+     if( !dq.empty() && k < i - dq.front() + 1)
+         dq.pop_front();
+
+     //maintain monotonous queue
+     //if the queue is not empty and the tail element is not smaller than a[i]
+     //pop all the bigger elements until it is smaller than a[i]
+     while( !dq.empty() && a[dq.back()] >= a[i])
+         dq.pop_back();
+
+     dq.push_back(i);
+
+     if(i + 1 >= k)
+         cout << a[dq.front()] << " ";
+}
+{% endhighlight %}
+
+
+## KMP
+
+{% highlight C++ linenos %}
+//ne: based on pattern string p
+//ne[i] = j, j the maximal length of prefix: ne[1:j] == ne[i-j+1:i]
+for (int i = 2, j = 0; i <= m; i ++ )
+{
+    while (j && p[i] != p[j + 1])
+      j = ne[j];
+
+    if (p[i] == p[j + 1])
+      j ++ ;
+
+    ne[i] = j;
+}
+
+for (int i = 1, j = 0; i <= n; i ++ )
+{
+    while (j && s[i] != p[j + 1])
+      j = ne[j];
+
+    if (s[i] == p[j + 1])
+      j++;
+
+    if (j == m)
+    {
+        j = ne[j];
+    }
+}
+{% endhighlight %}
+
+
+## Trie
+
+{% highlight C++ linenos %}
+int son[N][26], cnt[N], idx;
+// 0 is the root, and empty node  
+// son[p][u] stores p's subtree root node
+// cnt[p] stores number of words ending with p node
+
+void insert(string str)
+{
+    int p = 0;
+
+    for (int i = 0; i < str.size(); i ++ )
+    {
+        int u = str[i] - 'a';
+
+        if (!son[p][u])
+          son[p][u] = ++idx;
+
+        p = son[p][u];
+    }
+
+    cnt[p]++ ;
+}
+
+int query(string str)
+{
+    int p = 0;
+    for (int i = 0; str.size(); i ++ )
+    {
+        int u = str[i] - 'a';
+
+        if (!son[p][u])
+          return 0;
+
+        p = son[p][u];
+    }
+
+    return cnt[p];
+}
 {% endhighlight %}
