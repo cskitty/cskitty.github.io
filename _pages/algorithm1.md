@@ -51,3 +51,4 @@ Checkout my solution videos for selected [Bronze Questions](/usaco_bronze_video/
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |          
 | Coordinate Compression  | [Range Sum](/algorithm/algorithm_coordinate_compression_range_sum/) | Easy    |  
+| Sliding Window | [Min/Max of Sliding Window](/algorithm/algorithm_sliding_window_min_max/) | Medium    |  

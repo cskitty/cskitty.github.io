@@ -274,7 +274,10 @@ void merge(vector<pair<int,int>> &segs)
     sort(segs.begin(), segs.end());
 
     int st = -2e9, ed = -2e9;
+
+    //[st, ed]: the last range
     for (auto seg : segs)
+        //case 1: can't merge new range
         if (ed < seg.first)
         {
             if (st != -2e9)
@@ -283,6 +286,9 @@ void merge(vector<pair<int,int>> &segs)
             st = seg.first, ed = seg.second;
         }
         else
+          //case 2: the new range's end is smaller than last range's end
+          //case 3: the new range's end is bigger than last range's end
+          //in both cases, extend the new end for the last range
           ed = max(ed, seg.second);
 
     if (st != -2e9)
@@ -290,4 +296,22 @@ void merge(vector<pair<int,int>> &segs)
 
     segs = res;
 }
+{% endhighlight %}
+
+
+
+## Monotonous Stack
+
+{% highlight C++ linenos %}
+//Open a stack and decrease monotonically.
+// For the top element on the stack, what you can see is the number of elements behind
+	stack<int>s;
+	for (int i = 0; i < n; i++) {
+		int temp;
+		cin >> temp;
+		//When the input person is taller, remove the shorter person from the stack
+		while (!s.empty() && temp >= s.top())s.pop();
+		sum += s.size();
+		s.push(temp);
+	}
 {% endhighlight %}

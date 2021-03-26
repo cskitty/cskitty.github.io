@@ -8,7 +8,7 @@ tags:
   - Coordinate Compression
 ---
 
-## Interval DP: Bonus Binary Tree
+## Coordinate Compression: Range Sum
 
 Suppose there is an infinite number line, and the number on each coordinate on the number line is 0.
 
