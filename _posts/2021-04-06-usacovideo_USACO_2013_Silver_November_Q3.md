@@ -1,10 +1,10 @@
 ---
-title: USACO 2021 Bronze February Q3. Clockwise Fence
+title: USACO 2013 Silver November Q3. Pogo-Cow
 categories:
   - USACOVIDEO
 tags:
-  - USACO Bronze
-permalink: //usacovideo/USACO-2021-Bronze-February-Q3-Clockwise-Fence
+  - USACO Silver
+permalink: /usacovideo/usaco-2013-silver-november-q3
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

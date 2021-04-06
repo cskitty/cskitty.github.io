@@ -1,10 +1,10 @@
 ---
-title: USACO 2017 Gold December Q3. Barn Painting
+title: USACO 2015 Silver January Q3. Meeting Time
 categories:
   - USACOVIDEO
 tags:
-  - USACO Gold
-permalink: //usacovideo/USACO-2017-Gold-December-Q3-Barn-Painting
+  - USACO Silver
+permalink: /usacovideo/usaco-2015-silver-january-q3
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

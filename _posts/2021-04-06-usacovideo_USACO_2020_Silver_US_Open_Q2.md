@@ -4,7 +4,7 @@ categories:
   - USACOVIDEO
 tags:
   - USACO Silver
-permalink: //usacovideo/USACO-2020-Silver-US-Open-Q2
+permalink: /usacovideo/usaco-2020-silver-us-open-q2
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

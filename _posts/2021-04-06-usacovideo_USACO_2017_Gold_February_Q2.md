@@ -1,10 +1,10 @@
 ---
-title: USACO 2021 Silver February Q2. Year of the Cow
+title: USACO 2017 Gold February Q2. Why Did the Cow Cross the Road II
 categories:
   - USACOVIDEO
 tags:
-  - USACO Silver
-permalink: //usacovideo/USACO-2021-Silver-February-Q2-Year-of-the-Cow
+  - USACO Gold
+permalink: /usacovideo/usaco-2017-gold-february-q2
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

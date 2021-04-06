@@ -1,10 +1,10 @@
 ---
-title: USACO 2018 Gold December Q3. Teamwork
+title: USACO 2021 Silver February Q2. Year of the Cow
 categories:
   - USACOVIDEO
 tags:
-  - USACO Gold
-permalink: //usacovideo/USACO-2018-Gold-December-Q3-Teamwork
+  - USACO Silver
+permalink: /usacovideo/usaco-2021-silver-february-q2
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

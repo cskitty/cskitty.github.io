@@ -1,10 +1,10 @@
 ---
-title: USACO 2013 Silver November Q3. Pogo-Cow
+title: USACO 2018 Gold December Q3. Teamwork
 categories:
   - USACOVIDEO
 tags:
-  - USACO Silver
-permalink: //usacovideo/USACO-2013-Silver-November-Q3-Pogo-Cow
+  - USACO Gold
+permalink: /usacovideo/usaco-2018-gold-december-q3
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

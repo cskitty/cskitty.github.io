@@ -1,10 +1,10 @@
 ---
-title: USACO 2017 Gold February Q2. Why Did the Cow Cross the Road II
+title: USACO 2021 Bronze February Q3. Clockwise Fence
 categories:
   - USACOVIDEO
 tags:
-  - USACO Gold
-permalink: //usacovideo/USACO-2017-Gold-February-Q2-Why-Did-the-Cow-Cross-the-Road-II
+  - USACO Bronze
+permalink: /usacovideo/usaco-2021-bronze-february-q3
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

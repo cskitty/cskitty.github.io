@@ -4,7 +4,7 @@ categories:
   - USACOVIDEO
 tags:
   - USACO Gold
-permalink: //usacovideo/USACO-2017-Gold-January-Q2
+permalink: /usacovideo/usaco-2017-gold-january-q2
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

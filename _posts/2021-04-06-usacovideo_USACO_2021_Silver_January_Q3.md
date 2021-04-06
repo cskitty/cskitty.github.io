@@ -4,7 +4,7 @@ categories:
   - USACOVIDEO
 tags:
   - USACO Silver
-permalink: //usacovideo/USACO-2021-Silver-January-Q3
+permalink: /usacovideo/usaco-2021-silver-january-q3
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

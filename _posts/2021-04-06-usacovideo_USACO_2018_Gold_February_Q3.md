@@ -1,10 +1,10 @@
 ---
-title: USACO 2015 Silver US Open Q3. Bessie's Birthday Buffet
+title: USACO 2018 Gold February Q3. Taming the Herd
 categories:
   - USACOVIDEO
 tags:
-  - USACO Silver
-permalink: //usacovideo/USACO-2015-Silver-US-Open-Q3-Bessie's-Birthday-Buffet
+  - USACO Gold
+permalink: /usacovideo/usaco-2018-gold-february-q3
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork
