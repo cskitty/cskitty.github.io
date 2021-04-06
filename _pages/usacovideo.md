@@ -10,9 +10,9 @@ author_profile: true
 
 Farmer John is the well acclaimed owner of many cows. But one of them always gets into mischief! Help Farmer John deal with Bessie the cow, using programs to assist them on their journey on the [USACO](http://usaco.org/) site.
 
-## Gold Questions
+## Gold Questions  
    
-| Name   |  Year   | Q# | Contest |
+| Name   |  Year   | Q# | Contest |  
 |--------|---------|----|---------|  
 | [Teamwork](/usacovideo/tutorial_usaco_gold_2018_dec_q3) | 2018 | Q3 | December |   
 | [Barn Painting](/usacovideo/tutorial_usaco_gold_2017_dec_q3) | 2017 | Q3 | December |   
@@ -28,7 +28,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | [Hoof, Paper, Scissors](/usacovideo/tutorial_usaco_gold_2017_jan_q2) | 2017 | Q2 | January |   
 ## Silver Questions
    
-| Name   |  Year   | Q# | Contest |
+| Name   |  Year   | Q# | Contest |  
 |--------|---------|----|---------|  
 | [Pogo-Cow](/usacovideo/tutorial_usaco_silver_2013_november_q3) | 2013 | Q3 | November |   
 | [Bessie's Birthday Buffet](/usacovideo/tutorial_usaco_silver_2015_us_open_q3) | 2015 | Q3 | US Open |   
@@ -42,7 +42,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | [Dance Mooves](/usacovideo/tutorial_usaco_silver_2021_jan_q1) | 2021 | Q1 | January |   
 ## Bronze Questions
 
-| Name   |  Year   | Q# | Contest |
+| Name   |  Year   | Q# | Contest |  
 |--------|---------|----|---------|  
     | [Clockwise Fence](/usacovideo/tutorial_usaco_bronze_2021_feb_q3) | 2021 | Q3 | February |   
 | [Just Stalling](/usacovideo/tutorial_usaco_bronze_2021_jan_q3) | 2021 | Q3 | January |   
