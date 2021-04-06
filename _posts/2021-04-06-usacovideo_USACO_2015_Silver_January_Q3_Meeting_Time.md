@@ -4,6 +4,7 @@ categories:
   - USACOVIDEO
 tags:
   - USACO Silver
+permalink: //usacovideo/USACO-2015-Silver-January-Q3-Meeting-Time
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

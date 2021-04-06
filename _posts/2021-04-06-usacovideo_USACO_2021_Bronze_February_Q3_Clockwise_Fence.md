@@ -4,6 +4,7 @@ categories:
   - USACOVIDEO
 tags:
   - USACO Bronze
+permalink: //usacovideo/USACO-2021-Bronze-February-Q3-Clockwise-Fence
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

@@ -4,6 +4,7 @@ categories:
   - USACOVIDEO
 tags:
   - USACO Silver
+permalink: //usacovideo/USACO-2015-Silver-US-Open-Q3-Bessie's-Birthday-Buffet
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork

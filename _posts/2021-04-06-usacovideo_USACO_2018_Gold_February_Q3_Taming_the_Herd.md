@@ -4,6 +4,7 @@ categories:
   - USACOVIDEO
 tags:
   - USACO Gold
+permalink: //usacovideo/USACO-2018-Gold-February-Q3-Taming-the-Herd
 ---
   
 ## USACO 2018 Gold December Q3. Teamwork
