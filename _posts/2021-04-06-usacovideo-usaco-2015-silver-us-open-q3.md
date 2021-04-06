@@ -1,15 +1,15 @@
 ---
 title: USACO 2015 Silver US Open Q3. Bessie's Birthday Buffet
 categories:
-  - USACOVIDEO
+  - video
 tags:
   - USACO Silver
-permalink: /usacovideo/usaco-2015-silver-us-open-q3
+  - VIDEO 
 ---
   
-## USACO 2018 Gold December Q3. Teamwork
+## USACO 2015 Silver US Open Q3. Bessie's Birthday Buffet  
   
-{% include video id="boiC5NQCtlc" provider="youtube" %}
+{% include video id="xRVUjKSN09M" provider="youtube" %}
   
   
 {% highlight C++ linenos %}

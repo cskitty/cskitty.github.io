@@ -1,13 +1,13 @@
 ---
-title: USACO 2016 Gold US Open Q2: Closing the Farm
+title: USACO 2018 Gold December Q3. Teamwork
 categories:
-  - USACOVIDEO
+  - video
 tags:
   - USACO Gold
-permalink: /usacovideo/usaco-2016-gold-us-open-q2
+  - VIDEO 
 ---
   
-## USACO 2018 Gold December Q3. Teamwork
+## USACO 2018 Gold December Q3. Teamwork  
   
 {% include video id="boiC5NQCtlc" provider="youtube" %}
   
