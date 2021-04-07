@@ -29,4 +29,4 @@ The following tutorials and live class recording are available in starcoder.org.
 | [Python Hands-on Projects](/tags/game/)| Video Tutorial | Learning Python through Game Development | Intermediate |   
 | [Project Euler ](/tags/math/)| Online Tutorial| Python Programing for Complex Math Problems | Intermediate |
 | [USACO Algorithms ](/algorithms/)| Training Tutorial| Algorithms for USACO | Advanced |
-| [USA Computing Olympiad ](/categories/usaco/)| Training Tutorial| USACO Problems Explained | Advanced |
+| [USA Computing Olympiad ](/usaco/)| Training Tutorial| USACO Problems Explained | Advanced |
