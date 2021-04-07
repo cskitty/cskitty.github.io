@@ -20,7 +20,7 @@ feature_row:
 - image_path: /assets/images/two.PNG
   title: "USACO"
   excerpt: "Competitive Programming"
-  url: "/usacovideo/"
+  url: "/usaco/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/three.PNG
