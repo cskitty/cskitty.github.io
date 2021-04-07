@@ -1,5 +1,5 @@
 ---
-title: USACO 2019 Silver December Q2. Meetings
+title: USACO 2019 Silver December P2. Meetings
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2019 Silver December Q2: Meetings  
+## USACO 2019 Silver December P2: Meetings  
   
 {% include video id="W4ZYL456PVg" provider="youtube" %}
   

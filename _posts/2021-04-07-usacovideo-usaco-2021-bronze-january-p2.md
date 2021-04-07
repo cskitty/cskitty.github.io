@@ -1,5 +1,5 @@
 ---
-title: USACO 2021 Bronze January Q2. Even More Odd Photos
+title: USACO 2021 Bronze January P2. Even More Odd Photos
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2021 Bronze January Q2: Even More Odd Photos  
+## USACO 2021 Bronze January P2: Even More Odd Photos  
   
 {% include video id="VbPjZamNA40" provider="youtube" %}
   

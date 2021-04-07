@@ -1,5 +1,5 @@
 ---
-title: USACO 2020 Silver US Open Q1. Social Distancing
+title: USACO 2020 Silver US Open P1. Social Distancing
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2020 Silver US Open Q1: Social Distancing  
+## USACO 2020 Silver US Open P1: Social Distancing  
   
 {% include video id="mt8QhnFOkr0" provider="youtube" %}
   

@@ -1,5 +1,5 @@
 ---
-title: USACO 2021 Silver February Q2. Year of the Cow
+title: USACO 2021 Silver February P2. Year of the Cow
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2021 Silver February Q2. Year of the Cow  
+## USACO 2021 Silver February P2. Year of the Cow  
   
 {% include video id="MY5Ait0AcmE" provider="youtube" %}
   

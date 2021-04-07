@@ -1,5 +1,5 @@
 ---
-title: USACO 2017 Gold December Q3. Haybale Feast
+title: USACO 2017 Gold December P3. Haybale Feast
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2017 Gold December Q3: Haybale Feast  
+## USACO 2017 Gold December P3: Haybale Feast  
   
 {% include video id="duSypWU574E" provider="youtube" %}
   

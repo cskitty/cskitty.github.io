@@ -1,5 +1,5 @@
 ---
-title: USACO 2021 Gold January Q2. Telephone
+title: USACO 2021 Gold January P2. Telephone
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2021 Gold January Q2: Telephone  
+## USACO 2021 Gold January P2: Telephone  
   
 {% include video id="wad17BQD8n8" provider="youtube" %}
   

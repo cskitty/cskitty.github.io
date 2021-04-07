@@ -1,5 +1,5 @@
 ---
-title: "Video Tutorials for USACO Questions"  
+title: "Video Tutorials for USACO Problems"  
 layout: tag  
 permalink: /usacovideo/  
 author_profile: true  
@@ -10,52 +10,62 @@ author_profile: true
 
 Farmer John is the well acclaimed owner of many cows. But one of them always gets into mischief! Help Farmer John deal with Bessie the cow, using programs to assist them on their journey on the [USACO](http://usaco.org/) site.
 
-
+## Detailed Video Tutorials for USACO Problems
 
 ## Bronze Questions
 
-| Name   |  Year   | Q# | Contest |  
+| Name   |  Year   | P# | Contest |  
 |--------|---------|----|---------|  
-| [Clockwise Fence](/video/usacovideo-usaco-2021-bronze-february-q3) | 2021 | Q3 | February |   
-| [Just Stalling](/video/usacovideo-usaco-2021-bronze-january-q3) | 2021 | Q3 | January |   
-| [Even More Odd Photos](/video/usacovideo-usaco-2021-bronze-january-q2) | 2021 | Q2 | January |   
+| [Clockwise Fence](/video/usacovideo-usaco-2021-bronze-february-p3) | 2021 | P3 | February |   
+| [Just Stalling](/video/usacovideo-usaco-2021-bronze-january-p3) | 2021 | P3 | January |   
+| [Even More Odd Photos](/video/usacovideo-usaco-2021-bronze-january-p2) | 2021 | P2 | January |   
+| [Stuck in a Rut](/video/usacovideo-usaco-2020-bronze-december-p3) | 2020 | P3 | December |   
+
 
 ## Silver Questions
 
 | Name   |  Year   | Q# | Contest |  
 |--------|---------|----|---------|  
-| [Pogo-Cow](/video/usacovideo-usaco-2013-silver-november-q3) | 2013 | Q3 | November |   
-| [Bessie's Birthday Buffet](/video/usacovideo-usaco-2015-silver-us-open-q3) | 2015 | Q3 | US Open |   
-| [Meeting Time](/video/usacovideo-usaco-2015-silver-january-q3) | 2015 | Q3 | January |   
-| [Year of the Cow](/video/usacovideo-usaco-2021-silver-february-q2) | 2021 | Q2 | February |   
-| [Meetings](/video/usacovideo-usaco-2019-silver-december-q2) | 2019 | Q2 | December |   
-| [The Cow Run](/video/usacovideo-usaco-2013-silver-march-q3) | 2013 | Q3 | March |   
-| [Spaced Out](/video/usacovideo-usaco-2021-silver-january-q3) | 2021 | Q3 | January |   
-| [Cereal](/video/usacovideo-usaco-2020-silver-us-open-q2) | 2020 | Q2 | US Open |   
-| [Social Distancing](/video/usacovideo-usaco-2020-silver-us-open-q1) | 2020 | Q1 | US Open |   
-| [Dance Mooves](/video/usacovideo-usaco-2021-silver-january-q1) | 2021 | Q1 | January |   
+| [Year of the Cow](/video/usacovideo-usaco-2021-silver-february-p2) | 2021 | P2 | February |  
+| [Dance Mooves](/video/usacovideo-usaco-2021-silver-january-p1) | 2021 | P1 | January |
+| [Spaced Out](/video/usacovideo-usaco-2021-silver-january-p3) | 2021 | P3 | January |  
+| [Social Distancing](/video/usacovideo-usaco-2020-silver-us-open-p1) | 2020 | P1 | US Open |
+| [Cereal](/video/usacovideo-usaco-2020-silver-us-open-p2) | 2020 | P2 | US Open |   
+| [Cowntagion](/video/usacovideo-usaco-2020-silver-december-p1) | 2020 | P1 | December |   
+| [Rectangular Pasture](/video/usacovideo-usaco-2020-silver-december-p2) | 2020 | P2 | December |
+| [Stuck in a Rut](/video/usacovideo-usaco-2020-silver-december-p3) | 2020 | P3 | December |
+| [Meetings](/video/usacovideo-usaco-2019-silver-december-p2) | 2019 | P2 | December |   
+| [Bessie's Birthday Buffet](/video/usacovideo-usaco-2015-silver-us-open-p3) | 2015 | P3 | US Open |   
+| [Cow Routing](/video/usacovideo-usaco-2015-silver-january-p2) | 2015 | P2 | January |   
+| [Stampede](/video/usacovideo-usaco-2015-silver-january-p1) | 2015 | P1 | January |   
+| [Superbull](/video/usacovideo-usaco-2015-silver-february-p3) | 2015 | P3 | February |   
+| [Meeting Time](/video/usacovideo-usaco-2015-silver-january-p3) | 2015 | P3 | January |  
+| [Cow Hopscotch](/video/usacovideo-usaco-2015-silver-february-p2) | 2015 | P2 | February |
+| [Pogo-Cow](/video/usacovideo-usaco-2013-silver-november-p3) | 2013 | P3 | November |    
+| [The Cow Run](/video/usacovideo-usaco-2013-silver-march-p3) | 2013 | P3 | March |  
+
 
 ## Gold Questions
 
 | Name   |  Year   | Q# | Contest |  
-|--------|---------|----|---------|  
-| [Teamwork](/video/usacovideo-usaco-2018-gold-december-q3) | 2018 | Q3 | December |   
-| [Barn Painting](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | Q3 | December |   
-| [Taming the Herd](/video/usacovideo-usaco-2018-gold-february-q3) | 2018 | Q3 | February |   
-| [Why Did the Cow Cross the Road II](/video/usacovideo-usaco-2017-gold-february-q2) | 2017 | Q2 | February |   
-| [Talent Show](/video/usacovideo-usaco-2018-gold-us-open-q3) | 2018 | Q3 | US Open |   
-| [Telephone](/video/usacovideo-usaco-2021-gold-january-q2) | 2021 | Q2 | January |   
-| [Haybale Feast](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | Q3 | December |   
-| [Cow Checklist](/video/usacovideo-usaco-2016-gold-december-q2) | 2016 | Q2 | December |   
-| [Radio Contact](/video/usacovideo-usaco-2016-gold-january-q2) | 2016 | Q2 | January |   
-| [Closing the Farm](/video/usacovideo-usaco-2016-gold-us-open-q2) | 2016 | Q2 | US Open |   
-| [Sleepy Cow Herding](/video/usacovideo-usaco-2019-gold-january-q2) | 2019 | Q2 | January |   
-| [Hoof, Paper, Scissors](/video/usacovideo-usaco-2017-gold-january-q2) | 2017 | Q2 | January |
+|--------|---------|----|---------|
+| [Portles](/video/usacovideo-usaco-2021-gold-us-open-q2/) | 2021 | P2 | US Open |  
+| [Telephone](/video/usacovideo-usaco-2021-gold-january-p2) | 2021 | P2 | January |
+| [Sleepy Cow Herding](/video/usacovideo-usaco-2019-gold-january-p2) | 2019 | P2 | January |  
+| [Teamwork](/video/usacovideo-usaco-2018-gold-december-p3) | 2018 | P3 | December |   
+| [Talent Show](/video/usacovideo-usaco-2018-gold-us-open-p3) | 2018 | P3 | US Open |
+| [Taming the Herd](/video/usacovideo-usaco-2018-gold-february-p3) | 2018 | P3 | February |   
+| [Barn Painting](/video/usacovideo-usaco-2017-gold-december-p3) | 2017 | P3 | December |   
+| [Haybale Feast](/video/usacovideo-usaco-2017-gold-december-p3) | 2017 | P3 | December |
+| [Why Did the Cow Cross the Road II](/video/usacovideo-usaco-2017-gold-february-p2) | 2017 | P2 | February |
+| [Hoof, Paper, Scissors](/video/usacovideo-usaco-2017-gold-january-p2) | 2017 | P2 | January |   
+| [Cow Checklist](/video/usacovideo-usaco-2016-gold-december-p2) | 2016 | P2 | December |   
+| [Radio Contact](/video/usacovideo-usaco-2016-gold-january-p2) | 2016 | P2 | January |   
+| [Closing the Farm](/video/usacovideo-usaco-2016-gold-us-open-p2) | 2016 | P2 | US Open |   
 
 
 
-
-## My Reference Implementation for USACO Questions
+## My Reference Implementation for USACO Problems
 
 ###  Silver
 

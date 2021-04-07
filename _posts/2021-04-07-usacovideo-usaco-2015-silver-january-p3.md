@@ -1,5 +1,5 @@
 ---
-title: USACO 2015 Silver January Q3. Meeting Time
+title: USACO 2015 Silver January P3. Meeting Time
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2015 Silver January Q3. Meeting Time  
+## USACO 2015 Silver January P3. Meeting Time  
   
 {% include video id="xPLGKFHKPJU" provider="youtube" %}
   

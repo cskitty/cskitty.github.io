@@ -1,5 +1,5 @@
 ---
-title: USACO 2020 Silver US Open Q2. Cereal
+title: USACO 2020 Silver US Open P2. Cereal
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2020 Silver US Open Q2: Cereal  
+## USACO 2020 Silver US Open P2: Cereal  
   
 {% include video id="FcCdPu9Yz70" provider="youtube" %}
   

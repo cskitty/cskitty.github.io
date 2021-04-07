@@ -1,5 +1,5 @@
 ---
-title: USACO 2017 Gold January Q2. Hoof, Paper, Scissors
+title: USACO 2017 Gold January P2. Hoof, Paper, Scissors
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2017 Gold January Q2: Hoof, Paper, Scissors  
+## USACO 2017 Gold January P2: Hoof, Paper, Scissors  
   
 {% include video id="YvPGN6ZPKCc" provider="youtube" %}
   

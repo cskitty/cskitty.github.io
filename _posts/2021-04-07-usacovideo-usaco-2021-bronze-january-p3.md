@@ -1,5 +1,5 @@
 ---
-title: USACO 2021 Bronze January Q3. Just Stalling
+title: USACO 2021 Bronze January P3. Just Stalling
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2021 Bronze January Q3: Just Stalling  
+## USACO 2021 Bronze January P3: Just Stalling  
   
 {% include video id="w89ku-wpE9I" provider="youtube" %}
   

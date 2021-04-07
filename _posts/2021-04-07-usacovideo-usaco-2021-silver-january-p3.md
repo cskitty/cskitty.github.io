@@ -1,5 +1,5 @@
 ---
-title: USACO 2021 Silver January Q3. Spaced Out
+title: USACO 2021 Silver January P3. Spaced Out
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2021 Silver January Q3: Spaced Out  
+## USACO 2021 Silver January P3: Spaced Out  
   
 {% include video id="7eMHxpDQJEw" provider="youtube" %}
   

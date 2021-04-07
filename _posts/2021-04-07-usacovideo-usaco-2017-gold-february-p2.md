@@ -1,5 +1,5 @@
 ---
-title: USACO 2017 Gold February Q2. Why Did the Cow Cross the Road II
+title: USACO 2017 Gold February P2. Why Did the Cow Cross the Road II
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2017 Gold February Q2. Why Did the Cow Cross the Road II  
+## USACO 2017 Gold February P2. Why Did the Cow Cross the Road II  
   
 {% include video id="9Rn5qtXMnlQ" provider="youtube" %}
   

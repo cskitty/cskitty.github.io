@@ -1,5 +1,5 @@
 ---
-title: USACO 2018 Gold February Q3. Taming the Herd
+title: USACO 2018 Gold February P3. Taming the Herd
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2018 Gold February Q3. Taming the Herd  
+## USACO 2018 Gold February P3. Taming the Herd  
   
 {% include video id="Zdyf842FpYQ" provider="youtube" %}
   

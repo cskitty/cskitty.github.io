@@ -1,5 +1,5 @@
 ---
-title: USACO 2021 Silver January Q1. Dance Mooves
+title: USACO 2021 Silver January P1. Dance Mooves
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2021 Silver January Q1: Dance Mooves  
+## USACO 2021 Silver January P1: Dance Mooves  
   
 {% include video id="WaumFVLE6Dc" provider="youtube" %}
   
