@@ -1,5 +1,5 @@
 ---
-title: USACO 2018 Gold December Q3. Teamwork
+title: USACO 2018 Gold December P3. Teamwork
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2018 Gold December Q3. Teamwork  
+## USACO 2018 Gold December P3. Teamwork  
   
 {% include video id="boiC5NQCtlc" provider="youtube" %}
   

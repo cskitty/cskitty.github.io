@@ -1,5 +1,5 @@
 ---
-title: USACO 2015 Silver US Open Q3. Bessie's Birthday Buffet
+title: USACO 2015 Silver US Open P3. Bessie's Birthday Buffet
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2015 Silver US Open Q3. Bessie's Birthday Buffet  
+## USACO 2015 Silver US Open P3. Bessie's Birthday Buffet  
   
 {% include video id="xRVUjKSN09M" provider="youtube" %}
   

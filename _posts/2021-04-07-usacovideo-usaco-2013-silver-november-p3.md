@@ -1,5 +1,5 @@
 ---
-title: USACO 2013 Silver November Q3. Pogo-Cow
+title: USACO 2013 Silver November P3. Pogo-Cow
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2013 Silver November Q3. Pogo-Cow  
+## USACO 2013 Silver November P3. Pogo-Cow  
   
 {% include video id="25FGTMQHZt8" provider="youtube" %}
   

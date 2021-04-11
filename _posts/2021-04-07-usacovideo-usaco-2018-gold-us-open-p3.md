@@ -1,5 +1,5 @@
 ---
-title: USACO 2018 Gold US Open Q3. Talent Show
+title: USACO 2018 Gold US Open P3. Talent Show
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2018 Gold US Open Q3: Talent Show  
+## USACO 2018 Gold US Open P3: Talent Show  
   
 {% include video id="FdaANHGe588" provider="youtube" %}
   

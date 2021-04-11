@@ -1,5 +1,5 @@
 ---
-title: USACO 2016 Gold December Q2. Cow Checklist
+title: USACO 2016 Gold December P2. Cow Checklist
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2016 Gold December Q2: Cow Checklist  
+## USACO 2016 Gold December P2: Cow Checklist  
   
 {% include video id="Wib9aih7-Q4" provider="youtube" %}
   

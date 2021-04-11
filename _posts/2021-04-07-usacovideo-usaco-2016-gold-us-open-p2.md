@@ -1,5 +1,5 @@
 ---
-title: USACO 2016 Gold US Open Q2. Closing the Farm
+title: USACO 2016 Gold US Open P2. Closing the Farm
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2016 Gold US Open Q2: Closing the Farm  
+## USACO 2016 Gold US Open P2: Closing the Farm  
   
 {% include video id="5G1CGuTfUJk" provider="youtube" %}
   

@@ -1,5 +1,5 @@
 ---
-title: USACO 2016 Gold January Q2. Radio Contact
+title: USACO 2016 Gold January P2. Radio Contact
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO 
 ---
   
-## USACO 2016 Gold January Q2: Radio Contact  
+## USACO 2016 Gold January P2: Radio Contact  
   
 {% include video id="MOei3fIEPR0" provider="youtube" %}
   
