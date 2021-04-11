@@ -60,29 +60,9 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | [Why Did the Cow Cross the Road II](/video/usacovideo-usaco-2017-gold-february-q2) | 2017 | Q2 | February |   
 | [Hoof, Paper, Scissors](/video/usacovideo-usaco-2017-gold-january-q2) | 2017 | Q2 | January |
 | [Closing the Farm](/video/usacovideo-usaco-2016-gold-us-open-q2) | 2016 | Q2 | US Open |  
-| [Radio Contact](/video/usacovideo-usaco-2016-gold-january-q2) | 2016 | Q2 | January |   
+| [Radio Contact](/video/usacovideo-usaco-2016-gold-january-p2) | 2016 | Q2 | January |   
 | [Haybale Feast](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | Q3 | December |   
 | [Cow Checklist](/video/usacovideo-usaco-2016-gold-december-q2) | 2016 | Q2 | December |      
-
-
-
-
-## My Reference Implementation for USACO Questions
-|--------|---------|----|---------|
-| [Portles](/video/usacovideo-usaco-2021-gold-us-open-q2/) | 2021 | P2 | US Open |  
-| [Telephone](/video/usacovideo-usaco-2021-gold-january-p2) | 2021 | P2 | January |
-| [Sleepy Cow Herding](/video/usacovideo-usaco-2019-gold-january-p2) | 2019 | P2 | January |  
-| [Teamwork](/video/usacovideo-usaco-2018-gold-december-p3) | 2018 | P3 | December |   
-| [Talent Show](/video/usacovideo-usaco-2018-gold-us-open-p3) | 2018 | P3 | US Open |
-| [Taming the Herd](/video/usacovideo-usaco-2018-gold-february-p3) | 2018 | P3 | February |   
-| [Barn Painting](/video/usacovideo-usaco-2017-gold-december-p3) | 2017 | P3 | December |   
-| [Haybale Feast](/video/usacovideo-usaco-2017-gold-december-p3) | 2017 | P3 | December |
-| [Why Did the Cow Cross the Road II](/video/usacovideo-usaco-2017-gold-february-p2) | 2017 | P2 | February |
-| [Hoof, Paper, Scissors](/video/usacovideo-usaco-2017-gold-january-p2) | 2017 | P2 | January |   
-| [Cow Checklist](/video/usacovideo-usaco-2016-gold-december-p2) | 2016 | P2 | December |   
-| [Radio Contact](/video/usacovideo-usaco-2016-gold-january-p2) | 2016 | P2 | January |   
-| [Closing the Farm](/video/usacovideo-usaco-2016-gold-us-open-p2) | 2016 | P2 | US Open |   
-
 
 
 ## My Reference Implementation for USACO Problems
