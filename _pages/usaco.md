@@ -39,6 +39,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 | Name   |  Year   | Q# | Contest |  
 |--------|---------|----|---------|  
+| [United Cows of Farmer John](/video/usacovideo-usaco-2021-gold-us-open-q1) | 2021 | Q1 | US Open |   
 | [Portals](/video/usacovideo-usaco-2021-gold-us-open-q2) | 2021 | Q2 | US Open |   
 | [Telephone](/video/usacovideo-usaco-2021-gold-january-q2) | 2021 | Q2 | January |   
 | [Sleepy Cow Herding](/video/usacovideo-usaco-2019-gold-january-q2) | 2019 | Q2 | January |
