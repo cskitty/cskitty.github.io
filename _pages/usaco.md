@@ -58,12 +58,13 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | [Teamwork](/video/usacovideo-usaco-2018-gold-december-q3) | 2018 | P3 | December |   
 | [Barn Painting](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | P3 | December |     
 | [Why Did the Cow Cross the Road II](/video/usacovideo-usaco-2017-gold-february-q2) | 2017 | P2 | February |   
-| [Hoof, Paper, Scissors](/video/usacovideo-usaco-2017-gold-january-q2) | 2017 | P2 | January |
 | [Closing the Farm](/video/usacovideo-usaco-2016-gold-us-open-q2) | 2016 | P2 | US Open |  
 | [Radio Contact](/video/usacovideo-usaco-2016-gold-january-p2) | 2016 | P2 | January |   
 | [Haybale Feast](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | P3 | December |   
+| [Hoof, Paper, Scissors](/video/usacovideo-usaco-2017-gold-january-q2) | 2017 | P2 | January |
+| [Cow Navigation](/video/usacovideo-usaco-2017-gold-january-p3) | 2017 | P3 | January |
 | [Cow Checklist](/video/usacovideo-usaco-2016-gold-december-q2) | 2016 | P2 | December |      
-| [Lasers and Mirrors](/video/usacovideo-usaco-2016-gold-december-p3) | 2016 | P2 | December |  
+| [Lasers and Mirrors](/video/usacovideo-usaco-2016-gold-december-p3) | 2016 | P3 | December |  
 
 ## My Reference Implementation for USACO Problems
 
