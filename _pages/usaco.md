@@ -49,21 +49,21 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 | Name   |  Year   | Q# | Contest |  
 |--------|---------|----|---------|  
-| [United Cows of Farmer John](/video/usacovideo-usaco-2021-gold-us-open-q1) | 2021 | Q1 | US Open |   
-| [Portals](/video/usacovideo-usaco-2021-gold-us-open-q2) | 2021 | Q2 | US Open |   
-| [Telephone](/video/usacovideo-usaco-2021-gold-january-q2) | 2021 | Q2 | January |   
-| [Sleepy Cow Herding](/video/usacovideo-usaco-2019-gold-january-q2) | 2019 | Q2 | January |
-| [Talent Show](/video/usacovideo-usaco-2018-gold-us-open-q3) | 2018 | Q3 | US Open |   
-| [Taming the Herd](/video/usacovideo-usaco-2018-gold-february-q3) | 2018 | Q3 | February |
-| [Teamwork](/video/usacovideo-usaco-2018-gold-december-q3) | 2018 | Q3 | December |   
-| [Barn Painting](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | Q3 | December |     
-| [Why Did the Cow Cross the Road II](/video/usacovideo-usaco-2017-gold-february-q2) | 2017 | Q2 | February |   
-| [Hoof, Paper, Scissors](/video/usacovideo-usaco-2017-gold-january-q2) | 2017 | Q2 | January |
-| [Closing the Farm](/video/usacovideo-usaco-2016-gold-us-open-q2) | 2016 | Q2 | US Open |  
-| [Radio Contact](/video/usacovideo-usaco-2016-gold-january-p2) | 2016 | Q2 | January |   
-| [Haybale Feast](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | Q3 | December |   
-| [Cow Checklist](/video/usacovideo-usaco-2016-gold-december-q2) | 2016 | Q2 | December |      
-
+| [United Cows of Farmer John](/video/usacovideo-usaco-2021-gold-us-open-q1) | 2021 | P1 | US Open |   
+| [Portals](/video/usacovideo-usaco-2021-gold-us-open-q2) | 2021 | P2 | US Open |   
+| [Telephone](/video/usacovideo-usaco-2021-gold-january-q2) | 2021 | P2 | January |   
+| [Sleepy Cow Herding](/video/usacovideo-usaco-2019-gold-january-q2) | 2019 | P2 | January |
+| [Talent Show](/video/usacovideo-usaco-2018-gold-us-open-q3) | 2018 | P3 | US Open |   
+| [Taming the Herd](/video/usacovideo-usaco-2018-gold-february-q3) | 2018 | P3 | February |
+| [Teamwork](/video/usacovideo-usaco-2018-gold-december-q3) | 2018 | P3 | December |   
+| [Barn Painting](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | P3 | December |     
+| [Why Did the Cow Cross the Road II](/video/usacovideo-usaco-2017-gold-february-q2) | 2017 | P2 | February |   
+| [Hoof, Paper, Scissors](/video/usacovideo-usaco-2017-gold-january-q2) | 2017 | P2 | January |
+| [Closing the Farm](/video/usacovideo-usaco-2016-gold-us-open-q2) | 2016 | P2 | US Open |  
+| [Radio Contact](/video/usacovideo-usaco-2016-gold-january-p2) | 2016 | P2 | January |   
+| [Haybale Feast](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | P3 | December |   
+| [Cow Checklist](/video/usacovideo-usaco-2016-gold-december-q2) | 2016 | P2 | December |      
+| [Lasers and Mirrors](/video/usacovideo-usaco-2016-gold-december-p3) | 2016 | P2 | December |  
 
 ## My Reference Implementation for USACO Problems
 
