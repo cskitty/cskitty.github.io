@@ -12,4 +12,4 @@ author_profile: true
 | [USACO Bronze Algorithms](/algorithm1)  | Beginner     |
 | [USACO Silver Algorithms](/algorithm2)  | Intermediate |
 | [USACO Gold Algorithms](/algorithm3)    | Hard         |
-| [USACO Platinum Algorithms](/algorithm4)| Super Hard   |
+| [USACO Platinum Algorithms](/algorithm4)| Insanely Hard   |

@@ -41,7 +41,7 @@ author_profile: true
 | LIS,DFS | [ Missile Defense System](/algorithm/algorithm_dp_LIS_nlogn/) | Hard |
 | DP | [ LCS (Longest Common Sequence)](/algorithm/algorithm_dp_LCS/) | Medium |
 | LIS | [ Sister Cities](/algorithm/algorithm_dp_LIS_sister_cities/) | Medium |    
-| LIS | [ Chrous ](/algorithm/algorithm_dp_LIS_chrous/) | Medium |  
+| LIS | [ Chorus ](/algorithm/algorithm_dp_LIS_chrous/) | Medium |  
 | LIS | [Best Time to Buy and Sell Stock](https://starcoder.org/programming/dp-buy-sell-stock/)  | Easy         |  
 | Backtrack, LIS | [ Missile Defense System](/algorithm/algorithm_dfs_missile_defense_system/) | Medium |  
 | LIS/LCS | [ LCIS(Longest Common Increasing Sequence)](/algorithm/algorithm_dp_LCIS/) | Hard |   
@@ -84,6 +84,11 @@ author_profile: true
 | DP Compression | [Treasure Hunt](/algorithm/algorithm_dp_fa_treasure_hunt/)  | Medium         |  
 | DP Compression w/ Rolling Array | [Artillary Position](/algorithm/algorithm_dp_fa_artillery_position/)  | Medium         |   
 
+### DP & Combinatorics
+  
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| Combinatorics | [KK's Chemicals](/algorithm/algorithm_dp_kk_chemicals/)  | Medium         |   
 
 ### Graph  
 
