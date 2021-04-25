@@ -85,10 +85,16 @@ author_profile: true
 | DP Compression w/ Rolling Array | [Artillary Position](/algorithm/algorithm_dp_fa_artillery_position/)  | Medium         |   
 
 ### DP & Combinatorics
-  
+
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
 | Combinatorics | [KK's Chemicals](/algorithm/algorithm_dp_kk_chemicals/)  | Medium         |   
+
+### DP on a Tree
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| DP on a Tree | [A Party Without a Boss](/algorithm/algorithm_dp_tree_a-party-without-boss)  | Medium         |   
 
 ### Graph  
 
