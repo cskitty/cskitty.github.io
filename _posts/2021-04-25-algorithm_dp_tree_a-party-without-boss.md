@@ -60,14 +60,13 @@ Sample Output
 5
 ```
 
-Solution  
-
+### Solution  
+  
 We can create a dp array with state dp[i][j] where i represents the employee and j represents 0 if the employee doesn't go to the party, and 1 if the employee does.
 
 * Employee doesn't go: We can choose between the maximum of the children (people working under the employee) going, or the children not going. dp[i][0] = max(dp[x][0], dp[x][1]) + max(dp[x + 1][0], dp[x + 1][1]) + ... max(dp[y][0], dp[y][1])
 * Employee does go: The children cannot go, thus it can only be dp[i][1] = dp[x][0] + dp[x + 1][0] + ... + dp[y][0]
 
-### Solution  
 
 {% highlight C++ linenos %}
 #include <iostream>
