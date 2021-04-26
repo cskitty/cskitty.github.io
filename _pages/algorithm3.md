@@ -90,11 +90,14 @@ author_profile: true
 | ------------| --------------------------------------------------------------- | ------------- |  
 | Combinatorics | [KK's Chemicals](/algorithm/algorithm_dp_kk_chemicals/)  | Medium         |   
 
+
 ### DP on a Tree
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
 | DP on a Tree | [A Party Without a Boss](/algorithm/algorithm_dp_tree_a-party-without-boss)  | Medium         |   
+| DP on a Tree | [Course Selection](/algorithm/algorithm_dp_tree_course-selection/)  | Medium         |   
+
 
 ### Graph  
 
