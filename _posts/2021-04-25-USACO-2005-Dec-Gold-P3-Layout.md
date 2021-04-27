@@ -1,5 +1,5 @@
 ---
-title: "USACO 2005 December Gold P1: Layout"
+title: "USACO 2005 December Gold P3: Layout"
 categories:
   - USACO
 tags:
@@ -9,7 +9,7 @@ tags:
   - SPFA
 ---
 
-# USACO 2005 December Gold P1: Layout
+# USACO 2005 December Gold P3: Layout
 
 Description
 

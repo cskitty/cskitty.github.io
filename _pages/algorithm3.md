@@ -104,4 +104,4 @@ author_profile: true
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
 | Dijkstra | [Dijkstra’s Shortest Path](/programming/dijkstra's-shortest-path/)  | Medium    
-| Shortest Path Faster Algorithm (SPFA)     | [Layout](/usaco/USACO-2005-Dec-Gold-P1-Layout/)  | Medium  |         
+| Shortest Path Faster Algorithm (SPFA)     | [Layout](/usaco/USACO-2005-Dec-Gold-P3-Layout/)  | Medium  |         
