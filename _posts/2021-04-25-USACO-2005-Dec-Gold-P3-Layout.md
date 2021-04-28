@@ -5,7 +5,7 @@ categories:
 tags:
   - Algorithms
   - USACO
-  - Two Pointer
+  - Two Pointers
 ---
 
 # USACO 2005 December Gold P3: Layout

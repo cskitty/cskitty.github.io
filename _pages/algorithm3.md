@@ -81,8 +81,14 @@ author_profile: true
 | DP on FA | [Little King](/algorithm/algorithm_dp_fa_little_king/)  | Medium         |    
 | DP on FA | [Password Counting](/algorithm/algorithm_dp_fa_password_counting/)  | Medium         |  
 | DP on AC FA | [DNA Repairing](/algorithm/algorithm_dp_fa_dna_repairing/)  | Medium         |   
-| DP Compression | [Treasure Hunt](/algorithm/algorithm_dp_fa_treasure_hunt/)  | Medium         |  
-| DP Compression w/ Rolling Array | [Artillary Position](/algorithm/algorithm_dp_fa_artillery_position/)  | Medium         |   
+
+### State Compression DP
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| State Compression DP | [Treasure Hunt](/algorithm/algorithm_dp_fa_treasure_hunt/)  | Medium         |  
+| State Compression DP w/ Rolling Array | [Artillary Position](/algorithm/algorithm_dp_fa_artillery_position/)  | Medium         |   
+| State Compression DP | [Traveling by Stagecoach](/usaco/USACO-2005-Traveling-by-Stagecoach/) | Medium     |
 
 ### DP & Combinatorics
 
