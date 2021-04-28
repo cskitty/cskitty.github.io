@@ -5,8 +5,7 @@ categories:
 tags:
   - Algorithms
   - USACO
-  - Graph
-  - SPFA
+  - Two Pointer
 ---
 
 # USACO 2005 December Gold P3: Layout
@@ -63,7 +62,7 @@ Finally, to calculate the shortest path running side spfa from 1-n
 Code: deposit with a star chart to finish before the chain overtime, but later found a small array of n plus side, plus pass by, pay attention to test cases to get rid of.
 
 
-{% highlight python linenos %}
+{% highlight C++ linenos %}
 #include<vector>
 #include<cstdio>
 #include<iostream>

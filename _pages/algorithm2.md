@@ -52,28 +52,28 @@ Checkout my solution videos for selected [Silver Questions](/usaco_silver_video/
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
-| Two Pointers| [Circulation of Affection](https://starcoder.org/programming/an-impassioned-circulation-of-affection/)   | Easy         |
+| Two Pointers| [Circulation of Affection](/programming/an-impassioned-circulation-of-affection/)   | Easy         |
 | Two Pointers | [Cow Lineup](/usaco/USACO-2011-Nov-Silver/#problem-2-cow-lineup)   |  Easy  |
 | Two Pointers | [Diamond Collector](/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector)   |  Easy  |
 | Two Pointers | [Why did the Cow Cross the Road?](/usaco/USACO-2017-Feb-Silver/#problem-1-why-did-the-cow-cross-the-road)   |  Easy  |
 | Two Pointers | [Paired Up](/usaco/USACO-2017-Open-Silver/#problem-1-paired-up)   |  Easy  |
-| Two Pointers | [Diamond Collector](https://starcoder.org/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector)  | Hard      |
-
+| Two Pointers | [Diamond Collector](/usaco/USACO-2016-Open-Silver/#problem-2-diamond-collector)  | Hard      |
+| Two Pointers | [Layout](/usaco/USACO-2005-Dec-Gold-P3-Layout/)  | Hard      |
 
 ### DFS  
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
-| DFS         | [Grid Paths](https://starcoder.org/programming/grid-paths/)  | Easy         |  
-| FloodFill  | [Flood Fill](https://starcoder.org/programming/flood-fill/)  | Easy         |
-| FloodFill  | [Grid Path](https://starcoder.org/programming/grid-paths/)  | Easy         |
+| DFS         | [Grid Paths](/programming/grid-paths/)  | Easy         |  
+| FloodFill  | [Flood Fill](/programming/flood-fill/)  | Easy         |
+| FloodFill  | [Grid Path](/programming/grid-paths/)  | Easy         |
  | DFS | [Luxury River Cruise](/usaco/USACO-2013-Open-Silver/#problem-3-luxury-river-cruise)   |  Easy  |
 | FloodFill | [Switching on the Lights](/usaco/USACO-2015-Dec-Silver/#problem-1-switching-on-the-lights)   |  Easy  |
 | FloodFill | [Build Gates](/usaco/USACO-2016-Jan-Silver/#problem-3-build-gates)   |  Easy  |
 | FloodFill | [Moocast](/usaco/USACO-2016-Dec-Silver/#problem-3-moocast)   |  Easy  |
 | FloodFill | [Why did the Cow Cross the Road III](/usaco/USACO-2017-Feb-Silver/#problem-3-why-did-the-cow-cross-the-road-iii)   |  Easy  |
 | FloodFill | [Where's Bessie](/usaco/USACO-2017-Open-Silver/#problem-3-wheres-bessie)   |  Easy  |
-| FloodFill | [Mootube](https://starcoder.org/usaco/USACO-2018-Jan-Silver/#problem-3-mootube)   |  Easy  |
+| FloodFill | [Mootube](/usaco/USACO-2018-Jan-Silver/#problem-3-mootube)   |  Easy  |
 | FloodFill | [Mooyo Mooyo](/usaco/USACO-2018-Dec-Silver/#problem-3-mooyo-mooyo)   |  Easy  |
 | FloodFill | [Icy Perimeter](/usaco/USACO-2019-Jan-Silver/#problem-2-icy-perimeter)   |  Easy  |
 | DFS/Flood Fill | [Fence Planning](/usaco/USACO-2019-Open-Silver/#problem-3-fence-planning)   |  Easy  |
@@ -84,7 +84,7 @@ Checkout my solution videos for selected [Silver Questions](/usaco_silver_video/
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
-| BFS         | [BFS Distance](https://starcoder.org/programming/bfs-graph/)  | Easy         |
+| BFS         | [BFS Distance](/programming/bfs-graph/)  | Easy         |
 | BFS | [Piggyback](/usaco/USACO-2014-Dec-Silver/#problem-1-piggyback)   |  Easy  |
 | BFS | [Closing the Farm](/usaco/USACO-2016-Open-Silver/#closing-the-farm)   |  Easy  |
 | BFS | [Muliplayer Moo](/usaco/USACO-2018-Open-Silver/#problem-3-multiplayer-moo)   |  Easy  |
@@ -95,8 +95,8 @@ Checkout my solution videos for selected [Silver Questions](/usaco_silver_video/
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
-| Tree        | [Tree Traversal](https://starcoder.org/programming/tree-traversals/)  | Easy         |
-| Tree        | [Tree Algorithms](https://starcoder.org/programming/tree-algorithms/)  | Easy         |
+| Tree        | [Tree Traversal](/programming/tree-traversals/)  | Easy         |
+| Tree        | [Tree Algorithms](/programming/tree-algorithms/)  | Easy         |
 
 ### Sorting  
 
