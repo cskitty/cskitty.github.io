@@ -28,9 +28,8 @@ long long dp[22];
 // use dp to calculate sum of digit all size i numbers : 00...00 - 99..99
 void init() {
     dp[0] = 0;
-    dp[1] = 45;
 
-    for (int i = 2; i < 21; i++) {
+    for (int i = 1; i < 21; i++) {
         dp[i] = 10 * dp[i - 1] + 45 * pow(10, i-1);
     }
 }
