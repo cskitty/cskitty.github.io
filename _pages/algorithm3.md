@@ -88,7 +88,15 @@ author_profile: true
 | ------------| --------------------------------------------------------------- | ------------- |  
 | State Compression DP | [Treasure Hunt](/algorithm/algorithm_dp_fa_treasure_hunt/)  | Medium         |  
 | State Compression DP w/ Rolling Array | [Artillary Position](/algorithm/algorithm_dp_fa_artillery_position/)  | Medium         |   
-| State Compression DP | [Traveling by Stagecoach](/usaco/USACO-2005-Traveling-by-Stagecoach/) | Medium     |
+| State Compression DP | [Traveling by Stagecoach](/usaco/POJ-2686-Traveling-by-Stagecoach/) | Medium     |
+
+### DP on Digits
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| DP on Digits | [Sum of Digits](/usaco/DP-digit-dp-sum-of-digits/)  | Medium         |   
+
+
 
 ### DP & Combinatorics
 
