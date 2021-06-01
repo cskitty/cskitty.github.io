@@ -23,6 +23,13 @@ author_profile: true
             <td> <a href="/cses/segtree-cses-1649/">Dynamic Range Minimum Queries</a></td>
            <td>Easy</td>
        </tr>
+
+       <tr>
+            <td>Monotonous Queue, Segment Tree</td>
+            <td>  <a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=285">USACO 2013 Open, Gold</a></td>
+            <td> <a href="/usaco/USACO-2017-open-285/">Max Query with Monotonous Queue</a></td>
+           <td>Medium</td>
+       </tr>
        <!-- and so on... -->
    </tbody>
 </table>
