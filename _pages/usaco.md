@@ -20,7 +20,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 | [Just Stalling](/video/usacovideo-usaco-2021-bronze-january-p3) | 2021 | P3 | January |   
 | [Even More Odd Photos](/video/usacovideo-usaco-2021-bronze-january-p2) | 2021 | P2 | January |   
 | [Stuck in a Rut](/video/usacovideo-usaco-2020-bronze-december-p3) | 2020 | P3 | December |   
-
+| [Mixing Milk](/video/usacovideo-usaco-2018-bronze-december-p1) | 2018 | P1 | December |
 
 ## Silver Questions
 

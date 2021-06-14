@@ -7,7 +7,7 @@ tags:
   - VIDEO
 ---
 
-## USACO 2018 December Contest, Bronze  
+## [USACO 2018 December Contest, Bronze](http://usaco.org/index.php?page=viewproblem2&cpid=855)
 
 {% include video id="Sntu-XaCNy8" provider="youtube" %}
 
