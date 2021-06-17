@@ -12,8 +12,8 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 ## Video Solution for USACO Problems
 
-## Bronze Questions
 <link rel="stylesheet" href="../assets/css/table.css">
+<h3> Bronze Questions </h3>
 <table class="styled-table">
     <thead>
         <tr>
@@ -59,7 +59,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
         <td>2019</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=965">P3</a></td>
       <td>December</td>
-      <td>BruteForce</td>
+      <td>Brute Force</td>
       </tr>
 
         <tr>
@@ -69,62 +69,317 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
           <td>December</td>
           <td>Simulation</td>
         </tr>
-
         <tr>
             <td><a href="../video/usacovideo-usaco-2017-bronze-january-p3">Cow Tipping</a></td>
-            <td>2018</td>
-          <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=855">P1</a></td>
-          <td>December</td>
-          <td>Simulation</td>
+            <td>2017</td>
+          <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=689">P3</a></td>
+          <td>January</td>
+          <td>Brute Force</td>
         </tr>
         <!-- and so on... -->
     </tbody>
 </table>
 
 
-## Silver Questions
+<h3> Silver Questions </h3>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Problem</th>
+            <th>Contest</th>
+            <th>Algorithm</th>
+        </tr>
+    </thead>
+    <tbody>
 
-| Name   |  Year   | Q# | Contest |  
-|--------|---------|----|---------|  
-| [Year of the Cow](/video/usacovideo-usaco-2021-silver-february-p2) | 2021 | P2 | February |  
-| [Dance Mooves](/video/usacovideo-usaco-2021-silver-january-p1) | 2021 | P1 | January |
-| [Spaced Out](/video/usacovideo-usaco-2021-silver-january-p3) | 2021 | P3 | January |  
-| [Social Distancing](/video/usacovideo-usaco-2020-silver-us-open-p1) | 2020 | P1 | US Open |
-| [Cereal](/video/usacovideo-usaco-2020-silver-us-open-p2) | 2020 | P2 | US Open |   
-| [Cowntagion](/video/usacovideo-usaco-2020-silver-december-p1) | 2020 | P1 | December |   
-| [Rectangular Pasture](/video/usacovideo-usaco-2020-silver-december-p2) | 2020 | P2 | December |
-| [Stuck in a Rut](/video/usacovideo-usaco-2020-silver-december-p3) | 2020 | P3 | December |
-| [Meetings](/video/usacovideo-usaco-2019-silver-december-p2) | 2019 | P2 | December |   
-| [Bessie's Birthday Buffet](/video/usacovideo-usaco-2015-silver-us-open-p3) | 2015 | P3 | US Open |   
-| [Cow Routing](/video/usacovideo-usaco-2015-silver-january-p2) | 2015 | P2 | January |   
-| [Stampede](/video/usacovideo-usaco-2015-silver-january-p1) | 2015 | P1 | January |   
-| [Superbull](/video/usacovideo-usaco-2015-silver-february-p3) | 2015 | P3 | February |   
-| [Meeting Time](/video/usacovideo-usaco-2015-silver-january-p3) | 2015 | P3 | January |  
-| [Cow Hopscotch](/video/usacovideo-usaco-2015-silver-february-p2) | 2015 | P2 | February |
-| [Pogo-Cow](/video/usacovideo-usaco-2013-silver-november-p3) | 2013 | P3 | November |    
-| [The Cow Run](/video/usacovideo-usaco-2013-silver-march-p3) | 2013 | P3 | March |  
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2021-silver-february-p2">Year of the Cow</a></td>
+        <td>2021</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1111">P3</a></td>
+      <td>February</td>
+      <td>Brute Force</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2021-silver-january-p1">Dance Mooves</a></td>
+        <td>2021</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1086">P3</a></td>
+      <td>February</td>
+      <td>Brute Force</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2021-silver-january-p3">Spaced Out</a></td>
+        <td>2021</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1088">P3</a></td>
+      <td>January</td>
+      <td>Brute Force</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2020-silver-us-open-p1">Social Distancing</a></td>
+        <td>2021</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=1038">P1</a></td>
+      <td>US Open</td>
+      <td>Binary Search</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2020-silver-us-open-p2">Cereal</a></td>
+        <td>2020</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=1039">P2</a></td>
+      <td>US Open</td>
+      <td>Simulation</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2020-silver-december-p1">Cowntagion</a></td>
+        <td>2020</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1062">P1</a></td>
+      <td>December</td>
+      <td>DFS</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2020-silver-december-p2">Rectangular Pasture</a></td>
+        <td>2020</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1063">P2</a></td>
+      <td>December</td>
+      <td>SweepLine</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2020-silver-december-p3">Stuck in a Rut</a></td>
+        <td>2020</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1064">P3</a></td>
+      <td>December</td>
+      <td>Simulation, DFS</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2019-silver-december-p2"> Meetings</a></td>
+        <td>2019</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=967">P2</a></td>
+      <td>December</td>
+      <td>Simulation</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2015-silver-us-open-p3">Bessie’s Birthday Buffet</a></td>
+        <td>2015</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=551">P3</a></td>
+      <td>December</td>
+      <td>DP</td>
+    </tr>
 
 
-## Gold Questions
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2015-silver-january-p2">Cow Routing</a></td>
+        <td>2015</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=512">P2</a></td>
+      <td>January</td>
+      <td>Dijkstra</td>
+    </tr>
 
-| Name   |  Year   | Q# | Contest |  
-|--------|---------|----|---------|  
-| [United Cows of Farmer John](/video/usacovideo-usaco-2021-gold-us-open-q1) | 2021 | P1 | US Open |   
-| [Portals](/video/usacovideo-usaco-2021-gold-us-open-q2) | 2021 | P2 | US Open |   
-| [Telephone](/video/usacovideo-usaco-2021-gold-january-q2) | 2021 | P2 | January |   
-| [Sleepy Cow Herding](/video/usacovideo-usaco-2019-gold-january-q2) | 2019 | P2 | January |
-| [Talent Show](/video/usacovideo-usaco-2018-gold-us-open-q3) | 2018 | P3 | US Open |   
-| [Taming the Herd](/video/usacovideo-usaco-2018-gold-february-q3) | 2018 | P3 | February |
-| [Teamwork](/video/usacovideo-usaco-2018-gold-december-q3) | 2018 | P3 | December |   
-| [Barn Painting](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | P3 | December |     
-| [Why Did the Cow Cross the Road II](/video/usacovideo-usaco-2017-gold-february-q2) | 2017 | P2 | February |   
-| [Closing the Farm](/video/usacovideo-usaco-2016-gold-us-open-q2) | 2016 | P2 | US Open |  
-| [Radio Contact](/video/usacovideo-usaco-2016-gold-january-p2) | 2016 | P2 | January |   
-| [Haybale Feast](/video/usacovideo-usaco-2017-gold-december-q3) | 2017 | P3 | December |   
-| [Hoof, Paper, Scissors](/video/usacovideo-usaco-2017-gold-january-q2) | 2017 | P2 | January |
-| [Cow Navigation](/video/usacovideo-usaco-2017-gold-january-p3) | 2017 | P3 | January |
-| [Cow Checklist](/video/usacovideo-usaco-2016-gold-december-q2) | 2016 | P2 | December |      
-| [Lasers and Mirrors](/video/usacovideo-usaco-2016-gold-december-p3) | 2016 | P3 | December |  
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2015-silver-january-p1">Stampede</a></td>
+        <td>2015</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=511">P1</a></td>
+      <td>January</td>
+      <td>Geometry</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2015-silver-february-p3">Superbull</a></td>
+        <td>2015</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=531">P3</a></td>
+      <td>January</td>
+      <td>MST</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2015-silver-january-p3">Meeting Time</a></td>
+        <td>2015</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=513">P3</a></td>
+      <td>January</td>
+      <td>DP</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2015-silver-february-p2">Cow Hopscotch</a></td>
+        <td>2015</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=530">P2</a></td>
+      <td>February</td>
+      <td>DP</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2013-silver-november-p3">Pogo-Cow</a></td>
+        <td>2013</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=345">P3</a></td>
+      <td>November</td>
+      <td>DP</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2013-silver-march-p3">The Cow Run</a></td>
+        <td>2013</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=345">P3</a></td>
+      <td>March</td>
+      <td>DP</td>
+    </tr>
+
+
+    </tbody>
+</table>
+
+<h3> Gold Questions </h3>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Problem</th>
+            <th>Contest</th>
+            <th>Algorithm</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2021-gold-us-open-q1">United Cows of Farmer John</a></td>
+        <td>2021</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=1137">P1</a></td>
+      <td>US Open</td>
+      <td>BIT</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2021-gold-us-open-q2">Portals</a></td>
+        <td>2021</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=1138">P2</a></td>
+      <td>US Open</td>
+      <td>Brute Force</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2021-gold-january-p2">Telephone</a></td>
+        <td>2021</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=1090">P2</a></td>
+      <td>January</td>
+      <td>Dijkstra</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2019-gold-january-p2">Sleepy Cow Herding</a></td>
+        <td>2019</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=898">P2</a></td>
+      <td>January</td>
+      <td>BIT</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2018-gold-us-open-p3">Talent Show</a></td>
+        <td>2019</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=839">P3</a></td>
+      <td>US Open</td>
+      <td>Knapsack</td>
+    </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2018-gold-february-p3">Taming the Herd</a></td>
+        <td>2018</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=815">P3</a></td>
+      <td>February</td>
+      <td>DP</td>
+    </tr>    
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2018-gold-december-p3">Teamwork</a></td>
+        <td>2018</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=863">P3</a></td>
+      <td>December</td>
+      <td>DP</td>
+    </tr>   
+
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2017-gold-december-p2">Barn Painting</a></td>
+        <td>2017</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=766">P2</a></td>
+      <td>December</td>
+      <td>DP</td>
+    </tr>  
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2017-gold-december-p3">Haybale Feast</a></td>
+        <td>2017</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=767">P3</a></td>
+      <td>December</td>
+      <td>DP</td>
+    </tr>   
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2017-gold-february-p2">Why Did the Cow Cross the Road II</a></td>
+        <td>2017</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=718">P2</a></td>
+      <td>February</td>
+      <td>DP</td>
+    </tr>  
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2017-gold-january-p2">Hoof, Paper, Scissors</a></td>
+        <td>2017</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=694">P2</a></td>
+      <td>January</td>
+      <td>DP</td>
+    </tr>  
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2017-gold-january-p3">Cow Navigation</a></td>
+        <td>2017</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=695">P2</a></td>
+      <td>January</td>
+      <td>Dijkstra</td>
+    </tr>      
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2016-gold-us-open-p2">Closing the Farm</a></td>
+        <td>2016</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=646">P2</a></td>
+      <td>US Open</td>
+      <td>Union Find</td>
+    </tr>  
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2016-gold-january-p2">Radio Contact</a></td>
+        <td>2016</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=598">P2</a></td>
+      <td>January</td>
+      <td>DP</td>
+    </tr>  
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2016-gold-december-p2">Cow Checklist</a></td>
+        <td>2016</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=670">P2</a></td>
+      <td>December</td>
+      <td>DP</td>
+    </tr>  
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2016-gold-december-p3">Lasers and Mirrors</a></td>
+        <td>2016</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=671">P2</a></td>
+      <td>December</td>
+      <td>Dijkstra</td>
+    </tr>  
+
+    </tbody>
+</table>
+
 
 ## My Reference Implementation for USACO Problems
 
