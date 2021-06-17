@@ -6,21 +6,81 @@ author_profile: true
 ---
 ![](/assets/images/USACObessieheader.PNG)
 
-## USACO: A Story About Farmer John and Bessie the Cow  
+## A Story About Farmer John and Bessie the Cow  
 
 Farmer John is the well acclaimed owner of many cows. But one of them always gets into mischief! Help Farmer John deal with Bessie the cow, using programs to assist them on their journey on the [USACO](http://usaco.org/) site.
 
-## Detailed Video Tutorials for USACO Problems
+## Video Solution for USACO Problems
 
 ## Bronze Questions
+<link rel="stylesheet" href="../assets/css/table.css">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Problem</th>
+            <th>Contest</th>
+            <th>Algorithm</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <tr>
+            <td><a href="../video/usacovideo-usaco-2021-bronze-february-p3">Clockwise Fence</a></td>
+            <td>2021</td>
+          <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1109">P3</a></td>
+          <td>February</td>
+          <td>Geometry</td>
+        </tr>
+        <tr>
+            <td><a href="../video/usacovideo-usaco-2021-bronze-january-p3">Just Stalling</a></td>
+            <td>2021</td>
+          <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1085">P3</a></td>
+          <td>January</td>
+          <td>Combinations</td>
+        </tr>
+        <tr>
+            <td><a href="../video/usacovideo-usaco-2021-bronze-january-p2">Even More Odd Photos</a></td>
+            <td>2021</td>
+          <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1084">P2</a></td>
+          <td>December</td>
+          <td>Math</td>
+        </tr>
+        <tr>
+            <td><a href="../video/usacovideo-usaco-2020-bronze-december-p3">Stuck in a Rut</a></td>
+            <td>2021</td>
+          <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1064">P3</a></td>
+          <td>January</td>
+          <td>Simulation</td>
+        </tr>
 
-| Name   |  Year   | P# | Contest |  
-|--------|---------|----|---------|  
-| [Clockwise Fence](/video/usacovideo-usaco-2021-bronze-february-p3) | 2021 | P3 | February |   
-| [Just Stalling](/video/usacovideo-usaco-2021-bronze-january-p3) | 2021 | P3 | January |   
-| [Even More Odd Photos](/video/usacovideo-usaco-2021-bronze-january-p2) | 2021 | P2 | January |   
-| [Stuck in a Rut](/video/usacovideo-usaco-2020-bronze-december-p3) | 2020 | P3 | December |   
-| [Mixing Milk](/video/usacovideo-usaco-2018-bronze-december-p1) | 2018 | P1 | December |
+        <td><a href="../video/usacovideo-usaco-2019-bronze-december-p3">Livestock Lineup</a></td>
+        <td>2019</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=965">P3</a></td>
+      <td>December</td>
+      <td>BruteForce</td>
+      </tr>
+
+        <tr>
+            <td><a href="../video/usacovideo-usaco-2018-bronze-december-p1">Mixing Milk</a></td>
+            <td>2018</td>
+          <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=855">P1</a></td>
+          <td>December</td>
+          <td>Simulation</td>
+        </tr>
+
+        <tr>
+            <td><a href="../video/usacovideo-usaco-2017-bronze-january-p3">Cow Tipping</a></td>
+            <td>2018</td>
+          <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=855">P1</a></td>
+          <td>December</td>
+          <td>Simulation</td>
+        </tr>
+        <!-- and so on... -->
+    </tbody>
+</table>
+
 
 ## Silver Questions
 
