@@ -9,7 +9,7 @@ tags:
 
 ## [USACO 2019 Bronze December P3. Livestock Lineup](http://www.usaco.org/index.php?page=viewproblem2&cpid=965)
 
-{% include video id="kgweCjqzR9A" provider="youtube" %}
+{% include video id="-xsSQzExCRc" provider="youtube" %}
 
 {% highlight Java linenos %}
 import java.io.*;

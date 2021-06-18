@@ -9,7 +9,7 @@ tags:
 
 ## [USACO 2020 Bronze December P3. Stuck in a Rut](http://usaco.org/index.php?page=viewproblem2&cpid=1061)
 
-{% include video id="kgweCjqzR9A" provider="youtube" %}
+{% include video id="AZbmkIigv08" provider="youtube" %}
 
 {% highlight Java linenos %}
 import java.io.*;

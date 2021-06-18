@@ -9,7 +9,7 @@ tags:
 
 ## [USACO 2017 Bronze January P3. Cow Tipping](http://www.usaco.org/index.php?page=viewproblem2&cpid=689)
 
-{% include video id="gttxR2ndcyg" provider="youtube" %}
+{% include video id="EYbxd0QkVFU" provider="youtube" %}
 
 {% highlight Java linenos %}
 import java.io.*;
