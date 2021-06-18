@@ -25,7 +25,24 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
         </tr>
     </thead>
     <tbody>
+
     <tr>
+    <td><a href="../video/usacovideo-usaco-2019-bronze-december-p3">Livestock Lineup</a></td>
+    <td>2019</td>
+  <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=965">P3</a></td>
+  <td>December</td>
+  <td>Brute Force</td>
+  </tr>
+
+    <tr>
+        <td><a href="../video/usacovideo-usaco-2020-bronze-december-p3">Stuck in a Rut</a></td>
+        <td>2021</td>
+      <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1064">P3</a></td>
+      <td>January</td>
+      <td>Simulation</td>
+    </tr>
+
+
         <tr>
             <td><a href="../video/usacovideo-usaco-2021-bronze-february-p3">Clockwise Fence</a></td>
             <td>2021</td>
@@ -33,6 +50,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
           <td>February</td>
           <td>Geometry</td>
         </tr>
+
         <tr>
             <td><a href="../video/usacovideo-usaco-2021-bronze-january-p3">Just Stalling</a></td>
             <td>2021</td>
@@ -47,20 +65,8 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
           <td>December</td>
           <td>Math</td>
         </tr>
-        <tr>
-            <td><a href="../video/usacovideo-usaco-2020-bronze-december-p3">Stuck in a Rut</a></td>
-            <td>2021</td>
-          <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=1064">P3</a></td>
-          <td>January</td>
-          <td>Simulation</td>
-        </tr>
 
-        <td><a href="../video/usacovideo-usaco-2019-bronze-december-p3">Livestock Lineup</a></td>
-        <td>2019</td>
-      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=965">P3</a></td>
-      <td>December</td>
-      <td>Brute Force</td>
-      </tr>
+
 
         <tr>
             <td><a href="../video/usacovideo-usaco-2018-bronze-december-p1">Mixing Milk</a></td>
