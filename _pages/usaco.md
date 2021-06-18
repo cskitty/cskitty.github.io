@@ -227,7 +227,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
         <td><a href="../video/usacovideo-usaco-2013-silver-march-p3">The Cow Run</a></td>
         <td>2013</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=345">P3</a></td>
-      <td>March</td>
+      <td>US Open</td>
       <td>DP</td>
     </tr>
 

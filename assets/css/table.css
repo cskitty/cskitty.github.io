@@ -18,6 +18,10 @@
 .styled-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
+.styled-table tbody tr:nth-of-type(odd) {
+    /*background-color: #f3f3f3;*/
+    background-color: #e8e8e8;
+}
 
 .styled-table tbody tr:last-of-type {
     border-bottom: 2px solid #275882;
@@ -30,4 +34,8 @@
     background-color: #275882;
     color: #ffffff;
     text-align: left;
+}
+/* Test */
+table {
+  display: inline;
 }
