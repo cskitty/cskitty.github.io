@@ -1,5 +1,5 @@
 ---
-title: USACO 2014 Gold December P1. Guard Mark
+title: USACO 2014 Gold November P1. Balanced Cow Breeds
 categories:
   - video
 tags:
@@ -7,72 +7,66 @@ tags:
   - VIDEO
 ---
 
-## [USACO 2014 Gold December P1. Guard Mark](http://www.usaco.org/index.php?page=viewproblem2&cpid=494)
+## [USACO 2014 Gold November P1. Balanced Cow Breeds](http://www.usaco.org/index.php?page=viewproblem2&cpid=193)
 
-### State compression DP
+### Advanced DP
 
 {% highlight C++ linenos %}
 #include <bits/stdc++.h>
 using namespace std;
 
-int N, H;
-const int INF = INT_MAX;
-vector<vector<int>> cows;
+typedef long long ll;
+const int maxV = 1001;
+int dp[maxV][maxV];
 
+int main() {
+    string s;
+    cin >> s;
 
-int bitmask(int original, int add) {
-    original |= 1UL << add;
-    return original;
-}
+    dp[1][1] = 1, dp[1][0] = 1;
 
-int unbit(int n, int k) {
-    return (n & ( 1 << k )) >> k;
-}
-
-int height(int n) {
-    int ans = 0;
-    for (int i = 0; i < N; i++) {
-        if (unbit(n, i)) {
-            ans += cows[i][0];
+    int currOpen = 1;
+    int i = 0;
+    for (auto c : s) {
+        i++;
+        if (i < 2) {
+            continue;
         }
-    }
-    return ans;
-}
+        if (c == '(') {
+            currOpen++;
+        }
+        else {
+            currOpen--;
+        }
+        for (int j = 0; j < currOpen + 1; j++) {
+            int k = currOpen - j;
+            int l = currOpen - k + 1;
+            dp[i][j] = 0;
 
-signed main() {
-    ifstream cin("guard.in");
-    ofstream cout("guard.out");
-    cin >> N >> H;
+            if (c == '(') {
+                // left bracket, "("
 
-    cows.resize(N);
-    for (int i = 0; i < N; i++) {
-        vector<int> cowinfo(3);
-        cin >> cowinfo[0] >> cowinfo[1] >> cowinfo[2];
-        cows[i] = cowinfo;
-    }
-    // dp[subset of cows used] = maxweight
-    vector<int> dp(pow(2, N));
-
-    int ans = 0;
-    dp[0] = INF;
-    for (int i = 0; i < pow(2, N); i++) {
-        for (int j = 0; j < N; j++) {
-            // see if you can add j
-            if (! unbit(i, j) && dp[i] - cows[j][1] >= 0) {
-                // subset including j
-                int subset = bitmask(i, j);
-                dp[subset] = max(dp[subset], min(cows[j][2], dp[i] - cows[j][1]));
-                // if height > , add to ans
-                if (height(subset) >= H) {
-                    ans = max(ans, dp[subset]);
+                if (j - 1 >= 0 && dp[i - 1][j - 1] != 0) {
+                    dp[i][j] += dp[i - 1][j - 1];
+                }
+                if (k - 1 >= 0 && dp[i - 1][currOpen - 1 - (k - 1)] != 0) {
+                    dp[i][j] += dp[i - 1][currOpen - 1 - (k - 1)];
                 }
             }
+            else {
+                // right bracket, ")"
+
+                if (dp[i - 1][j + 1] != 0) {
+                    dp[i][j] += dp[i - 1][j + 1];
+                }
+                if (dp[i - 1][currOpen + 1 - (k + 1)] != 0) {
+                    dp[i][j] += dp[i - 1][currOpen + 1 - (k + 1)];
+                }
+            }
+            dp[i][j] %= 2012;
         }
     }
-    if (ans == 0) {
-        cout << "Mark is too tall";
-        return 0;
-    }
-    cout << ans;
+
+    cout << dp[i][0] % 2012;
 }
 {% endhighlight %}  

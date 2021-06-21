@@ -40,8 +40,14 @@ author_profile: true
        <tr>
             <td>Advanced DP</td>
             <td>  <a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=193">USACO 2014  November P1, Gold</a></td>
-            <td> <a href="/video/USACO-2012-November-P1">Balanced Cow Breeds</a></td>
+            <td> <a href="/video/USACO-2012-Gold-November-P1">Balanced Cow Breeds</a></td>
            <td>Easy</td>
+       </tr>
+       <tr>
+            <td>Game strategy using DP</td>
+            <td>USACO 2010 Gold January P1 </td>
+            <td> <a href="/video/USACO-2010-Gold-Jan-P1">Taking Turns</a></td>
+           <td>Medium</td>
        </tr>
        <!-- and so on... -->
    </tbody>
