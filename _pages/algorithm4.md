@@ -34,7 +34,13 @@ author_profile: true
        <tr>
             <td>State Compression DP</td>
             <td>  <a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=494">USACO 2014 December, Gold</a></td>
-            <td> <a href="/video/USACO-2014-Gold-December-P1">Bitmask DP</a></td>
+            <td> <a href="/video/USACO-2014-Gold-December-P1">Guard Mark</a></td>
+           <td>Easy</td>
+       </tr>
+       <tr>
+            <td>Advanced DP</td>
+            <td>  <a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=193">USACO 2014  November P1, Gold</a></td>
+            <td> <a href="/video/USACO-2012-November-P1">Balanced Cow Breeds</a></td>
            <td>Easy</td>
        </tr>
        <!-- and so on... -->
