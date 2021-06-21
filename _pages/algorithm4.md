@@ -30,6 +30,13 @@ author_profile: true
             <td> <a href="/usaco/USACO-2017-open-285/">Max Query with Monotonous Queue</a></td>
            <td>Medium</td>
        </tr>
+
+       <tr>
+            <td>State Compression DP</td>
+            <td>  <a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=494">USACO 2014 December, Gold</a></td>
+            <td> <a href="/usaco/USACO-2005-Dec-Gold-P3-Layout">Bitmask DP</a></td>
+           <td>Easy</td>
+       </tr>
        <!-- and so on... -->
    </tbody>
 </table>
