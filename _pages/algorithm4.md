@@ -34,7 +34,7 @@ author_profile: true
        <tr>
             <td>State Compression DP</td>
             <td>  <a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=494">USACO 2014 December, Gold</a></td>
-            <td> <a href="/usaco/USACO-2005-Dec-Gold-P3-Layout">Bitmask DP</a></td>
+            <td> <a href="/video/USACO-2014-Gold-December-P1">Bitmask DP</a></td>
            <td>Easy</td>
        </tr>
        <!-- and so on... -->
