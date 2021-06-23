@@ -32,9 +32,9 @@ author_profile: true
        </tr>
 
        <tr>
-            <td>State Compression DP</td>
+            <td>Bitmask DP</td>
             <td>  <a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=494">USACO 2014 December, Gold</a></td>
-            <td> <a href="/video/USACO-2014-Gold-December-P1">Guard Mark</a></td>
+            <td> <a href="/USACO-2014-Gold-December-P1/">Guard Mark</a></td>
            <td>Easy</td>
        </tr>
        <tr>
@@ -50,7 +50,7 @@ author_profile: true
            <td>Medium</td>
        </tr>
        <tr>
-            <td>Bitmasp DP</td>
+            <td>Bitmask DP</td>
             <td>  <a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=515">USACO 2015 Gold January P2</a></td>
             <td> <a href="/video/USACO-2015-Gold-December-P1">Moovie Mooving</a></td>
            <td>Medium</td>
