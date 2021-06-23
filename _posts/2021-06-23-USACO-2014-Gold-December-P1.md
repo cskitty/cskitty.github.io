@@ -4,9 +4,9 @@ tags:
   - USACO Platinum
 ---
 
-## [USACO 2014 Gold December P1. Moovie Mooving](http://www.usaco.org/index.php?page=viewproblem2&cpid=494)
+## [USACO 2014 Gold December P1. Guard Mark](http://www.usaco.org/index.php?page=viewproblem2&cpid=494)
 
-##Bitmask DP
+## Bitmask DP
 
 {% highlight C++ linenos %}
 #include <bits/stdc++.h>
