@@ -31,7 +31,7 @@ Checkout my solution videos for selected [Silver Questions](/usaco_silver_video/
 
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
-| Binary Search | [Binary Search C++](programming/algorithm-binarysearch-cpp/)  | Easy       |
+| Binary Search | [Binary Search C++](/programming/algorithm-binarysearch-cpp/)  | Easy       |
 | Binary Search | [Maximum Median](/algorithm-maximum-medium/)  | Easy       |
 | Binary Search | [B.Books](/programming/algorithm-binary-search/#b-books)  | Easy       |
 | Binary Search | [C.Cellular Network](/programming/algorithm-binary-search/#c-cellular-network)  | Easy       |
