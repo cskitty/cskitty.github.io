@@ -49,6 +49,12 @@ author_profile: true
             <td> <a href="/video/USACO-2010-Gold-Jan-P1">Taking Turns</a></td>
            <td>Medium</td>
        </tr>
+       <tr>
+            <td>Bitmasp DP</td>
+            <td>  <a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=515">USACO 2015 Gold January P2</a></td>
+            <td> <a href="/video/USACO-2015-Gold-December-P1">Moovie Mooving</a></td>
+           <td>Medium</td>
+       </tr>
        <!-- and so on... -->
    </tbody>
 </table>

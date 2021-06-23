@@ -255,7 +255,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     <tbody>
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2021-gold-us-open-q1">United Cows of Farmer John</a></td>
+        <td><a href="/video/usacovideo-usaco-2021-gold-us-open-q1">United Cows of Farmer John</a></td>
         <td>2021</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=1137">P1</a></td>
       <td>US Open</td>
@@ -263,7 +263,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2021-gold-us-open-q2">Portals</a></td>
+        <td><a href="/video/usacovideo-usaco-2021-gold-us-open-q2">Portals</a></td>
         <td>2021</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=1138">P2</a></td>
       <td>US Open</td>
@@ -271,7 +271,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2021-gold-january-p2">Telephone</a></td>
+        <td><a href="/video/usacovideo-usaco-2021-gold-january-p2">Telephone</a></td>
         <td>2021</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=1090">P2</a></td>
       <td>January</td>
@@ -279,7 +279,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2019-gold-january-p2">Sleepy Cow Herding</a></td>
+        <td><a href="/video/usacovideo-usaco-2019-gold-january-p2">Sleepy Cow Herding</a></td>
         <td>2019</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=898">P2</a></td>
       <td>January</td>
@@ -287,7 +287,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2018-gold-us-open-p3">Talent Show</a></td>
+        <td><a href="/video/usacovideo-usaco-2018-gold-us-open-p3">Talent Show</a></td>
         <td>2019</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=839">P3</a></td>
       <td>US Open</td>
@@ -295,7 +295,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2018-gold-february-p3">Taming the Herd</a></td>
+        <td><a href="/video/usacovideo-usaco-2018-gold-february-p3">Taming the Herd</a></td>
         <td>2018</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=815">P3</a></td>
       <td>February</td>
@@ -303,7 +303,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>    
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2018-gold-december-p3">Teamwork</a></td>
+        <td><a href="/video/usacovideo-usaco-2018-gold-december-p3">Teamwork</a></td>
         <td>2018</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=863">P3</a></td>
       <td>December</td>
@@ -312,7 +312,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2017-gold-december-p2">Barn Painting</a></td>
+        <td><a href="/video/usacovideo-usaco-2017-gold-december-p2">Barn Painting</a></td>
         <td>2017</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=766">P2</a></td>
       <td>December</td>
@@ -320,7 +320,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>  
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2017-gold-december-p3">Haybale Feast</a></td>
+        <td><a href="/video/usacovideo-usaco-2017-gold-december-p3">Haybale Feast</a></td>
         <td>2017</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=767">P3</a></td>
       <td>December</td>
@@ -328,7 +328,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>   
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2017-gold-february-p2">Why Did the Cow Cross the Road II</a></td>
+        <td><a href="/video/usacovideo-usaco-2017-gold-february-p2">Why Did the Cow Cross the Road II</a></td>
         <td>2017</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=718">P2</a></td>
       <td>February</td>
@@ -336,7 +336,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>  
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2017-gold-january-p2">Hoof, Paper, Scissors</a></td>
+        <td><a href="/video/usacovideo-usaco-2017-gold-january-p2">Hoof, Paper, Scissors</a></td>
         <td>2017</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=694">P2</a></td>
       <td>January</td>
@@ -344,7 +344,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>  
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2017-gold-january-p3">Cow Navigation</a></td>
+        <td><a href="/video/usacovideo-usaco-2017-gold-january-p3">Cow Navigation</a></td>
         <td>2017</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=695">P2</a></td>
       <td>January</td>
@@ -352,7 +352,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>      
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2016-gold-us-open-p2">Closing the Farm</a></td>
+        <td><a href="/video/usacovideo-usaco-2016-gold-us-open-p2">Closing the Farm</a></td>
         <td>2016</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=646">P2</a></td>
       <td>US Open</td>
@@ -360,7 +360,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>  
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2016-gold-january-p2">Radio Contact</a></td>
+        <td><a href="/video/usacovideo-usaco-2016-gold-january-p2">Radio Contact</a></td>
         <td>2016</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=598">P2</a></td>
       <td>January</td>
@@ -368,7 +368,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>  
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2016-gold-december-p2">Cow Checklist</a></td>
+        <td><a href="/video/usacovideo-usaco-2016-gold-december-p2">Cow Checklist</a></td>
         <td>2016</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=670">P2</a></td>
       <td>December</td>
@@ -376,12 +376,21 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>  
 
     <tr>
-        <td><a href="../video/usacovideo-usaco-2016-gold-december-p3">Lasers and Mirrors</a></td>
+        <td><a href="/video/usacovideo-usaco-2016-gold-december-p3">Lasers and Mirrors</a></td>
         <td>2016</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=671">P2</a></td>
       <td>December</td>
       <td>Dijkstra</td>
     </tr>  
+
+    <tr>
+        <td><a href="/video/USACO-2015-Gold-December-P1">Moovie Mooving</a></td>
+        <td>2015</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=515">P2</a></td>
+      <td>December</td>
+      <td>DP</td>
+    </tr>  
+
 
     </tbody>
 </table>
