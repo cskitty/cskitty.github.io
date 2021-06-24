@@ -57,7 +57,7 @@ author_profile: true
        </tr>
        <tr>
             <td>BIT, DFS</td>
-            <td> <a href="/USACO-2017-Platinum-January-P1/">USACO 2017 Platinum January P1</a></td>
+            <td> <a href="http://usaco.org/index.php?page=viewproblem2&cpid=696">USACO 2017 Platinum January P1</a></td>
             <td> <a href="/USACO-2017-Platinum-January-P1">Promotion Counting</a></td>
            <td>Medium</td>
        </tr>
