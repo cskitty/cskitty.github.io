@@ -395,6 +395,31 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tbody>
 </table>
 
+<h3> Platinum Questions </h3>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Problem</th>
+            <th>Contest</th>
+            <th>Algorithm</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+    <td><a href="/USACO-2017-Platinum-January-P1/">Promotion Counting</a></td>
+    <td>2017</td>
+    <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=696">P1</a></td>
+    <td>January</td>
+    <td>BIT, DFS</td>
+  </tr>
+
+        <!-- and so on... -->
+    </tbody>
+</table>
+
 
 ## My Reference Implementation for USACO Problems
 

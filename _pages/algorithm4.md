@@ -55,6 +55,12 @@ author_profile: true
             <td> <a href="/video/USACO-2015-Gold-December-P1">Moovie Mooving</a></td>
            <td>Medium</td>
        </tr>
+       <tr>
+            <td>BIT, DFS</td>
+            <td> <a href="/USACO-2017-Platinum-January-P1/">USACO 2017 Platinum January P1</a></td>
+            <td> <a href="/USACO-2017-Platinum-January-P1">Promotion Counting</a></td>
+           <td>Medium</td>
+       </tr>
        <!-- and so on... -->
    </tbody>
 </table>
