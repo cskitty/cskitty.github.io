@@ -62,7 +62,7 @@ author_profile: true
            <td>Medium</td>
        </tr>
        <tr>
-            <td>Geometry, Radial SweepLine</td>
+            <td>Geometry, Radial Sweep</td>
             <td> <a href="https://dmoj.ca/problem/ioi03p6">IOI 2003 Seeing the Boundary
 </a></td>
             <td> <a href="/IOI-2003-Boundary">Promotion Counting</a></td>
