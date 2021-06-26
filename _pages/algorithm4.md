@@ -61,6 +61,13 @@ author_profile: true
             <td> <a href="/USACO-2017-Platinum-January-P1">Promotion Counting</a></td>
            <td>Medium</td>
        </tr>
+       <tr>
+            <td>Geometry, Radial SweepLine</td>
+            <td> <a href="https://dmoj.ca/problem/ioi03p6">IOI 2003 Seeing the Boundary
+</a></td>
+            <td> <a href="/IOI-2003-Boundary">Promotion Counting</a></td>
+           <td>Medium</td>
+       </tr>
        <!-- and so on... -->
    </tbody>
 </table>
