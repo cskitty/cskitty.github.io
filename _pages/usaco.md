@@ -10,6 +10,7 @@ author_profile: true
 
 Farmer John is the well acclaimed owner of many cows. But one of them always gets into mischief! Help Farmer John deal with Bessie the cow, using programs to assist them on their journey on the [USACO](http://usaco.org/) site.
 
+
 ## Video Solution for USACO Problems
 
 <link rel="stylesheet" href="../assets/css/table.css">
