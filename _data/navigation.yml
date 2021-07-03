@@ -1,12 +1,12 @@
 main:
   - title: "Playground"
     url: /playground/
-  - title: "Tutorials"
-    url: /tutorials/
-  - title: "Algorithms"
-    url: /algorithms/
   - title: "USACO"
     url: /usaco/
+  - title: "Algorithms"
+    url: /algorithms/
+  - title: "Tutorials"
+    url: /tutorials/
   - title: "Cryptography"
     url: /tags/cryptography/
   - title: "Archive"

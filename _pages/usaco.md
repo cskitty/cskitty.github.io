@@ -416,6 +416,15 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     <td>January</td>
     <td>BIT, DFS</td>
   </tr>
+  <tr>
+  <td><a href="/video/usacovideo-usaco-2019-platinum-january-p3/">Train Tracking2</a></td>
+  <td>2019</td>
+  <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=696">P3</a></td>
+  <td>January</td>
+  <td>DP, Sliding Window</td>
+</tr>
+
+
 
         <!-- and so on... -->
     </tbody>

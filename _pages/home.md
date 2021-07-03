@@ -11,22 +11,22 @@ excerpt: "From Basic Coding to USACO Competitive Programming"
 intro:
   - excerpt: 'From beginner level Introduction to Python tutorial to complex computer algorithms for USA Computer Olympiad (USACO).'
 feature_row:
-- image_path: assets/images/one.PNG
-  title: "Tutorials"
-  excerpt: "Python from scratch"
-  url: "/tutorials/"
-  btn_class: "btn--primary"
-  btn_label: "Learn more"
 - image_path: /assets/images/two.PNG
   title: "USACO"
-  excerpt: "Competitive Programming"
+  excerpt: "Video Solutions for USACO Problems"
   url: "/usaco/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/three.PNG
   title: "Algorithms"
-  excerpt: "Computer Algorithms"
+  excerpt: "Bronze to Platinum Algorithms"
   url: "/algorithms/"
+  btn_class: "btn--primary"
+  btn_label: "Learn more"
+- image_path: assets/images/one.PNG
+  title: "Tutorials"
+  excerpt: "Python from scratch"
+  url: "/tutorials/"
   btn_class: "btn--primary"
   btn_label: "Learn more"
 - image_path: /assets/images/four.PNG

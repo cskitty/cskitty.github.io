@@ -67,8 +67,12 @@ author_profile: true
             <td> <a href="/USACO-2010-gold-open-CowHopscotch">Cow Hopscotch</a></td>
            <td>Medium</td>
        </tr>
-
-
+       <tr>
+            <td>DP, Sliding Window</td>
+            <td> USACO 2019 Platinum January P3</td>
+            <td><a href="/video/usacovideo-usaco-2019-platinum-january-p3/">Train Tracking 2</a></td>
+           <td>Medium</td>
+       </tr>
        <!-- and so on... -->
    </tbody>
 </table>
