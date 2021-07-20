@@ -296,6 +296,14 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>
 
     <tr>
+        <td><a href="/video/usacovideo-usaco-2018-gold-open-p2/">Milking Order</a></td>
+        <td>2018</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=838">P2</a></td>
+      <td>US Open</td>
+      <td>Binary Search, TopologySort</td>
+    </tr>
+
+    <tr>
         <td><a href="/video/usacovideo-usaco-2018-gold-february-p3">Taming the Herd</a></td>
         <td>2018</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=815">P3</a></td>
@@ -397,6 +405,7 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
 </table>
 
 <h3> Platinum Questions </h3>
+
 <table class="styled-table">
     <thead>
         <tr>
@@ -416,15 +425,22 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     <td>January</td>
     <td>BIT, DFS</td>
   </tr>
+
   <tr>
   <td><a href="/video/usacovideo-usaco-2019-platinum-january-p3/">Train Tracking2</a></td>
   <td>2019</td>
   <td><a href="http://usaco.org/index.php?page=viewproblem2&cpid=696">P3</a></td>
   <td>January</td>
   <td>DP, Sliding Window</td>
-</tr>
+  </tr>
 
-
+  <tr>
+  <td><a href="/video/usacovideo-usaco-2016-platinum-open-p1">262144</a></td>
+  <td>2016</td>
+  <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=648">P1</a></td>
+  <td>US Open</td>
+  <td>DP</td>
+  </tr>
 
         <!-- and so on... -->
     </tbody>

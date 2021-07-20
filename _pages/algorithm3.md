@@ -119,3 +119,10 @@ author_profile: true
 | ------------| --------------------------------------------------------------- | ------------- |  
 | Dijkstra | [Dijkstra’s Shortest Path](/programming/dijkstra's-shortest-path/)  | Medium    
 | Shortest Path Faster Algorithm (SPFA)     | [Layout](/usaco/USACO-2005-Dec-Gold-P3-Layout/)  | Medium  |         
+
+
+### TopologySort  
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| TopologySort | [Milking Order](/video/usacovideo-usaco-2018-gold-open-p2/)  | Medium    

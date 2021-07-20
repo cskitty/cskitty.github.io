@@ -73,6 +73,12 @@ author_profile: true
             <td><a href="/video/usacovideo-usaco-2019-platinum-january-p3/">Train Tracking 2</a></td>
            <td>Medium</td>
        </tr>
+       <tr>
+            <td>DP </td>
+            <td>USACO 2016 Platinum Open P1</td>
+            <td><a href="/video/usacovideo-usaco-2016-platinum-open-p1">262144</a></td>
+           <td>Medium</td>
+       </tr>
        <!-- and so on... -->
    </tbody>
 </table>
