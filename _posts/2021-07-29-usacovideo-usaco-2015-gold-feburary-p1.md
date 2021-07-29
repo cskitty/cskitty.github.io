@@ -1,5 +1,5 @@
 ---
-title: USACO 2015 Gold February P1: Cow Hopscotch
+title: USACO 2015 Gold February P1. Cow Hopscotch
 categories:
   - video
 tags:

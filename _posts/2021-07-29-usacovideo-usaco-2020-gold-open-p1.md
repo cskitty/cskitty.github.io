@@ -1,5 +1,5 @@
 ---
-title: USACO 2020 Gold Open P1: Cow Haircut
+title: USACO 2020 Gold Open P1. Cow Haircut
 categories:
   - video
 tags:
