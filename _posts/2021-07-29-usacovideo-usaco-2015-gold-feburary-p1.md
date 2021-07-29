@@ -1,5 +1,5 @@
 ---
-title: USACO 2015 Old Gold February P1: Cow Hopscotch  
+title: USACO 2015 Gold February P1: Cow Hopscotch
 categories:
   - video
 tags:
@@ -7,7 +7,7 @@ tags:
   - VIDEO
 ---
 
-## [USACO 2015 Old Gold February P1: Cow Hopscotch](http://www.usaco.org/index.php?page=viewproblem2&cpid=532)
+## [USACO 2015 Gold February P1: Cow Hopscotch](http://www.usaco.org/index.php?page=viewproblem2&cpid=532)
 
 {% include video id="6blXS6g39iU" provider="youtube" %}
 

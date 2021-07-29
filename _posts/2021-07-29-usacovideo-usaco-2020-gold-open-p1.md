@@ -1,5 +1,5 @@
 ---
-title: USACO 2020 Gold Open P1: Cow Haircut  
+title: USACO 2020 Gold Open P1: Cow Haircut
 categories:
   - video
 tags:
@@ -9,7 +9,7 @@ tags:
 
 ## [USACO 2020 Gold Open P1: Cow Haircut  ](http://www.usaco.org/index.php?page=viewproblem2&cpid=1041)
 
-{% include video id="iFVaRcot24Y&t" provider="youtube" %}
+{% include video id="iFVaRcot24Y" provider="youtube" %}
 
 {% highlight C++ linenos %}
 #include <bits/stdc++.h>

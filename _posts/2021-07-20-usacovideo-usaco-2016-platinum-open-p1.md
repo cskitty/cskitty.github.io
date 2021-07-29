@@ -1,5 +1,5 @@
 ---
-title: USACO 2016 2016 Platinum Open P1. 262144
+title: USACO 2016 Platinum Open P1. 262144
 categories:
   - video
 tags:
