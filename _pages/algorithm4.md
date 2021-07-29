@@ -79,6 +79,13 @@ author_profile: true
             <td><a href="/video/usacovideo-usaco-2016-platinum-open-p1">262144</a></td>
            <td>Medium</td>
        </tr>
+
+       <tr>
+            <td>DP, BIT/SEG</td>
+            <td>USACO 2015 Gold Feburary P1</td>
+            <td><a href="/video/usacovideo-usaco-2015-gold-feburary-p1">Cow Hopscotch</a></td>
+            <td>Hard</td>
+       </tr>
        <!-- and so on... -->
    </tbody>
 </table>

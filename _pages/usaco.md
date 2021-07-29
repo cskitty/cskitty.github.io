@@ -280,6 +280,14 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
     </tr>
 
     <tr>
+        <td><a href="/video/usacovideo-usaco-2020-gold-open-p1">Cow Haircut</a></td>
+        <td>2021</td>
+      <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=1041">P1</a></td>
+      <td>US Open</td>
+      <td>BIT</td>
+    </tr>
+
+    <tr>
         <td><a href="/video/usacovideo-usaco-2019-gold-january-p2">Sleepy Cow Herding</a></td>
         <td>2019</td>
       <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=898">P2</a></td>
@@ -440,6 +448,14 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
   <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=648">P1</a></td>
   <td>US Open</td>
   <td>DP</td>
+  </tr>
+
+  <tr>
+  <td><a href="/video/usacovideo-usaco-2015-gold-feburary-p1">Cow Hopscotch</a></td>
+  <td>2015</td>
+  <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=532">P1</a></td>
+  <td>Feburary</td>
+  <td>DP, BIT/SEG</td>
   </tr>
 
         <!-- and so on... -->

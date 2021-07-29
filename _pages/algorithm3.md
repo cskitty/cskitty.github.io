@@ -126,3 +126,10 @@ author_profile: true
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
 | TopologySort | [Milking Order](/video/usacovideo-usaco-2018-gold-open-p2/)  | Medium    
+
+
+### Point Update Range Query  
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| BIT   | [Cow Haircut](/video/usacovideo-usaco-2020-gold-open-p1)  | Medium |   
