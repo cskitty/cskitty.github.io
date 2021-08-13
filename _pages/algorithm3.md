@@ -133,3 +133,10 @@ author_profile: true
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
 | BIT   | [Cow Haircut](/video/usacovideo-usaco-2020-gold-open-p1)  | Medium |   
+
+
+### Euler Tour, LCA
+
+| Algorithm   |  Example                                                        | Level         |
+| ------------| --------------------------------------------------------------- | ------------- |  
+| Euler Tour, LCA,BIT   | [Cow Land](/video/usacovideo-usaco-2019-gold-feburary-p1)  | Medium |   
