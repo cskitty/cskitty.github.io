@@ -86,6 +86,14 @@ author_profile: true
             <td><a href="/video/usacovideo-usaco-2015-gold-feburary-p1/">Cow Hopscotch</a></td>
             <td>Hard</td>
        </tr>
+
+       <tr>
+            <td>HLD</td>
+            <td>CSES 2134: Path Queries II</td>
+            <td><a href="/CSES-2134-path-queries-ii/">Path Queries II</a></td>
+            <td>Easy</td>
+       </tr>
+
        <!-- and so on... -->
    </tbody>
 </table>

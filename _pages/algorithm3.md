@@ -140,3 +140,4 @@ author_profile: true
 | Algorithm   |  Example                                                        | Level         |
 | ------------| --------------------------------------------------------------- | ------------- |  
 | Euler Tour, LCA,BIT   | [Cow Land](/video/usacovideo-usaco-2019-gold-feburary-p1)  | Medium |   
+| Euler Tour, LCA, Custom Hash   | [Milk Visits](/video/usacovideo-usaco-2019-gold-december-p2/)  | Medium |   
