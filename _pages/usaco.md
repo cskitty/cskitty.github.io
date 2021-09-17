@@ -466,6 +466,13 @@ Farmer John is the well acclaimed owner of many cows. But one of them always get
   <td>DP, BIT/SEG</td>
   </tr>
 
+  <tr>
+  <td><a href="/video/usacovideo-usaco-2018-platinum-open-p3/">Disruption</a></td>
+  <td>2018</td>
+  <td><a href="http://www.usaco.org/index.php?page=viewproblem2&cpid=842">P3</a></td>
+  <td>US Open</td>
+  <td>Merge from S to L</td>
+  </tr>
         <!-- and so on... -->
     </tbody>
 </table>

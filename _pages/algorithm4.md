@@ -94,6 +94,13 @@ author_profile: true
             <td>Easy</td>
        </tr>
 
+       <tr>
+            <td>Merge From Small to Large</td>
+            <td>USACO 2018 Open P3</td>
+            <td><a href="/video/usacovideo-usaco-2018-platinum-open-p3/">Disruption</a></td>
+            <td>Easy</td>
+       </tr>
+
        <!-- and so on... -->
    </tbody>
 </table>
