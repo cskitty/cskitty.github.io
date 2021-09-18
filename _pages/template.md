@@ -8,6 +8,319 @@ author_profile: true
 
 ![](/assets/images/USACObessieheader.PNG)
 
+## Dijkstra
+{% highlight C++ linenos %}
+int dijkstraM(int start, int end, vector<vector<pi>> adj, vector<int> &dist) {
+    vector<bool> visited(N);
+
+    priority_queue<pi, vector<pi>, greater<pi>> pq;
+
+    pq.push({0, start});
+    dist[start] = 0;
+
+    while (pq.size()) {
+        pi value = pq.top(); pq.pop();
+        ll node = value.s;
+        if (visited[node]) {
+            continue;
+        }
+        visited[node] = true;
+
+        for (auto to : adj[node]) {
+            int newWeight = to.f + dist[node];
+
+            if (newWeight < dist[to.s]) {
+                // nodeInfo[to.s] = nodeInfo[node] + cows[to.s];
+                prevV[to.s] = node;
+
+                dist[to.s] = newWeight;
+                pq.push({dist[to.s], to.s});
+            }
+        }
+
+        //dbg(node, dist[node]);
+    }
+
+    return dist[end];
+}
+{% endhighlight %}
+
+## BIT
+{% highlight C++ linenos %}
+struct BIT {
+    vector<int> tree;
+    void init(int _n) { tree.resize(_n); }
+
+    void upd(int i, int x) {
+        while (i < tree.size()) {
+            tree[i] = (tree[i] + x);
+            //if (tree[i] < 0) tree[i] += M;
+            if (tree[i] > M) tree[i] -= M;
+            tree[i] = (tree[i] + M) % M;
+            i += (i & (-i));
+        }
+    }
+
+    long long query(int i) {
+        long long ans = 0;
+        while (i > 0) {
+            ans += tree[i];
+            //if (ans < 0) ans += M;
+            if (ans > M) ans -= M;
+            ans = (ans + M) % M;
+            i -= (i & (-i));
+        }
+        return ans;
+    }
+};
+
+BIT  allColors;
+allColors.query(j);
+allColors.upd(j, x);
+{% endhighlight %}
+
+
+## Normal Segment Tree
+{% highlight C++ linenos %}
+vector<int> arr;
+vector<int> tree;
+arr.resize(N + 1);
+tree.resize(4*N);
+
+void build(int p, int l, int r) {
+    if (l == r) {tree[p] = arr[l]; return;}
+
+    int mid = (l + r)/2;
+    build(2*p, l, mid);
+    build(2*p + 1, mid + 1, r);
+
+    tree[p] = min(tree[2*p], tree[2*p + 1]);
+}
+
+void update(int p, int l, int r, int x, int y) {
+    // turn arr[x] into y
+    if (l == r) { tree[p] = y; return; }
+
+    int mid = (l + r)/2;
+    if (x <= mid) {
+        update(2*p, l, mid, x, y);
+    }
+    else {
+        update(2*p + 1, mid + 1, r, x, y);
+    }
+
+    tree[p] = min(tree[2*p], tree[2*p + 1]);
+}
+
+int query(int p, int l, int r, int x, int y) {
+    if (l == r) { return tree[p]; }
+
+    int mid = (l + r)/2;
+    int ans = INT_MAX;
+    if (x <= mid) {
+        ans = min(ans, query(2 * p, l, mid, x, y));
+    }
+    if (y >= mid + 1) {
+        ans = min(ans, query(2 * p + 1, mid + 1, r, x, y));
+    }
+
+    return ans;
+}
+
+
+{% endhighlight %}
+
+
+## Fast Segment Tree
+{% highlight C++ linenos %}
+template<class T> struct Seg { // comb(ID,b) = b
+    const T ID = 1e18; T comb(T a, T b) { return min(a,b); }
+    int n; vector<T> seg;
+    void init(int _n) { n = _n; seg.assign(2*n,ID); }
+    void pull(int p) { seg[p] = comb(seg[2*p],seg[2*p+1]); }
+    void upd(int p, T val) { // set val at position p
+        seg[p += n] = val; for (p /= 2; p; p /= 2) pull(p); }
+    T query(int l, int r) {	// min on interval [l, r]
+        T ra = ID, rb = ID;
+        for (l += n, r += n+1; l < r; l /= 2, r /= 2) {
+            if (l&1) ra = comb(ra,seg[l++]);
+            if (r&1) rb = comb(seg[--r],rb);
+        }
+        return comb(ra,rb);
+    }
+};
+
+Seg<int> st;
+st.upd(i, x);
+int a = st.query(x, y);
+{% endhighlight %}
+
+## LCA
+
+{% highlight C++ linenos %}
+
+vector<vector<int>> up(2e5 + 1, vector<int> (20));
+
+//initialize jump table
+up[c][0] = p;
+for (int i = 1; i < 20; i++) {
+    up[c][i] = up[up[c][i-1]][i-1];
+}
+
+int lca(int a, int b) {
+    if (depth[a] > depth[b]) {
+        swap (a, b);
+    }
+
+    // binary jumping
+    int d = depth[b] - depth[a];
+    for (int i = 0; i < 20; i++) {
+        if((d >> i) & 1) {
+            b = up[b][i];
+        }
+    }
+
+    if(a == b) return a;
+
+    //lca using binary jumping
+    for (int i = 19; i >= 0; i--) {
+        int ap = up[a][i];
+        int bp = up[b][i];
+        if(ap != bp) a = ap, b = bp;
+    }
+    return up[a][0];
+}
+{% endhighlight %}
+
+## HLD
+
+{% highlight C++ linenos %}
+//dfs1 to get depth, parent and sz of each node
+void dfs(int n, int p) {
+    // make trees
+    depth[n] = depth[p] + 1;
+    sz[n] = 1;
+    for (auto i : adj[n]) {
+        if (i != p) {
+            parent[i] = n;
+            dfs(i, n);
+            sz[n] += sz[i];
+        }
+    }
+}
+
+int T = 1;
+//dfs2 to flatten and get index T of node, head of node
+void dfs2(int n, int h, int p) {
+    st[n] = T++;
+
+    //do some calculation.e.g    seg.upd(st[n], values[n]);
+    head[n] = h;
+    int hv = -1;
+    for (auto i : adj[n]) {
+        if (i != p) {
+            if (hv == -1 || sz[i] > sz[hv]) {
+                hv = i;
+            }
+        }
+    }
+
+    // leaf node, then return
+    if (hv == -1) return;
+
+    // heavy edge = inherit
+    dfs2(hv, h, n);
+
+    // other eddge, start a new segment
+    for (auto i : adj[n]) {
+        if (i != p && i != hv) {
+            // light edge = new segment
+            dfs2(i, i, n);
+        }
+    }
+}
+
+//do something for 2 nodes ...
+int hldquery(int a, int b) {
+    int ans = 0;
+    while (head[a] != head[b]) {
+        if (depth[head[a]] < depth[head[b]]) swap(a, b);
+        int q1 = seg.query(st[head[a]], st[a]);
+        a = parent[head[a]];
+        ans = max(ans, q1);
+    }
+    if (depth[a] < depth[b]) swap(a, b);
+    int q2 = seg.query(st[b], st[a]);
+    ans = max(ans, q2);
+    return ans;
+}
+{% endhighlight %}
+
+
+## Math
+### Fast Power
+
+{% highlight C++ linenos %}
+int mul(int x,int n,int p)
+{
+   int ans=0;
+   while(n) {
+       if (n&1)ans=ans+x%p;
+       x=x+x%p;
+       n>>=1;
+   }
+   return ans%p;
+}
+
+int fpow(int x,int n,int p)
+{
+   int ans=1;
+   while (n) {
+       if (n&1) ans=mul(ans,x,p);
+       x=mul(x,x,p);
+       n>>=1;
+   }
+   return ans%p;
+}
+{% endhighlight %}
+### GCD
+
+{% highlight C++ linenos %}
+int gcd(int x,int y){
+    return y==0?x:gcd(y,x%y);
+}
+
+int exgcd(int a,int b,int &x,int &y)
+{
+    if (b==0) {
+        x=1;y=0;
+        return a;
+    }
+    int g=exgcd(b,a%b,x,y);
+    int t=x;x=y;y=t-a/b*x;
+    return g;
+}
+{% endhighlight %}
+
+## Data Structure
+### Priority queue
+
+{% highlight C++ linenos %}
+priority_queue<int> q;                           //biggest on top
+priority_queue<int,vector<int>,less<int> > q;    //biggest on top
+
+priority_queue<int,vectot<int>,greater<int> > q; //smallest on top
+
+struct cmp{
+    bool operator () (pair<int,int> &a, pair<int,int> &b){
+        if (a.first!= b.first) return a.first<b.first;
+        else return a.second<b.second;
+    }
+};
+priority_queue<rec,vector<rec>,cmp>q;  
+
+{% endhighlight %}
+
 ## Sorting
 
 ### Quick Sort
