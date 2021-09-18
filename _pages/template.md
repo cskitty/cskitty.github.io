@@ -380,8 +380,82 @@ int hldquery(int a, int b) {
 }
 {% endhighlight %}
 
+### Union Find
+{% highlight C++ linenos %}
+int parent[N]; // initialize parent[i] = i
 
-## Math
+#ifndef PATH_COMPRESSION
+int findRoot (int a) {
+    if (parent[a] == a) {
+      return a;
+    }
+
+    return findRoot(parent[a]);
+}
+#else
+//Path Compression - O(log N) per query:
+int findRoot (int a) {
+  if (parent[a] == a) {
+    return a;
+  }
+    return parent[a] = findRoot(parent[a]);
+}
+#endif
+
+bool isConnected (int a, int b) {
+  return findRoot(a) == findRoot(b);
+}
+
+#ifdef KEEP_SIZE_SMALL
+int size[N]; // initialize size[i] = 1
+
+void join (int a, int b) {
+  a = findRoot(a);
+  b = findRoot(b);
+
+  if (a == b) {
+    return;
+  }
+
+  if (size[a] < size[b]) {
+  parent[a] = b;
+    size[b] += size[a];
+  }
+  else {
+    parent[b] = a;
+    size[a] += size[b];
+  }
+}
+#elseif KEEP_DEPTH_SMALL
+int depth[N]; // initialize depth[i] = 1
+
+void join (int a, int b) {
+  a = findRoot(a);
+  b = findRoot(b);
+
+  if (a == b) {
+    return;
+  }
+
+  if (depth[a] < depth[b]) {
+    parent[a] = b;
+  }
+  else {
+    parent[b] = a;
+    depth[a] = max(depth[a], depth[b] + 1);
+  }
+}
+#else
+void join (int a, int b) {
+  parent[ findRoot(a) ] = findRoot(b);
+}
+
+#endif
+{% endhighlight %}
+
+
+## Math  
+
 ### Fast Power
 
 {% highlight C++ linenos %}
