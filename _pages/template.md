@@ -130,6 +130,110 @@ int query(int p, int l, int r, int x, int y) {
 
 {% endhighlight %}
 
+## Lazy Segment Tree
+{% highlight C++ linenos %}
+
+template<class T, int MX> struct LazySeg {
+    T treesum[MX], treemin[MX], lazy[MX];
+
+    void build(int n, int tl, int tr) {
+        if (tl == tr) {
+            treesum[n] = arr[tl];
+            treemin[n] = arr[tl];
+            return;
+        }
+        int mid = (tl + tr)/2;
+        build(n << 1, tl, mid);
+        build((n << 1) + 1, mid + 1, tr);
+        // change me
+        treesum[n] = (treesum[n << 1] + treesum[(n << 1) + 1]);
+        treemin[n] = min(treemin[2*n], treemin[2*n + 1]);
+    }
+
+    void pushdown(int n, int tl, int tr) {
+        if (lazy[n] > 0) {
+            // change me
+            treesum[n] += (tr - tl + 1) * lazy[n];
+            treemin[n] += lazy[n];
+
+            if (tl != tr) {
+                lazy[2*n] += lazy[n];
+                lazy[2*n+1] += lazy[n];
+            }
+            lazy[n] = 0;
+        }
+    }
+
+    void upd(int n, int tl, int tr, int st, int ed, T v) {
+        pushdown(n, tl, tr);
+        if (tl > tr || tl > ed || tr < st) return;
+        if (tl >= st && tr <= ed) {
+            // change me: only for min/max
+            treesum[n] += (tr - tl + 1) * v;
+            treemin[n] += v;
+
+            // only for min
+            if (tl != tr) {
+                lazy[2*n] += v;
+                lazy[2*n + 1] += v;
+            }
+            return;
+        }
+        else {
+            int mid = (tl + tr)/2;
+            upd(2*n, tl, mid, st, ed, v);
+            upd(2*n+1, mid+1, tr, st, ed, v);
+
+            // change me
+            treesum[n] = (treesum[2*n] + treesum[2*n+1]);
+            treemin[n] = min(treemin[2*n+1], treemin[2*n]);
+        }
+    }
+
+    T querySum(int n, int tl, int tr, int st, int ed) {
+        // change me
+        if (tl > tr || ed < tl || st > tr) return 0;
+
+        pushdown(n, tl, tr);
+
+        // segment completely inside query
+        if (st <= tl && tr <= ed) {
+            return treesum[n];
+        }
+        else {
+            int mid = (tl + tr)/2;
+            T a = querySum(2*n, tl, mid, st, ed);
+            T b = querySum(2*n + 1, mid + 1, tr, st, ed);
+
+            // change me
+            return a+b;
+        }
+    }
+
+    T queryMin(int n, int tl, int tr, int st, int ed) {
+        // change me
+        if (tl > tr || ed < tl || st > tr) return MAX;
+        pushdown(n, tl, tr);
+
+        // segment completely inside query
+        if (st <= tl && tr <= ed) {
+            return treemin[n];
+        }
+
+        int mid = (tl + tr)/2;
+        T a = queryMin(2*n, tl, mid, st, ed);
+        T b = queryMin(2*n + 1, mid + 1, tr, st, ed);
+
+        // change me
+        return min(a, b);
+    }
+};
+
+const int SEGSZ = 4*MXV;
+LazySeg<long long, SEGSZ> seg;
+
+{% endhighlight %}
+
 
 ## Fast Segment Tree
 {% highlight C++ linenos %}
@@ -158,38 +262,58 @@ int a = st.query(x, y);
 ## LCA
 
 {% highlight C++ linenos %}
-
+int T = 1;
+vector<int> st, ed, depth;
 vector<vector<int>> up(2e5 + 1, vector<int> (20));
 
-//initialize jump table
-up[c][0] = p;
-for (int i = 1; i < 20; i++) {
-    up[c][i] = up[up[c][i-1]][i-1];
-}
+//euler tour to flattern the tree
+void dfs(int n, int p) {
+    st[n] = T;
+    depth[n] = depth[p] + 1;
 
-int lca(int a, int b) {
-    if (depth[a] > depth[b]) {
-        swap (a, b);
+    //jump table for node n
+    up[n][0] = p;
+    for (int i = 1; i < 20; i++) {
+        up[n][i] = up[up[n][i - 1]][i - 1];
     }
 
-    // binary jumping
-    int d = depth[b] - depth[a];
-    for (int i = 0; i < 20; i++) {
-        if((d >> i) & 1) {
-            b = up[b][i];
+    T++;
+    for (auto c : adj[n]) {
+        if (c != p) {
+            dfs(c, n);
         }
     }
 
-    if(a == b) return a;
+    ed[n] = T - 1;
+}
 
-    //lca using binary jumping
+int lca(int a, int b) {
+    if (depth[a] < depth[b]) swap(a, b);
+
+    int diff = depth[a] - depth[b];
+    for (int i = 0; i < 20; i++) {
+        if ((diff >> i) & 1) {
+            a = up[a][i];
+        }
+    }
+    if (a == b) return a;
+
     for (int i = 19; i >= 0; i--) {
         int ap = up[a][i];
         int bp = up[b][i];
-        if(ap != bp) a = ap, b = bp;
+        if (ap != bp) {
+            a = ap; b = bp;
+        }
     }
     return up[a][0];
 }
+
+//dfs to get depth and initialize jump table
+depth[0] = -1;
+dfs(1, 0);
+
+//lca
+int l = lca(a, b);
 {% endhighlight %}
 
 ## HLD
@@ -282,7 +406,8 @@ int fpow(int x,int n,int p)
    }
    return ans%p;
 }
-{% endhighlight %}
+{% endhighlight %}  
+
 ### GCD
 
 {% highlight C++ linenos %}
@@ -303,6 +428,15 @@ int exgcd(int a,int b,int &x,int &y)
 {% endhighlight %}
 
 ## Data Structure
+
+### Unordered Map Custom Comparitor
+{% highlight C++ linenos %}
+struct hashPi {
+    size_t operator()(const pair<int, int>& p) const { return (p.first*100001) + p.second; }
+};
+unordered_map<pair<int, int>, int, hashPi> findlca;
+{% endhighlight %}
+
 ### Priority queue
 
 {% highlight C++ linenos %}
