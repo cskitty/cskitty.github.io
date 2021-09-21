@@ -101,6 +101,13 @@ author_profile: true
             <td>Easy</td>
        </tr>
 
+       <tr>
+            <td>LCA DSU</td>
+            <td>USACO 2018 Open P3</td>
+            <td><a href="/video/usacovideo-usaco-2018-platinum-open-p3-dsu/">Disruption</a></td>
+            <td>Easy</td>
+       </tr>
+
        <!-- and so on... -->
    </tbody>
 </table>
