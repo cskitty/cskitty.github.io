@@ -466,9 +466,18 @@ void buildTable(string& w, VI& t)
 
   while(i < w.length())
   {
-    if(w[i-1] == w[j]) { t[i] = j+1; i++; j++; }
-    else if(j > 0) j = t[j];
-    else { t[i] = 0; i++; }
+    if(w[i-1] == w[j]) {
+       t[i] = j+1;
+       i++;
+       j++;
+    }
+    else if(j > 0) {
+      j = t[j];
+    }
+    else {
+      t[i] = 0;
+      i++;
+    }
   }
 }
 
