@@ -453,6 +453,49 @@ void join (int a, int b) {
 #endif
 {% endhighlight %}
 
+## KMP
+
+{% highlight C++ linenos %}
+typedef vector<int> VI;
+
+void buildTable(string& w, VI& t)
+{
+  t = VI(w.length());
+  int i = 2, j = 0;
+  t[0] = -1; t[1] = 0;
+
+  while(i < w.length())
+  {
+    if(w[i-1] == w[j]) { t[i] = j+1; i++; j++; }
+    else if(j > 0) j = t[j];
+    else { t[i] = 0; i++; }
+  }
+}
+
+int KMP(string& s, string& w)
+{
+  int m = 0, i = 0;
+  VI t;
+
+  buildTable(w, t);
+  while(m+i < s.length())
+  {
+    if(w[i] == s[m+i])
+    {
+      i++;
+      if(i == w.length()) return m;
+    }
+    else
+    {
+      m += i-t[i];
+      if(i > 0) i = t[i];
+    }
+  }
+  return s.length();
+}
+
+{% endhighlight %}
+
 
 ## Math  
 
@@ -715,24 +758,52 @@ vector<int> div(vector<int> &A, int b, int &r)
 
 ### 1D Prefix Sum
 {% highlight C++ linenos %}
-S[i] = a[1] + a[2] + ... a[i]
-a[l] + ... + a[r] = S[r] - S[l - 1]
+
+for (int i=1; i<=N; i++) {
+  pre[i] = val[i] + pre[i-1];
+}
+
+//sum from a to b inclusive
+pre[b] - pre[a-1]
 {% endhighlight %}
 
 ### Reverse 1D Prefix Sum
 {% highlight C++ linenos %}
-B[l] += c, B[r + 1] -= c
+val[a] += x;
+val[b+1] -= x;
+
+for (int i=1; i< N; i++) {
+  val[i] += val[i-1];
+}
 {% endhighlight %}
 
 ### 2D Prefix Sum
 {% highlight C++ linenos %}
-S[i, j] = sum of first i rows and j columns
-S[x2, y2] - S[x1 - 1, y2] - S[x2, y1 - 1] + S[x1 - 1, y1 - 1]
+for (int i=1; i<=N; i++) {
+  for (int j=1; j<=N; j++) {
+    pre[i][j] = val[i][j] + pre[i-1][j] + pre[i][j-1] - pre[i-1][j-1];
+  }
+}
+
+//sum of the range from (x1, y1) to (x2, y2) is:
+pre[x2][y2] - pre[x1-1][y2] - pre[x2][y1-1] + pre[x1-1][y1-1]
 {% endhighlight %}
 
 ### Reverse 2D Prefix Sum
 {% highlight C++ linenos %}
-S[x1, y1] += c, S[x2 + 1, y1] -= c, S[x1, y2 + 1] -= c, S[x2 + 1, y2 + 1] += c
+
+// add v to the range from (x1, y1) to (x2, y2), inclusive
+val[x1][y1] += v;
+val[x1][y2+1] -= v;
+val[x2+1][y1] -= v;
+val[x2+1][y2+1] += v;
+
+// get value at (i,j)
+for (int i=1; i<=N; i++) {
+  for (int j=1; j<=N; j++) {
+    val[i][j] += + pre[i-1][j] + pre[i][j-1] - pre[i-1][j-1];
+  }
+}
 {% endhighlight %}
 
 
