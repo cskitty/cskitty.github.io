@@ -14,7 +14,7 @@ tags:
 
 ## Problem 1. Sleepy Cow Herding
 
-[The Great Revegetation](http://usaco.org/index.php?page=viewproblem2&cpid=918)
+[Sleepy Cow Herding](http://usaco.org/index.php?page=viewproblem2&cpid=918)
 
 Farmer John's N cows are always wandering off to the far reaches of the farm! He needs your help herding them back together.  
 The main field in the farm is long and skinny -- we can think of it as a number line, on which a cow can occupy any integer location. The N cows are currently situated at different integer locations, and Farmer John wants to move them so they occupy consecutive locations (e.g., positions 3, 4, 5, 6, 7, and 8).  
@@ -44,55 +44,61 @@ The minimum number of moves is 1 --- if Farmer John moves the cow in position 4 
 Problem credits: Matthew Fahrbach
 
 {% highlight c++ linenos %}
-
-
-int N;
+#include <vector>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+using namespace std;
 
 int main() {
-    setIO("herding");
-
+    ifstream cin("herding.in");
+    ofstream cout("herding.out");
+    int N;
     cin >> N;
+    vector<int> cows (N);
 
-    int val = 0;
-    vector<int> left(N);
-    vector<int> cows(N);
-    F0R(i, N) {
+    for (int i = 0; i < N; i++) {
         cin >> cows[i];
     }
 
-    sort(all(cows));
+    sort(cows.begin(), cows.end());
+    int j = 0;
+    int maxA = 0;
 
-    int maxL = 0;
-    int minL = INT_MAX;
 
-    FOR(i, 1, N) {
-        int count = 0;
-        int j = i - 1;
-        while (j >= 0 && cows[i] - cows[j] < N) {
-            count++;
-            j--;
+    for (int i = 0; i < N; i++) {
+        while (j < N && cows[i] - cows[j] >= N) {
+            j++;
         }
-        maxL = max(maxL, count);
-        minL = min(minL, count);
-        left[i] = count;
+        maxA = max(maxA, i - j + 1);
+
+    }
+    int ansMin = N - maxA;
+
+    if ( ( (cows[N - 2] - cows[0] == N - 2) && (cows[N - 1] - cows[N - 2] > 2) )  || ( (cows[N - 1] - cows[1] == N - 2) && (cows[1] - cows[0] > 2) )) {
+            ansMin = 2;
+        } 
+
+    int ansMax = 0;
+    if (cows[N - 1] - cows[N - 2] > cows[1] - cows[0]) {
+        ansMax = cows[N - 1] - cows[1] + 1 - (N - 1);
+    } else {
+        ansMax = cows[N - 2] - cows[0] + 1 - (N - 1);
+    } 
+
+    if (cows[N - 1] - cows[0] == N - 1) {
+        ansMin = 0;
+        ansMax = 0;
     }
 
-
-        cout << N - 1 - maxL << endl;
-
-
-
-    cout << N - 1 - minL;
-
-    // cout << 1 << endl << 2;
+    cout << ansMin << endl << ansMax << endl;
 }
-
 {% endhighlight %}
 
 
 ## Problem 2. Painting the Barn
 
-[The Great Revegetation](http://usaco.org/index.php?page=viewproblem2&cpid=920)
+[Painting the Barn](http://usaco.org/index.php?page=viewproblem2&cpid=920)
 
 Farmer John is not good at multitasking. He gets distracted often, making it hard to complete long projects. Currently, he is trying to paint one side of his barn, but he keeps painting small rectangular areas and then getting sidetracked by the needs of tending to his cows, leaving some parts of the barn painted with more coats of paint than others.  
 We can describe the side of the barn as a 2D x-y plane, on which Farmer John paints N rectangles, each with sides parallel to the coordinate axes, each described by the coordinates of its lower-left and upper-right corner points.  
