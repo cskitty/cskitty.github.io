@@ -1239,3 +1239,17 @@ void solve_intersection(point a, point b, point c, point d){
     }   
 }
 {% endhighlight %}
+
+
+## Geometry 3. Sort Points Counter Clockwise using Cross Product
+
+
+{% highlight C++ linenos %}
+inline bool up (point p) {
+  return p.y > 0 or (p.y == 0 and p.x >= 0);
+}
+
+sort(v.begin(), v.end(), [] (point a, point b) {
+  return up(a) == up(b) ? a.x * b.y > a.y * b.x : up(a) < up(b);
+});
+{% endhighlight %}
