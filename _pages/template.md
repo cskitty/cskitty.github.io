@@ -236,15 +236,58 @@ LazySeg<long long, SEGSZ> seg;
 
 
 ## Fast Segment Tree
+
 {% highlight C++ linenos %}
+#include <bits/stdc++.h>
+using namespace std;
+
 template<class T> struct Seg { // comb(ID,b) = b
-    const T ID = 1e18; T comb(T a, T b) { return min(a,b); }
+	const T ID = 1e18; T comb(T a, T b) { return min(a,b); }
+	int n; vector<T> seg;
+	void init(int _n) { n = _n; seg.assign(2*n,ID); }
+	void pull(int p) { seg[p] = comb(seg[2*p],seg[2*p+1]); }
+	void upd(int p, T val) { // set val at position p
+		seg[p += n] = val; for (p /= 2; p; p /= 2) pull(p); }
+	T query(int l, int r) {	// min on interval [l, r]
+		T ra = ID, rb = ID;
+		for (l += n, r += n+1; l < r; l /= 2, r /= 2) {
+			if (l&1) ra = comb(ra,seg[l++]);
+			if (r&1) rb = comb(seg[--r],rb);
+		}
+		return comb(ra,rb);
+	}
+};
+
+Seg<int> st;
+
+int main() {
+	int n, q; cin >> n >> q;
+  //Note that st.init(n+1) allows us to update and query indices in the range [0,n+1)=[0,n].
+	st.init(n+1);
+	for(int i=1; i<=n; i++) {
+		int a; cin >> a;
+		st.upd(i, a);
+	}
+	for(int i=1; i<=q; i++) {
+		int t, a, b; cin >> t >> a >> b;
+		if (t==1) st.upd(a,b);
+		else cout << st.query(a,b) <<"\n";
+	}
+}
+
+Seg<int> st;
+st.upd(i, x);
+int a = st.query(x, y);
+
+bool ckmin(int& a, int b){ return b < a ? a = b, true : false; }
+template<class T> struct Seg { // comb(ID,b) = b
+    const T ID = 0; T comb(T a, T b) { return min(a,b); }
     int n; vector<T> seg;
     void init(int _n) { n = _n; seg.assign(2*n,ID); }
     void pull(int p) { seg[p] = comb(seg[2*p],seg[2*p+1]); }
     void upd(int p, T val) { // set val at position p
-        seg[p += n] = val; for (p /= 2; p; p /= 2) pull(p); }
-    T query(int l, int r) {	// min on interval [l, r]
+        ckmin(seg[p += n],val); for (p /= 2; p; p /= 2) pull(p); }
+    T query(int l, int r) {	// sum on interval [l, r]
         T ra = ID, rb = ID;
         for (l += n, r += n+1; l < r; l /= 2, r /= 2) {
             if (l&1) ra = comb(ra,seg[l++]);
@@ -253,10 +296,6 @@ template<class T> struct Seg { // comb(ID,b) = b
         return comb(ra,rb);
     }
 };
-
-Seg<int> st;
-st.upd(i, x);
-int a = st.query(x, y);
 {% endhighlight %}
 
 ## LCA
@@ -1243,6 +1282,12 @@ void solve_intersection(point a, point b, point c, point d){
 
 ## Geometry 3. Sort Points Counter Clockwise using Cross Product
 
+//https://codeforces.com/blog/entry/48122
+ a ^ b = a.x * b.y - a.y * b.x = |a||b|sin α.
+
+* if a ^ b > 0, then b points to the left side of d if we're looking in the direction of a;
+* if a ^ b = 0, then b lies on d, so it's collinear with a;
+* if a ^ b < 0, then b points to the right side of d (as in the picture).
 
 {% highlight C++ linenos %}
 inline bool up (point p) {
