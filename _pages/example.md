@@ -7,9 +7,9 @@ author_profile: true
 ---
 
 ## Lazy Segment Tree
-{% highlight C++ linenos %}
-#include <bits/stdc++.h>
-using namespace std;
+{% highlight C++ linenos %}  
+#include <bits/stdc++.h>  
+using namespace std;  
 
 using ll = long long;
 
