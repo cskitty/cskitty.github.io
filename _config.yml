@@ -20,7 +20,7 @@ title                    : ""
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "cskitty"
-description              : "Project Star Coder."
+description              : "Project Starcoder."
 url                      : "https://cskitty.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cskitty/cskitty.github.io"
@@ -96,8 +96,8 @@ author:
   name             : "StarCoder"
   avatar           : "/assets/images/logo.PNG" #"https://avatars3.githubusercontent.com/u/19498807?s=400&u=a311a0cc9b765090373a431d386a0842ff8a9622&v=4"
   bio              : "
-  <br> <br> Project starcoder provides online articles, tutorials and video class sessions which can help K-12 students to learn from basic coding to algorithms for advanced USACO comeptitive programming.
-  <br> <br> You can find coding ideas and applications for various subjects including algorithms / math / cryptography etc."
+  <br> <br> Project Starcoder is a collection of free online resources for students to learn programming, from beginning to end.
+  <br> <br> Presenting online videos, articles, programming solutions, and live/video classes!"
 # Site Footer
 footer:
   links:
