@@ -98,7 +98,7 @@ int main() {
 
 ## Problem 2. Painting the Barn
 
-[Painting the Barn](http://usaco.org/index.php?page=viewproblem2&cpid=920)
+[Painting the Barn](http://usaco.org/index.php?page=viewproblem2&cpid=919)
 
 Farmer John is not good at multitasking. He gets distracted often, making it hard to complete long projects. Currently, he is trying to paint one side of his barn, but he keeps painting small rectangular areas and then getting sidetracked by the needs of tending to his cows, leaving some parts of the barn painted with more coats of paint than others.  
 We can describe the side of the barn as a 2D x-y plane, on which Farmer John paints N rectangles, each with sides parallel to the coordinate axes, each described by the coordinates of its lower-left and upper-right corner points.  
