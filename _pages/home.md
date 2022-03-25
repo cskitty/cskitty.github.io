@@ -6,7 +6,7 @@ date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"
   overlay_filter: "0"
-  overlay_image: /assets/images/starheader.PNG
+  overlay_image: /assets/images/star-new.png
 excerpt: "programming from beginning to end."
 intro:
   - excerpt: 'From beginner-level python tutorials to complex algorithms for the USA Computer Olympiad (USACO).'
