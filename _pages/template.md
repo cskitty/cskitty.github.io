@@ -626,27 +626,38 @@ void merge_sort(int q[], int l, int r)
 {% highlight C++ linenos %}
 bool check(int x) {/* ... */}  
 
-int bsearch_1(int l, int r)
-{
-    while (l < r)
-    {
-        int mid = l + r >> 1;
-        if (check(mid)) r = mid;    
-        else l = mid + 1;
+/*FFFTT*/
+int binary_search() {
+    int l = 0;
+    int r = 1e9 + 1;
+    while (l != r) {
+        int mid = (l + r)/2;
+        if (check(mid)) {
+            r = mid;
+        }
+        else {
+            l = mid + 1;
+        }
     }
     return l;
 }
 
-int bsearch_2(int l, int r)
-{
-    while (l < r)
-    {
-        int mid = l + r + 1 >> 1;
-        if (check(mid)) l = mid;
-        else r = mid - 1;
-    }
-    return l;
-}
+/*TTFF*/
+int binary_search(vector<ll> x) {
+
+      int l = 0;
+      int r = 1e9 + 1;
+      while (l != r) {
+          int mid = (l + r + 1)/2;
+          if (check(x, mid)) {
+              l = mid;
+          }
+          else {
+              r = mid - 1;
+          }
+      }
+      return l;
+  }
 {% endhighlight %}
 
 ## Math
