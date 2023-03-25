@@ -1031,3 +1031,27 @@ int query(string str)
     return cnt[p];
 }
 {% endhighlight %}
+				     
+				     
+## State machine
+
+{% highlight Python linenos %}
+def bessie_substrings(x):
+    max_bessie_counts = []
+    for i in range(len(x)):
+        count = 0
+        j = i
+        while j < len(x) and count < 6:
+            if x[j] == 'bessie'[count]:
+                count += 1
+            j += 1
+        max_bessie_counts.append(count)
+    return sum(max_bessie_counts)
+
+def total_bessie_counts(x):
+    total_count = 0
+    for i in range(len(x)):
+        total_count += bessie_substrings(x[i:])
+    return total_count
+
+{% endhighlight %}
