@@ -45,7 +45,29 @@ int dijkstraM(int start, int end, vector<vector<pi>> adj, vector<int> &dist) {
 }
 {% endhighlight %}
 
-## BIT
+
+				       
+				       
+## BIT Tree
+{% highlight C++ linenos %}
+
+void upd(int i, int x) {
+    for (i; i <= N; i += i & (-i)) {
+        bit[i] += x;
+    }
+}
+
+int query(int i) {
+    int ans = 0;
+    for (i; i > 0; i -= i & (-i)) {
+        ans += bit[i];
+    }
+    return ans;
+}				       
+
+{% endhighlight %}				       
+				       
+## BIT Tree (Fast)
 {% highlight C++ linenos %}
 struct BIT {
     vector<int> tree;
@@ -258,6 +280,24 @@ Seg<int> st;
 st.upd(i, x);
 int a = st.query(x, y);
 {% endhighlight %}
+	
+	
+## Euler Tour
+{% highlight C++ linenos %}
+
+void flatten(int n, int p) {
+    st[n] = T;
+    T++;
+    for (auto c : adj[n]) {
+        if (c != p) {
+            flatten(c, n);
+        }
+    }
+    ed[n] = T-1;
+}
+	
+{% endhighlight %}
+
 
 ## LCA
 
@@ -266,7 +306,8 @@ int T = 1;
 vector<int> st, ed, depth;
 vector<vector<int>> up(2e5 + 1, vector<int> (20));
 
-//euler tour to flattern the tree
+//
+	tour to flattern the tree
 void dfs(int n, int p) {
     st[n] = T;
     depth[n] = depth[p] + 1;
