@@ -10,12 +10,12 @@ tags:
 
 # Binary Search
 
-## Minimum Possible
+## METHOD 1
 
-Binary search with false false true true.
+### Minimum Possible
+(binary search with false false true true)
 
 {% highlight c++ linenos %}
-
 int binary_search() {
     int l = 0;
     int r = 1e9 + 1;
@@ -33,9 +33,8 @@ int binary_search() {
 
 {% endhighlight %}
 
-## Maximum Possible
-
-Binary search with true true false false.
+### Maximum Possible
+(binary search with true true false false)
 
 {% highlight c++ linenos %}
 
@@ -56,6 +55,38 @@ Binary search with true true false false.
   }
 
 {% endhighlight %}
+  
+  
+## METHOD 2 (PurpleCrayon) Open Intervals
+  
+### Minimum Possible
+false false true true
+{% highlight c++ linenos %}
+
+  int lo = -1, hi = N, mid = (lo+hi)/2;
+  while (lo < mid && mid < hi) {
+    if (check(mid)) hi = mid;
+    else lo = mid;
+    mid = (lo+hi)/2;
+  }
+  return hi;
+
+{% endhighlight %}  
+  
+
+### Maximum Possible
+true true false false
+{% highlight c++ linenos %}
+
+  int lo = 1, hi = N, mid = (lo+hi)/2;
+  while (lo < mid && mid < hi) {
+    if (check(mid)) lo = mid;
+    else hi = mid;
+    mid = (lo+hi)/2;
+  }
+  return lo;
+
+{% endhighlight %}  
 
 ## C++ Functions for Binary Search
 
