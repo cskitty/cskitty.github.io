@@ -549,31 +549,37 @@ int KMP(string& s, string& w)
 
 ## Math  
 
-### Fast Power
+### Binary Exponentiation
 
 {% highlight C++ linenos %}
-int mul(int x,int n,int p)
-{
-   int ans=0;
-   while(n) {
-       if (n&1)ans=ans+x%p;
-       x=x+x%p;
-       n>>=1;
-   }
-   return ans%p;
-}
-
-int fpow(int x,int n,int p)
-{
-   int ans=1;
-   while (n) {
-       if (n&1) ans=mul(ans,x,p);
-       x=mul(x,x,p);
-       n>>=1;
-   }
-   return ans%p;
+ll bp(ll b, ll p=M-2) {
+	ll r=1;
+	for (; p; p/=2, b=b*b%M)
+		if (p%2)
+			r=r*b%M;
+	return r;
 }
 {% endhighlight %}  
+
+### Factorial / Inverse Factorial
+
+{% highlight C++ linenos %}
+const int mxN=2e6+5, M=1e9+7;
+ll f[mxN], iF[mxN], iv[mxN];
+ 
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	f[0]=f[1]=iF[0]=iF[1]=iv[1]=1;
+	for (int i=2; i<mxN; ++i) {
+		f[i]=f[i-1]*i%M;
+		iv[i]=M-M/i*iv[M%i]%M;
+		iF[i]=iF[i-1]*iv[i]%M;
+	}
+ }
+ 
+{% endhighlight %}  
+
 
 ### GCD
 
@@ -596,7 +602,7 @@ int exgcd(int a,int b,int &x,int &y)
 
 ## Data Structure
 
-### Unordered Map Custom Comparitor
+### Unordered Map Custom Comparator
 {% highlight C++ linenos %}
 struct hashPi {
     size_t operator()(const pair<int, int>& p) const { return (p.first*100001) + p.second; }
