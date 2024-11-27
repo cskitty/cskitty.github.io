@@ -50,22 +50,93 @@ int dijkstraM(int start, int end, vector<vector<pi>> adj, vector<int> &dist) {
 				       
 ## BIT Tree
 {% highlight C++ linenos %}
-
-void upd(int i, int x) {
-    for (i; i <= N; i += i & (-i)) {
-        bit[i] += x;
+struct BIT {
+    int sz;
+    vector<int> tree;
+    BIT(int _sz) {
+        sz = _sz;
+        tree.resize(sz * 4);
     }
-}
-
-int query(int i) {
-    int ans = 0;
-    for (i; i > 0; i -= i & (-i)) {
-        ans += bit[i];
+    void upd(int i, int x) {
+        for (; i < tree.size(); i += i & -i) {
+            tree[i] += x;
+        }
     }
-    return ans;
-}				       
+    int query(int i) {
+        int ans = 0;
+        for (; i > 0; i -= i & -i) {
+            ans += tree[i];
+        }
+        return ans;
+    }
+};
 
-{% endhighlight %}				       
+struct BIT2 {
+    int sz;
+    vector<int> tree;
+    BIT2(int _sz) {
+        sz = _sz;
+        tree.resize(sz + 1);
+    }
+    void upd(int i, int x) {
+        tree[i] += x;
+    }
+    int query(int i) {
+        int ans = 0;
+        while (i > 0) {
+            ans += tree[i];
+            i--;
+        }
+        return ans;
+    }
+};
+
+{% endhighlight %}	
+
+## ll bit tree
+
+{% highlight C++ linenos %}
+struct BIT {
+    int sz;
+    vector<ll> tree;
+    BIT(int _sz) {
+        sz = _sz;
+        tree.resize(sz * 4);
+    }
+    void upd(int i, ll x) {
+        for (; i < tree.size(); i += i & -i) {
+            tree[i] += x;
+        }
+    }
+    ll query(int i) {
+        ll ans = 0;
+        for (; i > 0; i -= i & -i) {
+            ans += tree[i];
+        }
+        return ans;
+    }
+};
+
+struct BIT2 {
+    int sz;
+    vector<ll> tree;
+    BIT2(int _sz) {
+        sz = _sz;
+        tree.resize(sz + 1);
+    }
+    void upd(int i, int x) {
+        tree[i] += x;
+    }
+    ll query(int i) {
+        ll ans = 0;
+        while (i > 0) {
+            ans += tree[i];
+            i--;
+        }
+        return ans;
+    }
+};
+{% endhighlight %}
 				       
 ## BIT Tree (Fast)
 {% highlight C++ linenos %}
