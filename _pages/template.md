@@ -10,43 +10,74 @@ author_profile: true
 
 ## Dijkstra
 {% highlight C++ linenos %}
-int dijkstraM(int start, int end, vector<vector<pi>> adj, vector<int> &dist) {
-    vector<bool> visited(N);
-
-    priority_queue<pi, vector<pi>, greater<pi>> pq;
-
-    pq.push({0, start});
-    dist[start] = 0;
-
-    while (pq.size()) {
-        pi value = pq.top(); pq.pop();
-        ll node = value.s;
-        if (visited[node]) {
-            continue;
-        }
-        visited[node] = true;
-
-        for (auto to : adj[node]) {
-            int newWeight = to.f + dist[node];
-
-            if (newWeight < dist[to.s]) {
-                // nodeInfo[to.s] = nodeInfo[node] + cows[to.s];
-                prevV[to.s] = node;
-
-                dist[to.s] = newWeight;
-                pq.push({dist[to.s], to.s});
-            }
-        }
-
-        //dbg(node, dist[node]);
+for (int i = 1; i <= n; i++) dist[i] = LLONG_MAX;
+dist[1] = 0;
+priority_queue<pair<ll, int>, vector<pair<ll, int>>, greater<pair<ll, int>>> pq;
+pq.push({0LL, 1});
+while (!pq.empty()) {
+    auto tp = pq.top();
+    pq.pop();
+    if (tp.first != dist[tp.second]) continue;
+    for (auto ch : adj[tp.second]) {
+        if (ch.second + tp.first < dist[ch.first]) {
+	    pq.push({dist[ch.first] = ch.second + tp.first, ch.first});
+	}
     }
-
-    return dist[end];
 }
 {% endhighlight %}
 
+## Binary Jumping/LCA
+{% highlight C++ linenos %}
+int h[MXN];
+int up[MXN][MXD];
+vector<int> adj[MXN];
 
-				       
+void build() {
+    for (int j = 1; j < MXD; j++) {
+        for (int i = 1; i <= n; i++) {
+            up[i][j] = up[up[i][j - 1]][j - 1];
+        }
+    }
+}
+
+
+void dfs(int node) {
+    for (auto ch : adj[node]) {
+        h[ch] = h[node] + 1;
+        dfs(ch);
+    }
+}
+
+int lift(int a, int b) {
+    for (int j = 0; j < MXD; j++) {
+        if (b & (1 << j)) {
+            a = up[a][j];
+        }
+    }
+    return a;
+}
+
+int lca(int a, int b) {
+    if (h[a] > h[b]) swap(a, b);
+    int k = h[b] - h[a];
+    b = lift(b, k);
+    if (a == b) return a;
+    for (int i = MXD - 1; i >= 0; i--) {
+        if (up[a][i] != up[b][i]) {
+            a = up[a][i];
+            b = up[b][i];
+        }
+    }
+    return up[a][0];
+}
+
+int main() {
+    h[1] = 0;
+    up[1][0] = 1;
+    dfs(1);
+    build();
+}
+{% endhighlight %}	
 				       
 ## BIT Tree
 {% highlight C++ linenos %}
