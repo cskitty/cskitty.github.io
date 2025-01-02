@@ -54,6 +54,17 @@ ll c(int a, int b) {
 }
 {% endhighlight %}
 
+## Combinatorics (triangle)
+{% highlight C++ linenos %}
+for (int i = 0; i <= n; ++i) {
+    c[i][0] = c[i][i] = 1;
+    for (int j = 1; j < i; ++j)
+        c[i][j] = (c[i][j] + c[i - 1][j]) % MOD;
+        c[i][j] = (c[i][j] + c[i - 1][j - 1]) % MOD;
+    }
+}
+{% endhighlight %}
+
 ## Fast I/O
 {% highlight C++ linenos %}
 ios::sync_with_stdio(false);
