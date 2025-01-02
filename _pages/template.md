@@ -8,6 +8,58 @@ author_profile: true
 
 ![](/assets/images/USACObessieheader.PNG)
 
+## Fast power 
+{% highlight C++ linenos %}
+ll power(ll a, ll b) {
+    ll ans = 1;
+    while (b > 0) {
+        if (b % 2 == 1) {
+            ans = (ans * a) % MOD;
+        }
+        a = (a * a) % MOD;
+        b /= 2;
+    }
+    return ans;
+}
+{% endhighlight %}
+
+## Precompute factorials
+{% highlight C++ linenos %}
+ll f[MXN];
+
+void init() {
+    f[0] = 1;
+    for (int i = 1; i < MXN; i++) {
+        f[i] = f[i - 1] * i;
+        f[i] %= MOD;
+    }
+}
+{% endhighlight %}
+
+## Modular Inverse
+{% highlight C++ linenos %}
+ll inv(ll a) {
+    return power(a, MOD - 2) % MOD;
+}
+{% endhighlight %}
+
+## Combinatorics
+ll c(int a, int b) {
+{% highlight C++ linenos %}
+    assert(a >= b);
+    ll ans = f[a];
+    ans = (ans * inv(f[b])) % MOD;
+    ans = (ans * inv(f[a - b])) % MOD;
+    return ans;
+}
+{% endhighlight %}
+
+## Fast I/O
+{% highlight C++ linenos %}
+ios::sync_with_stdio(false);
+cin.tie(nullptr);
+{% endhighlight %}
+
 ## Dijkstra
 {% highlight C++ linenos %}
 for (int i = 1; i <= n; i++) dist[i] = LLONG_MAX;
