@@ -44,8 +44,8 @@ ll inv(ll a) {
 {% endhighlight %}
 
 ## Combinatorics
-ll c(int a, int b) {
 {% highlight C++ linenos %}
+ll c(int a, int b) {
     assert(a >= b);
     ll ans = f[a];
     ans = (ans * inv(f[b])) % MOD;
