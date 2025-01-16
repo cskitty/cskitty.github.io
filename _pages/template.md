@@ -273,52 +273,34 @@ allColors.upd(j, x);
 
 ## Normal Segment Tree
 {% highlight C++ linenos %}
-vector<int> arr;
-vector<int> tree;
-arr.resize(N + 1);
-tree.resize(4*N);
+#define opp(a, b) min(a, b)
 
-void build(int p, int l, int r) {
-    if (l == r) {tree[p] = arr[l]; return;}
-
-    int mid = (l + r)/2;
-    build(2*p, l, mid);
-    build(2*p + 1, mid + 1, r);
-
-    tree[p] = min(tree[2*p], tree[2*p + 1]);
-}
-
-void update(int p, int l, int r, int x, int y) {
-    // turn arr[x] into y
-    if (l == r) { tree[p] = y; return; }
-
-    int mid = (l + r)/2;
-    if (x <= mid) {
-        update(2*p, l, mid, x, y);
-    }
-    else {
-        update(2*p + 1, mid + 1, r, x, y);
-    }
-
-    tree[p] = min(tree[2*p], tree[2*p + 1]);
-}
-
-int query(int p, int l, int r, int x, int y) {
-    if (l == r) { return tree[p]; }
-
-    int mid = (l + r)/2;
-    int ans = INT_MAX;
-    if (x <= mid) {
-        ans = min(ans, query(2 * p, l, mid, x, y));
-    }
-    if (y >= mid + 1) {
-        ans = min(ans, query(2 * p + 1, mid + 1, r, x, y));
-    }
-
-    return ans;
-}
-
-
+struct SEG {
+	vector<int> a, tree;
+	long long def = LLONG_MAX;
+	void init(vector<int> &_a) {
+		a = _a;
+		tree.resize(a.size() * 4, def);
+	}
+	int build(int node, int l, int r) {
+		if (l > r) return def;
+		if (l == r) return tree[node] = a[l];
+		int mid = (r + l) / 2;
+		return tree[node] = opp(build(node * 2, l, mid), build(node * 2 + 1, mid + 1, r));
+	}
+	int query(int node, int l, int r, int x, int y) {
+		if (r <= y && l >= x) return tree[node];
+		if (l > y || r < x) return def;
+		int mid = (r + l) / 2;
+		return opp(query(node * 2, l, mid, x, y), query(node * 2 + 1, mid + 1, r, x, y));
+	}
+	int upd(int node, int l, int r, int i, int j) {
+		if (i > r || i < l) return tree[node];
+		if (l == r) return tree[node] = j;
+		int mid = (r + l) / 2;
+		return tree[node] = opp(upd(node * 2, l, mid, i, j), upd(node * 2 + 1, mid + 1, r, i, j));
+	}
+};
 {% endhighlight %}
 
 ## Lazy Segment Tree
