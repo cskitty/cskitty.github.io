@@ -62,12 +62,52 @@ void init() {
     for (int i = 0; i < MXN; ++i) {
         c[i][0] = c[i][i] = 1;
         for (int j = 1; j < i; ++j) {
-	    c[i][j] = (c[i][j] + c[i - 1][j]) % MOD;
-	    c[i][j] = (c[i][j] + c[i - 1][j - 1]) % MOD;
-	}
+            (c[i][j] = (c[i][j] + c[i - 1][j])) %= MOD;
+            (c[i][j] = (c[i][j] + c[i - 1][j - 1])) %= MOD;
+        }
     }
 }
 {% endhighlight %}
+
+
+## Combo full
+{% highlight C++ linenos %}
+using ll = long long;
+
+ll power(ll a, ll b) {
+    ll ans = 1;
+    while (b > 0) {
+        if (b % 2 == 1) {
+            ans = (ans * a) % MOD;
+        }
+        a = (a * a) % MOD;
+        b /= 2;
+    }
+    return ans;
+}
+
+ll f[MXN];
+
+void init() {
+    f[0] = 1;
+    for (int i = 1; i < MXN; i++) {
+        f[i] = f[i - 1] * i;
+        f[i] %= MOD;
+    }
+}
+
+ll inv(ll a) {
+    return power(a, MOD - 2) % MOD;
+}
+
+ll c(int a, int b) {
+    assert(a >= b);
+    ll ans = f[a];
+    ans = (ans * inv(f[b])) % MOD;
+    ans = (ans * inv(f[a - b])) % MOD;
+    return ans;
+}
+{% endhighlight %} 
 
 ## Fast IO
 {% highlight C++ linenos %}
@@ -273,33 +313,57 @@ allColors.upd(j, x);
 
 ## Normal Segment Tree
 {% highlight C++ linenos %}
+ 
 #define opp(a, b) min(a, b)
-
+ 
+template<typename T>
 struct SEG {
-	vector<int> a, tree;
-	long long def = LLONG_MAX;
-	void init(vector<int> &_a) {
-		a = _a;
-		tree.resize(a.size() * 4, def);
-	}
-	int build(int node, int l, int r) {
-		if (l > r) return def;
-		if (l == r) return tree[node] = a[l];
-		int mid = (r + l) / 2;
-		return tree[node] = opp(build(node * 2, l, mid), build(node * 2 + 1, mid + 1, r));
-	}
-	int query(int node, int l, int r, int x, int y) {
-		if (r <= y && l >= x) return tree[node];
-		if (l > y || r < x) return def;
-		int mid = (r + l) / 2;
-		return opp(query(node * 2, l, mid, x, y), query(node * 2 + 1, mid + 1, r, x, y));
-	}
-	int upd(int node, int l, int r, int i, int j) {
-		if (i > r || i < l) return tree[node];
-		if (l == r) return tree[node] = j;
-		int mid = (r + l) / 2;
-		return tree[node] = opp(upd(node * 2, l, mid, i, j), upd(node * 2 + 1, mid + 1, r, i, j));
-	}
+    int sz;
+    vector<T> tree;
+    T *arr, def;
+    void bbuild(int node, int l, int r) {
+        if (l == r) {
+            tree[node] = arr[l];
+            return;
+        }
+        int mid = (l + r) / 2;
+        bbuild(node * 2, l, mid);
+        bbuild(node * 2 + 1, mid + 1, r);
+        tree[node] = opp(tree[node * 2], tree[node * 2 + 1]);
+    }
+    void uupd(int node, int l, int r, int x, int y) {
+        if (l == r) {
+            tree[node] = y;
+            return;
+        }
+        int mid = (l + r) / 2;
+        if (x <= mid) uupd(node * 2, l, mid, x, y);
+        else uupd(node * 2 + 1, mid + 1, r, x, y);
+        tree[node] = opp(tree[node * 2], tree[node * 2 + 1]);
+    }
+    T qquery(int node, int l, int r, int x, int y) {
+        if (r < x || y < l) return def;
+        if (x <= l && r <= y) return tree[node];
+        int mid = (l + r) / 2;
+        return opp(qquery(2 * node, l, mid, x, y),
+             qquery(2 * node + 1, mid + 1, r, x, y));
+    }
+    void build() {
+        bbuild(1, 1, sz);
+    }
+    void upd(int x, int y) {
+        uupd(1, 1, sz, x, y);
+    }
+    T query(int x, int y) {
+        return qquery(1, 1, sz, x, y);
+    }
+    void init(int _n, T* _arr, T _def) {
+        sz = _n;
+        def = _def;
+        arr = _arr;
+        tree.resize(4 * sz, def);
+        build();
+    }
 };
 {% endhighlight %}
 
