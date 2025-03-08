@@ -262,7 +262,7 @@ struct BIT2 {
         sz = _sz;
         tree.resize(sz + 1);
     }
-    void upd(int i, int x) {
+    void upd(int i, ll x) {
         tree[i] += x;
     }
     ll query(int i) {
@@ -313,9 +313,8 @@ allColors.upd(j, x);
 
 ## Normal Segment Tree
 {% highlight C++ linenos %}
- 
-#define opp(a, b) min(a, b)
- 
+ #define opp(x, y) max(x, y)
+
 template<typename T>
 struct SEG {
     int sz;
@@ -341,7 +340,7 @@ struct SEG {
         else uupd(node * 2 + 1, mid + 1, r, x, y);
         tree[node] = opp(tree[node * 2], tree[node * 2 + 1]);
     }
-    T qquery(int node, int l, int r, int x, int y) {
+    T qquery(int node, int l, int r, int x, T y) {
         if (r < x || y < l) return def;
         if (x <= l && r <= y) return tree[node];
         int mid = (l + r) / 2;
@@ -351,7 +350,7 @@ struct SEG {
     void build() {
         bbuild(1, 1, sz);
     }
-    void upd(int x, int y) {
+    void upd(int x, T y) {
         uupd(1, 1, sz, x, y);
     }
     T query(int x, int y) {
@@ -365,6 +364,7 @@ struct SEG {
         build();
     }
 };
+
 {% endhighlight %}
 
 ## Lazy Segment Tree
