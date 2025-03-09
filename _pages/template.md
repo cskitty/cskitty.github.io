@@ -330,7 +330,7 @@ struct SEG {
         bbuild(node * 2 + 1, mid + 1, r);
         tree[node] = opp(tree[node * 2], tree[node * 2 + 1]);
     }
-    void uupd(int node, int l, int r, int x, int y) {
+    void uupd(int node, int l, int r, int x, T y) {
         if (l == r) {
             tree[node] = y;
             return;
@@ -340,7 +340,7 @@ struct SEG {
         else uupd(node * 2 + 1, mid + 1, r, x, y);
         tree[node] = opp(tree[node * 2], tree[node * 2 + 1]);
     }
-    T qquery(int node, int l, int r, int x, T y) {
+    T qquery(int node, int l, int r, int x, int y) {
         if (r < x || y < l) return def;
         if (x <= l && r <= y) return tree[node];
         int mid = (l + r) / 2;
