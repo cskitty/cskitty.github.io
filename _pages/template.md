@@ -88,46 +88,6 @@ void init() {
 }
 {% endhighlight %}
 
-
-## Combo full
-{% highlight C++ linenos %}
-using ll = long long;
-
-ll power(ll a, ll b) {
-    ll ans = 1;
-    while (b > 0) {
-        if (b % 2 == 1) {
-            ans = (ans * a) % MOD;
-        }
-        a = (a * a) % MOD;
-        b /= 2;
-    }
-    return ans;
-}
-
-ll f[MXN];
-
-void init() {
-    f[0] = 1;
-    for (int i = 1; i < MXN; i++) {
-        f[i] = f[i - 1] * i;
-        f[i] %= MOD;
-    }
-}
-
-ll inv(ll a) {
-    return power(a, MOD - 2) % MOD;
-}
-
-ll c(int a, int b) {
-    assert(a >= b);
-    ll ans = f[a];
-    ans = (ans * inv(f[b])) % MOD;
-    ans = (ans * inv(f[a - b])) % MOD;
-    return ans;
-}
-{% endhighlight %} 
-
 ## Fast IO
 {% highlight C++ linenos %}
 ios::sync_with_stdio(false);
