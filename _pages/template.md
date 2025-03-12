@@ -44,6 +44,7 @@ ll inv(ll a) {
 {% endhighlight %}
 
 ## Combinatorics
+{% highlight C++ linenos %}
 const int MAXN = 1e6;
 const int MOD = 1e9 + 7;
 
