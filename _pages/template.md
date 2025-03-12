@@ -64,13 +64,19 @@ ll exp(ll x, ll n, ll m) {
 
 void int() {
     fac[0] = 1;
-    for (int i = 1; i <= MAXN; i++) { fac[i] = fac[i - 1] * i % MOD; }
+    for (int i = 1; i <= MAXN; i++) { 
+        fac[i] = fac[i - 1] * i % MOD;
+    }
  
     inv[MAXN] = exp(fac[MAXN], MOD - 2, MOD);
-    for (int i = MAXN; i >= 1; i--) { inv[i - 1] = inv[i] * i % MOD; }
+    for (int i = MAXN; i >= 1; i--) { 
+        inv[i - 1] = inv[i] * i % MOD; 
+    }
 }
 
-ll choose(int n, int r) { return fac[n] * inv[r] % MOD * inv[n - r] % MOD; }
+ll choose(int n, int r) {
+    return fac[n] * inv[r] % MOD * inv[n - r] % MOD; 
+}
 {% endhighlight %}
 
 ## Combinatorics (triangle)
