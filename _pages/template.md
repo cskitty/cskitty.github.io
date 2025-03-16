@@ -8,6 +8,36 @@ author_profile: true
 
 ![](/assets/images/USACObessieheader.PNG)
 
+## Start code
+{% highlight C++ linenos %}
+#include <bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
+#define endl "\n"
+
+int main() {
+
+}
+{% endhighlight %}
+
+## Start code (with testcases)
+
+#include <bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
+#define endl "\n"
+
+void solve() {
+    
+}
+
+int main() {
+    int t; cin >> t;
+    while (t--) solve();
+}
+{% endhighlight %}
 ## Fast power 
 {% highlight C++ linenos %}
 ll power(ll a, ll b) {
@@ -298,11 +328,12 @@ allColors.upd(j, x);
 
 ## Normal Segment Tree
 {% highlight C++ linenos %}
- #define opp(x, y) max(x, y)
+
+#define opp(x, y, k) min(x, y)
 
 template<typename T>
 struct SEG {
-    int sz;
+    int sz, key;
     vector<T> tree;
     T *arr, def;
     void bbuild(int node, int l, int r) {
@@ -313,7 +344,7 @@ struct SEG {
         int mid = (l + r) / 2;
         bbuild(node * 2, l, mid);
         bbuild(node * 2 + 1, mid + 1, r);
-        tree[node] = opp(tree[node * 2], tree[node * 2 + 1]);
+        tree[node] = opp(tree[node * 2], tree[node * 2 + 1], key);
     }
     void uupd(int node, int l, int r, int x, T y) {
         if (l == r) {
@@ -323,14 +354,14 @@ struct SEG {
         int mid = (l + r) / 2;
         if (x <= mid) uupd(node * 2, l, mid, x, y);
         else uupd(node * 2 + 1, mid + 1, r, x, y);
-        tree[node] = opp(tree[node * 2], tree[node * 2 + 1]);
+        tree[node] = opp(tree[node * 2], tree[node * 2 + 1], key);
     }
     T qquery(int node, int l, int r, int x, int y) {
         if (r < x || y < l) return def;
         if (x <= l && r <= y) return tree[node];
         int mid = (l + r) / 2;
         return opp(qquery(2 * node, l, mid, x, y),
-             qquery(2 * node + 1, mid + 1, r, x, y));
+             qquery(2 * node + 1, mid + 1, r, x, y), key);
     }
     void build() {
         bbuild(1, 1, sz);
@@ -341,15 +372,84 @@ struct SEG {
     T query(int x, int y) {
         return qquery(1, 1, sz, x, y);
     }
-    void init(int _n, T* _arr, T _def) {
+    void init(int _n, T* _arr, T _def, int _key = 0) {
         sz = _n;
         def = _def;
         arr = _arr;
+        key = _key;
         tree.resize(4 * sz, def);
         build();
     }
+    void init(int _n, T _def, int _key = 0) {
+        sz = _n;
+        def = _def;
+        key = _key;
+        tree.resize(4 * sz, def);
+    }
+    T get(int ind) {
+        return query(ind, ind);
+    }
 };
 
+template<typename T>
+struct SEG0 {
+    int sz, key;
+    vector<T> tree;
+    T *arr, def;
+    void bbuild(int node, int l, int r) {
+        if (l == r) {
+            tree[node] = arr[l];
+            return;
+        }
+        int mid = (l + r) / 2;
+        bbuild(node * 2, l, mid);
+        bbuild(node * 2 + 1, mid + 1, r);
+        tree[node] = opp(tree[node * 2], tree[node * 2 + 1], key);
+    }
+    void uupd(int node, int l, int r, int x, T y) {
+        if (l == r) {
+            tree[node] = y;
+            return;
+        }
+        int mid = (l + r) / 2;
+        if (x <= mid) uupd(node * 2, l, mid, x, y);
+        else uupd(node * 2 + 1, mid + 1, r, x, y);
+        tree[node] = opp(tree[node * 2], tree[node * 2 + 1], key);
+    }
+    T qquery(int node, int l, int r, int x, int y) {
+        if (r < x || y < l) return def;
+        if (x <= l && r <= y) return tree[node];
+        int mid = (l + r) / 2;
+        return opp(qquery(2 * node, l, mid, x, y),
+             qquery(2 * node + 1, mid + 1, r, x, y), key);
+    }
+    void build() {
+        bbuild(1, 0, sz - 1);
+    }
+    void upd(int x, T y) {
+        uupd(1, 0, sz - 1, x, y);
+    }
+    T query(int x, int y) {
+        return qquery(1, 0, sz - 1, x, y);
+    }
+    void init(int _n, T* _arr, T _def, int _key = 0) {
+        sz = _n;
+        def = _def;
+        arr = _arr;
+        key = _key;
+        tree.resize(4 * sz, def);
+        build();
+    }
+    void init(int _n, T _def, int _key = 0) {
+        sz = _n;
+        def = _def;
+        key = _key;
+        tree.resize(4 * sz, def);
+    }
+    T get(int ind) {
+        return query(ind, ind);
+    }
+};
 {% endhighlight %}
 
 ## Lazy Segment Tree
@@ -878,7 +978,7 @@ int binary_search() {
     int l = 0;
     int r = 1e9 + 1;
     while (l != r) {
-        int mid = (l + r)/2;
+        int mid = (l + r) / 2;
         if (check(mid)) {
             r = mid;
         }
@@ -895,8 +995,8 @@ int binary_search(vector<ll> x) {
       int l = 0;
       int r = 1e9 + 1;
       while (l != r) {
-          int mid = (l + r + 1)/2;
-          if (check(x, mid)) {
+          int mid = (l + r + 1) / 2;
+          if (check(mid)) {
               l = mid;
           }
           else {
