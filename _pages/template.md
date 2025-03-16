@@ -22,7 +22,7 @@ int main() {
 {% endhighlight %}
 
 ## Start code (with testcases)
-
+{% highlight C++ linenos %}
 #include <bits/stdc++.h>
 using namespace std;
 
