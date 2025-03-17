@@ -3,37 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>2D Point Visualizer with Extra Lines</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <!-- React and ReactDOM from CDN -->
   <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
   <!-- Babel for JSX transformation -->
   <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <style>
-    body {
-      font-family: sans-serif;
-      padding: 20px;
-    }
-    label {
-      margin-right: 10px;
-    }
-    input[type="number"] {
-      margin-left: 5px;
-      width: 60px;
-    }
-    .option-group {
-      margin-top: 10px;
-    }
-  </style>
 </head>
-<body>
-  <div id="root"></div>
+<body class="bg-gray-100 p-8">
+  <div id="root" class="max-w-4xl mx-auto bg-white p-6 rounded shadow"></div>
   
   <script type="text/babel">
     const PointVisualizer = () => {
+      // Updated default grid values for a 30x30 grid
       const [inputText, setInputText] = React.useState('');
       const [points, setPoints] = React.useState([]);
-      const [gridWidth, setGridWidth] = React.useState(10);
-      const [gridHeight, setGridHeight] = React.useState(10);
+      const [gridWidth, setGridWidth] = React.useState(30);
+      const [gridHeight, setGridHeight] = React.useState(30);
       const [gridSpacing, setGridSpacing] = React.useState(1);
       const [pointSize, setPointSize] = React.useState(0.2);
       const [boldInterval, setBoldInterval] = React.useState(5);
@@ -182,80 +169,132 @@
       const transform = `translate(${translateX}, ${translateY}) scale(${scaleX}, ${scaleY})`;
 
       return (
-        <div>
+        <div className="space-y-6">
+          {/* Points Input */}
           <div>
             <textarea
               rows="10"
-              cols="30"
               placeholder="Enter 2D points (x y) on each line"
               value={inputText}
               onChange={handleInputChange}
+              className="w-full p-2 border border-gray-300 rounded"
             />
           </div>
-          <div className="option-group">
-            <label>
+
+          {/* Extra Lines Input */}
+          <div className="space-y-2">
+            <label className="block font-medium">
               Extra Lines:
-              <textarea
-                rows="4"
-                cols="30"
-                placeholder="Enter extra lines (e.g., x=5 or y=6), one per line"
-                value={extraLinesText}
-                onChange={(e) => setExtraLinesText(e.target.value)}
-              />
             </label>
+            <textarea
+              rows="4"
+              placeholder="Enter extra lines (e.g., x=5 or y=6), one per line"
+              value={extraLinesText}
+              onChange={(e) => setExtraLinesText(e.target.value)}
+              className="w-full p-2 border border-gray-300 rounded"
+            />
           </div>
-          <div className="option-group">
-            <label>
-              Grid Width:
-              <input type="number" value={gridWidth} onChange={handleGridWidthChange} />
-            </label>
-            <label>
-              Grid Height:
-              <input type="number" value={gridHeight} onChange={handleGridHeightChange} />
-            </label>
-            <label>
-              Grid Spacing:
-              <input type="number" value={gridSpacing} onChange={handleGridSpacingChange} />
-            </label>
-            <label>
-              Point Size:
-              <input type="number" step="0.1" value={pointSize} onChange={handlePointSizeChange} />
-            </label>
+
+          {/* Grid Settings */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <label className="block">
+                Grid Width:
+                <input
+                  type="number"
+                  value={gridWidth}
+                  onChange={handleGridWidthChange}
+                  className="w-20 ml-2 p-1 border border-gray-300 rounded"
+                />
+              </label>
+              <label className="block">
+                Grid Height:
+                <input
+                  type="number"
+                  value={gridHeight}
+                  onChange={handleGridHeightChange}
+                  className="w-20 ml-2 p-1 border border-gray-300 rounded"
+                />
+              </label>
+              <label className="block">
+                Grid Spacing:
+                <input
+                  type="number"
+                  value={gridSpacing}
+                  onChange={handleGridSpacingChange}
+                  className="w-20 ml-2 p-1 border border-gray-300 rounded"
+                />
+              </label>
+              <label className="block">
+                Point Size:
+                <input
+                  type="number"
+                  step="0.1"
+                  value={pointSize}
+                  onChange={handlePointSizeChange}
+                  className="w-20 ml-2 p-1 border border-gray-300 rounded"
+                />
+              </label>
+            </div>
+            <div className="space-y-2">
+              <label className="block">
+                Bold Interval:
+                <input
+                  type="number"
+                  value={boldInterval}
+                  onChange={handleBoldIntervalChange}
+                  className="w-20 ml-2 p-1 border border-gray-300 rounded"
+                />
+              </label>
+              <label className="block">
+                Bold Line Thickness:
+                <input
+                  type="number"
+                  step="0.01"
+                  value={boldLineThickness}
+                  onChange={handleBoldLineThicknessChange}
+                  className="w-20 ml-2 p-1 border border-gray-300 rounded"
+                />
+              </label>
+              <div className="flex items-center space-x-4 mt-2">
+                <label className="flex items-center">
+                  <input
+                    type="checkbox"
+                    checked={invertX}
+                    onChange={() => setInvertX(!invertX)}
+                    className="mr-1"
+                  />
+                  Invert X
+                </label>
+                <label className="flex items-center">
+                  <input
+                    type="checkbox"
+                    checked={invertY}
+                    onChange={() => setInvertY(!invertY)}
+                    className="mr-1"
+                  />
+                  Invert Y
+                </label>
+              </div>
+            </div>
           </div>
-          <div className="option-group">
-            <label>
-              Bold Interval:
-              <input type="number" value={boldInterval} onChange={handleBoldIntervalChange} />
-            </label>
-            <label>
-              Bold Line Thickness:
-              <input type="number" step="0.01" value={boldLineThickness} onChange={handleBoldLineThicknessChange} />
-            </label>
+
+          {/* Render Button */}
+          <div className="flex justify-end">
+            <button 
+              onClick={parsePoints}
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+            >
+              Render
+            </button>
           </div>
-          <div className="option-group">
-            <label>
-              <input
-                type="checkbox"
-                checked={invertX}
-                onChange={() => setInvertX(!invertX)}
-              />
-              Invert X
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={invertY}
-                onChange={() => setInvertY(!invertY)}
-              />
-              Invert Y
-            </label>
-          </div>
-          <button onClick={parsePoints} style={{ marginTop: '10px' }}>Render</button>
+
+          {/* SVG Canvas */}
           <svg
-            width="500"
-            height="500"
+            width="800"
+            height="800"
             viewBox={`0 0 ${gridWidth} ${gridHeight}`}
-            style={{ border: '1px solid black', marginTop: '20px' }}
+            className="border border-gray-300 mt-6"
           >
             <g transform={transform}>
               {verticalLines}
