@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2D Point Visualizer with Extra Lines</title>
+  <!-- React and ReactDOM from CDN -->
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <!-- Babel for JSX transformation -->
+  <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    label {
+      margin-right: 10px;
+    }
+    input[type="number"] {
+      margin-left: 5px;
+      width: 60px;
+    }
+    .option-group {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script type="text/babel">
+    const PointVisualizer = () => {
+      const [inputText, setInputText] = React.useState('');
+      const [points, setPoints] = React.useState([]);
+      const [gridWidth, setGridWidth] = React.useState(10);
+      const [gridHeight, setGridHeight] = React.useState(10);
+      const [gridSpacing, setGridSpacing] = React.useState(1);
+      const [pointSize, setPointSize] = React.useState(0.2);
+      const [boldInterval, setBoldInterval] = React.useState(5);
+      const [boldLineThickness, setBoldLineThickness] = React.useState(0.05);
+      const [invertX, setInvertX] = React.useState(false);
+      const [invertY, setInvertY] = React.useState(false);
+      const [extraLinesText, setExtraLinesText] = React.useState('');
+      const [extraLines, setExtraLines] = React.useState([]);
+
+      const handleInputChange = (e) => setInputText(e.target.value);
+      const handleGridWidthChange = (e) => setGridWidth(parseFloat(e.target.value) || 0);
+      const handleGridHeightChange = (e) => setGridHeight(parseFloat(e.target.value) || 0);
+      const handleGridSpacingChange = (e) => setGridSpacing(parseFloat(e.target.value) || 0);
+      const handlePointSizeChange = (e) => setPointSize(parseFloat(e.target.value) || 0);
+      const handleBoldIntervalChange = (e) => setBoldInterval(parseFloat(e.target.value) || 1);
+      const handleBoldLineThicknessChange = (e) => setBoldLineThickness(parseFloat(e.target.value) || 0.05);
+
+      const parsePoints = () => {
+        // Parse the points from the textarea (format: "x y")
+        const parsedPoints = inputText.split('\n').map(line => {
+          const parts = line.trim().split(/\s+/);
+          if (parts.length === 2) {
+            return { x: parseFloat(parts[0]), y: parseFloat(parts[1]) };
+          }
+          return null;
+        }).filter(point => point && !isNaN(point.x) && !isNaN(point.y));
+        setPoints(parsedPoints);
+
+        // Parse extra lines from the extraLinesText textarea.
+        // Expected format per line: "x=5" or "y=6"
+        const parsedExtraLines = extraLinesText.split('\n').map(line => {
+          const match = line.trim().match(/^(x|y)\s*=\s*([-+]?[0-9]*\.?[0-9]+)$/i);
+          if (match) {
+            return { type: match[1].toLowerCase(), value: parseFloat(match[2]) };
+          }
+          return null;
+        }).filter(line => line !== null);
+        setExtraLines(parsedExtraLines);
+      };
+
+      // Generate vertical grid lines with a bold line every "boldInterval" steps.
+      const verticalLines = [];
+      const numVertical = Math.floor(gridWidth / gridSpacing);
+      for (let i = 0; i <= numVertical; i++) {
+        const x = i * gridSpacing;
+        const isBold = (i % boldInterval === 0);
+        verticalLines.push(
+          <line
+            key={`v-${i}`}
+            x1={x}
+            y1={0}
+            x2={x}
+            y2={gridHeight}
+            stroke="#ccc"
+            strokeWidth={isBold ? boldLineThickness : 0.02}
+          />
+        );
+      }
+      if (gridWidth % gridSpacing !== 0) {
+        const i = numVertical + 1;
+        const isBold = (i % boldInterval === 0);
+        verticalLines.push(
+          <line
+            key="v-final"
+            x1={gridWidth}
+            y1={0}
+            x2={gridWidth}
+            y2={gridHeight}
+            stroke="#ccc"
+            strokeWidth={isBold ? boldLineThickness : 0.02}
+          />
+        );
+      }
+
+      // Generate horizontal grid lines with a bold line every "boldInterval" steps.
+      const horizontalLines = [];
+      const numHorizontal = Math.floor(gridHeight / gridSpacing);
+      for (let j = 0; j <= numHorizontal; j++) {
+        const y = j * gridSpacing;
+        const isBold = (j % boldInterval === 0);
+        horizontalLines.push(
+          <line
+            key={`h-${j}`}
+            x1={0}
+            y1={y}
+            x2={gridWidth}
+            y2={y}
+            stroke="#ccc"
+            strokeWidth={isBold ? boldLineThickness : 0.02}
+          />
+        );
+      }
+      if (gridHeight % gridSpacing !== 0) {
+        const j = numHorizontal + 1;
+        const isBold = (j % boldInterval === 0);
+        horizontalLines.push(
+          <line
+            key="h-final"
+            x1={0}
+            y1={gridHeight}
+            x2={gridWidth}
+            y2={gridHeight}
+            stroke="#ccc"
+            strokeWidth={isBold ? boldLineThickness : 0.02}
+          />
+        );
+      }
+
+      // Generate extra vertical/horizontal lines as specified by the user.
+      const extraLineElements = extraLines.map((lineDef, index) => {
+        if (lineDef.type === 'x') {
+          return (
+            <line
+              key={`extra-v-${index}`}
+              x1={lineDef.value}
+              y1={0}
+              x2={lineDef.value}
+              y2={gridHeight}
+              stroke="blue"
+              strokeWidth="0.04"
+              strokeDasharray="0.2,0.1"
+            />
+          );
+        } else if (lineDef.type === 'y') {
+          return (
+            <line
+              key={`extra-h-${index}`}
+              x1={0}
+              y1={lineDef.value}
+              x2={gridWidth}
+              y2={lineDef.value}
+              stroke="blue"
+              strokeWidth="0.04"
+              strokeDasharray="0.2,0.1"
+            />
+          );
+        }
+        return null;
+      });
+
+      // Compute transform for axis inversion.
+      const scaleX = invertX ? -1 : 1;
+      const scaleY = invertY ? -1 : 1;
+      const translateX = invertX ? gridWidth : 0;
+      const translateY = invertY ? gridHeight : 0;
+      const transform = `translate(${translateX}, ${translateY}) scale(${scaleX}, ${scaleY})`;
+
+      return (
+        <div>
+          <div>
+            <textarea
+              rows="10"
+              cols="30"
+              placeholder="Enter 2D points (x y) on each line"
+              value={inputText}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="option-group">
+            <label>
+              Extra Lines:
+              <textarea
+                rows="4"
+                cols="30"
+                placeholder="Enter extra lines (e.g., x=5 or y=6), one per line"
+                value={extraLinesText}
+                onChange={(e) => setExtraLinesText(e.target.value)}
+              />
+            </label>
+          </div>
+          <div className="option-group">
+            <label>
+              Grid Width:
+              <input type="number" value={gridWidth} onChange={handleGridWidthChange} />
+            </label>
+            <label>
+              Grid Height:
+              <input type="number" value={gridHeight} onChange={handleGridHeightChange} />
+            </label>
+            <label>
+              Grid Spacing:
+              <input type="number" value={gridSpacing} onChange={handleGridSpacingChange} />
+            </label>
+            <label>
+              Point Size:
+              <input type="number" step="0.1" value={pointSize} onChange={handlePointSizeChange} />
+            </label>
+          </div>
+          <div className="option-group">
+            <label>
+              Bold Interval:
+              <input type="number" value={boldInterval} onChange={handleBoldIntervalChange} />
+            </label>
+            <label>
+              Bold Line Thickness:
+              <input type="number" step="0.01" value={boldLineThickness} onChange={handleBoldLineThicknessChange} />
+            </label>
+          </div>
+          <div className="option-group">
+            <label>
+              <input
+                type="checkbox"
+                checked={invertX}
+                onChange={() => setInvertX(!invertX)}
+              />
+              Invert X
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                checked={invertY}
+                onChange={() => setInvertY(!invertY)}
+              />
+              Invert Y
+            </label>
+          </div>
+          <button onClick={parsePoints} style={{ marginTop: '10px' }}>Render</button>
+          <svg
+            width="500"
+            height="500"
+            viewBox={`0 0 ${gridWidth} ${gridHeight}`}
+            style={{ border: '1px solid black', marginTop: '20px' }}
+          >
+            <g transform={transform}>
+              {verticalLines}
+              {horizontalLines}
+              {extraLineElements}
+              {points.map((point, index) => (
+                <circle key={index} cx={point.x} cy={point.y} r={pointSize} fill="red" />
+              ))}
+            </g>
+          </svg>
+        </div>
+      );
+    };
+
+    ReactDOM.render(<PointVisualizer />, document.getElementById('root'));
+  </script>
+</body>
+</html>
