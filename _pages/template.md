@@ -38,6 +38,16 @@ int main() {
     while (t--) solve();
 }
 {% endhighlight %}
+
+## Coordinate compress
+{% highlight C++ linenos %}
+sort(vals.begin(), vals.end());
+vals.erase(unique(vals.begin(), vals.end()), vals.end());
+for (int i = 0; i < vals.size(); i++) {
+    valToInd[vals[i]] = i;
+}
+{% endhighlight %}
+
 ## Fast power 
 {% highlight C++ linenos %}
 ll power(ll a, ll b) {
